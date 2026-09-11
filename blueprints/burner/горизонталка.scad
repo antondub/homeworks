@@ -3,9 +3,9 @@ $fn = 60;
 
 wall = 3;               // Толщина стенок металла
 sq_size = 100;          // Размер квадратной трубы
-sq_len = 160;           // Длина квадратной трубы
+sq_len = 180;           // Длина квадратной трубы
 r_diam = 90;            // Диаметр круглой трубы
-r_len = 200;            // Длина круглой трубы
+r_len = 100;            // Длина круглой трубы
 trans_len = 50;         // Длина перехода квадрат->круг
 
 // Параметры фланца и окна
@@ -40,8 +40,11 @@ insert_width = 94;      // Реальная ширина картриджа (94 
 insert_thick = 1.5;     // Толщина металла внутренних пластин (1.5 мм)
 plate_thick = 1.5;      // Толщина боковых стенок (1.5 мм)
 
+cut_z = 0; 
+
 // === СБОРКА ВСЕЙ КОНСТРУКЦИИ ===
 //projection(cut = true)
+difference(){
 rotate([0,90,0])
 union() {
     // 1. Основной сквозной тракт устройства
@@ -52,6 +55,7 @@ union() {
             cyclone_row_holes();    // Отверстия на круглой трубе сразу после перехода
             bottom_air_scad_cuts2();
         }
+        main_body_inner_deflector();
     }
     
     // 2. Большой фланец со смотровым окном
@@ -75,10 +79,14 @@ union() {
         }
     }
 
-translate([0,-22,-30])
+translate([0,-22,-34])
 rotate([0,-90,-90])
 translate([0,47,0])
 inner_insert_assembly();
+    
+}
+    translate([-500, -500, cut_z]) 
+        cube([1000, 1000, 1000]); 
 }
 
 // --- Новый стабильный модуль перехода без hull() и polyhedron() ---
@@ -148,8 +156,27 @@ module main_body_inner() {
         
     translate([0, 0, trans_len - 0.1])
         cylinder(d = r_diam - wall*2, h = r_len + 2);
+
 }
 
+module main_body_inner_deflector() {
+    translate([0, -10, 2.5/2])
+    union(){
+        difference() {
+                linear_extrude(height = 40, scale = 0.65)
+                     square([95, 73], center = true);
+              translate([0, 0, -0.1])
+                linear_extrude(height = 40.2, scale = 0.63)
+            square([95-3, 73-3], center = true);
+        }
+        difference(){
+            translate([0, 3, 0])
+                cube([100,80,2.5], center = true);
+            cube([95-3,73-3,2.7], center = true);
+        }
+    }
+   
+}
 // Внешняя часть фланца
 module flange_outer() {
     translate([0, 0, -flange_thick])
@@ -192,7 +219,7 @@ module cyclone_row_holes() {
 module cone_jacket() {
     difference() {
         // Конус плавно идет от фланца (Z=0) до конца зоны перфорации
-        cylinder(d1 = jacket_start_d, d2 = r_diam + wall*2, h = jacket_len);
+        cylinder(d1 = jacket_start_d, d2 = r_diam, h = jacket_len + wall*2);
         
         // Внутренний вырез полости воздуха внутри конуса
         translate([0, 0, -0.1])
@@ -251,18 +278,19 @@ module bottom_air_scad_cuts2() {
 // === ГЕОМЕТРИЧЕСКИЕ МОДУЛИ ===
 
 module inner_insert_assembly() {
-    // Центрируем деталь по ширине трубы (ось X) от -47 до +47 мм
-    translate([-insert_width/2, 0, 0]) {
+  scale([1.1,1,1])
+    translate([-insert_width/2*1.05, 0, 0]) {
         
         // Поворот строго rotate()
         rotate([90, 0, 0]) {
-            
+            difference(){
             // Сдвигаем всё в центр локальных координат для идеального вращения
             translate([-insert_len/2, -insert_height/2, 0]) {
                 
                 // 1. Пять внутренних рабочих пластин (ширина 94 мм)
-                linear_extrude(height = insert_width)
+                  linear_extrude(height = insert_width)
                     color_sheets_2d_real();
+                //}
                 
                 // 2. Левая глухая боковая стенка (прямоугольник 160х94 мм)
                 linear_extrude(height = plate_thick)
@@ -273,8 +301,13 @@ module inner_insert_assembly() {
                     linear_extrude(height = plate_thick)
                         square([insert_len, insert_height]);
             }
+            
+            translate([insert_width/2 + 19,-insert_width/2+1,insert_height/2])
+                cube([15,3,70],center=true);
+            }
         }
-    }
+    
+  }
 }
 
 // 2D Профиль внутренних пластин, рассчитанный строго в реальных миллиметрах
@@ -288,7 +321,7 @@ module color_sheets_2d_real() {
     draw_flat_segment(43, h - 49, 86, h - 49, t);
     draw_flat_segment(86, h - 49, 129, h - 40, t);
     draw_flat_segment(129, h - 40, l, h - 22, t);
-    draw_flat_segment(l, h - 22, l, h - 6, t); 
+    draw_flat_segment(l, h - 22, l, h - 3, t); 
     
     // 2. БОРДОВАЯ ЛИНИЯ (Идет по верхнему краю h и впритирку к синей)
     draw_flat_segment(42, h - 1.5, 21, h - 1.5, t);   

@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="330mm"
+   height="420mm"
+   viewBox="-180 -125 330 420"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="горизонталка_размеры.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <style
+     id="style8">
+.measure-arrow
+{
+}
+.measure-label
+{
+
+}
+.measure-line
+{
+}</style>
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="measure_segments"
+       linked_items=""
+       id="path-effect32"
+       is_visible="true"
+       lpeversion="1.3.1"
+       unit="mm"
+       orientation="parallel"
+       coloropacity="#000000ff"
+       fontbutton="Sans 10"
+       precision="2"
+       fix_overlaps="0"
+       position="5"
+       text_top_bottom="0"
+       helpline_distance="0"
+       helpline_overlap="2"
+       line_width="0.25"
+       scale="1"
+       format="{measure}{unit}"
+       blacklist=""
+       active_projection="false"
+       whitelist="false"
+       showindex="false"
+       arrows_outside="false"
+       flip_side="false"
+       scale_sensitive="true"
+       local_locale="true"
+       rotate_anotation="true"
+       hide_back="true"
+       hide_arrows="false"
+       smallx100="false"
+       distance_projection="20"
+       angle_projection="0"
+       avoid_overlapping="true"
+       onbbox="false"
+       bboxonly="false"
+       centers="false"
+       maxmin="false"
+       helpdata="" />
+    <inkscape:path-effect
+       effect="measure_segments"
+       linked_items=""
+       id="path-effect28"
+       is_visible="true"
+       lpeversion="1.3.1"
+       unit="mm"
+       orientation="parallel"
+       coloropacity="#000000ff"
+       fontbutton="Sans 10"
+       precision="2"
+       fix_overlaps="0"
+       position="5"
+       text_top_bottom="0"
+       helpline_distance="0"
+       helpline_overlap="2"
+       line_width="0.25"
+       scale="1"
+       format="{measure}{unit}"
+       blacklist=""
+       active_projection="false"
+       whitelist="false"
+       showindex="false"
+       arrows_outside="false"
+       flip_side="false"
+       scale_sensitive="true"
+       local_locale="true"
+       rotate_anotation="true"
+       hide_back="true"
+       hide_arrows="false"
+       smallx100="false"
+       distance_projection="20"
+       angle_projection="0"
+       avoid_overlapping="true"
+       onbbox="false"
+       bboxonly="false"
+       centers="false"
+       maxmin="false"
+       helpdata="" />
+    <inkscape:path-effect
+       effect="measure_segments"
+       linked_items=""
+       id="path-effect25"
+       is_visible="true"
+       lpeversion="1.3.1"
+       unit="mm"
+       orientation="parallel"
+       coloropacity="#000000ff"
+       fontbutton="Sans 10"
+       precision="2"
+       fix_overlaps="0"
+       position="5"
+       text_top_bottom="0"
+       helpline_distance="0"
+       helpline_overlap="2"
+       line_width="0.25"
+       scale="1"
+       format="{measure}{unit}"
+       blacklist=""
+       active_projection="false"
+       whitelist="false"
+       showindex="false"
+       arrows_outside="false"
+       flip_side="false"
+       scale_sensitive="true"
+       local_locale="true"
+       rotate_anotation="true"
+       hide_back="true"
+       hide_arrows="false"
+       smallx100="false"
+       distance_projection="20"
+       angle_projection="0"
+       avoid_overlapping="true"
+       onbbox="false"
+       bboxonly="false"
+       centers="false"
+       maxmin="false"
+       helpdata="" />
+    <inkscape:path-effect
+       effect="measure_segments"
+       linked_items=""
+       id="path-effect22"
+       is_visible="true"
+       lpeversion="1.3.1"
+       unit="mm"
+       orientation="parallel"
+       coloropacity="#000000ff"
+       fontbutton="Sans 10"
+       precision="2"
+       fix_overlaps="0"
+       position="5"
+       text_top_bottom="0"
+       helpline_distance="0"
+       helpline_overlap="2"
+       line_width="0.25"
+       scale="1"
+       format="{measure}{unit}"
+       blacklist=""
+       active_projection="false"
+       whitelist="false"
+       showindex="false"
+       arrows_outside="false"
+       flip_side="false"
+       scale_sensitive="true"
+       local_locale="true"
+       rotate_anotation="true"
+       hide_back="true"
+       hide_arrows="false"
+       smallx100="false"
+       distance_projection="20"
+       angle_projection="0"
+       avoid_overlapping="true"
+       onbbox="false"
+       bboxonly="false"
+       centers="false"
+       maxmin="false"
+       helpdata="" />
+    <inkscape:path-effect
+       effect="measure_segments"
+       linked_items=""
+       id="path-effect16"
+       is_visible="true"
+       lpeversion="1.3.1"
+       unit="mm"
+       orientation="parallel"
+       coloropacity="#000000ff"
+       fontbutton="Sans 10"
+       precision="2"
+       fix_overlaps="0"
+       position="5"
+       text_top_bottom="0"
+       helpline_distance="0"
+       helpline_overlap="2"
+       line_width="0.25"
+       scale="1"
+       format="{measure}{unit}"
+       blacklist=""
+       active_projection="false"
+       whitelist="false"
+       showindex="false"
+       arrows_outside="false"
+       flip_side="false"
+       scale_sensitive="true"
+       local_locale="true"
+       rotate_anotation="true"
+       hide_back="true"
+       hide_arrows="false"
+       smallx100="false"
+       distance_projection="20"
+       angle_projection="0"
+       avoid_overlapping="true"
+       onbbox="false"
+       bboxonly="false"
+       centers="false"
+       maxmin="false"
+       helpdata="" />
+    <inkscape:path-effect
+       effect="measure_segments"
+       linked_items=""
+       id="path-effect12"
+       is_visible="true"
+       lpeversion="1.3.1"
+       unit="mm"
+       orientation="parallel"
+       coloropacity="#000000ff"
+       fontbutton="Sans 10"
+       precision="2"
+       fix_overlaps="0"
+       position="5"
+       text_top_bottom="0"
+       helpline_distance="0"
+       helpline_overlap="2"
+       line_width="0.25"
+       scale="1"
+       format="{measure}{unit}"
+       blacklist=""
+       active_projection="false"
+       whitelist="false"
+       showindex="false"
+       arrows_outside="false"
+       flip_side="false"
+       scale_sensitive="true"
+       local_locale="true"
+       rotate_anotation="true"
+       hide_back="true"
+       hide_arrows="false"
+       smallx100="false"
+       distance_projection="20"
+       angle_projection="0"
+       avoid_overlapping="true"
+       onbbox="false"
+       bboxonly="false"
+       centers="false"
+       maxmin="false"
+       helpdata="" />
+    <inkscape:path-effect
+       effect="measure_segments"
+       linked_items=""
+       id="path-effect8"
+       is_visible="true"
+       lpeversion="1.3.1"
+       unit="mm"
+       orientation="parallel"
+       coloropacity="#000000ff"
+       fontbutton="Sans 10"
+       precision="2"
+       fix_overlaps="0"
+       position="5"
+       text_top_bottom="0"
+       helpline_distance="0"
+       helpline_overlap="2"
+       line_width="0.25"
+       scale="1"
+       format="{measure}{unit}"
+       blacklist=""
+       active_projection="false"
+       whitelist="false"
+       showindex="false"
+       arrows_outside="false"
+       flip_side="false"
+       scale_sensitive="true"
+       local_locale="true"
+       rotate_anotation="true"
+       hide_back="true"
+       hide_arrows="false"
+       smallx100="false"
+       distance_projection="20"
+       angle_projection="0"
+       avoid_overlapping="true"
+       onbbox="false"
+       bboxonly="false"
+       centers="false"
+       maxmin="false"
+       helpdata="" />
+    <marker
+       id="ArrowDIN-start"
+       class="path3 path-effect8 measure-arrow-marker"
+       inkscape:stockid="ArrowDIN-start"
+       orient="auto"
+       refX="0.0"
+       refY="0.0"
+       sodipodi:insensitive="true">
+      <path
+         d="M -8,0 8,-2.11 8,2.11 z"
+         class="path3 path-effect8 measure-arrow"
+         id="ArrowDIN-start_path"
+         style="fill:context-stroke;;fill-opacity:1;stroke:none" />
+    </marker>
+    <marker
+       id="ArrowDIN-end"
+       class="path3 path-effect8 measure-arrow-marker"
+       inkscape:stockid="ArrowDIN-end"
+       orient="auto"
+       refX="0.0"
+       refY="0.0"
+       sodipodi:insensitive="true">
+      <path
+         d="M 8,0 -8,2.11 -8,-2.11 z"
+         class="path3 path-effect8 measure-arrow"
+         id="ArrowDIN-end_path"
+         style="fill:context-stroke;;fill-opacity:1;stroke:none" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.5754436"
+     inkscape:cx="370.14922"
+     inkscape:cy="799.38329"
+     inkscape:window-width="2560"
+     inkscape:window-height="1366"
+     inkscape:window-x="0"
+     inkscape:window-y="37"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">OpenSCAD Model</title>
+  <path
+     d="m -180,72 h 70 v 20 h 11.2132 l -10.6062,10.607 2.535,2.535 L -90.7157,89 H -108 V 72 h 88 v -3 h -160 z m 0,-97 H 0.0999994 v 0.01 L 50,-13.65 h 100 v -3 H 65 l -65,-35 V -75 h -8 v 47 H -180 Z M 0,-28 V -48.5959 L 59.1,-16.65 h -4.0303 l -0.0459,0.1356 -0.0125,0.0371 -0.0667,0.1581 -0.0157,0.037 -0.018,0.0346 -0.0745,0.143 -0.1017,0.158 -0.1097,0.1368 -0.0895,0.0875 -0.0271,0.0265 -0.0288,0.0212 -0.0933,0.0688 -0.0956,0.0491 -0.0308,0.0159 -0.1292,0.0393 -0.0325,0.0033 -0.0982,0.0098 -0.0982,-0.0098 -0.0325,-0.0033 -0.1292,-0.0393 -0.0308,-0.0159 -0.0956,-0.0491 -0.0933,-0.0688 -0.0288,-0.0212 -0.0271,-0.0265 -0.0895,-0.0875 -0.1097,-0.1368 -0.1017,-0.158 -0.0745,-0.143 -0.018,-0.0346 -0.0157,-0.037 -0.0667,-0.1581 -0.0125,-0.0371 -0.0459,-0.1356 H 50 Z m -177.11,95.5 h 0.825 v 0.75 h 152.35 v -1.5 H -175.46 V 47.177 l 8.543,-15.533 12.832,-2.9164 -0.207,-0.7515 2.864,1.6567 0.443,-0.6328 -0.237,0.7184 11,3 0.474,-1.4368 -10.891,-2.9701 -11.793,-6.8228 -8.618,-17.62784 1.064,-17.42006 17.027,-9.1908 h 22.874 v -1.5 h -23.1 v 0.75 l -0.421,-0.6449 -17.6,9.5 0.421,0.6449 -0.824,-0.0416 -1.1,18 0.824,0.0416 -0.754,0.30461 8.8,17.99999 0.754,-0.3046 -0.443,0.6328 8.309,4.8065 -12.466,2.8331 0.2,0.7276 -0.738,-0.3354 -8.8,16 0.738,0.3354 h -0.825 z m 18.7,-8.5 h 0.825 l 0.346,0.681 28.435,-11.931 h 47.0429 L -34.617,55.7236 -4.53709,66.75 H -7.435 v 1.5 h 7.15 V 67.5 L 0.023519,66.8044 -34.0765,54.3044 -34.385,55 l 0.1509,-0.7373 -47.3,-8 L -81.685,47 v -0.75 h -47.3 V 47 l -0.346,-0.681 -27.429,11.5088 v -6.6201 l 6.348,-9.6186 9.662,-3.9037 -0.67,-1.3707 -9.9,4 0.335,0.6853 -0.707,-0.3859 -6.6,10 0.707,0.3859 h -0.825 z m 7.994,-50.42632 20.9,16.00002 0.531,-0.5737 v 0.75 h 47.3 V 24 l 0.169,0.7341 47.3,-9 L -34.385,15 -33.9708,15.6486 0.129246,-2.35139 -0.285017,-3 H 1.25 v 0.01527 l 40,14.865293 V 10.391667 L 2.5,-4.10078 V -11 H 0.54 v -8 H -1.11 V -3.43178 L -34.6842,14.2907 -81.7704,23.25 h -46.9136 l -20.67,-15.82367 z m 74.6708,127.68132 1.7071,1.707 L -28.0761,92 H -8 v 33 H 0 V 102 L 65,73.35 h 85 v -3 H 50 L 2.5,68.75 V 68.1008 L 41.25,58.370833 V 56.881967 L 1.25,66.9847 V 67 H 0 v 2 h -10 v 3 H 0 l 50,1.35 h 9.1 L 0,98.9459 V 89 h -36.6117 l 3.2993,3.2993 0.7614,0.7614 z M -8,-110 h 8 v -15 h -8 z"
+     stroke="#000000"
+     fill="#d3d3d3"
+     stroke-width="0.5"
+     id="path1"
+     sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>OpenSCAD Model</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M -82.459988,173.04171 H -105.334 l -13.4507,11.14153 0.88672,17.25751 12.03177,12.75104 9.029515,6.82281 8.777723,5.89619"
+     id="path2"
+     sodipodi:nodetypes="ccccccc"
+     inkscape:path-effect="#path-effect16"
+     inkscape:original-d="M -82.459988,173.04171 H -105.334 l -13.4507,11.14153 0.88672,17.25751 12.03177,12.75104 9.029515,6.82281 8.777723,5.89619" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m -101.72898,203.21806 20.669992,15.82368 h 46.913584 l 47.086197,-8.9593 33.574202,-17.72249 v -15.56823"
+     id="path3"
+     inkscape:path-effect="#path-effect8"
+     inkscape:original-d="m -101.72898,203.21806 20.669992,15.82368 h 46.913584 l 47.086197,-8.9593 33.574202,-17.72249 v -15.56823" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m -109.61403,255.47276 28.435042,-11.931 h 47.042884 l 47.144098,7.9736 34.332001,12.15141"
+     id="path4"
+     inkscape:path-effect="#path-effect28"
+     inkscape:original-d="m -109.61403,255.47276 28.435042,-11.931 h 47.042884 l 47.144098,7.9736 34.332001,12.15141" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m -111.93479,217.60319 -18.59167,9.83256 -8.543,15.53301 v 20.95501"
+     id="path5"
+     sodipodi:nodetypes="cccc"
+     inkscape:path-effect="#path-effect22"
+     inkscape:original-d="m -111.93479,217.60319 -18.59167,9.83256 -8.543,15.53301 v 20.95501" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 63.022945,189.48677 v 69.98473 l 39.999995,-10.11804 v -45.0014 z"
+     id="path6"
+     inkscape:path-effect="#path-effect12"
+     inkscape:original-d="m 63.022945,189.48677 v 69.98473 l 39.999995,-10.11804 v -45.0014 z" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M -128.61586,270.27378 H 47.384135"
+     id="path7"
+     inkscape:path-effect="#path-effect32"
+     inkscape:original-d="M -128.61586,270.27378 H 47.384135" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m -99.21804,232.61143 -14.18022,4.87414 -6.718,10.3859 v 8.00001"
+     id="path8"
+     sodipodi:nodetypes="cccc"
+     inkscape:path-effect="#path-effect25"
+     inkscape:original-d="m -99.21804,232.61143 -14.18022,4.87414 -6.718,10.3859 v 8.00001" />
+  <path
+     id="infoline-on-start-0-path-effect8"
+     class="path3 path-effect8 measure-helper-line measure-line"
+     d="m -101.72898,203.21806 4.255071,-5.55827"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-0-path-effect8"
+     class="path3 path-effect8 measure-label"
+     sodipodi:insensitive="true"
+     x="-97.464456"
+     y="207.76528"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(37.435456,-89.885018,207.76528)"><tspan
+       sodipodi:role="line"
+       id="tspan8">26,03mm</tspan></text>
+  <path
+     id="infoline-on-end-0-path-effect8"
+     class="path3 path-effect8 measure-helper-line measure-line"
+     d="m -81.058988,219.04174 2.335943,-6.89422"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-0-path-effect8"
+     class="path3 path-effect8 measure-DIM-line measure-line"
+     d="m -97.101566,200.4636 0.993885,0.76086 m 14.160861,10.84069 0.993886,0.76086"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-1-path-effect8"
+     class="path3 path-effect8 measure-helper-line measure-line"
+     d="m -81.058988,219.04174 2.335943,-6.89422"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-1-path-effect8"
+     class="path3 path-effect8 measure-label"
+     sodipodi:insensitive="true"
+     x="-64.617921"
+     y="215.45285"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"><tspan
+       sodipodi:role="line"
+       id="tspan9">46,91mm</tspan></text>
+  <path
+     id="infoline-on-end-1-path-effect8"
+     class="path3 path-effect8 measure-helper-line measure-line"
+     d="m -34.145404,219.04174 -0.659207,-6.99117"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-1-path-effect8"
+     class="path3 path-effect8 measure-DIM-line measure-line"
+     d="m -77.364857,214.04174 h 11.400984 m 17.946029,0 h 11.400983"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-2-path-effect8"
+     class="path3 path-effect8 measure-helper-line measure-line"
+     d="m -34.145404,219.04174 -0.659207,-6.99117"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-2-path-effect8"
+     class="path3 path-effect8 measure-label"
+     sodipodi:insensitive="true"
+     x="-19.036872"
+     y="211.06246"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(-10.773143,-11.40981,211.06246)"><tspan
+       sodipodi:role="line"
+       id="tspan10">47,93mm</tspan></text>
+  <path
+     id="infoline-on-end-2-path-effect8"
+     class="path3 path-effect8 measure-helper-line measure-line"
+     d="M 12.940793,210.08244 10.608665,203.4231"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-2-path-effect8"
+     class="path3 path-effect8 measure-DIM-line measure-line"
+     d="m -32.652111,213.6679 12.16367,-2.31444 m 17.6297301,-3.35448 12.16367,-2.31444"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-3-path-effect8"
+     class="path3 path-effect8 measure-helper-line measure-line"
+     d="M 12.940793,210.08244 10.608665,203.4231"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-3-path-effect8"
+     class="path3 path-effect8 measure-label"
+     sodipodi:insensitive="true"
+     x="19.466352"
+     y="198.57598"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(-27.827797,27.051081,198.57598)"><tspan
+       sodipodi:role="line"
+       id="tspan11">37,96mm</tspan></text>
+  <path
+     id="infoline-on-end-3-path-effect8"
+     class="path3 path-effect8 measure-helper-line measure-line"
+     d="M 46.514995,192.35995 39.80221,188.31276"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-3-path-effect8"
+     class="path3 path-effect8 measure-DIM-line measure-line"
+     d="m 13.038418,204.37707 5.462652,-2.88352 m 15.782564,-8.33099 5.462652,-2.88352"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-4-path-effect8"
+     class="path3 path-effect8 measure-helper-line measure-line"
+     d="M 46.514995,192.35995 39.80221,188.31276"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-4-path-effect8"
+     class="path3 path-effect8 measure-label"
+     sodipodi:insensitive="true"
+     x="22.834259"
+     y="183.06857"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"><tspan
+       sodipodi:role="line"
+       id="tspan12">15,57mm</tspan></text>
+  <path
+     id="infoline-on-end-4-path-effect8"
+     class="path3 path-effect8 measure-helper-line measure-line"
+     d="m 46.514995,176.79172 h -7"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-4-path-effect8"
+     class="path3 path-effect8 measure-DIM-line measure-line"
+     d="m 43.514995,189.34541 -4,-12.55369"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="display:none;marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-0-path-effect12"
+     class="path6 path-effect12 measure-helper-line measure-line"
+     d="m 63.022945,189.48677 6.141618,8.83444"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-0-path-effect12"
+     class="path6 path-effect12 measure-label"
+     sodipodi:insensitive="true"
+     x="61.866966"
+     y="224.86415"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(-90,69.434056,224.86415)"><tspan
+       sodipodi:role="line"
+       id="tspan13">69,98mm</tspan></text>
+  <path
+     id="infoline-on-end-0-path-effect12"
+     class="path6 path-effect12 measure-helper-line measure-line"
+     d="m 63.022945,259.4715 6.228636,-8.00035"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-0-path-effect12"
+     class="path6 path-effect12 measure-DIM-line measure-line"
+     d="m 68.022945,198.67904 v 17.28266 m 0,17.80491 v 17.28265"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-1-path-effect12"
+     class="path6 path-effect12 measure-helper-line measure-line"
+     d="m 63.022945,259.4715 6.228636,-8.00035"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-1-path-effect12"
+     class="path6 path-effect12 measure-label"
+     sodipodi:insensitive="true"
+     x="75.741923"
+     y="250.62302"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(-14.195268,83.368985,250.62302)"><tspan
+       sodipodi:role="line"
+       id="tspan14">41,26mm</tspan></text>
+  <path
+     id="infoline-on-end-1-path-effect12"
+     class="path6 path-effect12 measure-helper-line measure-line"
+     d="M 103.02294,249.35346 96.444823,244.2321"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-1-path-effect12"
+     class="path6 path-effect12 measure-DIM-line measure-line"
+     d="m 69.961876,252.55881 4.362037,-1.10338 m 17.398059,-4.40086 4.362037,-1.10338"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-2-path-effect12"
+     class="path6 path-effect12 measure-helper-line measure-line"
+     d="M 103.02294,249.35346 96.444823,244.2321"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-2-path-effect12"
+     class="path6 path-effect12 measure-label"
+     sodipodi:insensitive="true"
+     x="91.806989"
+     y="226.64437"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(-90,99.434051,226.64437)"><tspan
+       sodipodi:role="line"
+       id="tspan15">45,00mm</tspan></text>
+  <path
+     id="infoline-on-end-2-path-effect12"
+     class="path6 path-effect12 measure-helper-line measure-line"
+     d="m 103.02294,204.35206 -6.642166,4.61757"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-2-path-effect12"
+     class="path6 path-effect12 measure-DIM-line measure-line"
+     d="m 98.02294,243.46073 v -7.84334 m 0,-17.94603 v -7.84335"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-3-path-effect12"
+     class="path6 path-effect12 measure-helper-line measure-line"
+     d="m 103.02294,204.35206 -6.642166,4.61757"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-3-path-effect12"
+     class="path6 path-effect12 measure-label"
+     sodipodi:insensitive="true"
+     x="74.904313"
+     y="203.57625"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(20.386692,82.531376,203.57625)"><tspan
+       sodipodi:role="line"
+       id="tspan16">42,67mm</tspan></text>
+  <path
+     id="infoline-on-end-3-path-effect12"
+     class="path6 path-effect12 measure-helper-line measure-line"
+     d="m 63.022945,189.48677 6.141618,8.83444"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-3-path-effect12"
+     class="path6 path-effect12 measure-DIM-line measure-line"
+     d="m 96.148214,207.1313 -4.7143,-1.75198 m -16.821943,-6.25158 -4.7143,-1.75199"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-0-path-effect16"
+     class="path2 path-effect16 measure-helper-line measure-line"
+     d="m -82.459988,173.04171 v 7"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-0-path-effect16"
+     class="path2 path-effect16 measure-label"
+     sodipodi:insensitive="true"
+     x="-100.57549"
+     y="179.45282"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"><tspan
+       sodipodi:role="line"
+       id="tspan17">22,87mm</tspan></text>
+  <path
+     id="infoline-on-end-0-path-effect16"
+     class="path2 path-effect16 measure-helper-line measure-line"
+     d="m -105.334,173.04171 2.47994,6.88155"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-0-path-effect16"
+     class="path2 path-effect16 measure-DIM-line measure-line"
+     d="M -84.459988,178.04171 H -101.53213"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="display:none;marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-1-path-effect16"
+     class="path2 path-effect16 measure-helper-line measure-line"
+     d="m -105.334,173.04171 2.47994,6.88155"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-1-path-effect16"
+     class="path2 path-effect16 measure-label"
+     sodipodi:insensitive="true"
+     x="-107.1798"
+     y="193.01166"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(50.364251,-99.672683,193.01166)"><tspan
+       sodipodi:role="line"
+       id="tspan18">17,47mm</tspan></text>
+  <path
+     id="infoline-on-end-1-path-effect16"
+     class="path2 path-effect16 measure-helper-line measure-line"
+     d="m -118.7847,184.18324 6.95335,3.05397"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-1-path-effect16"
+     class="path2 path-effect16 measure-DIM-line measure-line"
+     d="m -104.80794,176.50148 -7.57876,11.47169"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="display:none;marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-2-path-effect16"
+     class="path2 path-effect16 measure-helper-line measure-line"
+     d="m -118.7847,184.18324 6.95335,3.05397"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-2-path-effect16"
+     class="path2 path-effect16 measure-label"
+     sodipodi:insensitive="true"
+     x="-109.75646"
+     y="192.32067"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(-2.9413672,-102.24935,192.32067)"><tspan
+       sodipodi:role="line"
+       id="tspan19">17,28mm</tspan></text>
+  <path
+     id="infoline-on-end-2-path-effect16"
+     class="path2 path-effect16 measure-helper-line measure-line"
+     d="m -117.89798,201.44075 6.73813,-2.87954"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-2-path-effect16"
+     class="path2 path-effect16 measure-DIM-line measure-line"
+     d="m -115.65988,186.53557 4.65829,12.70895"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="display:none;marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-3-path-effect16"
+     class="path2 path-effect16 measure-helper-line measure-line"
+     d="m -117.89798,201.44075 6.73813,-2.87954"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-3-path-effect16"
+     class="path2 path-effect16 measure-label"
+     sodipodi:insensitive="true"
+     x="-116.29161"
+     y="205.86969"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(46.662425,-108.78449,205.86969)"><tspan
+       sodipodi:role="line"
+       id="tspan20">17,53mm</tspan></text>
+  <path
+     id="infoline-on-end-3-path-effect16"
+     class="path2 path-effect16 measure-helper-line measure-line"
+     d="m -105.86621,214.19179 4.6837,-5.2258"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-3-path-effect16"
+     class="path2 path-effect16 measure-DIM-line measure-line"
+     d="m -111.62637,200.8018 7.73642,8.1989"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="display:none;marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-4-path-effect16"
+     class="path2 path-effect16 measure-helper-line measure-line"
+     d="m -105.86621,214.19179 4.6837,-5.2258"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-4-path-effect16"
+     class="path2 path-effect16 measure-label"
+     sodipodi:insensitive="true"
+     x="-99.043087"
+     y="204.84556"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(-52.924868,-91.535969,204.84556)"><tspan
+       sodipodi:role="line"
+       id="tspan21">11,32mm</tspan></text>
+  <path
+     id="infoline-on-end-4-path-effect16"
+     class="path2 path-effect16 measure-helper-line measure-line"
+     d="m -96.836695,221.0146 4.064314,-5.70161"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-4-path-effect16"
+     class="path2 path-effect16 measure-DIM-line measure-line"
+     d="m -103.72309,212.05103 10.99552,3.29485"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="display:none;marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-5-path-effect16"
+     class="path2 path-effect16 measure-helper-line measure-line"
+     d="m -96.836695,221.0146 4.064314,-5.70161"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-5-path-effect16"
+     class="path2 path-effect16 measure-label"
+     sodipodi:insensitive="true"
+     x="-90.922089"
+     y="210.64002"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(-56.109872,-83.414971,210.64002)"><tspan
+       sodipodi:role="line"
+       id="tspan22">10,57mm</tspan></text>
+  <path
+     id="infoline-on-end-5-path-effect16"
+     class="path2 path-effect16 measure-helper-line measure-line"
+     d="m -88.058972,226.91079 3.903215,-5.81076"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-5-path-effect16"
+     class="path2 path-effect16 measure-DIM-line measure-line"
+     d="m -95.048497,218.60179 10.89274,2.49824"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="display:none;marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-0-path-effect22"
+     class="path5 path-effect22 measure-helper-line measure-line"
+     d="m -111.93479,217.60319 3.27259,6.1879"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-0-path-effect22"
+     class="path5 path-effect22 measure-label"
+     sodipodi:insensitive="true"
+     x="-125.15151"
+     y="227.83708"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(-27.87298,-117.57208,227.83708)"><tspan
+       sodipodi:role="line"
+       id="tspan23">21,03mm</tspan></text>
+  <path
+     id="infoline-on-end-0-path-effect22"
+     class="path5 path-effect22 measure-helper-line measure-line"
+     d="m -130.52646,227.43575 5.0627,5.14621"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-0-path-effect22"
+     class="path5 path-effect22 measure-DIM-line measure-line"
+     d="m -111.3652,222.95815 -13.73318,7.26305"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="display:none;marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-1-path-effect22"
+     class="path5 path-effect22 measure-helper-line measure-line"
+     d="m -130.52646,227.43575 5.0627,5.14621"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-1-path-effect22"
+     class="path5 path-effect22 measure-label"
+     sodipodi:insensitive="true"
+     x="-125.71623"
+     y="244.44684"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(28.810353,-118.20911,244.44684)"><tspan
+       sodipodi:role="line"
+       id="tspan24">17,73mm</tspan></text>
+  <path
+     id="infoline-on-end-1-path-effect22"
+     class="path5 path-effect22 measure-helper-line measure-line"
+     d="m -139.06946,242.96876 6.93712,1.78182"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-1-path-effect22"
+     class="path5 path-effect22 measure-DIM-line measure-line"
+     d="m -128.61879,230.19241 -3.69823,15.02444"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="display:none;marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-2-path-effect22"
+     class="path5 path-effect22 measure-helper-line measure-line"
+     d="m -139.06946,242.96876 6.93712,1.78182"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-2-path-effect22"
+     class="path5 path-effect22 measure-label"
+     sodipodi:insensitive="true"
+     x="-140.23779"
+     y="254.0884"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(-90,-132.65835,254.0884)"><tspan
+       sodipodi:role="line"
+       id="tspan25">20,96mm</tspan></text>
+  <path
+     id="infoline-on-end-2-path-effect22"
+     class="path5 path-effect22 measure-helper-line measure-line"
+     d="m -139.06946,263.92377 h 7"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-2-path-effect22"
+     class="path5 path-effect22 measure-DIM-line measure-line"
+     d="m -134.06946,246.25302 v 15.67075"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="display:none;marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-0-path-effect25"
+     class="path8 path-effect25 measure-helper-line measure-line"
+     d="m -99.21804,232.61143 2.275429,6.61985"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-0-path-effect25"
+     class="path8 path-effect25 measure-label"
+     sodipodi:insensitive="true"
+     x="-110.91409"
+     y="240.83056"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(-18.969285,-103.40697,240.83056)"><tspan
+       sodipodi:role="line"
+       id="tspan26">14,99mm</tspan></text>
+  <path
+     id="infoline-on-end-0-path-effect25"
+     class="path8 path-effect25 measure-helper-line measure-line"
+     d="m -113.39826,237.48557 4.49198,5.74193"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-0-path-effect25"
+     class="path8 path-effect25 measure-DIM-line measure-line"
+     d="m -99.48412,237.99002 -8.7631,3.01212"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="display:none;marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-1-path-effect25"
+     class="path8 path-effect25 measure-helper-line measure-line"
+     d="m -113.39826,237.48557 4.49198,5.74193"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-1-path-effect25"
+     class="path8 path-effect25 measure-label"
+     sodipodi:insensitive="true"
+     x="-108.44805"
+     y="253.05922"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(32.896344,-100.94093,253.05922)"><tspan
+       sodipodi:role="line"
+       id="tspan27">12,37mm</tspan></text>
+  <path
+     id="infoline-on-end-1-path-effect25"
+     class="path8 path-effect25 measure-helper-line measure-line"
+     d="m -120.11626,247.87147 6.91815,2.04244"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-1-path-effect25"
+     class="path8 path-effect25 measure-DIM-line measure-line"
+     d="m -111.81792,240.56602 -1.61903,9.86784"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="display:none;marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-2-path-effect25"
+     class="path8 path-effect25 measure-helper-line measure-line"
+     d="m -120.11626,247.87147 6.91815,2.04244"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-2-path-effect25"
+     class="path8 path-effect25 measure-label"
+     sodipodi:insensitive="true"
+     x="-107.76676"
+     y="252.60955"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"><tspan
+       sodipodi:role="line"
+       id="tspan28">8,00mm</tspan></text>
+  <path
+     id="infoline-on-end-2-path-effect25"
+     class="path8 path-effect25 measure-helper-line measure-line"
+     d="m -120.11626,255.87148 h 7"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-2-path-effect25"
+     class="path8 path-effect25 measure-DIM-line measure-line"
+     d="m -117.11626,249.34762 4,6.52386"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="display:none;marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-0-path-effect28"
+     class="path4 path-effect28 measure-helper-line measure-line"
+     d="m -109.61403,255.47276 -2.70837,-6.45482"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-0-path-effect28"
+     class="path4 path-effect28 measure-label"
+     sodipodi:insensitive="true"
+     x="-104.36981"
+     y="246.19788"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(-22.762332,-96.785084,246.19788)"><tspan
+       sodipodi:role="line"
+       id="tspan29">30,84mm</tspan></text>
+  <path
+     id="infoline-on-end-0-path-effect28"
+     class="path4 path-effect28 measure-helper-line measure-line"
+     d="m -81.178988,243.54176 -2.708366,-6.45482"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-0-path-effect28"
+     class="path4 path-effect28 measure-DIM-line measure-line"
+     d="m -109.70434,250.08835 4.14503,-1.7392 m 16.456504,-6.90495 4.145035,-1.73921"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-1-path-effect28"
+     class="path4 path-effect28 measure-helper-line measure-line"
+     d="m -81.178988,243.54176 v -7"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-1-path-effect28"
+     class="path4 path-effect28 measure-label"
+     sodipodi:insensitive="true"
+     x="-65.284608"
+     y="239.95287"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"><tspan
+       sodipodi:role="line"
+       id="tspan30">47,04mm</tspan></text>
+  <path
+     id="infoline-on-end-1-path-effect28"
+     class="path4 path-effect28 measure-helper-line measure-line"
+     d="m -34.136104,243.54176 v -7"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-1-path-effect28"
+     class="path4 path-effect28 measure-DIM-line measure-line"
+     d="m -79.178988,238.54176 h 12.548427 m 17.94603,0 h 12.548427"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-2-path-effect28"
+     class="path4 path-effect28 measure-helper-line measure-line"
+     d="m -34.136104,243.54176 1.167349,-6.90198"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-2-path-effect28"
+     class="path4 path-effect28 measure-label"
+     sodipodi:insensitive="true"
+     x="-17.592619"
+     y="243.98993"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(9.5997314,-9.9655571,243.98993)"><tspan
+       sodipodi:role="line"
+       id="tspan31">47,81mm</tspan></text>
+  <path
+     id="infoline-on-end-2-path-effect28"
+     class="path4 path-effect28 measure-helper-line measure-line"
+     d="m 13.007994,251.51536 1.167349,-6.90198"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-2-path-effect28"
+     class="path4 path-effect28 measure-DIM-line measure-line"
+     d="m -31.33029,238.9453 12.752692,2.1569 m 17.69472748,2.99275 12.75269152,2.1569"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-3-path-effect28"
+     class="path4 path-effect28 measure-helper-line measure-line"
+     d="m 13.007994,251.51536 2.335591,-6.59886"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-3-path-effect28"
+     class="path4 path-effect28 measure-label"
+     sodipodi:insensitive="true"
+     x="23.786719"
+     y="254.20784"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"
+     transform="rotate(19.490821,31.371448,254.20784)"><tspan
+       sodipodi:role="line"
+       id="tspan32">36,42mm</tspan></text>
+  <path
+     id="infoline-on-end-3-path-effect28"
+     class="path4 path-effect28 measure-helper-line measure-line"
+     d="m 47.339995,263.66677 2.335591,-6.59886"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-3-path-effect28"
+     class="path4 path-effect28 measure-DIM-line measure-line"
+     d="m 16.561663,247.4692 6.868745,2.43111 m 16.823731,5.95456 6.868745,2.43111"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-on-start-0-path-effect32"
+     class="path7 path-effect32 measure-helper-line measure-line"
+     d="m -128.61586,270.27378 v -7"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     id="text-on-0-path-effect32"
+     class="path7 path-effect32 measure-label"
+     sodipodi:insensitive="true"
+     x="-49.131926"
+     y="266.68489"
+     style="font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill:#000000;fill-opacity:1;font-size:3.52778px"><tspan
+       sodipodi:role="line"
+       id="tspan33">176,00mm</tspan></text>
+  <path
+     id="infoline-on-end-0-path-effect32"
+     class="path7 path-effect32 measure-helper-line measure-line"
+     d="m 47.384135,270.27378 v -7"
+     sodipodi:insensitive="true"
+     inkscape:label="dinhelpline"
+     style="stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+  <path
+     id="infoline-0-path-effect32"
+     class="path7 path-effect32 measure-DIM-line measure-line"
+     d="m -126.61586,265.27378 h 75.981099 m 20.037797,0 h 75.981099"
+     sodipodi:insensitive="true"
+     inkscape:label="dinline"
+     style="marker-start:url(#ArrowDIN-start);marker-end:url(#ArrowDIN-end);stroke-width:0.25;stroke:#000000;stroke-opacity:1" />
+</svg>
