@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="820" viewBox="0 0 1120 820">
+<rect width="100%" height="100%" fill="#f6f3ea"/>
+<style>
+  text { font-family: "Liberation Sans", sans-serif; fill: #241c16; }
+  .title { font-size: 22px; font-weight: 700; }
+  .sub { font-size: 13px; fill: #6b6258; }
+  .lab { font-size: 14px; font-weight: 700; }
+  .sm { font-size: 12px; fill: #3c342c; }
+  .dim { font-size: 12px; fill: #9a3412; font-weight: 700; }
+  .halo { stroke: #f6f3ea; stroke-width: 4px; paint-order: stroke fill; }
+</style>
+<defs>
+  <marker id="ah" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="6" orient="auto">
+    <path d="M0,0 L10,4 L0,8 Z" fill="#d85a12"/>
+  </marker>
+  <marker id="ad" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="6" orient="auto">
+    <path d="M0,0 L10,4 L0,8 Z" fill="#9a3412"/>
+  </marker>
+  <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+    <line x1="0" y1="0" x2="0" y2="7" stroke="#b7ad9e" stroke-width="1.2"/>
+  </pattern>
+  <pattern id="hatch2" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#9aa3ad" stroke-width="1"/>
+  </pattern>
+</defs>
+<text class="title" x="28" y="36">Как рука едет по прямой</text>
+<text class="sub" x="28" y="58">Вид сверху. Рабочее положение α = 40°. Бледные контуры — края хода, 22° и 68°.</text>
+<line x1="28" y1="70" x2="1092" y2="70" stroke="#e0d6c6" stroke-width="1"/>
+<rect x="36" y="250" width="46" height="410" fill="url(#hatch2)" stroke="#5c6770" stroke-width="1.4"/>
+<text class="sm" transform="translate(58,455) rotate(-90)" text-anchor="middle">направляющая Y</text>
+<line x1="159.2" y1="455.0" x2="300.0" y2="455.0" stroke="#c4b8a4" stroke-width="1.2" stroke-dasharray="5 5"/>
+<text class="sm halo" x="308.0" y="447.0">ось X</text>
+<line x1="168.0" y1="415.4" x2="372.0" y2="333.0" stroke="#8b939c" stroke-width="2.2" stroke-linecap="round" opacity="0.95" stroke-dasharray="7 6"/>
+<line x1="372.0" y1="333.0" x2="576.0" y2="415.4" stroke="#8b939c" stroke-width="2.2" stroke-linecap="round" opacity="0.95" stroke-dasharray="7 6"/>
+<line x1="168.0" y1="494.6" x2="372.0" y2="577.0" stroke="#8b939c" stroke-width="2.2" stroke-linecap="round" opacity="0.95" stroke-dasharray="7 6"/>
+<line x1="372.0" y1="577.0" x2="576.0" y2="494.6" stroke="#8b939c" stroke-width="2.2" stroke-linecap="round" opacity="0.95" stroke-dasharray="7 6"/>
+<rect x="576.0" y="415.4" width="18" height="79.2" rx="3" fill="#e7e1d6" stroke="#8b939c" stroke-width="1.4"/>
+<circle cx="372.0" cy="333.0" r="3.5" fill="#8b939c"/>
+<circle cx="372.0" cy="577.0" r="3.5" fill="#8b939c"/>
+<line x1="168.0" y1="415.4" x2="250.4" y2="211.4" stroke="#8b939c" stroke-width="2.2" stroke-linecap="round" opacity="0.95" stroke-dasharray="7 6"/>
+<line x1="250.4" y1="211.4" x2="332.8" y2="415.4" stroke="#8b939c" stroke-width="2.2" stroke-linecap="round" opacity="0.95" stroke-dasharray="7 6"/>
+<line x1="168.0" y1="494.6" x2="250.4" y2="698.6" stroke="#8b939c" stroke-width="2.2" stroke-linecap="round" opacity="0.95" stroke-dasharray="7 6"/>
+<line x1="250.4" y1="698.6" x2="332.8" y2="494.6" stroke="#8b939c" stroke-width="2.2" stroke-linecap="round" opacity="0.95" stroke-dasharray="7 6"/>
+<rect x="332.8" y="415.4" width="18" height="79.2" rx="3" fill="#e7e1d6" stroke="#8b939c" stroke-width="1.4"/>
+<circle cx="250.4" cy="211.4" r="3.5" fill="#8b939c"/>
+<circle cx="250.4" cy="698.6" r="3.5" fill="#8b939c"/>
+<text class="sm halo" x="598.0" y="409.4">22° · 927 мм</text>
+<text class="sm halo" x="354.8" y="516.6">68° · 375 мм</text>
+<line x1="168.0" y1="415.4" x2="336.5" y2="274.0" stroke="#1e4d7b" stroke-width="7" stroke-linecap="round"/>
+<line x1="168.0" y1="494.6" x2="336.5" y2="636.0" stroke="#1e4d7b" stroke-width="7" stroke-linecap="round"/>
+<line x1="336.5" y1="274.0" x2="505.1" y2="415.4" stroke="#1f6b4a" stroke-width="7" stroke-linecap="round"/>
+<line x1="336.5" y1="636.0" x2="505.1" y2="494.6" stroke="#1f6b4a" stroke-width="7" stroke-linecap="round"/>
+<rect x="505.1" y="415.4" width="18" height="79.2" rx="3" fill="#f3d2c4" stroke="#8c3b14" stroke-width="2"/>
+<circle cx="336.5" cy="274.0" r="6" fill="#fff" stroke="#8c3b14" stroke-width="2.4"/>
+<circle cx="336.5" cy="636.0" r="6" fill="#fff" stroke="#8c3b14" stroke-width="2.4"/>
+<circle cx="168.0" cy="415.4" r="7" fill="#2456c4"/>
+<circle cx="168.0" cy="494.6" r="7" fill="#2456c4"/>
+<rect x="86" y="400" width="76" height="128" rx="4" fill="#e4dccf" stroke="#2a241e" stroke-width="1.8"/>
+<text class="sm" x="124" y="458" text-anchor="middle">каретка</text>
+<text class="sm" x="124" y="474" text-anchor="middle">плиты 8 мм</text>
+<circle cx="168.0" cy="415.4" r="7" fill="#2456c4"/>
+<text class="sm halo" x="180.0" y="401.4">вал А</text>
+<circle cx="168.0" cy="494.6" r="7" fill="#2456c4"/>
+<text class="sm halo" x="180.0" y="512.6">вал Б</text>
+<text class="lab halo" x="238.8" y="344.0">плечо 1</text>
+<text class="lab halo" x="238.8" y="574.0">плечо 2</text>
+<text class="lab halo" x="420.8" y="332.7">плечо 3</text>
+<text class="lab halo" x="420.8" y="585.3">плечо 4</text>
+<text class="lab halo" x="336.5" y="260.0" text-anchor="middle">локоть</text>
+<text class="lab halo" x="531.1" y="423.4">голова</text>
+<text class="sm halo" x="531.1" y="439.4">40° · 766 мм</text>
+<path d="M 204.0 415.4 A 36 36 0 0 0 195.6 392.3" fill="none" stroke="#9a3412" stroke-width="1.4"/>
+<text class="dim halo" x="212.0" y="387.4">α</text>
+<text class="dim halo" x="124" y="508" text-anchor="middle">180 мм</text>
+<rect x="860" y="100" width="230" height="168" rx="8" fill="#fff" stroke="#e0d6c6"/>
+<line x1="876" y1="128" x2="908" y2="128" stroke="#1e4d7b" stroke-width="6" stroke-linecap="round"/>
+<text class="sm" x="918" y="132">плечи 1 и 2, у валов</text>
+<line x1="876" y1="162" x2="908" y2="162" stroke="#1f6b4a" stroke-width="6" stroke-linecap="round"/>
+<text class="sm" x="918" y="166">плечи 3 и 4, у головы</text>
+<line x1="876" y1="196" x2="908" y2="196" stroke="#8b939c" stroke-width="6" stroke-linecap="round"/>
+<text class="sm" x="918" y="200">края хода</text>
+<line x1="876" y1="230" x2="908" y2="230" stroke="#2456c4" stroke-width="6" stroke-linecap="round"/>
+<text class="sm" x="918" y="234">валы А и Б</text>
+<text class="sm" x="28" y="792">Длины плеч равны, ширина головы равна расстоянию между валами — иначе голова уведёт вбок. x = 2·L·cos α.</text>
+</svg>

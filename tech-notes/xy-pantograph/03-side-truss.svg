@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="640" viewBox="0 0 1180 640">
+<rect width="100%" height="100%" fill="#f6f3ea"/>
+<style>
+  text { font-family: "Liberation Sans", sans-serif; fill: #241c16; }
+  .title { font-size: 22px; font-weight: 700; }
+  .sub { font-size: 13px; fill: #6b6258; }
+  .lab { font-size: 14px; font-weight: 700; }
+  .sm { font-size: 12px; fill: #3c342c; }
+  .dim { font-size: 12px; fill: #9a3412; font-weight: 700; }
+  .halo { stroke: #f6f3ea; stroke-width: 4px; paint-order: stroke fill; }
+</style>
+<defs>
+  <marker id="ah" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="6" orient="auto">
+    <path d="M0,0 L10,4 L0,8 Z" fill="#d85a12"/>
+  </marker>
+  <marker id="ad" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="6" orient="auto">
+    <path d="M0,0 L10,4 L0,8 Z" fill="#9a3412"/>
+  </marker>
+  <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+    <line x1="0" y1="0" x2="0" y2="7" stroke="#b7ad9e" stroke-width="1.2"/>
+  </pattern>
+  <pattern id="hatch2" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#9aa3ad" stroke-width="1"/>
+  </pattern>
+</defs>
+<text class="title" x="28" y="36">Ферма держит вес, ремень держит поворот</text>
+<text class="sub" x="28" y="58">Вид сбоку, один борт. Второе плечо — зеркало и на этом виде закрыто первым. Масштаб единый.</text>
+<line x1="28" y1="70" x2="1152" y2="70" stroke="#e0d6c6" stroke-width="1"/>
+<rect x="24" y="196.0" width="36" height="234.0" fill="url(#hatch2)" stroke="#5c6770"/>
+<text class="sm" transform="translate(40,313.0) rotate(-90)" text-anchor="middle">каретка Y</text>
+<rect x="51.6" y="261.5" width="124.8" height="6.2" fill="url(#hatch)" stroke="#2a241e" stroke-width="1"/>
+<rect x="51.6" y="417.5" width="124.8" height="6.2" fill="url(#hatch)" stroke="#2a241e" stroke-width="1"/>
+<rect x="51.6" y="255.3" width="6.2" height="162.2" fill="#e4dccf" stroke="#2a241e" stroke-width="1"/>
+<rect x="137.0" y="262.0" width="32" height="24" rx="2" fill="#d5e1f8" stroke="#2456c4" stroke-width="1.4"/>
+<circle cx="153.0" cy="274.0" r="4" fill="#2456c4"/>
+<rect x="137.0" y="386.8" width="32" height="24" rx="2" fill="#d5e1f8" stroke="#2456c4" stroke-width="1.4"/>
+<circle cx="153.0" cy="398.8" r="4" fill="#2456c4"/>
+<line x1="153.0" y1="274.0" x2="153.0" y2="398.8" stroke="#5c6770" stroke-width="6" stroke-linecap="round"/>
+<line x1="153.0" y1="242.8" x2="543.0" y2="242.8" stroke="#1e4d7b" stroke-width="7" stroke-linecap="round"/>
+<line x1="153.0" y1="430.0" x2="543.0" y2="430.0" stroke="#1e4d7b" stroke-width="7" stroke-linecap="round"/>
+<line x1="543.0" y1="242.8" x2="933.0" y2="242.8" stroke="#1f6b4a" stroke-width="7" stroke-linecap="round"/>
+<line x1="543.0" y1="430.0" x2="933.0" y2="430.0" stroke="#1f6b4a" stroke-width="7" stroke-linecap="round"/>
+<line x1="168.6" y1="430.0" x2="288.2" y2="242.8" stroke="#7d8790" stroke-width="2.4"/>
+<line x1="288.2" y1="242.8" x2="407.8" y2="430.0" stroke="#7d8790" stroke-width="2.4"/>
+<line x1="407.8" y1="430.0" x2="527.4" y2="242.8" stroke="#7d8790" stroke-width="2.4"/>
+<line x1="558.6" y1="242.8" x2="678.2" y2="430.0" stroke="#7d8790" stroke-width="2.4"/>
+<line x1="678.2" y1="430.0" x2="797.8" y2="242.8" stroke="#7d8790" stroke-width="2.4"/>
+<line x1="797.8" y1="242.8" x2="917.4" y2="430.0" stroke="#7d8790" stroke-width="2.4"/>
+<rect x="529.0" y="233.4" width="28.1" height="196.6" rx="2" fill="#fff" stroke="#8c3b14" stroke-width="1.8"/>
+<line x1="543.0" y1="236.6" x2="543.0" y2="436.2" stroke="#8c3b14" stroke-width="2" stroke-dasharray="4 3"/>
+<text class="lab halo" x="543.0" y="158.6" text-anchor="middle">локоть, палец Ø12</text>
+<rect x="921.3" y="274.0" width="54.6" height="124.8" rx="3" fill="#f3d2c4" stroke="#8c3b14" stroke-width="1.8"/>
+<text class="lab" x="948.6" y="328.6" text-anchor="middle">голова</text>
+<rect x="940.8" y="375.4" width="12.5" height="31.2" fill="#8c3b14"/>
+<line x1="948.6" y1="383.2" x2="948.6" y2="414.4" stroke="#9a3412" stroke-width="1.4" marker-end="url(#ad)"/>
+<text class="dim halo" x="1007.1" y="392.6">2 кг</text>
+<text class="lab halo" x="238.8" y="196.0">плечо 1 · уголок 25×25×3</text>
+<text class="sm halo" x="238.8" y="210.0">полки наружу, раскосы 20×3</text>
+<text class="lab halo" x="738.0" y="196.0">плечо 3, та же ферма</text>
+<line x1="153.0" y1="467.4" x2="543.0" y2="467.4" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
+<line x1="543.0" y1="467.4" x2="153.0" y2="467.4" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
+<text class="dim halo" x="348.0" y="482.4" text-anchor="middle">500</text>
+<line x1="543.0" y1="467.4" x2="933.0" y2="467.4" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
+<line x1="933.0" y1="467.4" x2="543.0" y2="467.4" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
+<text class="dim halo" x="738.0" y="482.4" text-anchor="middle">500</text>
+<line x1="67.2" y1="242.8" x2="67.2" y2="430.0" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
+<line x1="67.2" y1="430.0" x2="67.2" y2="242.8" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
+<text class="dim halo" x="59.2" y="336.4" text-anchor="end" dominant-baseline="middle">240</text>
+<line x1="199.8" y1="274.0" x2="199.8" y2="398.8" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
+<line x1="199.8" y1="398.8" x2="199.8" y2="274.0" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
+<text class="dim halo" x="207.8" y="336.4" text-anchor="start" dominant-baseline="middle">160</text>
+<text class="sm halo" x="96.8" y="250.6">UCF204</text>
+<text class="sm" x="48" y="610">Вес и провис замыкаются парой подшипников и поясами фермы. Ремень этого момента не видит — он только поворачивает валы.</text>
+</svg>
