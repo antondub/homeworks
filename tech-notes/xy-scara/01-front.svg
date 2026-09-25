@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640">
+<rect width="100%" height="100%" fill="#f6f3ea"/>
+<style>
+  text { font-family: "Liberation Sans", sans-serif; fill: #241c16; }
+  .title { font-size: 22px; font-weight: 700; }
+  .sub { font-size: 13px; fill: #6b6258; }
+  .lab { font-size: 14px; font-weight: 700; }
+  .sm { font-size: 12px; fill: #3c342c; }
+  .dim { font-size: 12px; fill: #9a3412; font-weight: 700; }
+  .halo { stroke: #f6f3ea; stroke-width: 4px; paint-order: stroke fill; }
+</style>
+<defs>
+  <marker id="ad" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="6" orient="auto">
+    <path d="M0,0 L10,4 L0,8 Z" fill="#9a3412"/>
+  </marker>
+  <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+    <line x1="0" y1="0" x2="0" y2="7" stroke="#9aa3ad" stroke-width="1.1"/>
+  </pattern>
+</defs>
+<text class="title" x="28" y="36">Z синхронно, Y на каретке</text>
+<text class="sub" x="28" y="58">Вид спереди. Оси Z прикручены к стене. Каретка — ось Y, с неё выходит ось A в комнату.</text>
+<line x1="28" y1="70" x2="1072" y2="70" stroke="#e0d6c6"/>
+<rect x="110" y="96" width="860" height="470" fill="#e4ddd0" stroke="#b7ad9e"/>
+<text class="sm" x="550" y="520" text-anchor="middle">стена</text>
+<rect x="150" y="110" width="34" height="430" fill="url(#hatch)" stroke="#2a241e" stroke-width="1.6"/>
+<rect x="900" y="110" width="34" height="430" fill="url(#hatch)" stroke="#2a241e" stroke-width="1.6"/>
+<text class="lab" x="167" y="104" text-anchor="middle">Z1</text>
+<text class="lab" x="917" y="104" text-anchor="middle">Z2</text>
+<rect x="168" y="168" width="748" height="16" rx="2" fill="none" stroke="#8b939c" stroke-width="2" stroke-dasharray="7 5"/>
+<text class="sm halo" x="542" y="156" text-anchor="middle">верх Z</text>
+<rect x="168" y="318" width="748" height="22" rx="2" fill="#d5dde3" stroke="#2a241e" stroke-width="1.6"/>
+<rect x="142" y="308" width="50" height="42" rx="3" fill="#d5e1f8" stroke="#2456c4" stroke-width="1.6"/>
+<rect x="892" y="308" width="50" height="42" rx="3" fill="#d5e1f8" stroke="#2456c4" stroke-width="1.6"/>
+<rect x="470" y="292" width="160" height="64" rx="4" fill="#e4dccf" stroke="#2a241e" stroke-width="1.8"/>
+<text class="lab" x="550" y="318" text-anchor="middle">каретка Y</text>
+<text class="sm" x="550" y="336" text-anchor="middle">ход вдоль рельса</text>
+<circle cx="550" cy="374" r="14" fill="#fff" stroke="#1e4d7b" stroke-width="2.4"/>
+<circle cx="550" cy="374" r="4" fill="#1e4d7b"/>
+<text class="sm halo" x="572" y="378">ось A</text>
+<text class="lab halo" x="550" y="276" text-anchor="middle">рельс Y, его поднимает ось Z</text>
+<line x1="118" y1="470" x2="118" y2="200" stroke="#9a3412" stroke-width="1.6" marker-end="url(#ad)"/>
+<line x1="118" y1="200" x2="118" y2="470" stroke="#9a3412" stroke-width="1.6" marker-end="url(#ad)"/>
+<text class="dim" x="96" y="340" text-anchor="middle">Z</text>
+<line x1="978" y1="470" x2="978" y2="200" stroke="#9a3412" stroke-width="1.6" marker-end="url(#ad)"/>
+<line x1="978" y1="200" x2="978" y2="470" stroke="#9a3412" stroke-width="1.6" marker-end="url(#ad)"/>
+<text class="dim" x="996" y="340">Z</text>
+<rect x="128" y="548" width="78" height="44" rx="3" fill="#e7f0d4" stroke="#2a241e"/>
+<rect x="878" y="548" width="78" height="44" rx="3" fill="#e7f0d4" stroke="#2a241e"/>
+<text class="sm" x="167" y="574" text-anchor="middle">мотор Z1</text>
+<text class="sm" x="917" y="574" text-anchor="middle">мотор Z2</text>
+<text class="sm" x="28" y="620">Z1 и Z2 получают одну координату. Разъезд на миллиметр перекашивает рельс и зажимает каретку.</text>
+</svg>

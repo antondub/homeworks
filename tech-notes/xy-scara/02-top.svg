@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="780" viewBox="0 0 1100 780">
+<rect width="100%" height="100%" fill="#f6f3ea"/>
+<style>
+  text { font-family: "Liberation Sans", sans-serif; fill: #241c16; }
+  .title { font-size: 22px; font-weight: 700; }
+  .sub { font-size: 13px; fill: #6b6258; }
+  .lab { font-size: 14px; font-weight: 700; }
+  .sm { font-size: 12px; fill: #3c342c; }
+  .dim { font-size: 12px; fill: #9a3412; font-weight: 700; }
+  .halo { stroke: #f6f3ea; stroke-width: 4px; paint-order: stroke fill; }
+</style>
+<defs>
+  <marker id="ad" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="6" orient="auto">
+    <path d="M0,0 L10,4 L0,8 Z" fill="#9a3412"/>
+  </marker>
+</defs>
+<text class="title" x="28" y="36">Оси A и B: первое плечо над вторым</text>
+<text class="sub" x="28" y="58">Вид сверху. Стена сзади, вылет в комнату. Зона — полукруг перед стеной.</text>
+<line x1="28" y1="70" x2="1072" y2="70" stroke="#e0d6c6"/>
+<path d="M220,390 A300,300 0 0 0 820,390" fill="none" stroke="#c4b8a4" stroke-width="1.6" stroke-dasharray="6 6"/>
+<line x1="220" y1="390" x2="820" y2="390" stroke="#c4b8a4" stroke-width="1.2" stroke-dasharray="6 6"/>
+<text class="sm halo" x="840" y="420">полукруг до 900 мм</text>
+<rect x="60" y="78" width="980" height="18" fill="#e4ddd0" stroke="#b7ad9e"/>
+<text class="sm" x="90" y="91">стена</text>
+<rect x="80" y="96" width="940" height="26" rx="4" fill="#d5dde3" stroke="#2a241e" stroke-width="1.6"/>
+<text class="sm halo" x="180" y="114">рельс Y</text>
+<rect x="448" y="86" width="144" height="70" rx="4" fill="#e4dccf" stroke="#2a241e" stroke-width="1.8"/>
+<text class="lab" x="520" y="122" text-anchor="middle">каретка</text>
+<line x1="520" y1="156" x2="520" y2="390" stroke="#5c6770" stroke-width="5"/>
+<!-- folded, two heights offset in plan so both read -->
+<line x1="508" y1="390" x2="508" y2="206" stroke="#1e4d7b" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
+<line x1="534" y1="390" x2="534" y2="206" stroke="#1f6b4a" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
+<text class="sm halo" x="548" y="198">сложена на каретку</text>
+<!-- working -->
+<line x1="520" y1="390" x2="640" y2="530" stroke="#1e4d7b" stroke-width="9" stroke-linecap="round"/>
+<line x1="640" y1="530" x2="560" y2="690" stroke="#1f6b4a" stroke-width="9" stroke-linecap="round"/>
+<circle cx="520" cy="390" r="12" fill="#fff" stroke="#2456c4" stroke-width="2.6"/>
+<circle cx="520" cy="390" r="4" fill="#2456c4"/>
+<circle cx="640" cy="530" r="8" fill="#fff" stroke="#9a3412" stroke-width="2.2"/>
+<rect x="542" y="682" width="40" height="24" rx="3" fill="#f3d2c4" stroke="#8c3b14"/>
+<text class="lab halo" x="500" y="378">A</text>
+<text class="lab halo" x="654" y="522">B</text>
+<text class="lab halo" x="600" y="450">плечо A, верх</text>
+<text class="lab halo" x="668" y="620">плечо B, низ</text>
+<text class="sm halo" x="590" y="700">голова</text>
+<text class="sm" x="28" y="748">За стену рука не заходит. Перед стеной зона — полукруг до 900 мм. Вытянутая прямая в работу не берётся.</text>
+</svg>
