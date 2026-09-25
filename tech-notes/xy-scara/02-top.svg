@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="780" viewBox="0 0 1100 780">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="860" viewBox="0 0 1100 860">
 <rect width="100%" height="100%" fill="#f6f3ea"/>
 <style>
   text { font-family: "Liberation Sans", sans-serif; fill: #241c16; }
@@ -13,35 +13,54 @@
   <marker id="ad" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="6" orient="auto">
     <path d="M0,0 L10,4 L0,8 Z" fill="#9a3412"/>
   </marker>
+  <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+    <line x1="0" y1="0" x2="0" y2="7" stroke="#9aa3ad" stroke-width="1.1"/>
+  </pattern>
 </defs>
-<text class="title" x="28" y="36">Оси A и B: первое плечо над вторым</text>
-<text class="sub" x="28" y="58">Вид сверху. Стена сзади, вылет в комнату. Зона — полукруг перед стеной.</text>
+<text class="title" x="28" y="36">Параллелограмм осей A и B</text>
+<text class="sub" x="28" y="58">Вид сверху. Оба мотора на каретке. Кривошип и рычаг равны, тяга параллельна плечу A.</text>
 <line x1="28" y1="70" x2="1072" y2="70" stroke="#e0d6c6"/>
-<path d="M220,390 A300,300 0 0 0 820,390" fill="none" stroke="#c4b8a4" stroke-width="1.6" stroke-dasharray="6 6"/>
-<line x1="220" y1="390" x2="820" y2="390" stroke="#c4b8a4" stroke-width="1.2" stroke-dasharray="6 6"/>
-<text class="sm halo" x="840" y="420">полукруг до 900 мм</text>
-<rect x="60" y="78" width="980" height="18" fill="#e4ddd0" stroke="#b7ad9e"/>
+
+<path d="M250,310 A310,310 0 0 0 870,310" fill="none" stroke="#c4b8a4" stroke-width="1.6" stroke-dasharray="6 6"/>
+<line x1="250" y1="310" x2="870" y2="310" stroke="#c4b8a4" stroke-width="1.2" stroke-dasharray="6 6"/>
+<path d="M483,310 A77,77 0 0 0 637,310" fill="none" stroke="#c4b8a4" stroke-width="1.3" stroke-dasharray="4 4"/>
+<text class="sm halo" x="888" y="360">полукруг до 900 мм</text>
+<text class="sm halo" x="660" y="292">ближе 230 мм не берём</text>
+
+<rect x="70" y="78" width="980" height="18" fill="#e4ddd0" stroke="#b7ad9e"/>
 <text class="sm" x="90" y="91">стена</text>
-<rect x="80" y="96" width="940" height="26" rx="4" fill="#d5dde3" stroke="#2a241e" stroke-width="1.6"/>
-<text class="sm halo" x="180" y="114">рельс Y</text>
-<rect x="448" y="86" width="144" height="70" rx="4" fill="#e4dccf" stroke="#2a241e" stroke-width="1.8"/>
-<text class="lab" x="520" y="122" text-anchor="middle">каретка</text>
-<line x1="520" y1="156" x2="520" y2="390" stroke="#5c6770" stroke-width="5"/>
-<!-- folded, two heights offset in plan so both read -->
-<line x1="508" y1="390" x2="508" y2="206" stroke="#1e4d7b" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
-<line x1="534" y1="390" x2="534" y2="206" stroke="#1f6b4a" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
-<text class="sm halo" x="548" y="198">сложена на каретку</text>
-<!-- working -->
-<line x1="520" y1="390" x2="640" y2="530" stroke="#1e4d7b" stroke-width="9" stroke-linecap="round"/>
-<line x1="640" y1="530" x2="560" y2="690" stroke="#1f6b4a" stroke-width="9" stroke-linecap="round"/>
-<circle cx="520" cy="390" r="12" fill="#fff" stroke="#2456c4" stroke-width="2.6"/>
-<circle cx="520" cy="390" r="4" fill="#2456c4"/>
-<circle cx="640" cy="530" r="8" fill="#fff" stroke="#9a3412" stroke-width="2.2"/>
-<rect x="542" y="682" width="40" height="24" rx="3" fill="#f3d2c4" stroke="#8c3b14"/>
-<text class="lab halo" x="500" y="378">A</text>
-<text class="lab halo" x="654" y="522">B</text>
-<text class="lab halo" x="600" y="450">плечо A, верх</text>
-<text class="lab halo" x="668" y="620">плечо B, низ</text>
-<text class="sm halo" x="590" y="700">голова</text>
-<text class="sm" x="28" y="748">За стену рука не заходит. Перед стеной зона — полукруг до 900 мм. Вытянутая прямая в работу не берётся.</text>
+<rect x="90" y="96" width="940" height="26" rx="4" fill="#d5dde3" stroke="#2a241e" stroke-width="1.6"/>
+<text class="sm halo" x="160" y="114">рельс Y</text>
+<rect x="488" y="100" width="144" height="68" rx="4" fill="#e4dccf" stroke="#2a241e" stroke-width="1.8"/>
+<text class="lab" x="560" y="128" text-anchor="middle">каретка</text>
+<text class="sm" x="560" y="148" text-anchor="middle">моторы A и B</text>
+<line x1="560" y1="168" x2="560" y2="310" stroke="#5c6770" stroke-width="5"/>
+
+<text class="sm halo" x="300" y="250">складка режется на ~150°</text>
+<text class="sm halo" x="300" y="268">голова остаётся ~230 мм от A</text>
+
+<line x1="539" y1="346" x2="655" y2="484" stroke="#6b3a1f" stroke-width="7" stroke-linecap="round"/>
+<line x1="560" y1="310" x2="539" y2="346" stroke="#9a3412" stroke-width="7" stroke-linecap="round"/>
+<line x1="560" y1="310" x2="676" y2="448" stroke="#1e4d7b" stroke-width="10" stroke-linecap="round"/>
+<line x1="676" y1="448" x2="586" y2="604" stroke="#1f6b4a" stroke-width="10" stroke-linecap="round"/>
+<line x1="676" y1="448" x2="655" y2="484" stroke="#9a3412" stroke-width="7" stroke-linecap="round"/>
+
+<circle cx="560" cy="310" r="12" fill="#fff" stroke="#2456c4" stroke-width="2.6"/>
+<circle cx="560" cy="310" r="4" fill="#2456c4"/>
+<circle cx="539" cy="346" r="5" fill="#9a3412"/>
+<circle cx="676" cy="448" r="8" fill="#fff" stroke="#9a3412" stroke-width="2.2"/>
+<circle cx="655" cy="484" r="5" fill="#9a3412"/>
+<rect x="568" y="592" width="40" height="24" rx="3" fill="#f3d2c4" stroke="#8c3b14"/>
+
+<text class="lab halo" x="538" y="296">A</text>
+<text class="lab halo" x="692" y="440">B</text>
+<text class="lab halo" x="700" y="390">плечо A, 450</text>
+<text class="sm halo" x="470" y="360">кривошип 90</text>
+<text class="sm halo" x="560" y="418">тяга 450</text>
+<text class="sm halo" x="720" y="470">рычаг 90</text>
+<text class="lab halo" x="700" y="560">плечо B, низ</text>
+<text class="sm halo" x="620" y="620">голова</text>
+
+<text class="sm" x="28" y="800">Кривошип и рычаг по 90 мм и параллельны. Тяга равна плечу A. Вытянутая прямая и складка дальше 150° в работу не берутся.</text>
+<text class="sm" x="28" y="822">Ближе 230 мм к оси A голова не доходит: у стены остаётся полоса, по рельсу её закрывает ход Y.</text>
 </svg>

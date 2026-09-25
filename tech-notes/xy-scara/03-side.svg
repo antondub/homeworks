@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680">
 <rect width="100%" height="100%" fill="#f6f3ea"/>
 <style>
   text { font-family: "Liberation Sans", sans-serif; fill: #241c16; }
@@ -17,43 +17,63 @@
     <line x1="0" y1="0" x2="0" y2="7" stroke="#9aa3ad" stroke-width="1.1"/>
   </pattern>
 </defs>
-<text class="title" x="28" y="36">Плечо A выше плеча B</text>
-<text class="sub" x="28" y="58">Вид сбоку. Колонна Z прикручена к стене, рука вылетает в комнату.</text>
+<text class="title" x="28" y="36">Три яруса: плечо A, тяга, плечо B</text>
+<text class="sub" x="28" y="58">Вид сбоку. Оба мотора на каретке. Локоть без мотора: вал, два UCP204 и рычаг.</text>
 <line x1="28" y1="70" x2="1072" y2="70" stroke="#e0d6c6"/>
-<rect x="36" y="110" width="34" height="430" fill="#e4ddd0" stroke="#b7ad9e"/>
-<text class="sm" transform="translate(52,340) rotate(-90)" text-anchor="middle">стена</text>
-<rect x="70" y="150" width="28" height="380" fill="url(#hatch)" stroke="#2a241e"/>
+
+<rect x="36" y="110" width="34" height="470" fill="#e4ddd0" stroke="#b7ad9e"/>
+<text class="sm" transform="translate(52,360) rotate(-90)" text-anchor="middle">стена</text>
+<rect x="70" y="150" width="28" height="400" fill="url(#hatch)" stroke="#2a241e"/>
 <text class="sm" x="84" y="142" text-anchor="middle">Z</text>
-<rect x="90" y="200" width="36" height="22" fill="#d5dde3" stroke="#2a241e"/>
-<!-- shoulder plate -->
-<rect x="118" y="150" width="14" height="250" fill="#e4dccf" stroke="#2a241e" stroke-width="1.6"/>
-<rect x="108" y="160" width="46" height="28" rx="3" fill="#d5e1f8" stroke="#2456c4"/>
-<rect x="108" y="330" width="46" height="28" rx="3" fill="#d5e1f8" stroke="#2456c4"/>
-<line x1="154" y1="174" x2="154" y2="344" stroke="#5c6770" stroke-width="6"/>
-<circle cx="154" cy="250" r="16" fill="none" stroke="#d85a12" stroke-width="4"/>
-<text class="sm halo" x="176" y="148">UCP204</text>
-<text class="sm halo" x="176" y="360">UCP204</text>
-<text class="lab halo" x="176" y="254">A</text>
-<!-- upper arm -->
-<line x1="154" y1="168" x2="560" y2="168" stroke="#1e4d7b" stroke-width="10" stroke-linecap="round"/>
-<text class="lab halo" x="340" y="156" text-anchor="middle">плечо A</text>
-<!-- elbow plate -->
-<rect x="548" y="150" width="14" height="250" fill="#e4dccf" stroke="#2a241e" stroke-width="1.6"/>
-<rect x="534" y="160" width="46" height="28" rx="3" fill="#d5e1f8" stroke="#2456c4"/>
-<rect x="534" y="330" width="46" height="28" rx="3" fill="#d5e1f8" stroke="#2456c4"/>
-<line x1="590" y1="174" x2="590" y2="400" stroke="#5c6770" stroke-width="6"/>
-<circle cx="590" cy="250" r="16" fill="none" stroke="#d85a12" stroke-width="4"/>
-<rect x="548" y="210" width="70" height="36" rx="3" fill="#e7f0d4" stroke="#2a241e"/>
-<text class="sm" x="583" y="232" text-anchor="middle">мотор B</text>
-<text class="lab halo" x="610" y="254">B</text>
-<!-- lower arm -->
-<line x1="590" y1="392" x2="960" y2="392" stroke="#1f6b4a" stroke-width="10" stroke-linecap="round"/>
-<text class="lab halo" x="760" y="378" text-anchor="middle">плечо B</text>
-<rect x="952" y="372" width="48" height="40" rx="3" fill="#f3d2c4" stroke="#8c3b14"/>
-<text class="sm halo" x="976" y="364" text-anchor="middle">голова</text>
-<line x1="154" y1="188" x2="154" y2="316" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
-<line x1="154" y1="316" x2="154" y2="188" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
-<text class="dim halo" x="132" y="260" text-anchor="end">120</text>
-<text class="sm" x="28" y="560">Зазор по высоте больше трубы 40 мм, плечи проходят друг над другом и складываются до каретки.</text>
-<text class="sm" x="28" y="582">Мотор B стоит на плите колена и едет вместе с плечом A. Кабель к нему — петлёй вдоль этого плеча.</text>
+<rect x="90" y="188" width="40" height="20" fill="#d5dde3" stroke="#2a241e"/>
+
+<rect x="128" y="130" width="16" height="360" fill="#e4dccf" stroke="#2a241e" stroke-width="1.6"/>
+<rect x="112" y="148" width="50" height="28" rx="3" fill="#d5e1f8" stroke="#2456c4"/>
+<rect x="112" y="430" width="50" height="28" rx="3" fill="#d5e1f8" stroke="#2456c4"/>
+<line x1="168" y1="162" x2="168" y2="444" stroke="#5c6770" stroke-width="6"/>
+<text class="sm halo" x="188" y="142">UCP204</text>
+<text class="sm halo" x="188" y="460">UCP204</text>
+
+<line x1="168" y1="158" x2="700" y2="158" stroke="#1e4d7b" stroke-width="10" stroke-linecap="round"/>
+<text class="lab halo" x="420" y="146" text-anchor="middle">плечо A</text>
+
+<circle cx="168" cy="230" r="16" fill="#fff" stroke="#d85a12" stroke-width="4"/>
+<text class="sm halo" x="168" y="234" text-anchor="middle">60T</text>
+<rect x="210" y="208" width="92" height="40" rx="3" fill="#e7f0d4" stroke="#2a241e"/>
+<text class="sm" x="256" y="226" text-anchor="middle">мотор A</text>
+<text class="sm" x="256" y="242" text-anchor="middle">NEMA 23</text>
+<line x1="184" y1="220" x2="214" y2="220" stroke="#d85a12" stroke-width="4"/>
+<line x1="184" y1="240" x2="214" y2="240" stroke="#d85a12" stroke-width="4"/>
+
+<line x1="190" y1="300" x2="720" y2="300" stroke="#6b3a1f" stroke-width="8" stroke-linecap="round"/>
+<text class="lab halo" x="440" y="288" text-anchor="middle">тяга 450</text>
+<circle cx="168" cy="300" r="22" fill="#fff" stroke="#9a3412" stroke-width="3"/>
+<circle cx="168" cy="300" r="4" fill="#9a3412"/>
+<text class="sm halo" x="250" y="276">кривошип 90</text>
+<rect x="214" y="330" width="92" height="40" rx="3" fill="#e7f0d4" stroke="#2a241e"/>
+<text class="sm" x="260" y="348" text-anchor="middle">мотор B</text>
+<text class="sm" x="260" y="364" text-anchor="middle">NEMA 23</text>
+<line x1="188" y1="290" x2="214" y2="336" stroke="#d85a12" stroke-width="4"/>
+<line x1="186" y1="312" x2="214" y2="356" stroke="#d85a12" stroke-width="4"/>
+
+<rect x="668" y="140" width="16" height="250" fill="#e4dccf" stroke="#2a241e" stroke-width="1.6"/>
+<rect x="652" y="150" width="48" height="26" rx="3" fill="#d5e1f8" stroke="#2456c4"/>
+<rect x="652" y="340" width="48" height="26" rx="3" fill="#d5e1f8" stroke="#2456c4"/>
+<line x1="720" y1="163" x2="720" y2="430" stroke="#5c6770" stroke-width="6"/>
+<circle cx="720" cy="300" r="6" fill="#9a3412"/>
+<text class="sm halo" x="734" y="292">рычаг 90</text>
+<text class="sm halo" x="734" y="168">UCP204</text>
+<text class="lab halo" x="734" y="250">B, без мотора</text>
+
+<line x1="720" y1="412" x2="1000" y2="412" stroke="#1f6b4a" stroke-width="10" stroke-linecap="round"/>
+<text class="lab halo" x="860" y="398" text-anchor="middle">плечо B</text>
+<rect x="992" y="392" width="48" height="40" rx="3" fill="#f3d2c4" stroke="#8c3b14"/>
+<text class="sm halo" x="1016" y="384" text-anchor="middle">голова</text>
+
+<line x1="150" y1="176" x2="150" y2="430" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
+<line x1="150" y1="430" x2="150" y2="176" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
+<text class="dim halo" x="136" y="310" text-anchor="end">200</text>
+
+<text class="sm" x="28" y="620">Тяга идёт средним ярусом. Кривошип мотора B сидит на оси A, на своём подшипнике, в плоскости тяги.</text>
+<text class="sm" x="28" y="642">На локте пара UCP204 и рычаг. Между опорами каретки около 200 мм: там шкив A и диск кривошипа.</text>
 </svg>
