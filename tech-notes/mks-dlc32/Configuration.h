@@ -2,7 +2,7 @@
  * Правки Marlin bugfix-2.1.x, файл Marlin/Configuration.h.
  * Это не полный Configuration.h. В дереве Marlin меняются эти строки.
  * Панель: раскомментировать тот же вариант, что в pins_MKS_DLC32.h.
- * Wi-Fi не включать: термистор стола на ADC2 (IO4).
+ * Хотэнд — MAX6675 (тип -2). Стол — NTC на IO33. Wi-Fi — WIFISUPPORT и WEBSUPPORT.
  */
 
 #define MOTHERBOARD BOARD_MKS_DLC32
@@ -10,6 +10,8 @@
 
 #define SERIAL_PORT 0
 #define BAUDRATE 250000
+#define SERIAL_PORT_2 -1
+#define BAUDRATE_2 250000
 
 #define X_DRIVER_TYPE  TB6600
 #define Y_DRIVER_TYPE  TB6600
@@ -19,7 +21,7 @@
 #define EXTRUDERS 1
 #define DEFAULT_NOMINAL_FILAMENT_DIA 1.75
 
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 -2
 #define TEMP_SENSOR_BED 1
 
 #define PIDTEMP
@@ -34,6 +36,10 @@
 #define X_MIN_ENDSTOP_HIT_STATE HIGH
 #define Y_MIN_ENDSTOP_HIT_STATE HIGH
 #define Z_MIN_ENDSTOP_HIT_STATE HIGH
+#define Z_MIN_PROBE_ENDSTOP_HIT_STATE LOW
+
+#define FIX_MOUNTED_PROBE
+#define NOZZLE_TO_PROBE_OFFSET { 0, 0, 0 }
 
 // Ремень GT2, шкив 20 зуб., микрошаг 16 → 80.
 // Винт Z T8x8, микрошаг 16 на TB6600 → 400.
@@ -50,6 +56,12 @@
 #define INVERT_Z_DIR false
 #define INVERT_E0_DIR false
 
+// U8 (SN74LVC1G04) переворачивает LCD_EN. На разъёме низкий уровень включает TB6600.
+#define X_ENABLE_ON 0
+#define Y_ENABLE_ON 0
+#define Z_ENABLE_ON 1
+#define E_ENABLE_ON 0
+
 #define X_HOME_DIR -1
 #define Y_HOME_DIR -1
 #define Z_HOME_DIR -1
@@ -60,12 +72,3 @@
 
 #define SDSUPPORT
 #define EEPROM_SETTINGS
-
-// --- панель 12864, вместе с ANET_A8_12864 в pins ---
-//#define ANET_FULL_GRAPHICS_LCD
-
-// --- панель 2004, пять кнопок, вместе с ANET_A8_2004 в pins ---
-//#define ULTRA_LCD
-//#define LCD_WIDTH 20
-//#define LCD_HEIGHT 4
-//#define ZONESTAR_LCD
