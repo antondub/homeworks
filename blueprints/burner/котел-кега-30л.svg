@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720">
-  <rect x="0" y="0" width="1180" height="720" fill="#f6f3ea"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="640" viewBox="0 0 1180 640">
+  <rect x="0" y="0" width="1180" height="640" fill="#f6f3ea"/>
 
   <text x="28" y="36" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#241c16">Котел: кега 30 л + жаровой стакан D200</text>
   <text x="28" y="58" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" fill="#6b6258">Продольный разрез. Вода в рубашке между кегой и стаканом. Факел реверсится внутри стакана.</text>
@@ -29,19 +29,17 @@
   <path d="M 270,340 Q 400,348 545,330" fill="none" stroke="#e08940" stroke-width="1.6" stroke-dasharray="6 5"/>
   <text x="390" y="308" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#241c16">факел / циклон</text>
 
-  <path d="M 555,250 C 480,232 380,228 300,236 C 280,238 268,248 268,250" fill="none" stroke="#c45c12" stroke-width="2.4"/>
-  <polygon points="262,258 274,246 280,262" fill="#c45c12"/>
-  <text x="400" y="218" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#241c16">реверс к дымоходу</text>
-
   <rect x="268" y="78" width="52" height="142" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.8"/>
   <rect x="276" y="86" width="36" height="126" fill="#f6f3ea" stroke="#2a241e" stroke-width="1.2"/>
   <text x="294" y="70" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">дымоход</text>
-  <path d="M 294,258 L 294,132" fill="none" stroke="#c45c12" stroke-width="2.2"/>
-  <polygon points="294,118 286,136 302,136" fill="#c45c12"/>
 
-  <path d="M 256,232 Q 278,248 292,268" fill="none" stroke="#5c2a10" stroke-width="4" stroke-linecap="round"/>
-  <text x="318" y="198" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">полукольцо-козырек</text>
-  <text x="318" y="214" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">(по желанию)</text>
+  <path d="M 330,216 L 356,216 L 354,248 L 332,246 Z" fill="#5c2a10" stroke="#2a241e" stroke-width="1.2"/>
+  <text x="364" y="200" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">козырек</text>
+
+  <path d="M 555,248 C 490,230 420,226 368,228 C 358,230 352,238 348,258 C 344,272 328,276 314,262 C 304,250 298,236 294,228" fill="none" stroke="#c45c12" stroke-width="2.4"/>
+  <path d="M 294,228 L 294,132" fill="none" stroke="#c45c12" stroke-width="2.2"/>
+  <polygon points="294,118 286,136 302,136" fill="#c45c12"/>
+  <text x="430" y="216" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#241c16">реверс</text>
 
   <path d="M 250,175 L 568,175" fill="none" stroke="#2a6f9b" stroke-width="1.8"/>
   <polygon points="580,175 564,168 564,182" fill="#2a6f9b"/>
@@ -79,32 +77,14 @@
   <rect x="320" y="78" width="40" height="14" fill="none" stroke="#8b939c" stroke-width="1.2" stroke-dasharray="5 4"/>
   <path d="M 360,85 L 764,280" fill="none" stroke="#8b939c" stroke-width="1.2" stroke-dasharray="5 4"/>
   <text x="786" y="188" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#6b6258">вторая кега</text>
-  <text x="786" y="204" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#6b6258">на выхлопе - позже</text>
 
   <circle cx="1040" cy="560" r="78" fill="#f3e4c8" stroke="#8c3b14" stroke-width="2.2"/>
-  <circle cx="1040" cy="560" r="78" fill="none" stroke="#2a241e" stroke-width="1.2" opacity="0.35"/>
+  <path d="M 972.0,528.3 L 975.7,521.5 L 980.0,515.1 L 984.9,509.1 L 990.4,503.7 L 996.5,498.9 L 1003.0,494.8 L 1009.9,491.3 L 1017.2,488.6 L 1024.6,486.6 L 1032.3,485.4 L 1040.0,485.0 L 1047.7,485.4 L 1055.4,486.6 L 1062.8,488.6 L 1070.1,491.3 L 1077.0,494.8 L 1083.5,498.9 L 1089.6,503.7 L 1095.1,509.1 L 1100.0,515.1 L 1104.3,521.5 L 1108.0,528.3 L 1088.9,537.2 L 1086.3,532.3 L 1083.2,527.6 L 1079.7,523.4 L 1075.7,519.5 L 1071.3,516.0 L 1066.6,513.0 L 1061.7,510.5 L 1056.4,508.6 L 1051.1,507.1 L 1045.6,506.3 L 1040.0,506.0 L 1034.4,506.3 L 1028.9,507.1 L 1023.6,508.6 L 1018.3,510.5 L 1013.4,513.0 L 1008.7,516.0 L 1004.3,519.5 L 1000.3,523.4 L 996.8,527.6 L 993.7,532.3 L 991.1,537.2 Z" fill="#5c2a10" stroke="#2a241e" stroke-width="1.2"/>
+  <path d="M 991.1,537.2 L 994.3,531.2 L 998.3,525.7 L 1002.9,520.7 L 1008.2,516.4 L 1013.9,512.7 L 1020.1,509.8 L 1026.5,507.7 L 1033.2,506.4 L 1040.0,506.0 L 1046.8,506.4 L 1053.5,507.7 L 1059.9,509.8 L 1066.1,512.7 L 1071.8,516.4 L 1077.1,520.7 L 1081.7,525.7 L 1085.7,531.2 L 1088.9,537.2 L 1081.7,540.6 L 1078.9,535.5 L 1075.5,530.8 L 1071.6,526.5 L 1067.1,522.8 L 1062.2,519.7 L 1057.0,517.3 L 1051.5,515.5 L 1045.8,514.4 L 1040.0,514.0 L 1034.2,514.4 L 1028.5,515.5 L 1023.0,517.3 L 1017.8,519.7 L 1012.9,522.8 L 1008.4,526.5 L 1004.5,530.8 L 1001.1,535.5 L 998.3,540.6 Z" fill="#8c3b14" stroke="#2a241e" stroke-width="1"/>
   <circle cx="1040" cy="560" r="38" fill="#cfc6b8" stroke="#2a241e" stroke-width="1.4"/>
   <text x="1040" y="556" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">горелка</text>
   <text x="1040" y="572" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">D100</text>
-  <path d="M 990,500 A 70 70 0 0 1 1090,500" fill="none" stroke="#5c2a10" stroke-width="5" stroke-linecap="round"/>
   <rect x="1020" y="448" width="40" height="36" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.4"/>
-  <text x="920" y="448" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#241c16">вид спереди, крышка</text>
-  <text x="920" y="466" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">козырек 120-150 град. сверху</text>
-  <text x="920" y="482" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">не пересекает ось факела</text>
-
-  <rect x="28" y="580" width="430" height="112" rx="8" fill="#ffffff" stroke="#e0d6c6"/>
-  <text x="44" y="604" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#241c16">Слои</text>
-  <rect x="44" y="618" width="28" height="14" fill="#c5dcea" stroke="#2a241e" stroke-width="1"/>
-  <text x="80" y="630" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">вода: кега 1.5 мм</text>
-  <rect x="44" y="640" width="28" height="14" fill="#f3e4c8" stroke="#8c3b14" stroke-width="1.4"/>
-  <text x="80" y="652" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">жаровой стакан 2.5 мм, D200</text>
-  <line x1="44" y1="678" x2="72" y2="678" stroke="#5c2a10" stroke-width="5" stroke-linecap="round"/>
-  <text x="80" y="682" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">задник ~5 мм (дно сковороды), мокрый</text>
-
-  <rect x="480" y="580" width="380" height="112" rx="8" fill="#ffffff" stroke="#e0d6c6"/>
-  <text x="496" y="604" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#241c16">Не делать</text>
-  <text x="496" y="626" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">кольца и шнек внутри факела</text>
-  <text x="496" y="644" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">сухой задник (сковорода без воды сзади)</text>
-  <text x="496" y="662" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">дымоход из водяной рубашки, минуя стакан</text>
-  <text x="496" y="680" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">целить 20 кВт с одной короткой кеги</text>
+  <text x="900" y="470" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#241c16">вид спереди</text>
+  <text x="900" y="488" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">козырек</text>
 </svg>
