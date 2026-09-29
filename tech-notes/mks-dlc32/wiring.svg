@@ -101,7 +101,7 @@ text { font-family: DejaVu Sans, Liberation Sans, sans-serif; fill: #241c16; }
 <text class="pin" x="622" y="262">7 IO25 Z PUL</text><text class="pin" x="710" y="262">8 IO33 NTC</text>
 <text class="pin" x="622" y="278">5 IO26 Z DIR</text><text class="pin" x="710" y="278">6 NC</text>
 <text class="pin" x="622" y="294">3 IO5 реле</text><text class="pin" x="710" y="294">4 IO27 ШИМ</text>
-<text class="pin" x="622" y="310">1 BEEPER база</text><text class="pin" x="710" y="310">2 NC</text>
+<text class="pin" x="622" y="310">1 BEEPER</text><text class="pin" x="710" y="310">2 NC</text>
 <text class="tiny" x="710" y="340" text-anchor="middle">пин 1 не занимать</text>
 <rect x="610" y="356" width="200" height="124" rx="4" fill="#ffffff" stroke="#2a5a38" stroke-width="1.2"/>
 <text class="sm" x="710" y="374" text-anchor="middle">EXP2</text>
@@ -125,8 +125,9 @@ text { font-family: DejaVu Sans, Liberation Sans, sans-serif; fill: #241c16; }
 <text class="lab" x="28" y="112">Экструдер</text>
 <text class="sm" x="28" y="130">сокет Z · мотор Z-MOTOR</text>
 <rect x="16" y="150" width="248" height="64" rx="8" fill="#e7eef6" stroke="#1e4d7b" stroke-width="1.2"/>
-<text class="lab" x="28" y="172">TB6600 X и Y</text>
-<text class="sm" x="28" y="194">S PUL+ · D DIR+ · E нет · G минус</text>
+<text class="lab" x="28" y="168">TB6600 X и Y</text>
+<text class="sm" x="28" y="186">S PUL+ · D DIR+</text>
+<text class="sm" x="28" y="204">E нет · G минус</text>
 <rect x="16" y="268" width="248" height="44" rx="8" fill="#e7eef6" stroke="#1e4d7b" stroke-width="1.2"/>
 <text class="lab" x="28" y="286">ENA осей</text>
 <text class="sm" x="28" y="304">12/24V → ENA+ · S → ENA−</text>
@@ -141,19 +142,21 @@ text { font-family: DejaVu Sans, Liberation Sans, sans-serif; fill: #241c16; }
 <text class="sm" x="848" y="194">щуп IO22 · NC 2 и 3 · NPN LOW</text>
 <rect x="836" y="210" width="250" height="48" rx="8" fill="#f8e6d8" stroke="#9a3412" stroke-width="1.2"/>
 <text class="lab" x="848" y="230">ШИМ хотэнда</text>
-<text class="sm" x="848" y="248">EXP1: 4 SIG · 9 GND · 24 В мимо</text>
+<text class="sm" x="848" y="248">4 SIG · 9 GND · 24 В мимо</text>
 <rect x="836" y="264" width="250" height="48" rx="8" fill="#f8e6d8" stroke="#9a3412" stroke-width="1.2"/>
 <text class="lab" x="848" y="284">Реле стола</text>
 <text class="sm" x="848" y="302">EXP1: 3 IN · 9 GND · 10 5 В</text>
 <rect x="836" y="318" width="250" height="48" rx="8" fill="#e7eef6" stroke="#1e4d7b" stroke-width="1.2"/>
 <text class="lab" x="848" y="338">TB6600 Z</text>
 <text class="sm" x="848" y="356">EXP1: 7 PUL+ · 5 DIR+ · 9 GND</text>
-<rect x="836" y="372" width="250" height="48" rx="8" fill="#e8f0e4" stroke="#1f6b4a" stroke-width="1.2"/>
-<text class="lab" x="848" y="392">MAX6675</text>
-<text class="sm" x="848" y="410">10=3,3 В · 2 SCK · 1 DO · 6 CS</text>
-<rect x="836" y="426" width="250" height="44" rx="8" fill="#e8f0e4" stroke="#1f6b4a" stroke-width="1.2"/>
-<text class="lab" x="848" y="444">NTC стола</text>
-<text class="sm" x="848" y="462">3,3 В — 4,7 кОм — IO33 — NTC</text>
+<rect x="836" y="368" width="250" height="64" rx="8" fill="#e8f0e4" stroke="#1f6b4a" stroke-width="1.2"/>
+<text class="lab" x="848" y="386">MAX6675</text>
+<text class="sm" x="848" y="404">VCC 3,3 В · 9 GND</text>
+<text class="sm" x="848" y="422">2 SCK · 1 DO · 6 CS</text>
+<rect x="836" y="440" width="250" height="60" rx="8" fill="#e8f0e4" stroke="#1f6b4a" stroke-width="1.2"/>
+<text class="lab" x="848" y="458">NTC стола</text>
+<text class="sm" x="848" y="476">подтяжка 4,7 кОм к 3,3 В</text>
+<text class="sm" x="848" y="492">NTC на IO33 и GND</text>
 <rect x="16" y="556" width="1072" height="72" rx="8" fill="#ffffff" stroke="#cfc4b4" stroke-width="1.2"/>
 <text class="lab" x="32" y="578">Не путать</text>
 <text class="sm" x="32" y="598">XYZ_EN только экструдер. Оси — бипер. EXP1 пин 1 не трогать. TTL, I2C, SWITCH пустые.</text>
@@ -171,7 +174,7 @@ text { font-family: DejaVu Sans, Liberation Sans, sans-serif; fill: #241c16; }
 <polyline points="836,234 828,234 828,294 810,294"/>
 <polyline points="836,288 833,288 833,306 810,306"/>
 <polyline points="836,342 823,342 823,262 810,262"/>
-<polyline points="836,396 825,396 825,456 810,456"/>
-<polyline points="836,448 820,448 820,272 810,272"/>
+<polyline points="836,400 825,400 825,392 810,392"/>
+<polyline points="836,470 820,470 820,272 810,272"/>
 </g>
 </svg>
