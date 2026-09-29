@@ -29,17 +29,22 @@
   <path d="M 270,340 Q 400,348 545,330" fill="none" stroke="#e08940" stroke-width="1.6" stroke-dasharray="6 5"/>
   <text x="390" y="308" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#241c16">факел / циклон</text>
 
-  <rect x="268" y="78" width="52" height="142" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.8"/>
-  <rect x="276" y="86" width="36" height="126" fill="#f6f3ea" stroke="#2a241e" stroke-width="1.2"/>
-  <text x="294" y="70" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">дымоход</text>
+  <rect x="281" y="78" width="52" height="142" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.8"/>
+  <rect x="289" y="86" width="36" height="126" fill="#f6f3ea" stroke="#2a241e" stroke-width="1.2"/>
+  <text x="307" y="70" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">дымоход</text>
 
-  <path d="M 330,216 L 356,216 L 354,248 L 332,246 Z" fill="#5c2a10" stroke="#2a241e" stroke-width="1.2"/>
-  <text x="364" y="200" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">козырек</text>
+  <path d="M 348,216 L 374,216 L 372,248 L 350,246 Z" fill="#5c2a10" stroke="#2a241e" stroke-width="1.2"/>
+  <text x="382" y="200" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">козырек</text>
 
-  <path d="M 555,248 C 490,230 420,226 368,228 C 358,230 352,238 348,258 C 344,272 328,276 314,262 C 304,250 298,236 294,228" fill="none" stroke="#c45c12" stroke-width="2.4"/>
-  <path d="M 294,228 L 294,132" fill="none" stroke="#c45c12" stroke-width="2.2"/>
-  <polygon points="294,118 286,136 302,136" fill="#c45c12"/>
-  <text x="430" y="216" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#241c16">реверс</text>
+  <path d="M 555,248 C 490,230 430,226 390,228 C 376,230 370,238 366,258 C 362,272 346,276 328,258 C 318,248 312,236 307,228" fill="none" stroke="#c45c12" stroke-width="2.4"/>
+  <path d="M 307,228 L 307,132" fill="none" stroke="#c45c12" stroke-width="2.2"/>
+  <polygon points="307,118 299,136 315,136" fill="#c45c12"/>
+  <text x="440" y="216" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#241c16">реверс</text>
+
+  <line x1="248" y1="198" x2="307" y2="198" stroke="#9a3412" stroke-width="1.1"/>
+  <line x1="248" y1="192" x2="248" y2="204" stroke="#9a3412"/>
+  <line x1="307" y1="192" x2="307" y2="204" stroke="#9a3412"/>
+  <text x="278" y="190" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" font-weight="700" fill="#9a3412">~50</text>
 
   <path d="M 250,175 L 568,175" fill="none" stroke="#2a6f9b" stroke-width="1.8"/>
   <polygon points="580,175 564,168 564,182" fill="#2a6f9b"/>
@@ -74,8 +79,8 @@
   <text x="402" y="132" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">воздух / предохр.</text>
 
   <path d="M 790,200 C 775,200 764,250 764,320 C 764,390 775,440 790,440 L 980,440 C 995,440 1006,390 1006,320 C 1006,250 995,200 980,200 Z" fill="none" stroke="#8b939c" stroke-width="1.6" stroke-dasharray="8 6"/>
-  <rect x="320" y="78" width="40" height="14" fill="none" stroke="#8b939c" stroke-width="1.2" stroke-dasharray="5 4"/>
-  <path d="M 360,85 L 764,280" fill="none" stroke="#8b939c" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <rect x="333" y="78" width="40" height="14" fill="none" stroke="#8b939c" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <path d="M 373,85 L 764,280" fill="none" stroke="#8b939c" stroke-width="1.2" stroke-dasharray="5 4"/>
   <text x="786" y="188" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#6b6258">вторая кега</text>
 
   <circle cx="1040" cy="560" r="78" fill="#f3e4c8" stroke="#8c3b14" stroke-width="2.2"/>
@@ -84,7 +89,6 @@
   <circle cx="1040" cy="560" r="38" fill="#cfc6b8" stroke="#2a241e" stroke-width="1.4"/>
   <text x="1040" y="556" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">горелка</text>
   <text x="1040" y="572" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">D100</text>
-  <rect x="1020" y="448" width="40" height="36" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.4"/>
   <text x="900" y="470" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#241c16">вид спереди</text>
   <text x="900" y="488" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">козырек</text>
 </svg>
