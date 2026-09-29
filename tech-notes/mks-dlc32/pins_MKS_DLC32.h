@@ -7,10 +7,11 @@
  * Экструдер — съёмный драйвер в сокете Z, мотор на клемме Z-MOTOR.
  * Ось Z — TB6600 с EXP1: STEP пин 7 (IO25), DIR пин 5 (IO26).
  * Экструдер — съёмный драйвер в сокете Z (131/132).
- * Z ENA — LCD_EN, EXP1 пин 3. U8 (SN74LVC1G04) инвертирует IO5, поэтому Z_ENABLE_ON 1.
- * X, Y и E ENA — XYZ_EN, ножка 15 сдвигателя (128), пин E разъёмов.
- * Ножку EN съёмного драйвера экструдера оставить в сокете.
- * ШИМ хотэнда — EXP1 пин 4 (IO27). Реле стола — BEEPER, бит 7 сдвигателя (135).
+ * Z ENA — вместе с X и Y, разъём бипера (135). Транзистор не выпаивать.
+ * Экструдер ENA — XYZ_EN (128), ножку EN оставить в сокете.
+ * Пин E разъёмов X/Y к TB6600 не подключать.
+ * ШИМ хотэнда — EXP1 пин 4 (IO27). Реле стола — EXP1 пин 3 (IO5), U8 инвертирует, HEATER_BED_INVERTING true.
+ * Обдув — SPINDLE (IO32). TTL пустой.
  * Щуп — Probe J12 пин 2 (IO22). Концевики: J9 IO36, J10 IO35, J11 IO34.
  * Хотэнд — MAX6675 на EXP2 (CS IO23, SCK IO18, DO IO19).
  * Термистор стола — EXP1 пин 8 (IO33).
@@ -45,19 +46,19 @@
 
 #define X_STEP_PIN                           129
 #define X_DIR_PIN                            130
-#define X_ENABLE_PIN                         128  // XYZ_EN, пин E
+#define X_ENABLE_PIN                         135  // бипер, все TB6600
 
 #define Y_STEP_PIN                           133
 #define Y_DIR_PIN                            134
-#define Y_ENABLE_PIN                         128
+#define Y_ENABLE_PIN                         135
 
 #define Z_STEP_PIN                            25  // EXP1 пин 7 → TB6600 PUL+
 #define Z_DIR_PIN                             26  // EXP1 пин 5 → TB6600 DIR+
-#define Z_ENABLE_PIN                           5  // LCD_EN_0, U8 инвертирует, EXP1 пин 3
+#define Z_ENABLE_PIN                         135
 
 #define E0_STEP_PIN                          131  // сокет Z, STEP
 #define E0_DIR_PIN                           132  // сокет Z, DIR
-#define E0_ENABLE_PIN                        128
+#define E0_ENABLE_PIN                        128  // XYZ_EN, только экструдер
 
 #define X_STOP_PIN                            36
 #define Y_STOP_PIN                            35
@@ -71,15 +72,15 @@
 #define TEMP_BED_PIN                          33  // ADC1, EXP1 пин 8
 
 #define HEATER_0_PIN                          27  // EXP1 пин 4, ШИМ хотэнда
-#define HEATER_BED_PIN                       135  // 595 QH, EXP1 BEEPER, реле стола
+#define HEATER_BED_PIN                         5  // EXP1 пин 3, U8 инвертирует
 #define FAN0_PIN                              32  // SPINDLE, обдув детали
 
 #define HEATER_0_INVERTING                 false
-#define HEATER_BED_INVERTING               false
+#define HEATER_BED_INVERTING                true  // U8: GPIO5 низкий -> на разъёме высокий
 
 #define SD_SCK_PIN                            14
 #define SD_MISO_PIN                           12
 #define SD_MOSI_PIN                           13
 #define SD_SS_PIN                             15
 
-#define SD_DETECT_PIN                         -1
+#define SD_DETECT_PIN                         39

@@ -56,10 +56,11 @@
 #define INVERT_Z_DIR false
 #define INVERT_E0_DIR false
 
-// U8 (SN74LVC1G04) переворачивает LCD_EN. На разъёме низкий уровень включает TB6600.
+// X/Y/Z TB6600 с бипера: высокий на 595 включает транзистор и гасит оптопару.
+// Экструдер без транзистора, низкий на XYZ_EN включает stepstick.
 #define X_ENABLE_ON 0
 #define Y_ENABLE_ON 0
-#define Z_ENABLE_ON 1
+#define Z_ENABLE_ON 0
 #define E_ENABLE_ON 0
 
 #define X_HOME_DIR -1
