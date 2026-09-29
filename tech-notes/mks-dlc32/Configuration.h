@@ -1,7 +1,8 @@
 /**
  * Правки Marlin bugfix-2.1.x, файл Marlin/Configuration.h.
  * Это не полный Configuration.h. В дереве Marlin меняются эти строки.
- * Панель: раскомментировать тот же вариант, что в pins_MKS_DLC32.h.
+ * Экрана нет: FYSETC_MINI_12864_2_1 и NEOPIXEL_LED выключить — это хвост Cheetah.
+ * Щуп на J12, не на Z-min: Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN выключить.
  * Хотэнд — MAX6675 (тип -2). Стол — NTC на IO33. Wi-Fi — WIFISUPPORT и WEBSUPPORT.
  */
 
@@ -37,6 +38,7 @@
 #define Y_MIN_ENDSTOP_HIT_STATE HIGH
 #define Z_MIN_ENDSTOP_HIT_STATE HIGH
 #define Z_MIN_PROBE_ENDSTOP_HIT_STATE LOW
+//#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 #define FIX_MOUNTED_PROBE
 #define NOZZLE_TO_PROBE_OFFSET { 0, 0, 0 }
@@ -73,3 +75,5 @@
 
 #define SDSUPPORT
 #define EEPROM_SETTINGS
+//#define FYSETC_MINI_12864_2_1
+//#define NEOPIXEL_LED

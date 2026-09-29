@@ -6,7 +6,7 @@ X, Y и Z идут через **TB6600**. Экструдер сидит на с�
 
 Сокеты X и Y пустые. Микрошаг и ток TB6600 — на DIP драйверов. У экструдера микрошаг — DIP у сокета Z, ток — потенциометр модуля.
 
-Готовые файлы: `mks-dlc32/pins_MKS_DLC32.h`, `mks-dlc32/Configuration.h`, `mks-dlc32/Configuration_adv.h`.
+Оверлеи: `mks-dlc32/pins_MKS_DLC32.h`, `mks-dlc32/Configuration.h`, `mks-dlc32/Configuration_adv.h`. Те же правки уже в `Marlin-2.x/`.
 
 ![Куда что садится](mks-dlc32/wiring.svg)
 
@@ -93,7 +93,7 @@ X, Y и Z идут через **TB6600**. Экструдер сидит на с�
 |---|---|---|
 | 1, IO19 | 3,3 В | MAX6675 DO |
 | 2, IO18 | 3,3 В | MAX6675 SCK |
-| 6, IO23 | 3,3 В | MAX6675 CS |
+| 6, IO23 | 3,3 В | LCD_MOSI, CS MAX6675 |
 | 8, RESET | сброс | не занимать |
 | 9, GND | земля | GND модуля MAX6675 |
 | 10, 3,3 В | питание | VCC модуля MAX6675 |
@@ -175,7 +175,7 @@ EXP2 пин 10 (3,3 В) → VCC
 EXP2 пин 9          → GND
 EXP2 пин 2 (IO18)   → SCK
 EXP2 пин 1 (IO19)   → SO / DO
-EXP2 пин 6 (IO23)   → CS
+EXP2 пин 6 (IO23, LCD_MOSI) → CS
 термопара T+ / T−   → входы MAX6675
 ```
 
@@ -222,13 +222,13 @@ EXP1 пин 10 (5 В)   → VCC катушки
 
 ## Marlin
 
-Ветка `bugfix-2.1.x`. В `platformio.ini` в корне:
+Ветка `bugfix-2.1.x` лежит в `Marlin-2.x/`. В `platformio.ini` в корне:
 
 ```ini
 default_envs = mks_dlc32_v2_1
 ```
 
-Плата в дереве Marlin не описана, добавляются три места.
+В апстриме платы нет. В этом дереве добавлены три места.
 
 `Marlin/src/core/boards.h`, следом за `BOARD_MM_JOKER`:
 
@@ -289,9 +289,10 @@ default_envs = mks_dlc32_v2_1
 #define Z_STOP_PIN                            34
 #define Z_MIN_PROBE_PIN                       22  // J12 пин 2
 
-#define TEMP_0_CS_PIN                         23  // EXP2 пин 6, MAX6675 CS
-#define TEMP_0_SCK_PIN                        18  // EXP2 пин 2
-#define TEMP_0_MISO_PIN                       19  // EXP2 пин 1, DO
+#define TEMP_0_CS_PIN                         23  // EXP2 пин 6, LCD_MOSI → CS
+#define TEMP_0_SCK_PIN                        18  // EXP2 пин 2, LCD_SCK
+#define TEMP_0_MISO_PIN                       19  // EXP2 пин 1, LCD_MISO / DO
+#define TEMP_0_MOSI_PIN              TEMP_0_SCK_PIN  // провода нет, шаблон SoftSPI
 #define TEMP_0_PIN                TEMP_0_CS_PIN
 #define TEMP_BED_PIN                          33  // ADC1, EXP1 пин 8
 
@@ -305,15 +306,18 @@ default_envs = mks_dlc32_v2_1
 #define SD_SCK_PIN                            14
 #define SD_MISO_PIN                           12
 #define SD_MOSI_PIN                           13
-#define SD_SS_PIN                             15
+#define SDSS                                  15
+#define SD_SS_PIN                          SDSS
 #define SD_DETECT_PIN                         39
 ```
+
+`HAL/ESP32/spi_pins.h` в этом дереве с `ifndef`, `SPI.begin` — пины карты 14/12/13/15. MAX6675 на EXP2 бит-бангом: SCK IO18, DO IO19, CS на LCD_MOSI IO23. Провода MOSI у модуля нет; `TEMP_0_MOSI_PIN` совпадает с SCK, иначе Marlin сядет на MOSI карты IO13. Чтение идёт через `receive()`, MOSI после `begin()` не дёргается. I2C не занимать. SoftSPI на ESP32 — `digitalWrite`, не `avr/io.h`. `WebSocketSerial.h` включает `MarlinConfigPre.h`, иначе цикл заголовков. Для Arduino 1.0.4 в `ini/features.ini` AsyncTCP/WebServer 2021 года, в env `mks_dlc32_v2_1` игнорировать AsyncTCP 3.x.
 
 Если при `M140 S60` на штыре 3 низкий уровень, `HEATER_BED_INVERTING` вернуть в `false`.
 
 ### Configuration.h
 
-Меняются только эти строки. Экрана на DLC32 нет. Ось Z на EXP1, штыри 7 и 5. Wi-Fi — `WIFISUPPORT` и `WEBSUPPORT`. USB остаётся первым портом.
+Меняются только эти строки. Экрана на DLC32 нет: выключить `FYSETC_MINI_12864_2_1` и `NEOPIXEL_LED`, это хвост Cheetah. Щуп на J12, не на концевике Z: `Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN` выключить. Ось Z на EXP1, штыри 7 и 5. Wi-Fi — `WIFISUPPORT` и `WEBSUPPORT`. USB остаётся первым портом. Для вебсокета `TX_BUFFER_SIZE` не ноль.
 
 ```cpp
 #define MOTHERBOARD BOARD_MKS_DLC32
@@ -348,6 +352,7 @@ default_envs = mks_dlc32_v2_1
 #define Y_MIN_ENDSTOP_HIT_STATE HIGH
 #define Z_MIN_ENDSTOP_HIT_STATE HIGH
 #define Z_MIN_PROBE_ENDSTOP_HIT_STATE LOW
+//#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 #define FIX_MOUNTED_PROBE
 #define NOZZLE_TO_PROBE_OFFSET { 0, 0, 0 }
@@ -379,6 +384,8 @@ default_envs = mks_dlc32_v2_1
 
 #define SDSUPPORT
 #define EEPROM_SETTINGS
+//#define FYSETC_MINI_12864_2_1
+//#define NEOPIXEL_LED
 ```
 
 `steps/mm` выше — старт для ремня GT2, шкив 20 зубов, микрошаг 16, винт Z с шагом 8 мм и прямой экструдер. Своя механика считается так:
@@ -398,10 +405,12 @@ steps/mm = (200 шагов на оборот × микрошаг) / мм за о
 ```cpp
 #define MINIMUM_STEPPER_POST_DIR_DELAY 5000
 #define MINIMUM_STEPPER_PRE_DIR_DELAY  5000
-#define MINIMUM_STEPPER_PULSE_NS       4000
+#define MINIMUM_STEPPER_PULSE          4
 #define MAXIMUM_STEPPER_RATE           100000
 
 #define DEFAULT_STEPPER_TIMEOUT_SEC 0
+
+#define TX_BUFFER_SIZE 32
 
 #define WIFISUPPORT
 #define WEBSUPPORT
@@ -413,9 +422,11 @@ steps/mm = (200 шагов на оборот × микрошаг) / мм за о
 
 Wi-Fi — `WIFISUPPORT` и `WEBSUPPORT`, одновременно `ESP3D_WIFISUPPORT` не включать. `SERIAL_PORT_2 -1` — сокет веб-морды, USB остаётся `SERIAL_PORT 0`. Сборку брать `mks_dlc32_v2_1` (таблица 8 МБ). `WIFI_SSID` и `WIFI_PWD` подставить до прошивки: без сети штатный Marlin крутит перезагрузку, своей точки доступа нет. В браузере `http://marlinesp.local` или IP из `M115` / последовательного лога. Bluetooth штатный Marlin портом не делает.
 
+С телефона в той же сети — браузер, в Chrome можно вынести на экран. Printoid и OctoApp ждут OctoPrint, к этой прошивке не цепляются. По USB-OTG, 250000: бесплатный Gcode Simulator, если канал живой — GcodePrintr.
+
 ## Сборка и первый пуск
 
-1. Клонировать `bugfix-2.1.x`, внести плату и оба конфига.
+1. Из `Marlin-2.x/` собрать `mks_dlc32_v2_1`. `WIFI_SSID` и `WIFI_PWD` в `Configuration_adv.h` подставить свои.
 2. `pio run -e mks_dlc32_v2_1 -t upload`. Если загрузчик не ловится, зажать BOOT, коротко нажать RESET, отпустить BOOT и повторить заливку.
 3. Хост на 250000. В ответ на `M115` должна прийти строка `DLC32 Printer`. В логе загрузки — IP. Телефон в той же сети открывает `http://marlinesp.local`. Стол на IO33 (ADC1), хотэнд на MAX6675, радио температуре не мешает.
 4. `M105` при комнатной температуре: хотэнд и стол около комнаты. Ноль или сразу максимум на хотэнде — обрыв термопары или питание MAX6675. То же на столе — подтяжка или тип датчика.

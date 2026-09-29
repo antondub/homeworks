@@ -13,7 +13,7 @@
  * ШИМ хотэнда — EXP1 пин 4 (IO27). Реле стола — EXP1 пин 3 (IO5), U8 инвертирует, HEATER_BED_INVERTING true.
  * Обдув — SPINDLE (IO32). TTL пустой.
  * Щуп — Probe J12 пин 2 (IO22). Концевики: J9 IO36, J10 IO35, J11 IO34.
- * Хотэнд — MAX6675 на EXP2 (CS IO23, SCK IO18, DO IO19).
+ * Хотэнд — MAX6675 на EXP2: SCK IO18, DO IO19, CS на LCD_MOSI IO23.
  * Термистор стола — EXP1 пин 8 (IO33).
  * Экрана на плате нет.
  *
@@ -65,9 +65,10 @@
 #define Z_STOP_PIN                            34
 #define Z_MIN_PROBE_PIN                       22  // J12 пин 2, магнитный щуп
 
-#define TEMP_0_CS_PIN                         23  // EXP2 пин 6, MAX6675 CS
-#define TEMP_0_SCK_PIN                        18  // EXP2 пин 2, MAX6675 SCK
-#define TEMP_0_MISO_PIN                       19  // EXP2 пин 1, MAX6675 DO
+#define TEMP_0_CS_PIN                         23  // EXP2 пин 6, LCD_MOSI → CS MAX6675
+#define TEMP_0_SCK_PIN                        18  // EXP2 пин 2, LCD_SCK
+#define TEMP_0_MISO_PIN                       19  // EXP2 пин 1, LCD_MISO / DO
+#define TEMP_0_MOSI_PIN              TEMP_0_SCK_PIN  // провода MOSI нет; только шаблон SoftSPI
 #define TEMP_0_PIN                TEMP_0_CS_PIN
 #define TEMP_BED_PIN                          33  // ADC1, EXP1 пин 8
 
@@ -81,6 +82,7 @@
 #define SD_SCK_PIN                            14
 #define SD_MISO_PIN                           12
 #define SD_MOSI_PIN                           13
-#define SD_SS_PIN                             15
+#define SDSS                                  15
+#define SD_SS_PIN                          SDSS
 
 #define SD_DETECT_PIN                         39
