@@ -222,7 +222,7 @@ EXP1 пин 10 (5 В)   → VCC катушки
 
 ## Marlin
 
-Ветка `bugfix-2.1.x` лежит в `Marlin-2.x/`. В `platformio.ini` в корне:
+Ветка `bugfix-2.1.x` лежит в `Marlin-2.x/`, каталог в `.gitignore`: там SSID и пароль. В `platformio.ini` в корне:
 
 ```ini
 default_envs = mks_dlc32_v2_1
