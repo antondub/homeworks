@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720">
+  <rect width="100%" height="100%" fill="#f6f3ea"/>
+  <style>
+    text { font-family: "Liberation Sans", sans-serif; fill: #241c16; }
+    .title { font-size: 22px; font-weight: 700; }
+    .sub { font-size: 13px; fill: #6b6258; }
+    .lab { font-size: 13px; font-weight: 700; }
+    .sm { font-size: 12px; fill: #3c342c; }
+    .dim { font-size: 12px; fill: #9a3412; font-weight: 700; }
+    .halo { stroke: #f6f3ea; stroke-width: 4px; paint-order: stroke fill; }
+    .note { font-size: 12px; fill: #3c342c; }
+  </style>
+  <defs>
+    <marker id="ag" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#c45c12"/>
+    </marker>
+    <marker id="aw" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#2a6f9b"/>
+    </marker>
+    <pattern id="water" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#8eb8d4" stroke-width="2.2" opacity="0.55"/>
+    </pattern>
+    <pattern id="steel" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#8a8074" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <text class="title" x="28" y="36">>BQ;: :530 30 ; + 60@>2>9 AB0:0= Ø200</text>
+  <text class="sub" x="28" y="58">@>4>;L=K9 @07@57. >40 2 @C10H:5 <564C :53>9 8 AB0:0=><. $0:5; @525@A8BAO 2=CB@8 AB0:0=0.  07<5@K >@85=B8@, :538 GCBL 3C;ONB.</text>
+  <line x1="28" y1="70" x2="1152" y2="70" stroke="#e0d6c6" stroke-width="1"/>
+
+  <!-- keg outer outline (dished heads) -->
+  <path d="M 230,145
+           C 205,145 188,250 188,320
+           C 188,390 205,495 230,495
+           L 620,495
+           C 645,495 662,390 662,320
+           C 662,250 645,145 620,145 Z"
+        fill="url(#water)" stroke="#2a241e" stroke-width="2.2"/>
+
+  <!-- inner fire can -->
+  <path d="M 248,220
+           L 575,220
+           C 592,220 605,268 608,320
+           C 605,372 592,420 575,420
+           L 248,420 Z"
+        fill="#f3e4c8" stroke="#8c3b14" stroke-width="2.4"/>
+
+  <!-- rear 5 mm dish (pan bottom), concave to fire / bulge into water -->
+  <path d="M 575,220 C 598,255 612,285 612,320 C 612,355 598,385 575,420"
+        fill="none" stroke="#5c2a10" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- front tubeplate of inner can -->
+  <rect x="236" y="218" width="12" height="204" fill="#e8d3b0" stroke="#8c3b14" stroke-width="1.8"/>
+
+  <!-- keg wall hint (outer stroke already); flange on front head -->
+  <rect x="168" y="268" width="70" height="104" rx="4" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.8"/>
+  <circle cx="203" cy="320" r="50" fill="#cfc6b8" stroke="#2a241e" stroke-width="1.4"/>
+  <circle cx="203" cy="320" r="38" fill="#f3e4c8" stroke="#8c3b14" stroke-width="1.6"/>
+
+  <!-- burner body (from left) -->
+  <rect x="28" y="278" width="142" height="84" fill="#e4dccf" stroke="#2a241e" stroke-width="1.8"/>
+  <rect x="48" y="292" width="100" height="56" fill="#c8c0b3" stroke="#2a241e" stroke-width="1.2"/>
+  <text class="sm" x="99" y="318" text-anchor="middle">3>@5;:0</text>
+  <text class="sm" x="99" y="334" text-anchor="middle">2KE>4 Ø100</text>
+
+  <!-- flame jet -->
+  <path d="M 248,320 L 560,320" fill="none" stroke="#c45c12" stroke-width="3.2" marker-end="url(#ag)"/>
+  <path d="M 270,300 Q 400,292 545,310" fill="none" stroke="#e08940" stroke-width="1.6" stroke-dasharray="6 5"/>
+  <path d="M 270,340 Q 400,348 545,330" fill="none" stroke="#e08940" stroke-width="1.6" stroke-dasharray="6 5"/>
+  <text class="lab halo" x="390" y="308">D0:5; / F8:;>=</text>
+
+  <!-- reverse along roof to chimney -->
+  <path d="M 555,250 C 480,232 380,228 300,236 C 280,238 268,248 262,258"
+        fill="none" stroke="#c45c12" stroke-width="2.4" marker-end="url(#ag)"/>
+  <text class="lab halo" x="400" y="218">@525@A : 4K<>E>4C</text>
+
+  <!-- chimney -->
+  <rect x="268" y="78" width="52" height="142" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.8"/>
+  <rect x="276" y="86" width="36" height="126" fill="#f6f3ea" stroke="#2a241e" stroke-width="1.2"/>
+  <text class="sm" x="294" y="70" text-anchor="middle">4K<>E>4</text>
+  <path d="M 294,258 L 294,120" fill="none" stroke="#c45c12" stroke-width="2.2" marker-end="url(#ag)"/>
+
+  <!-- half-ring visor inside can, top, before chimney -->
+  <path d="M 256,232 Q 278,248 292,268" fill="none" stroke="#5c2a10" stroke-width="4" stroke-linecap="round"/>
+  <text class="sm halo" x="318" y="198">?>;C:>;LF>-:>7K@Q:</text>
+  <text class="sm halo" x="318" y="214">(?> 65;0=8N)</text>
+
+  <!-- water circulation arrows -->
+  <path d="M 250,175 L 580,175" fill="none" stroke="#2a6f9b" stroke-width="1.8" marker-end="url(#aw)"/>
+  <path d="M 580,465 L 250,465" fill="none" stroke="#2a6f9b" stroke-width="1.8" marker-end="url(#aw)"/>
+  <text class="sm" x="400" y="168" fill="#2a6f9b">2>40, @C10H:0</text>
+
+  <!-- water gap callout at rear -->
+  <line x1="612" y1="320" x2="658" y2="320" stroke="#9a3412" stroke-width="1.2"/>
+  <line x1="612" y1="312" x2="612" y2="328" stroke="#9a3412" stroke-width="1.2"/>
+  <line x1="658" y1="312" x2="658" y2="328" stroke="#9a3412" stroke-width="1.2"/>
+  <text class="dim" x="635" y="308" text-anchor="middle">2540</text>
+
+  <!-- inner Ø200 -->
+  <line x1="500" y1="220" x2="500" y2="420" stroke="#9a3412" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <text class="dim" x="512" y="328">Ø200</text>
+  <text class="sm" x="512" y="344">AB5=:0 2.5</text>
+
+  <!-- keg diameter -->
+  <line x1="700" y1="145" x2="700" y2="495" stroke="#9a3412" stroke-width="1.1"/>
+  <line x1="692" y1="145" x2="708" y2="145" stroke="#9a3412"/>
+  <line x1="692" y1="495" x2="708" y2="495" stroke="#9a3412"/>
+  <text class="dim" transform="translate(722,320) rotate(90)" text-anchor="middle">:530 ~Ø360400 · 1.5 <<</text>
+
+  <!-- length -->
+  <line x1="188" y1="530" x2="662" y2="530" stroke="#9a3412" stroke-width="1.1"/>
+  <line x1="188" y1="522" x2="188" y2="538" stroke="#9a3412"/>
+  <line x1="662" y1="522" x2="662" y2="538" stroke="#9a3412"/>
+  <text class="dim" x="425" y="552" text-anchor="middle">4;8=0 :538 ~400 (>@85=B8@ 30 ;)</text>
+
+  <!-- fittings -->
+  <rect x="430" y="118" width="28" height="28" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.4"/>
+  <text class="sm" x="444" y="108" text-anchor="middle">?>40G0</text>
+  <rect x="520" y="494" width="28" height="28" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.4"/>
+  <text class="sm" x="534" y="542" text-anchor="middle">>1@0B:0</text>
+  <circle cx="390" cy="145" r="7" fill="#fff" stroke="#2a241e" stroke-width="1.4"/>
+  <text class="sm" x="402" y="132">2>74CE / ?@54>E@.</text>
+
+  <!-- ghost second keg -->
+  <path d="M 790,200 C 775,200 764,250 764,320 C 764,390 775,440 790,440 L 980,440 C 995,440 1006,390 1006,320 C 1006,250 995,200 980,200 Z"
+        fill="none" stroke="#8b939c" stroke-width="1.6" stroke-dasharray="8 6"/>
+  <rect x="320" y="78" width="40" height="14" fill="none" stroke="#8b939c" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <path d="M 360,85 L 764,280" fill="none" stroke="#8b939c" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text class="sm" x="786" y="188" fill="#6b6258">2B>@0O :530</text>
+  <text class="sm" x="786" y="204" fill="#6b6258">=0 2KE;>?5  ?>765</text>
+
+  <!-- front inset: half-ring -->
+  <circle cx="1040" cy="560" r="78" fill="#f3e4c8" stroke="#8c3b14" stroke-width="2.2"/>
+  <circle cx="1040" cy="560" r="78" fill="none" stroke="#2a241e" stroke-width="1.2" opacity="0.35"/>
+  <circle cx="1040" cy="560" r="38" fill="#cfc6b8" stroke="#2a241e" stroke-width="1.4"/>
+  <text class="sm" x="1040" y="556" text-anchor="middle">3>@5;:0</text>
+  <text class="sm" x="1040" y="572" text-anchor="middle">Ø100</text>
+  <path d="M 990,500 A 70 70 0 0 1 1090,500" fill="none" stroke="#5c2a10" stroke-width="5" stroke-linecap="round"/>
+  <rect x="1020" y="448" width="40" height="36" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.4"/>
+  <text class="lab" x="920" y="448">284 A?5@548, :@KH:0</text>
+  <text class="sm" x="920" y="466">:>7K@Q: 120150° A25@EC</text>
+  <text class="sm" x="920" y="482">=5 ?5@5A5:05B >AL D0:5;0</text>
+
+  <!-- legend box -->
+  <rect x="28" y="580" width="430" height="112" rx="8" fill="#fff" stroke="#e0d6c6"/>
+  <text class="lab" x="44" y="604">!;>8</text>
+  <rect x="44" y="618" width="28" height="14" fill="url(#water)" stroke="#2a241e" stroke-width="1"/>
+  <text class="sm" x="80" y="630">2>40: :530 1.5 <<</text>
+  <rect x="44" y="640" width="28" height="14" fill="#f3e4c8" stroke="#8c3b14" stroke-width="1.4"/>
+  <text class="sm" x="80" y="652">60@>2>9 AB0:0= 2.5 <<, Ø200</text>
+  <line x1="44" y1="678" x2="72" y2="678" stroke="#5c2a10" stroke-width="5" stroke-linecap="round"/>
+  <text class="sm" x="80" y="682">704=8: ~5 << (4=> A:>2>@>4K), <>:@K9</text>
+
+  <rect x="480" y="580" width="380" height="112" rx="8" fill="#fff" stroke="#e0d6c6"/>
+  <text class="lab" x="496" y="604">5 45;0BL</text>
+  <text class="note" x="496" y="626">:>;LF0 8 H=5: 2=CB@8 D0:5;0</text>
+  <text class="note" x="496" y="644">ACE>9 704=8: (A:>2>@>40 157 2>4K A7048)</text>
+  <text class="note" x="496" y="662">4K<>E>4 87 2>4O=>9 @C10H:8, <8=CO AB0:0=</text>
+  <text class="note" x="496" y="680">F5;8BL 20 :B A >4=>9 :>@>B:>9 :538</text>
+</svg>
