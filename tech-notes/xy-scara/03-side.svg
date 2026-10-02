@@ -1,7 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680">
-<rect width="100%" height="100%" fill="#f6f3ea"/>
-<style>
-  text { font-family: "Liberation Sans", sans-serif; fill: #241c16; }
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1100"
+   height="520"
+   viewBox="0 0 1100 520"
+   version="1.1"
+   id="svg43"
+   sodipodi:docname="03-side.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview43"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.5337789"
+     inkscape:cx="413.35815"
+     inkscape:cy="275.78943"
+     inkscape:window-width="2560"
+     inkscape:window-height="1366"
+     inkscape:window-x="0"
+     inkscape:window-y="37"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg43" />
+  <rect
+     width="100%"
+     height="100%"
+     fill="#f6f3ea"
+     id="rect1" />
+  <style
+     id="style1">
+  text { font-family: &quot;Liberation Sans&quot;, sans-serif; fill: #241c16; }
   .title { font-size: 22px; font-weight: 700; }
   .sub { font-size: 13px; fill: #6b6258; }
   .lab { font-size: 14px; font-weight: 700; }
@@ -9,71 +44,607 @@
   .dim { font-size: 12px; fill: #9a3412; font-weight: 700; }
   .halo { stroke: #f6f3ea; stroke-width: 4px; paint-order: stroke fill; }
 </style>
-<defs>
-  <marker id="ad" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="6" orient="auto">
-    <path d="M0,0 L10,4 L0,8 Z" fill="#9a3412"/>
-  </marker>
-  <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
-    <line x1="0" y1="0" x2="0" y2="7" stroke="#9aa3ad" stroke-width="1.1"/>
-  </pattern>
-</defs>
-<text class="title" x="28" y="36">Три яруса: плечо A, тяга, плечо B</text>
-<text class="sub" x="28" y="58">Вид сбоку. Оба мотора на каретке. Локоть без мотора: вал, два UCP204 и рычаг.</text>
-<line x1="28" y1="70" x2="1072" y2="70" stroke="#e0d6c6"/>
-
-<rect x="36" y="110" width="34" height="470" fill="#e4ddd0" stroke="#b7ad9e"/>
-<text class="sm" transform="translate(52,360) rotate(-90)" text-anchor="middle">стена</text>
-<rect x="70" y="150" width="28" height="400" fill="url(#hatch)" stroke="#2a241e"/>
-<text class="sm" x="84" y="142" text-anchor="middle">Z</text>
-<rect x="90" y="188" width="40" height="20" fill="#d5dde3" stroke="#2a241e"/>
-
-<rect x="128" y="130" width="16" height="360" fill="#e4dccf" stroke="#2a241e" stroke-width="1.6"/>
-<rect x="112" y="148" width="50" height="28" rx="3" fill="#d5e1f8" stroke="#2456c4"/>
-<rect x="112" y="430" width="50" height="28" rx="3" fill="#d5e1f8" stroke="#2456c4"/>
-<line x1="168" y1="162" x2="168" y2="444" stroke="#5c6770" stroke-width="6"/>
-<text class="sm halo" x="188" y="142">UCP204</text>
-<text class="sm halo" x="188" y="460">UCP204</text>
-
-<line x1="168" y1="158" x2="700" y2="158" stroke="#1e4d7b" stroke-width="10" stroke-linecap="round"/>
-<text class="lab halo" x="420" y="146" text-anchor="middle">плечо A</text>
-
-<circle cx="168" cy="230" r="16" fill="#fff" stroke="#d85a12" stroke-width="4"/>
-<text class="sm halo" x="168" y="234" text-anchor="middle">60T</text>
-<rect x="210" y="208" width="92" height="40" rx="3" fill="#e7f0d4" stroke="#2a241e"/>
-<text class="sm" x="256" y="226" text-anchor="middle">мотор A</text>
-<text class="sm" x="256" y="242" text-anchor="middle">NEMA 23</text>
-<line x1="184" y1="220" x2="214" y2="220" stroke="#d85a12" stroke-width="4"/>
-<line x1="184" y1="240" x2="214" y2="240" stroke="#d85a12" stroke-width="4"/>
-
-<line x1="190" y1="300" x2="720" y2="300" stroke="#6b3a1f" stroke-width="8" stroke-linecap="round"/>
-<text class="lab halo" x="440" y="288" text-anchor="middle">тяга 450</text>
-<circle cx="168" cy="300" r="22" fill="#fff" stroke="#9a3412" stroke-width="3"/>
-<circle cx="168" cy="300" r="4" fill="#9a3412"/>
-<text class="sm halo" x="250" y="276">кривошип 90</text>
-<rect x="214" y="330" width="92" height="40" rx="3" fill="#e7f0d4" stroke="#2a241e"/>
-<text class="sm" x="260" y="348" text-anchor="middle">мотор B</text>
-<text class="sm" x="260" y="364" text-anchor="middle">NEMA 23</text>
-<line x1="188" y1="290" x2="214" y2="336" stroke="#d85a12" stroke-width="4"/>
-<line x1="186" y1="312" x2="214" y2="356" stroke="#d85a12" stroke-width="4"/>
-
-<rect x="668" y="140" width="16" height="250" fill="#e4dccf" stroke="#2a241e" stroke-width="1.6"/>
-<rect x="652" y="150" width="48" height="26" rx="3" fill="#d5e1f8" stroke="#2456c4"/>
-<rect x="652" y="340" width="48" height="26" rx="3" fill="#d5e1f8" stroke="#2456c4"/>
-<line x1="720" y1="163" x2="720" y2="430" stroke="#5c6770" stroke-width="6"/>
-<circle cx="720" cy="300" r="6" fill="#9a3412"/>
-<text class="sm halo" x="734" y="292">рычаг 90</text>
-<text class="sm halo" x="734" y="168">UCP204</text>
-<text class="lab halo" x="734" y="250">B, без мотора</text>
-
-<line x1="720" y1="412" x2="1000" y2="412" stroke="#1f6b4a" stroke-width="10" stroke-linecap="round"/>
-<text class="lab halo" x="860" y="398" text-anchor="middle">плечо B</text>
-<rect x="992" y="392" width="48" height="40" rx="3" fill="#f3d2c4" stroke="#8c3b14"/>
-<text class="sm halo" x="1016" y="384" text-anchor="middle">голова</text>
-
-<line x1="150" y1="176" x2="150" y2="430" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
-<line x1="150" y1="430" x2="150" y2="176" stroke="#9a3412" stroke-width="1.1" marker-end="url(#ad)"/>
-<text class="dim halo" x="136" y="310" text-anchor="end">200</text>
-
-<text class="sm" x="28" y="620">Тяга идёт средним ярусом. Кривошип мотора B сидит на оси A, на своём подшипнике, в плоскости тяги.</text>
-<text class="sm" x="28" y="642">На локте пара UCP204 и рычаг. Между опорами каретки около 200 мм: там шкив A и диск кривошипа.</text>
+  <defs
+     id="defs1">
+    <marker
+       id="ad"
+       viewBox="0 0 10 8"
+       refX="9"
+       refY="4"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto">
+      <path
+         d="M0,0 L10,4 L0,8 Z"
+         fill="#9a3412"
+         id="path1" />
+    </marker>
+    <pattern
+       id="hatch"
+       width="7"
+       height="7"
+       patternUnits="userSpaceOnUse"
+       patternTransform="rotate(40)">
+      <line
+         x1="0"
+         y1="0"
+         x2="0"
+         y2="7"
+         stroke="#9aa3ad"
+         stroke-width="1.1"
+         id="line1" />
+    </pattern>
+  </defs>
+  <text
+     class="title"
+     x="28.0"
+     y="36.0"
+     id="text1">Вид сбоку</text>
+  <text
+     class="sub"
+     x="28.0"
+     y="58.0"
+     id="text2">Пять ярусов сверху вниз. Плиты — треугольники на ярусе 2.</text>
+  <line
+     x1="28"
+     y1="70"
+     x2="1072"
+     y2="70"
+     stroke="#e0d6c6"
+     id="line2" />
+  <rect
+     x="36"
+     y="110"
+     width="34"
+     height="430"
+     fill="#e4ddd0"
+     stroke="#b7ad9e"
+     id="rect2" />
+  <text
+     class="sm"
+     transform="translate(52,330) rotate(-90)"
+     text-anchor="middle"
+     id="text3">стена</text>
+  <rect
+     x="70"
+     y="150"
+     width="28"
+     height="370"
+     fill="url(#hatch)"
+     stroke="#2a241e"
+     id="rect3" />
+  <text
+     class="sm"
+     x="84.0"
+     y="142.0"
+     text-anchor="middle"
+     id="text4">Z</text>
+  <rect
+     x="90"
+     y="188"
+     width="40"
+     height="20"
+     fill="#d5dde3"
+     stroke="#2a241e"
+     id="rect4" />
+  <rect
+     x="128"
+     y="128"
+     width="18"
+     height="210"
+     fill="#e4dccf"
+     stroke="#2a241e"
+     stroke-width="1.6"
+     id="rect5" />
+  <rect
+     x="112"
+     y="136"
+     width="50"
+     height="24"
+     rx="3"
+     fill="#d5e1f8"
+     stroke="#2456c4"
+     id="rect6" />
+  <rect
+     x="112"
+     y="302"
+     width="50"
+     height="24"
+     rx="3"
+     fill="#d5e1f8"
+     stroke="#2456c4"
+     id="rect7" />
+  <line
+     x1="168"
+     y1="148"
+     x2="168"
+     y2="326"
+     stroke="#5c6770"
+     stroke-width="6"
+     id="line7" />
+  <rect
+     x="196"
+     y="175"
+     width="92"
+     height="40"
+     rx="3"
+     fill="#e7f0d4"
+     stroke="#2a241e"
+     id="rect8" />
+  <text
+     class="sm"
+     x="242.0"
+     y="192.0"
+     text-anchor="middle"
+     id="text8">мотор A</text>
+  <text
+     class="sm"
+     x="242.0"
+     y="206.0"
+     text-anchor="middle"
+     id="text9">NEMA 34</text>
+  <rect
+     x="196"
+     y="218"
+     width="92"
+     height="24"
+     rx="3"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="rect9" />
+  <text
+     class="sm"
+     x="242.0"
+     y="234.0"
+     text-anchor="middle"
+     id="text10">редуктор A</text>
+  <rect
+     x="196"
+     y="250"
+     width="92"
+     height="40"
+     rx="3"
+     fill="#e7f0d4"
+     stroke="#2a241e"
+     id="rect10" />
+  <text
+     class="sm"
+     x="242.0"
+     y="267.0"
+     text-anchor="middle"
+     id="text11">мотор B</text>
+  <text
+     class="sm"
+     x="242.0"
+     y="281.0"
+     text-anchor="middle"
+     id="text12">NEMA 34</text>
+  <rect
+     x="196"
+     y="293"
+     width="92"
+     height="24"
+     rx="3"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="rect12" />
+  <text
+     class="sm"
+     x="242.0"
+     y="309.0"
+     text-anchor="middle"
+     id="text13">редуктор B</text>
+  <!-- ярус 1: верх A + изогнутые тяги -->
+  <line
+     x1="168.0"
+     y1="148.0"
+     x2="700.0"
+     y2="148.0"
+     stroke="#1e4d7b"
+     stroke-width="8"
+     stroke-linecap="butt"
+     id="line13" />
+  <text
+     class="lab halo"
+     x="430.0"
+     y="136.0"
+     text-anchor="middle"
+     id="text14">верх плеча A</text>
+  <polyline
+     points="205.0,162.0 430.0,156.0 700.0,162.0"
+     fill="none"
+     stroke="#6b3a1f"
+     stroke-width="5"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="polyline14" />
+  <text
+     class="sm halo"
+     x="430.0"
+     y="178.0"
+     text-anchor="middle"
+     id="text15">изогнутые тяги</text>
+  <!-- ярус 2: плиты -->
+  <polygon
+     points="148,186 198,186 248,210 198,210"
+     fill="#c4b49a"
+     fill-opacity="0.9"
+     stroke="#2a241e"
+     stroke-width="1.4"
+     id="polygon15" />
+  <text
+     class="sm halo"
+     x="250.0"
+     y="198.0"
+     id="text16">плита кривошипа</text>
+  <circle
+     cx="168"
+     cy="198"
+     r="10"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="circle16" />
+  <circle
+     cx="168"
+     cy="198"
+     r="3"
+     fill="#5c6770"
+     id="circle17" />
+  <polygon
+     points="676,186 790,186 790,214 700,214 676,214"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     stroke-width="1.4"
+     id="polygon17" />
+  <circle
+     cx="700"
+     cy="200"
+     r="8"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="circle18" />
+  <circle
+     cx="700"
+     cy="200"
+     r="2.5"
+     fill="#5c6770"
+     id="circle19" />
+  <text
+     class="sm halo"
+     x="708.0"
+     y="188.0"
+     id="text19">1</text>
+  <circle
+     cx="724"
+     cy="200"
+     r="8"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="circle20" />
+  <circle
+     cx="724"
+     cy="200"
+     r="2.5"
+     fill="#5c6770"
+     id="circle21" />
+  <text
+     class="sm halo"
+     x="732.0"
+     y="188.0"
+     id="text21">2</text>
+  <circle
+     cx="768"
+     cy="200"
+     r="8"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="circle22" />
+  <circle
+     cx="768"
+     cy="200"
+     r="2.5"
+     fill="#5c6770"
+     id="circle23" />
+  <text
+     class="sm halo"
+     x="776.0"
+     y="188.0"
+     id="text23">3</text>
+  <text
+     class="lab halo"
+     x="820.0"
+     y="206.0"
+     id="text24">плита локтя</text>
+  <!-- ярус 3: прямая тяга + верх Б -->
+  <line
+     x1="205.0"
+     y1="232.0"
+     x2="724.0"
+     y2="232.0"
+     stroke="#6b3a1f"
+     stroke-width="5"
+     stroke-linecap="round"
+     id="line24" />
+  <text
+     class="sm halo"
+     x="430.0"
+     y="224.0"
+     text-anchor="middle"
+     id="text25">прямая тяга</text>
+  <line
+     x1="700.0"
+     y1="246.0"
+     x2="980.0"
+     y2="246.0"
+     stroke="#1f6b4a"
+     stroke-width="8"
+     stroke-linecap="butt"
+     id="line25" />
+  <text
+     class="lab halo"
+     x="880.0"
+     y="238.0"
+     text-anchor="middle"
+     id="text26">верх плеча Б</text>
+  <!-- ярус 4: низ Б -->
+  <line
+     x1="700.0"
+     y1="278.0"
+     x2="980.0"
+     y2="278.0"
+     stroke="#1f6b4a"
+     stroke-width="8"
+     stroke-linecap="butt"
+     id="line26" />
+  <text
+     class="lab halo"
+     x="880.0"
+     y="298.0"
+     text-anchor="middle"
+     id="text27">низ плеча Б</text>
+  <!-- ярус 5: низ A -->
+  <line
+     x1="168.0"
+     y1="314.0"
+     x2="700.0"
+     y2="314.0"
+     stroke="#1e4d7b"
+     stroke-width="8"
+     stroke-linecap="butt"
+     id="line27" />
+  <text
+     class="lab halo"
+     x="430.0"
+     y="334.0"
+     text-anchor="middle"
+     id="text28">низ плеча A</text>
+  <!-- pins elbow -->
+  <line
+     x1="700"
+     y1="148"
+     x2="700"
+     y2="314"
+     stroke="#5c6770"
+     stroke-width="4"
+     id="line28" />
+  <rect
+     x="676"
+     y="136"
+     width="48"
+     height="22"
+     rx="3"
+     fill="#d5e1f8"
+     stroke="#2456c4"
+     id="rect28" />
+  <rect
+     x="676"
+     y="302"
+     width="48"
+     height="22"
+     rx="3"
+     fill="#d5e1f8"
+     stroke="#2456c4"
+     id="rect29" />
+  <!-- вынос Б bearing on upper B -->
+  <rect
+     x="638"
+     y="236"
+     width="34"
+     height="20"
+     rx="3"
+     fill="#d5e1f8"
+     stroke="#2456c4"
+     id="rect30" />
+  <circle
+     cx="655"
+     cy="246"
+     r="4"
+     fill="#5c6770"
+     id="circle30" />
+  <text
+     class="sm halo"
+     x="600.0"
+     y="258.0"
+     id="text30">вынос Б</text>
+  <!-- голова: справа пластина устройства, влево крепления -->
+  <rect
+     x="1008"
+     y="148"
+     width="18"
+     height="140"
+     rx="2"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     stroke-width="1.5"
+     id="rect31" />
+  <rect
+     x="1026"
+     y="168"
+     width="42"
+     height="88"
+     rx="3"
+     fill="#f3d2c4"
+     stroke="#8c3b14"
+     stroke-width="1.5"
+     id="rect32" />
+  <text
+     class="sm halo"
+     x="1047.0"
+     y="206.0"
+     text-anchor="middle"
+     id="text32">инструмент</text>
+  <line
+     x1="980"
+     y1="162"
+     x2="1008"
+     y2="162"
+     stroke="#c4b49a"
+     stroke-width="8"
+     stroke-linecap="round"
+     id="line32" />
+  <circle
+     cx="980"
+     cy="162"
+     r="8"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="circle32" />
+  <circle
+     cx="980"
+     cy="162"
+     r="2.5"
+     fill="#5c6770"
+     id="circle33" />
+  <text
+     class="sm halo"
+     x="948.0"
+     y="152.0"
+     text-anchor="end"
+     id="text33">тяга</text>
+  <line
+     x1="980"
+     y1="246"
+     x2="1008"
+     y2="262"
+     stroke="#c4b49a"
+     stroke-width="8"
+     stroke-linecap="round"
+     id="line33" />
+  <line
+     x1="980"
+     y1="278"
+     x2="1008"
+     y2="262"
+     stroke="#c4b49a"
+     stroke-width="8"
+     stroke-linecap="round"
+     id="line34" />
+  <circle
+     cx="980"
+     cy="246"
+     r="8"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="circle34" />
+  <circle
+     cx="980"
+     cy="246"
+     r="2.5"
+     fill="#5c6770"
+     id="circle35" />
+  <circle
+     cx="980"
+     cy="278"
+     r="8"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="circle36" />
+  <circle
+     cx="980"
+     cy="278"
+     r="2.5"
+     fill="#5c6770"
+     id="circle37" />
+  <polyline
+     points="768.0,162.0 880.0,168.0 980.0,162.0"
+     fill="none"
+     stroke="#8a5a32"
+     stroke-width="5"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="polyline37" />
+  <!-- layer legend -->
+  <text
+     class="sm"
+     x="28.0"
+     y="380.0"
+     id="text37">1 верх: изогнутые тяги и верх A. На пальце глаза 3 тяга Б на 2–3 мм ниже верха A — при складке не в одном пятне.</text>
+  <text
+     class="sm"
+     x="28.0"
+     y="398.0"
+     id="text38">2 плиты кривошипа, локтя и головы. 3 прямая тяга и верх Б. 4 низ Б. 5 низ A.</text>
+  <text
+     class="sm"
+     x="28.0"
+     y="416.0"
+     id="text39">Прямая тяга и верх Б — один ярус, сдвиг на глазе 2. Низ A под низом Б: в плане складка, по высоте разные ярусы.</text>
+  <text
+     class="sm"
+     x="28.0"
+     y="434.0"
+     id="text40">Справа пластина под устройство. Влево пальцы: изогнутая тяга (ярус 1) и плечо Б (ярусы 3–4).</text>
+  <line
+     x1="22"
+     y1="148"
+     x2="22"
+     y2="314"
+     stroke="#9a3412"
+     stroke-width="1.1"
+     marker-end="url(#ad)"
+     id="line40" />
+  <line
+     x1="22"
+     y1="314"
+     x2="22"
+     y2="148"
+     stroke="#9a3412"
+     stroke-width="1.1"
+     marker-end="url(#ad)"
+     id="line41" />
+  <text
+     class="dim halo"
+     x="18"
+     y="240"
+     text-anchor="end"
+     id="text41">~170</text>
+  <text
+     class="sm"
+     x="28.0"
+     y="456.0"
+     id="text42">Палец Ø12 сквозь ярусы, проставка между соседними. Плита локтя — треугольник, глаза 1 2 3 в одном листе.</text>
+  <text
+     class="sm"
+     x="28.0"
+     y="474.0"
+     id="text43">Уголок A разомкнут: верх на ярусе 1, низ на 5. Уголок Б сплошной на 3 и 4 после короткого выноса.</text>
+  <text
+     xml:space="preserve"
+     style="font-size:6.66667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;white-space:pre;inline-size:225.788"
+     x="760.68732"
+     y="360.51971"
+     id="text44"
+     transform="translate(101.70958,-41.075021)"><tspan
+       x="760.68732"
+       y="360.51971"
+       id="tspan1">ну бред же, справа на лево, у нас идет крепление инструмента на </tspan><tspan
+       x="760.68732"
+       y="368.85307"
+       id="tspan2">широкой пластине, от нее отступ и крепление плеча Б - левее, и </tspan><tspan
+       x="760.68732"
+       y="377.18641"
+       id="tspan3">еще левее, на 64мм кажется ты рисовал, крепление рычага Б, </tspan><tspan
+       x="760.68732"
+       y="385.51976"
+       id="tspan4">крепления плеча Б по аналогии с локтем и креплением плеча А</tspan></text>
 </svg>

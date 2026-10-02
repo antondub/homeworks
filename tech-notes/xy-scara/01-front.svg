@@ -18,7 +18,7 @@
   </pattern>
 </defs>
 <text class="title" x="28" y="36">Z синхронно, Y на каретке</text>
-<text class="sub" x="28" y="58">Вид спереди. Оси Z прикручены к стене. Каретка — ось Y, с неё выходит ось A в комнату.</text>
+<text class="sub" x="28" y="58">Вид спереди. Оси Z прикручены к стене. Каретка — ось Y. Ось A на переднем крае каретки.</text>
 <line x1="28" y1="70" x2="1072" y2="70" stroke="#e0d6c6"/>
 <rect x="110" y="96" width="860" height="470" fill="#e4ddd0" stroke="#b7ad9e"/>
 <text class="sm" x="550" y="520" text-anchor="middle">стена</text>
