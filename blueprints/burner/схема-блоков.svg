@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420">
+  <rect x="0" y="0" width="1100" height="420" fill="#f6f3ea"/>
+  <text x="28" y="36" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#241c16">Блоки: топливо, воздух, горелка, котел</text>
+  <text x="28" y="58" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" fill="#6b6258">Масло: бак - насос (полиамид) - фильтр (медь) - тройник (медь) - форсунка. Пары с бака на вход вентилятора.</text>
+  <line x1="28" y1="70" x2="1072" y2="70" stroke="#e0d6c6" stroke-width="1"/>
+  <rect x="28" y="100" width="150" height="120" rx="6" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.8"/>
+  <text x="103" y="132" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#241c16">бак</text>
+  <text x="103" y="154" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">слив 1/4</text>
+  <text x="103" y="172" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">уровень 1/4</text>
+  <text x="103" y="190" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">перелив 1/2</text>
+  <text x="103" y="208" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">горловина, поплавок</text>
+  <rect x="230" y="124" width="110" height="72" rx="6" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.8"/>
+  <text x="285" y="166" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#241c16">насос</text>
+  <rect x="392" y="124" width="110" height="72" rx="6" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.8"/>
+  <text x="447" y="166" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#241c16">фильтр</text>
+  <rect x="554" y="100" width="150" height="120" rx="6" fill="#d9d1c4" stroke="#2a241e" stroke-width="1.8"/>
+  <text x="629" y="148" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#241c16">тройник</text>
+  <text x="629" y="170" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">форсунка M10</text>
+  <text x="629" y="188" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">датчик давления</text>
+  <rect x="28" y="300" width="150" height="64" rx="6" fill="#cfc6b8" stroke="#2a241e" stroke-width="1.8"/>
+  <text x="103" y="338" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#241c16">вентилятор</text>
+  <rect x="392" y="300" width="150" height="64" rx="6" fill="#e8d3b0" stroke="#8c3b14" stroke-width="1.8"/>
+  <text x="467" y="338" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#241c16">горелка</text>
+  <rect x="760" y="280" width="170" height="104" rx="6" fill="#c5dcea" stroke="#2a241e" stroke-width="1.8"/>
+  <text x="845" y="328" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#241c16">котел</text>
+  <text x="845" y="350" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="12" fill="#3c342c">кега 30 л</text>
+  <path d="M 178,160 L 224,160" fill="none" stroke="#2a6f9b" stroke-width="2.2"/>
+  <polygon points="230,160 220,155 220,165" fill="#2a6f9b"/>
+  <text x="178" y="150" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="11" fill="#2a6f9b">полиамид</text>
+  <path d="M 340,160 L 386,160" fill="none" stroke="#c45c12" stroke-width="2.2"/>
+  <polygon points="392,160 382,155 382,165" fill="#c45c12"/>
+  <text x="340" y="150" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="11" fill="#c45c12">медь</text>
+  <path d="M 502,160 L 548,160" fill="none" stroke="#c45c12" stroke-width="2.2"/>
+  <polygon points="554,160 544,155 544,165" fill="#c45c12"/>
+  <text x="502" y="150" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="11" fill="#c45c12">медь</text>
+  <path d="M 103,220 L 103,294" fill="none" stroke="#6b6258" stroke-width="2" stroke-dasharray="6 5"/>
+  <polygon points="103,300 98,290 108,290" fill="#6b6258"/>
+  <text x="116" y="268" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="11" fill="#6b6258">пары</text>
+  <path d="M 178,332 L 386,332" fill="none" stroke="#2a6f9b" stroke-width="2.2"/>
+  <polygon points="392,332 382,327 382,337" fill="#2a6f9b"/>
+  <text x="230" y="322" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="11" fill="#2a6f9b">воздух</text>
+  <path d="M 629,220 L 629,332 L 754,332" fill="none" stroke="#9a3412" stroke-width="2.2"/>
+  <polygon points="760,332 750,327 750,337" fill="#9a3412"/>
+  <text x="640" y="280" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="11" fill="#9a3412">масло в чашу</text>
+  <path d="M 542,332 L 754,332" fill="none" stroke="#c45c12" stroke-width="2.4"/>
+  <text x="600" y="358" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="11" fill="#c45c12">факел</text>
+</svg>
