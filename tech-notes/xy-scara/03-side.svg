@@ -9,6 +9,7 @@
    inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -21,19 +22,22 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.533779"
-     inkscape:cx="422.8119"
-     inkscape:cy="412.70615"
+     inkscape:cx="451.17321"
+     inkscape:cy="196.24731"
      inkscape:window-width="2560"
      inkscape:window-height="1366"
      inkscape:window-x="0"
      inkscape:window-y="37"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg66" />
+     inkscape:current-layer="svg66"
+     showguides="false" />
   <rect
      width="100%"
      height="100%"
      fill="#f6f3ea"
-     id="rect1" />
+     id="rect1"
+     x="-0.97797656"
+     y="0.65198439" />
   <style
      id="style1">
   text { font-family: &quot;Liberation Sans&quot;, sans-serif; fill: #241c16; }
@@ -46,6 +50,11 @@
 </style>
   <defs
      id="defs1">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#hatch"
+       id="pattern1"
+       patternTransform="matrix(0.76604444,0.37410636,-0.64278761,0.4458426,-1.1022287e-6,30.699075)" />
     <marker
        id="ad"
        viewBox="0 0 10 8"
@@ -93,52 +102,44 @@
      stroke="#e0d6c6"
      id="line2" />
   <rect
-     x="36"
-     y="110"
-     width="34"
-     height="480"
-     fill="#e4ddd0"
-     stroke="#b7ad9e"
-     id="rect2" />
-  <text
-     class="sm"
-     transform="translate(52,300) rotate(-90)"
-     text-anchor="middle"
-     id="text3">стена</text>
-  <rect
      x="70"
-     y="150"
+     y="118"
      width="28"
-     height="450"
+     height="261.90277"
      fill="url(#hatch)"
      stroke="#2a241e"
-     id="rect3" />
-  <text
-     class="sm"
-     x="84.0"
-     y="142.0"
-     text-anchor="middle"
-     id="text4">Z</text>
+     id="rect3"
+     style="fill:url(#pattern1);stroke-width:1" />
   <rect
-     x="90"
-     y="188"
-     width="40"
+     x="89.999992"
+     y="146"
+     width="75.53315"
      height="20"
      fill="#d5dde3"
      stroke="#2a241e"
-     id="rect4" />
+     id="rect4"
+     style="stroke-width:1" />
+  <rect
+     x="89.999992"
+     y="339.383"
+     width="75.859138"
+     height="20"
+     fill="#d5dde3"
+     stroke="#2a241e"
+     id="rect4-6"
+     style="stroke-width:1" />
   <rect
      x="128"
-     y="128"
+     y="139.08372"
      width="18"
-     height="300"
+     height="224.52568"
      fill="#e4dccf"
      stroke="#2a241e"
      stroke-width="1.6"
      id="rect5" />
   <rect
      x="112"
-     y="120"
+     y="144"
      width="50"
      height="24"
      rx="3"
@@ -146,33 +147,45 @@
      stroke="#2456c4"
      id="rect6" />
   <rect
+     x="123.32397"
+     y="228.66931"
+     width="27.870914"
+     height="33.220451"
+     rx="1.6722549"
+     fill="#d5e1f8"
+     stroke="#2456c4"
+     id="rect6-0"
+     style="stroke-width:0.999998" />
+  <rect
+     x="117.95097"
+     y="237.27954"
+     width="121.42447"
+     height="8"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     id="rect57-3"
+     style="stroke-width:1" />
+  <rect
      x="112"
-     y="354"
+     y="337.383"
      width="50"
      height="24"
      rx="3"
      fill="#d5e1f8"
      stroke="#2456c4"
      id="rect7" />
-  <line
-     x1="168"
-     y1="118"
-     x2="168"
-     y2="380"
-     stroke="#5c6770"
-     stroke-width="6"
-     id="line7" />
   <rect
-     x="168"
-     y="240"
-     width="55"
+     x="70.871178"
+     y="246.46103"
+     width="152.12881"
      height="8"
      fill="#c4b49a"
      stroke="#2a241e"
-     id="rect8" />
+     id="rect8"
+     style="stroke-width:0.999999" />
   <rect
      x="208.8"
-     y="184"
+     y="190"
      width="28.5"
      height="56"
      rx="2"
@@ -181,7 +194,7 @@
      id="rect9" />
   <rect
      x="215"
-     y="240"
+     y="246.84743"
      width="16"
      height="7.5"
      rx="1"
@@ -190,37 +203,45 @@
      id="rect10" />
   <text
      class="sm halo"
-     x="252"
-     y="198"
-     id="text12">57HS112 B</text>
-  <text
-     class="sm halo"
-     x="252"
-     y="184"
+     x="240"
+     y="250"
      id="text13">обод B</text>
-  <text
-     class="sm halo"
-     x="300"
-     y="232"
-     id="text14">треугольник B</text>
   <line
-     x1="168"
-     y1="148.0"
-     x2="700"
-     y2="148.0"
+     x1="120.40514"
+     y1="174"
+     x2="283.23557"
+     y2="174"
      stroke="#1e4d7b"
-     stroke-width="8"
+     stroke-width="7.99993"
      stroke-linecap="butt"
      id="line16" />
+  <line
+     x1="612.39819"
+     y1="222.92206"
+     x2="687"
+     y2="222.92206"
+     stroke="#1e4d7b"
+     stroke-width="8.00001"
+     stroke-linecap="butt"
+     id="line16-1" />
+  <line
+     x1="279.24823"
+     y1="174.04089"
+     x2="615.63684"
+     y2="223.34222"
+     stroke="#1e4d7b"
+     stroke-width="8.00001"
+     stroke-linecap="butt"
+     id="line16-1-9" />
   <text
      class="lab halo"
      x="430"
-     y="136"
+     y="162"
      text-anchor="middle"
      id="text16">верх плеча A</text>
   <rect
-     x="132"
-     y="174"
+     x="74"
+     y="172"
      width="28"
      height="22"
      rx="3"
@@ -228,104 +249,68 @@
      stroke="#2456c4"
      id="rect16" />
   <circle
-     cx="146"
-     cy="185"
+     cx="88"
+     cy="183"
      r="5"
      fill="#5c6770"
      id="circle16" />
-  <line
-     x1="146"
-     y1="163"
-     x2="146"
-     y2="168.0"
-     stroke="#5c6770"
-     stroke-width="3"
-     id="line17" />
-  <circle
-     cx="146"
-     cy="164"
-     r="6"
-     fill="#efe8dc"
-     stroke="#2a241e"
-     id="circle17" />
-  <circle
-     cx="146"
-     cy="164"
-     r="2.2"
-     fill="#5c6770"
-     id="circle18" />
   <text
      class="sm halo"
      x="96"
-     y="114"
+     y="108"
      id="text18">подшипник</text>
   <line
-     x1="146"
-     y1="164"
-     x2="668"
-     y2="164"
+     x1="88.769173"
+     y1="182"
+     x2="667.73547"
+     y2="182"
      stroke="#6b3a1f"
      stroke-width="5"
      stroke-linecap="round"
      id="line18" />
   <circle
      cx="668"
-     cy="164"
+     cy="182"
      r="6"
      fill="#efe8dc"
      stroke="#2a241e"
      id="circle19" />
   <circle
      cx="668"
-     cy="164"
+     cy="182"
      r="2.2"
      fill="#5c6770"
      id="circle20" />
   <text
      class="sm halo"
-     x="480"
-     y="180"
+     x="557.58612"
+     y="171.55081"
      text-anchor="middle"
      id="text20">прямая тяга</text>
-  <line
-     x1="168"
-     y1="252.5"
-     x2="200"
-     y2="252.5"
-     stroke="#c4b49a"
-     stroke-width="10"
-     stroke-linecap="round"
-     id="line20" />
   <circle
-     cx="168"
-     cy="252.5"
-     r="6"
-     fill="#efe8dc"
-     stroke="#2a241e"
-     id="circle21" />
-  <circle
-     cx="168"
-     cy="252.5"
-     r="2.2"
+     cx="136"
+     cy="240.5"
+     r="4.8624058"
      fill="#5c6770"
-     id="circle22" />
+     id="circle22"
+     style="stroke-width:1" />
   <circle
-     cx="200"
-     cy="252.5"
+     cx="168"
+     cy="240.5"
      r="6"
      fill="#efe8dc"
      stroke="#2a241e"
      id="circle23" />
   <circle
-     cx="200"
-     cy="252.5"
+     cx="168"
+     cy="240.5"
      r="2.2"
      fill="#5c6770"
      id="circle24" />
   <line
-     x1="200"
+     x1="166.12727"
      y1="262.5"
-     x2="632"
+     x2="631.80652"
      y2="262.5"
      stroke="#8a5a32"
      stroke-width="5"
@@ -364,95 +349,62 @@
      x="575"
      y="238"
      id="text27">вынос Б</text>
-  <line
-     x1="654"
-     y1="268"
-     x2="699"
-     y2="268"
-     stroke="#9a3412"
-     stroke-width="1.1"
-     marker-end="url(#ad)"
-     id="line27" />
-  <line
-     x1="695"
-     y1="268"
-     x2="650"
-     y2="268"
-     stroke="#9a3412"
-     stroke-width="1.1"
-     marker-end="url(#ad)"
-     id="line28" />
-  <text
-     class="dim halo"
-     x="672.5"
-     y="264"
-     text-anchor="middle"
-     id="text28">90</text>
   <polygon
-     points="656,214 656,156 760,156 760,214 "
+     points="760,214 656,214 656,156 760,156 "
      fill="#c4b49a"
      stroke="#2a241e"
      stroke-width="3.37301"
      id="polygon31"
-     transform="matrix(1,0,0,0.17227467,0,143.10281)" />
-  <circle
-     cx="700"
-     cy="174"
-     r="8"
-     fill="#efe8dc"
-     stroke="#2a241e"
-     id="circle32" />
-  <circle
-     cx="700"
-     cy="174"
-     r="3"
-     fill="#5c6770"
-     id="circle33" />
+     transform="matrix(1,0,0,0.17227467,0,165.10281)" />
+  <rect
+     x="658.82166"
+     y="187.5"
+     width="18.920622"
+     height="20"
+     rx="1.2613748"
+     fill="#d5e1f8"
+     stroke="#2456c4"
+     id="rect24-1"
+     style="stroke-width:0.999999" />
+  <rect
+     x="690.53967"
+     y="187.5"
+     width="18.920622"
+     height="20"
+     rx="1.2613748"
+     fill="#d5e1f8"
+     stroke="#2456c4"
+     id="rect24-1-4"
+     style="stroke-width:0.999999" />
+  <rect
+     x="735.53961"
+     y="187.5"
+     width="18.920622"
+     height="20"
+     rx="1.2613748"
+     fill="#d5e1f8"
+     stroke="#2456c4"
+     id="rect24-1-8"
+     style="stroke-width:0.999999" />
   <text
      class="sm halo"
      x="708"
-     y="188"
+     y="198"
      id="text33">1</text>
-  <circle
-     cx="668"
-     cy="176"
-     r="8"
-     fill="#efe8dc"
-     stroke="#2a241e"
-     id="circle34" />
-  <circle
-     cx="668"
-     cy="176"
-     r="3"
-     fill="#5c6770"
-     id="circle35" />
   <text
      class="sm halo"
-     x="618"
-     y="148"
+     x="654.51111"
+     y="168.21152"
      id="text35">зад</text>
-  <circle
-     cx="745"
-     cy="174"
-     r="8"
-     fill="#efe8dc"
-     stroke="#2a241e"
-     id="circle36" />
-  <circle
-     cx="745"
-     cy="174"
-     r="3"
-     fill="#5c6770"
-     id="circle37" />
   <text
      class="sm halo"
-     x="768"
-     y="164"
+     x="732.79285"
+     y="166.13214"
      id="text37">перед</text>
   <text
      class="lab halo"
-     x="780"
-     y="148"
+     x="663.78394"
+     y="150.69266"
      id="text38">плита локтя</text>
   <line
      x1="632.04236"
@@ -463,26 +415,13 @@
      stroke-width="3"
      id="line38-6" />
   <line
-     x1="200.00504"
-     y1="252.18987"
-     x2="200.00504"
-     y2="266.18982"
+     x1="168.00504"
+     y1="240.83559"
+     x2="168.00504"
+     y2="263.95261"
      stroke="#5c6770"
-     stroke-width="3"
+     stroke-width="2.99999"
      id="line38-6-5" />
-  <circle
-     cx="745.0"
-     cy="186.0"
-     r="6"
-     fill="#efe8dc"
-     stroke="#2a241e"
-     id="circle38" />
-  <circle
-     cx="745.0"
-     cy="186.0"
-     r="2.2"
-     fill="#5c6770"
-     id="circle39" />
   <polyline
      points="745,186 840,186 928,186"
      fill="none"
@@ -490,7 +429,8 @@
      stroke-width="5"
      stroke-linecap="round"
      stroke-linejoin="round"
-     id="polyline39" />
+     id="polyline39"
+     transform="translate(0,-6)" />
   <line
      x1="655.0"
      y1="246.0"
@@ -507,27 +447,27 @@
      text-anchor="middle"
      id="text39">верх плеча Б</text>
   <line
-     x1="700.0"
-     y1="278.0"
-     x2="960.0"
-     y2="278.0"
+     x1="700"
+     y1="298"
+     x2="960"
+     y2="298"
      stroke="#1f6b4a"
      stroke-width="8"
      stroke-linecap="butt"
      id="line40" />
   <text
      class="lab halo"
-     x="820.0"
-     y="298.0"
+     x="820"
+     y="312"
      text-anchor="middle"
      id="text40">низ плеча Б</text>
   <line
-     x1="168"
+     x1="122.68709"
      y1="324"
-     x2="700"
+     x2="700.00006"
      y2="324"
      stroke="#1e4d7b"
-     stroke-width="8"
+     stroke-width="8.00001"
      stroke-linecap="butt"
      id="line41" />
   <text
@@ -536,17 +476,34 @@
      y="344"
      text-anchor="middle"
      id="text41">низ плеча A</text>
-  <line
-     x1="700"
-     y1="148.0"
-     x2="700"
-     y2="314.0"
-     stroke="#5c6770"
-     stroke-width="4"
-     id="line42" />
+  <g
+     id="line42"
+     style="fill:#1f6b4a;fill-opacity:1">
+    <path
+       style="fill:#1f6b4a;fill-opacity:1"
+       d="M 700,195.02431 V 314"
+       id="path12" />
+    <path
+       style="fill:#1f6b4a;fill-opacity:1"
+       d="M 698,195.02344 V 314 h 4 V 195.02344 Z"
+       id="path13" />
+  </g>
+  <g
+     id="line42-5"
+     style="fill:#e4dccf;fill-opacity:1;stroke-width:0.459563;stroke:#1f6b4a"
+     transform="matrix(7.1123539,0,0,0.66572366,-4278.7887,103.44151)">
+    <path
+       style="fill:#e4dccf;fill-opacity:1;stroke-width:0.459563;stroke:#1f6b4a"
+       d="M 700,195.02431 V 314"
+       id="path12-0" />
+    <path
+       style="fill:#e4dccf;fill-opacity:1;stroke-width:0.459563;stroke:#1f6b4a"
+       d="M 698,195.02344 V 314 h 4 V 195.02344 Z"
+       id="path13-3" />
+  </g>
   <rect
      x="676"
-     y="136"
+     y="212"
      width="48"
      height="22"
      rx="3"
@@ -564,16 +521,16 @@
      id="rect43" />
   <line
      x1="928"
-     y1="204"
+     y1="198"
      x2="982.5"
-     y2="204"
+     y2="198"
      stroke="#c4b49a"
      stroke-width="14"
      stroke-linecap="butt"
      id="line43" />
   <rect
      x="916"
-     y="194"
+     y="188"
      width="24"
      height="20"
      rx="2"
@@ -583,15 +540,15 @@
      id="rect44" />
   <line
      x1="928"
-     y1="186"
+     y1="179.66081"
      x2="928"
-     y2="198"
+     y2="207.79742"
      stroke="#5c6770"
      stroke-width="3"
      id="line44" />
   <rect
      x="982.5"
-     y="148"
+     y="186"
      width="58"
      height="140"
      rx="2"
@@ -601,7 +558,7 @@
      id="rect45" />
   <rect
      x="1040"
-     y="160"
+     y="236"
      width="48"
      height="110"
      rx="3"
@@ -612,7 +569,7 @@
   <text
      class="sm halo"
      x="1064"
-     y="218"
+     y="290"
      text-anchor="middle"
      id="text46">инструмент</text>
   <rect
@@ -625,8 +582,8 @@
      stroke="#2456c4"
      id="rect47" />
   <rect
-     x="936.0"
-     y="266"
+     x="936"
+     y="286"
      width="48"
      height="22"
      rx="3"
@@ -646,7 +603,8 @@
      stroke="#5c6770"
      stroke-width="3"
      stroke-linejoin="miter"
-     id="polyline49" />
+     id="polyline49"
+     transform="translate(0,20)" />
   <line
      x1="960.0"
      y1="234"
@@ -662,108 +620,86 @@
      fill="#5c6770"
      id="circle49" />
   <circle
-     cx="960.0"
-     cy="278"
+     cx="960"
+     cy="298"
      r="5"
      fill="#5c6770"
      id="circle50" />
   <circle
-     cx="928.0"
-     cy="186.0"
+     cx="928"
+     cy="180"
      r="6"
      fill="#efe8dc"
      stroke="#2a241e"
      id="circle51" />
   <circle
-     cx="928.0"
-     cy="186.0"
+     cx="928"
+     cy="180"
      r="2.2"
      fill="#5c6770"
      id="circle52" />
   <text
      class="sm halo"
-     x="888"
-     y="154"
+     x="837.28754"
+     y="169.83739"
      id="text52">рычаг</text>
   <line
      x1="928"
-     y1="178"
+     y1="186"
      x2="960"
-     y2="178"
+     y2="186"
      stroke="#9a3412"
      stroke-width="1.1"
      marker-end="url(#ad)"
      id="line52" />
   <line
      x1="960"
-     y1="178"
+     y1="186"
      x2="928"
-     y2="178"
+     y2="186"
      stroke="#9a3412"
      stroke-width="1.1"
      marker-end="url(#ad)"
      id="line53" />
   <text
      class="dim halo"
-     x="944.0"
-     y="174"
+     x="944"
+     y="182"
      text-anchor="middle"
      id="text53">64</text>
   <line
      x1="960"
-     y1="312"
+     y1="330"
      x2="982.5"
-     y2="312"
+     y2="330"
      stroke="#9a3412"
      stroke-width="1.1"
      marker-end="url(#ad)"
      id="line54" />
   <line
      x1="982.5"
-     y1="312"
+     y1="330"
      x2="960"
-     y2="312"
+     y2="330"
      stroke="#9a3412"
      stroke-width="1.1"
      marker-end="url(#ad)"
      id="line55" />
   <text
      class="dim halo"
-     x="971.2"
-     y="308"
+     x="971.20001"
+     y="326"
      text-anchor="middle"
      id="text55">45</text>
-  <line
-     x1="22"
-     y1="148.0"
-     x2="22"
-     y2="314.0"
-     stroke="#9a3412"
-     stroke-width="1.1"
-     marker-end="url(#ad)"
-     id="line56" />
-  <line
-     x1="22"
-     y1="314.0"
-     x2="22"
-     y2="148.0"
-     stroke="#9a3412"
-     stroke-width="1.1"
-     marker-end="url(#ad)"
-     id="line57" />
-  <text
-     class="dim halo"
-     x="8"
-     y="235.0"
-     id="text57">~170</text>
   <rect
-     x="168"
+     x="70.917526"
      y="328"
-     width="55"
+     width="152.08247"
      height="8"
      fill="#c4b49a"
      stroke="#2a241e"
-     id="rect57" />
+     id="rect57"
+     style="stroke-width:1" />
   <rect
      x="215"
      y="328"
@@ -784,12 +720,7 @@
      id="rect61" />
   <text
      class="sm halo"
-     x="250"
-     y="314"
-     id="text61">57HS112 A</text>
-  <text
-     class="sm halo"
-     x="250"
+     x="236"
      y="338"
      id="text62">шкив</text>
   <text
@@ -798,66 +729,191 @@
      y="350"
      id="text63">обод A</text>
   <line
-     x1="168"
-     y1="370"
-     x2="223"
-     y2="370"
-     stroke="#9a3412"
-     stroke-width="1.1"
-     marker-end="url(#ad)"
-     id="line63" />
-  <line
-     x1="223"
-     y1="370"
-     x2="168"
-     y2="370"
-     stroke="#9a3412"
-     stroke-width="1.1"
-     marker-end="url(#ad)"
-     id="line64" />
-  <text
-     class="dim halo"
-     x="195.5"
-     y="366"
-     text-anchor="middle"
-     id="text64">110</text>
-  <line
-     x1="244"
-     y1="275.74582"
-     x2="244"
-     y2="328.05438"
-     stroke="#9a3412"
-     stroke-width="1.1"
-     marker-end="url(#ad)"
-     id="line65" />
-  <line
-     x1="244"
-     y1="321.80945"
-     x2="244"
-     y2="273.88107"
-     stroke="#9a3412"
-     stroke-width="1.1"
-     marker-end="url(#ad)"
-     id="line66" />
-  <text
-     class="dim halo"
-     x="250"
-     y="304"
-     id="text66">112</text>
-  <line
-     x1="668"
-     y1="163.42622"
-     x2="668"
-     y2="176.85445"
+     x1="668.00006"
+     y1="182.52335"
+     x2="668.00006"
+     y2="207.24661"
      stroke="#5c6770"
      stroke-width="3"
      id="line19" />
+  <circle
+     cx="745"
+     cy="180"
+     r="6"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="circle38" />
+  <circle
+     cx="745"
+     cy="180"
+     r="2.2"
+     fill="#5c6770"
+     id="circle39" />
   <line
-     x1="745"
-     y1="174"
-     x2="745"
-     y2="188"
+     x1="744.99994"
+     y1="179.97858"
+     x2="744.99994"
+     y2="208.75249"
      stroke="#5c6770"
-     stroke-width="3"
+     stroke-width="3.00002"
      id="line38" />
+  <rect
+     style="font-variation-settings:normal;opacity:0.539094;vector-effect:none;fill:#1f6b4a;fill-opacity:1;fill-rule:evenodd;stroke-width:1.02774;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+     id="rect2"
+     width="11.792446"
+     height="58.945724"
+     x="418.38437"
+     y="706.57428"
+     rx="3.4451442"
+     transform="matrix(0.60463149,-0.79650534,0.5593884,0.82890568,0,0)" />
+  <rect
+     style="font-variation-settings:normal;opacity:0.491625;vector-effect:none;fill:#1e4d7b;fill-opacity:1;fill-rule:evenodd;stroke-width:1.11533;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+     id="rect2-0"
+     width="28.456802"
+     height="144.54546"
+     x="241.78815"
+     y="454.05917"
+     rx="8.3136082"
+     transform="matrix(0.47109108,-0.88208457,0.4289015,0.90335126,0,0)" />
+  <rect
+     style="font-variation-settings:normal;opacity:0.491625;vector-effect:none;fill:#1e4d7b;fill-opacity:1;fill-rule:evenodd;stroke-width:1.00427;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+     id="rect2-0-7"
+     width="17.398308"
+     height="84.684814"
+     x="-105.60715"
+     y="293.39267"
+     rx="5.0828872"
+     transform="matrix(0.77052011,-0.63741568,0.73207647,0.68122246,0,0)" />
+  <path
+     id="rect2-0-7-3"
+     style="font-variation-settings:normal;opacity:0.491625;vector-effect:none;fill:#1e4d7b;fill-opacity:1;fill-rule:evenodd;stroke-width:1.00002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+     d="m 178.64649,177.07031 -42.12501,38.12514 c -2.07884,1.8815 -2.00565,4.80173 0.16407,6.54752 l 5.57398,4.48358 c 2.16972,1.7458 5.58912,1.63672 7.66796,-0.24478 l 53.50391,-48.42607 -24.78516,-1e-5 z" />
+  <rect
+     style="font-variation-settings:normal;opacity:0.491625;vector-effect:none;fill:#1e4d7b;fill-opacity:1;fill-rule:evenodd;stroke-width:1.11533;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+     id="rect2-0-2"
+     width="28.456802"
+     height="144.54546"
+     x="-454.72214"
+     y="-226.58183"
+     rx="8.3136082"
+     transform="matrix(-0.47109108,-0.88208457,-0.4289015,0.90335126,0,0)" />
+  <rect
+     style="font-variation-settings:normal;opacity:0.491625;vector-effect:none;fill:#1e4d7b;fill-opacity:1;fill-rule:evenodd;stroke-width:1.05725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+     id="rect2-0-1"
+     width="24.457771"
+     height="123.1555"
+     x="313.46552"
+     y="556.83252"
+     rx="7.145298"
+     transform="matrix(0.54811805,-0.83640098,0.50339415,0.8640569,0,0)" />
+  <rect
+     style="font-variation-settings:normal;opacity:0.491625;vector-effect:none;fill:#1e4d7b;fill-opacity:1;fill-rule:evenodd;stroke-width:1.06838;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+     id="rect2-0-2-8"
+     width="25.253258"
+     height="127.42589"
+     x="-572.29248"
+     y="-310.49966"
+     rx="7.3776975"
+     transform="matrix(-0.53085216,-0.84746445,-0.48652411,0.87366715,0,0)" />
+  <rect
+     style="font-variation-settings:normal;opacity:0.491625;vector-effect:none;fill:#1e4d7b;fill-opacity:1;fill-rule:evenodd;stroke-width:1.01914;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+     id="rect2-0-1-9"
+     width="23.737036"
+     height="114.58725"
+     x="161.97179"
+     y="555.19788"
+     rx="6.9347363"
+     transform="matrix(0.81372452,-0.58125072,0.77954037,0.62635199,0,0)" />
+  <rect
+     style="font-variation-settings:normal;opacity:0.491625;vector-effect:none;fill:#1e4d7b;fill-opacity:1;fill-rule:evenodd;stroke-width:1.03347;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+     id="rect2-0-2-8-2"
+     width="22.646593"
+     height="113.39605"
+     x="-670.95563"
+     y="-370.2775"
+     rx="6.6161652"
+     transform="matrix(-0.59195417,-0.80597162,-0.54671891,0.83731621,0,0)" />
+  <rect
+     style="font-variation-settings:normal;vector-effect:none;fill:#1f6b4a;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;opacity:0.53909428"
+     id="rect2-5"
+     width="13.691672"
+     height="67.154396"
+     x="385.97302"
+     y="710.87744"
+     rx="4"
+     transform="rotate(-43.315792)" />
+  <rect
+     style="font-variation-settings:normal;vector-effect:none;fill:#1f6b4a;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;opacity:0.53909428"
+     id="rect2-56"
+     width="13.691672"
+     height="67.154396"
+     x="469.30576"
+     y="789.44958"
+     rx="4"
+     transform="rotate(-43.315792)" />
+  <rect
+     style="font-variation-settings:normal;vector-effect:none;fill:#1f6b4a;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;opacity:0.53909428"
+     id="rect2-56-9"
+     width="13.691672"
+     height="67.154396"
+     x="-731.42847"
+     y="-342.69009"
+     rx="4"
+     transform="matrix(-0.7275837,-0.68601892,-0.68601892,0.7275837,0,0)" />
+  <rect
+     style="font-variation-settings:normal;vector-effect:none;fill:#1f6b4a;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;opacity:0.53909428"
+     id="rect2-56-9-2"
+     width="13.691672"
+     height="67.154396"
+     x="-814.76117"
+     y="-421.26227"
+     rx="4"
+     transform="matrix(-0.7275837,-0.68601892,-0.68601892,0.7275837,0,0)" />
+  <rect
+     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#1e4d7b;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+     id="rect11"
+     width="3.3424146"
+     height="35.037716"
+     x="204.61949"
+     y="285.56284"
+     rx="1.148515" />
+  <rect
+     style="font-variation-settings:normal;vector-effect:none;fill:#1e4d7b;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+     id="rect11-9"
+     width="3.3424146"
+     height="35.037716"
+     x="238.1525"
+     y="285.56284"
+     rx="1.148515" />
+  <rect
+     style="font-variation-settings:normal;vector-effect:none;fill:#1e4d7b;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+     id="rect11-9-2"
+     width="3.3424146"
+     height="35.037716"
+     x="238.22716"
+     y="203.88475"
+     rx="1.148515" />
+  <rect
+     style="font-variation-settings:normal;vector-effect:none;fill:#1e4d7b;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+     id="rect11-9-2-9"
+     width="3.3424146"
+     height="35.037716"
+     x="204.65425"
+     y="203.88475"
+     rx="1.148515" />
+  <text
+     class="sm halo"
+     x="112.55448"
+     y="222.45813"
+     id="text14">треугольник B</text>
+  <text
+     class="sm halo"
+     x="242"
+     y="222"
+     id="text12">57HS112 B</text>
+  <text
+     class="sm halo"
+     x="244"
+     y="314"
+     id="text61">57HS112 A</text>
 </svg>
