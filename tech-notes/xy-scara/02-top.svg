@@ -1,52 +1,1097 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="800" viewBox="0 0 1100 800">
-<rect width="100%" height="100%" fill="#f6f3ea"/>
-<style>
-  text { font-family: "Liberation Sans", sans-serif; fill: #241c16; }
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1100"
+   height="720"
+   viewBox="0 0 1100 720"
+   version="1.1"
+   id="svg103"
+   sodipodi:docname="02-top.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview103"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0845455"
+     inkscape:cx="390.94719"
+     inkscape:cy="336.54652"
+     inkscape:window-width="2560"
+     inkscape:window-height="1366"
+     inkscape:window-x="0"
+     inkscape:window-y="37"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg103" />
+  <rect
+     width="100%"
+     height="100%"
+     fill="#f6f3ea"
+     id="rect1" />
+  <style
+     id="style1">
+  text { font-family: &quot;Liberation Sans&quot;, sans-serif; fill: #241c16; }
   .title { font-size: 22px; font-weight: 700; }
   .sub { font-size: 13px; fill: #6b6258; }
-  .lab { font-size: 14px; font-weight: 700; }
-  .sm { font-size: 12px; fill: #3c342c; }
+  .lab { font-size: 13px; font-weight: 700; }
+  .sm { font-size: 11px; fill: #3c342c; }
+  .dim { font-size: 12px; fill: #9a3412; font-weight: 700; }
   .halo { stroke: #f6f3ea; stroke-width: 4px; paint-order: stroke fill; }
 </style>
-<text class="title" x="28.0" y="36.0">Вид сверху</text>
-<text class="sub" x="28.0" y="58.0">Плиты кривошипа и локтя — треугольники. Ярусы: см. вид сбоку.</text>
-<line x1="28" y1="70" x2="1072" y2="70" stroke="#e0d6c6"/>
-<rect x="70" y="78" width="980" height="16" fill="#e4ddd0" stroke="#b7ad9e"/>
-<text class="sm" x="90.0" y="90.0">стена</text>
-<rect x="90" y="94" width="940" height="24" rx="4" fill="#d5dde3" stroke="#2a241e" stroke-width="1.6"/>
-<text class="sm halo" x="150.0" y="111.0">рельс Y</text>
-<rect x="300" y="96" width="200" height="88" rx="4" fill="#e4dccf" stroke="#2a241e" stroke-width="1.8"/>
-<text class="lab" x="400.0" y="118.0" text-anchor="middle">каретка</text>
-<text class="sm" x="400.0" y="140.0" text-anchor="middle">A и B на одной оси</text>
-<path d="M-50.0,215.0 A450.0,450.0 0 0 0 850.0,215.0" fill="none" stroke="#c4b8a4" stroke-width="1.5" stroke-dasharray="6 6"/>
-<line x1="-50.0" y1="215.0" x2="850.0" y2="215.0" stroke="#c4b8a4" stroke-width="1.1" stroke-dasharray="6 6"/>
-<path d="M285.0,215.0 A115.0,115.0 0 0 0 515.0,215.0" fill="none" stroke="#c4b8a4" stroke-width="1.2" stroke-dasharray="4 4"/>
-<text class="sm halo" x="880.0" y="250.0">900 мм</text>
-<text class="sm halo" x="240.0" y="250.0">230 мм</text>
-<polyline points="579.3,411.3 525.7,439.1 313.7,368.2" fill="none" stroke="#8a5a32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<line x1="419.0" y1="174.2" x2="557.5" y2="351.5" stroke="#6b3a1f" stroke-width="8" stroke-linecap="round"/>
-<polyline points="479.0,212.2 617.8,337.9 617.5,389.5" fill="none" stroke="#6b3a1f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-<line x1="400.0" y1="215.0" x2="538.5" y2="392.3" stroke="#1e4d7b" stroke-width="15" stroke-linecap="butt"/>
-<line x1="617.5" y1="389.5" x2="313.7" y2="400.2" stroke="#1f6b4a" stroke-width="15" stroke-linecap="butt"/>
-<line x1="538.5" y1="392.3" x2="557.5" y2="351.5" stroke="#c4b49a" stroke-width="20" stroke-linecap="round"/><line x1="538.5" y1="392.3" x2="579.3" y2="411.3" stroke="#c4b49a" stroke-width="20" stroke-linecap="round"/><line x1="557.5" y1="351.5" x2="579.3" y2="411.3" stroke="#c4b49a" stroke-width="20" stroke-linecap="round"/><polygon points="538.5,392.3 557.5,351.5 579.3,411.3" fill="#c4b49a" fill-opacity="0.35" stroke="none"/><circle cx="538.5" cy="392.3" r="18" fill="#c4b49a" stroke="#2a241e" stroke-width="1.6"/><circle cx="538.5" cy="392.3" r="10" fill="#efe8dc" stroke="#2a241e" stroke-width="1.7"/><circle cx="538.5" cy="392.3" r="3" fill="#5c6770"/><circle cx="557.5" cy="351.5" r="18" fill="#c4b49a" stroke="#2a241e" stroke-width="1.6"/><circle cx="557.5" cy="351.5" r="10" fill="#efe8dc" stroke="#2a241e" stroke-width="1.7"/><circle cx="557.5" cy="351.5" r="3" fill="#5c6770"/><circle cx="579.3" cy="411.3" r="18" fill="#c4b49a" stroke="#2a241e" stroke-width="1.6"/><circle cx="579.3" cy="411.3" r="10" fill="#efe8dc" stroke="#2a241e" stroke-width="1.7"/><circle cx="579.3" cy="411.3" r="3" fill="#5c6770"/>
-<line x1="400.0" y1="215.0" x2="419.0" y2="174.2" stroke="#c4b49a" stroke-width="18" stroke-linecap="round"/><line x1="400.0" y1="215.0" x2="479.0" y2="212.2" stroke="#c4b49a" stroke-width="18" stroke-linecap="round"/><line x1="419.0" y1="174.2" x2="479.0" y2="212.2" stroke="#c4b49a" stroke-width="18" stroke-linecap="round"/><polygon points="400.0,215.0 419.0,174.2 479.0,212.2" fill="#c4b49a" fill-opacity="0.35" stroke="none"/><circle cx="400.0" cy="215.0" r="16" fill="#c4b49a" stroke="#2a241e" stroke-width="1.6"/><circle cx="400.0" cy="215.0" r="10" fill="#efe8dc" stroke="#2a241e" stroke-width="1.7"/><circle cx="400.0" cy="215.0" r="3" fill="#5c6770"/><circle cx="419.0" cy="174.2" r="16" fill="#c4b49a" stroke="#2a241e" stroke-width="1.6"/><circle cx="419.0" cy="174.2" r="10" fill="#efe8dc" stroke="#2a241e" stroke-width="1.7"/><circle cx="419.0" cy="174.2" r="3" fill="#5c6770"/><circle cx="479.0" cy="212.2" r="16" fill="#c4b49a" stroke="#2a241e" stroke-width="1.6"/><circle cx="479.0" cy="212.2" r="10" fill="#efe8dc" stroke="#2a241e" stroke-width="1.7"/><circle cx="479.0" cy="212.2" r="3" fill="#5c6770"/>
-<rect x="600.5" y="378.5" width="34" height="22" rx="4" fill="#d5e1f8" stroke="#2456c4" stroke-width="1.5"/><circle cx="617.5" cy="389.5" r="8" fill="#efe8dc" stroke="#2a241e" stroke-width="1.7"/><circle cx="617.5" cy="389.5" r="2.6" fill="#5c6770"/>
-<line x1="313.7" y1="368.2" x2="313.7" y2="422.7" stroke="#c4b49a" stroke-width="18" stroke-linecap="round"/><line x1="277.7" y1="422.7" x2="349.7" y2="422.7" stroke="#c4b49a" stroke-width="18" stroke-linecap="round"/><rect x="291.7" y="414.7" width="44" height="16" rx="2" fill="#f3d2c4" stroke="#8c3b14"/><circle cx="313.7" cy="400.2" r="14" fill="#c4b49a" stroke="#2a241e" stroke-width="1.6"/><circle cx="313.7" cy="400.2" r="8" fill="#efe8dc" stroke="#2a241e" stroke-width="1.7"/><circle cx="313.7" cy="400.2" r="3" fill="#5c6770"/><circle cx="313.7" cy="368.2" r="14" fill="#c4b49a" stroke="#2a241e" stroke-width="1.6"/><circle cx="313.7" cy="368.2" r="8" fill="#efe8dc" stroke="#2a241e" stroke-width="1.7"/><circle cx="313.7" cy="368.2" r="3" fill="#5c6770"/>
-<text class="lab halo" x="382.0" y="220.0">A</text>
-<text class="sm halo" x="427.0" y="154.2">кривошип 90</text>
-<text class="sm halo" x="489.0" y="216.2">ось тяги</text>
-<text class="lab halo" x="430.0" y="330.0">плечо A</text>
-<text class="sm halo" x="555.0" y="338.0">прямая тяга</text>
-<text class="sm halo" x="530.0" y="285.0">изогнутая тяга</text>
-<text class="sm halo" x="532.5" y="420.3">1</text>
-<text class="sm halo" x="559.5" y="377.5">2</text>
-<text class="sm halo" x="589.3" y="419.3">3</text>
-<text class="sm halo" x="632.0" y="372.0">вынос Б</text>
-<text class="sm halo" x="632.0" y="388.0">подшипник</text>
-<text class="lab halo" x="426.1" y="430.2">плечо Б</text>
-<text class="sm halo" x="329.7" y="366.2">изогнутая тяга</text>
-<text class="sm halo" x="295.7" y="450.7">инструмент</text>
-<text class="sm" x="28.0" y="718.0">Плиты — треугольники: три бобышки, три ребра. Глаза локтя: 1 плечо A, 2 прямая тяга, 3 изогнутая тяга Б.</text>
-<text class="sm" x="28.0" y="740.0">Ярусы сверху: изогнутые тяги и верх A; плиты; прямая тяга и верх Б; низ Б; низ A.</text>
-<text class="sm" x="28.0" y="762.0">Складка: изогнутая тяга Б и верх A на одном ярусе — сдвиг по пальцу 2–3 мм, не в одном пятне.</text>
+  <defs
+     id="defs1">
+    <marker
+       id="ad"
+       viewBox="0 0 10 8"
+       refX="9"
+       refY="4"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto">
+      <path
+         d="M0,0 L10,4 L0,8 Z"
+         fill="#9a3412"
+         id="path1" />
+    </marker>
+    <pattern
+       id="hatch"
+       width="7"
+       height="7"
+       patternUnits="userSpaceOnUse"
+       patternTransform="rotate(40)">
+      <line
+         x1="0"
+         y1="0"
+         x2="0"
+         y2="7"
+         stroke="#9aa3ad"
+         stroke-width="1.1"
+         id="line1" />
+    </pattern>
+  </defs>
+  <text
+     class="title"
+     x="28"
+     y="36"
+     id="text1">Вид сверху</text>
+  <text
+     class="sub"
+     x="28"
+     y="56"
+     id="text2">Два мотора. Оба обода R=110. Вал B 110 мм от A. Мотор A на плече, B на треугольнике.</text>
+  <line
+     x1="28"
+     y1="68"
+     x2="1072"
+     y2="68"
+     stroke="#e0d6c6"
+     id="line2" />
+  <rect
+     x="70"
+     y="78"
+     width="980"
+     height="16"
+     fill="#e4ddd0"
+     stroke="#b7ad9e"
+     id="rect2" />
+  <text
+     class="sm"
+     x="90"
+     y="90"
+     id="text3">стена</text>
+  <rect
+     x="90"
+     y="94"
+     width="940"
+     height="24"
+     rx="4"
+     fill="#d5dde3"
+     stroke="#2a241e"
+     stroke-width="1.6"
+     id="rect3" />
+  <text
+     class="sm halo"
+     x="150"
+     y="111"
+     id="text4">рельс Y</text>
+  <rect
+     x="370"
+     y="96"
+     width="145.17183"
+     height="132"
+     rx="2.5247276"
+     fill="#e4dccf"
+     stroke="#2a241e"
+     stroke-width="1.8"
+     id="rect4" />
+  <text
+     class="lab"
+     x="400"
+     y="108"
+     text-anchor="middle"
+     id="text5">каретка</text>
+  <path
+     d="m -50,171 a 450,450 0 0 0 900,0"
+     fill="none"
+     stroke="#c4b8a4"
+     stroke-width="1.5"
+     stroke-dasharray="6, 6"
+     id="path5" />
+  <line
+     x1="-50"
+     y1="171"
+     x2="850"
+     y2="171"
+     stroke="#c4b8a4"
+     stroke-width="1.1"
+     stroke-dasharray="6, 6"
+     id="line5" />
+  <path
+     d="m 285,171 a 115,115 0 0 0 230,0"
+     fill="none"
+     stroke="#c4b8a4"
+     stroke-width="1.2"
+     stroke-dasharray="4, 4"
+     id="path6" />
+  <text
+     class="sm halo"
+     x="880"
+     y="206"
+     id="text6">900 мм</text>
+  <text
+     class="sm halo"
+     x="155"
+     y="206"
+     id="text7">230 мм</text>
+  <path
+     d="m 451.7,189.8 -0.9,2.2 -1,2.2 -1,2.2 -1.2,2.1 -1.2,2.1 -1.3,1.9 -1.5,2 -1.5,1.9 -1.5,1.8 -1.7,1.7 -1.7,1.7 -1.8,1.5 -1.9,1.5 -2,1.5 -1.9,1.3 -2.1,1.2 -2.1,1.2 -2.2,1 -2.2,1 -2.2,0.9 -2.3,0.8 -2.3,0.6 -2.3,0.6 -2.3,0.5 -2.4,0.3 -2.4,0.3 -2.4,0.1 -2.4,0.1 -2.4,-0.1 -2.4,-0.1 -2.4,-0.3 -2.4,-0.3 -2.3,-0.5 -2.3,-0.6 -2.3,-0.6 -2.3,-0.8 3.4,-9.4 1.9,0.6 1.9,0.6 1.9,0.4 1.9,0.4 1.9,0.3 2,0.2 1.9,0.2 h 2 2 l 1.9,-0.2 2,-0.2 1.9,-0.3 1.9,-0.4 1.9,-0.4 1.9,-0.6 1.9,-0.6 1.8,-0.7 1.8,-0.8 1.8,-0.9 1.7,-0.9 1.7,-1 1.6,-1.1 1.6,-1.2 1.5,-1.2 1.5,-1.3 1.4,-1.4 1.4,-1.4 1.3,-1.5 1.2,-1.5 1.2,-1.6 1.1,-1.6 1,-1.7 0.9,-1.7 0.9,-1.8 0.8,-1.8 0.7,-1.8 z"
+     fill="#c4b49a"
+     fill-opacity="0.85"
+     stroke="#2a241e"
+     stroke-width="1.1"
+     id="path7" />
+  <line
+     x1="450"
+     y1="189.2"
+     x2="453.79999"
+     y2="190.60001"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line7" />
+  <line
+     x1="447.20001"
+     y1="195.60001"
+     x2="450.70001"
+     y2="197.39999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line8" />
+  <line
+     x1="443.60001"
+     y1="201.5"
+     x2="446.89999"
+     y2="203.8"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line9" />
+  <line
+     x1="439.20001"
+     y1="206.89999"
+     x2="442.20001"
+     y2="209.60001"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line10" />
+  <line
+     x1="434.20001"
+     y1="211.8"
+     x2="436.79999"
+     y2="214.79999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line11" />
+  <line
+     x1="428.60001"
+     y1="215.89999"
+     x2="430.70001"
+     y2="219.20001"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line12" />
+  <line
+     x1="422.5"
+     y1="219.20001"
+     x2="424.20001"
+     y2="222.79999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line13" />
+  <line
+     x1="416"
+     y1="221.70001"
+     x2="417.20001"
+     y2="225.60001"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line14" />
+  <line
+     x1="409.20001"
+     y1="223.39999"
+     x2="409.89999"
+     y2="227.29999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line15" />
+  <line
+     x1="402.29999"
+     y1="224.10001"
+     x2="402.5"
+     y2="228.10001"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line16" />
+  <line
+     x1="395.39999"
+     y1="224"
+     x2="395"
+     y2="228"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line17" />
+  <line
+     x1="388.5"
+     y1="222.89999"
+     x2="387.60001"
+     y2="226.79999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line18" />
+  <line
+     x1="381.79999"
+     y1="221"
+     x2="380.39999"
+     y2="224.79999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line19" />
+  <rect
+     x="483.37436"
+     y="20.363142"
+     width="12"
+     height="7"
+     rx="1.2"
+     fill="#5c6770"
+     transform="rotate(20)"
+     id="rect19" />
+  <rect
+     x="72.891449"
+     y="-437.87848"
+     width="12"
+     height="7"
+     rx="1.2"
+     fill="#5c6770"
+     transform="rotate(110)"
+     id="rect20" />
+  <line
+     x1="400"
+     y1="171"
+     x2="436"
+     y2="196.2"
+     stroke="#2a241e"
+     stroke-width="0.9"
+     id="line20" />
+  <line
+     x1="400"
+     y1="171"
+     x2="418.60001"
+     y2="210.89999"
+     stroke="#2a241e"
+     stroke-width="0.9"
+     id="line21" />
+  <line
+     x1="400"
+     y1="171"
+     x2="396.20001"
+     y2="214.79999"
+     stroke="#2a241e"
+     stroke-width="0.9"
+     id="line22" />
+  <path
+     d="m 482.5,218.6 -1.4,0.8 -1.4,0.7 -1.5,0.7 -1.4,0.7 -1.5,0.6 -1.5,0.6 -1.5,0.5 -1.5,0.5 -1.6,0.4 -1.5,0.4 -1.6,0.4 -1.5,0.3 -1.6,0.2 -1.6,0.2 -1.6,0.2 -1.6,0.1 -1.6,0.1 h -1.6 -1.6 l -1.6,-0.1 -1.6,-0.1 -1.6,-0.2 -1.6,-0.2 -1.6,-0.2 -1.5,-0.3 -1.6,-0.4 -1.5,-0.4 -1.6,-0.4 -1.5,-0.5 -1.5,-0.5 -1.5,-0.6 -1.5,-0.6 -1.4,-0.7 -1.5,-0.7 -1.4,-0.7 -1.4,-0.8 5,-8.6 1.1,0.6 1.2,0.6 1.2,0.6 1.2,0.5 1.2,0.5 1.2,0.5 1.2,0.4 1.3,0.4 1.3,0.4 1.2,0.3 1.3,0.3 1.3,0.2 1.3,0.2 1.3,0.2 1.3,0.1 1.3,0.1 1.3,0.1 h 1.3 1.3 l 1.3,-0.1 1.3,-0.1 1.3,-0.1 1.3,-0.2 1.3,-0.2 1.3,-0.2 1.3,-0.3 1.2,-0.3 1.3,-0.4 1.3,-0.4 1.2,-0.4 1.2,-0.5 1.2,-0.5 1.2,-0.5 1.2,-0.6 1.2,-0.6 1.1,-0.6 z"
+     fill="#c4b49a"
+     fill-opacity="0.85"
+     stroke="#2a241e"
+     stroke-width="1.1"
+     id="path22" />
+  <line
+     x1="481.60001"
+     y1="217.10001"
+     x2="483.60001"
+     y2="220.5"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line23" />
+  <line
+     x1="477.5"
+     y1="219.20001"
+     x2="479.20001"
+     y2="222.79999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line24" />
+  <line
+     x1="473.20001"
+     y1="221"
+     x2="474.60001"
+     y2="224.79999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line25" />
+  <line
+     x1="468.79999"
+     y1="222.39999"
+     x2="469.79999"
+     y2="226.29999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line26" />
+  <line
+     x1="464.20001"
+     y1="223.39999"
+     x2="464.89999"
+     y2="227.29999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line27" />
+  <line
+     x1="459.60001"
+     y1="224"
+     x2="460"
+     y2="228"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line28" />
+  <line
+     x1="455"
+     y1="224.20001"
+     x2="455"
+     y2="228.20001"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line29" />
+  <line
+     x1="450.39999"
+     y1="224"
+     x2="450"
+     y2="228"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line30" />
+  <line
+     x1="445.79999"
+     y1="223.39999"
+     x2="445.10001"
+     y2="227.29999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line31" />
+  <line
+     x1="441.20001"
+     y1="222.39999"
+     x2="440.20001"
+     y2="226.29999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line32" />
+  <line
+     x1="436.79999"
+     y1="221"
+     x2="435.39999"
+     y2="224.79999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line33" />
+  <line
+     x1="432.5"
+     y1="219.20001"
+     x2="430.79999"
+     y2="222.79999"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line34" />
+  <line
+     x1="428.39999"
+     y1="217.10001"
+     x2="426.39999"
+     y2="220.5"
+     stroke="#6b3a1f"
+     stroke-width="0.9"
+     id="line35" />
+  <rect
+     x="424.56305"
+     y="-312.05725"
+     width="12"
+     height="7"
+     rx="1.2"
+     fill="#5c6770"
+     transform="rotate(60)"
+     id="rect35" />
+  <rect
+     x="-30.43684"
+     y="-483.02585"
+     width="12"
+     height="7"
+     rx="1.2"
+     fill="#5c6770"
+     transform="rotate(120)"
+     id="rect36" />
+  <line
+     x1="455"
+     y1="171"
+     x2="470"
+     y2="212.29999"
+     stroke="#2a241e"
+     stroke-width="0.9"
+     id="line36" />
+  <line
+     x1="455"
+     y1="171"
+     x2="455"
+     y2="215"
+     stroke="#2a241e"
+     stroke-width="0.9"
+     id="line37" />
+  <line
+     x1="455"
+     y1="171"
+     x2="440"
+     y2="212.29999"
+     stroke="#2a241e"
+     stroke-width="0.9"
+     id="line38" />
+  <circle
+     cx="455"
+     cy="171"
+     r="45"
+     fill="none"
+     stroke="#8a5a32"
+     stroke-width="1.1"
+     stroke-dasharray="4, 4"
+     id="circle38" />
+  <text
+     class="sm halo"
+     x="250"
+     y="231"
+     id="text38">обод A 90°</text>
+  <text
+     class="sm halo"
+     x="528"
+     y="274"
+     id="text39">обод B 60°</text>
+  <text
+     class="sm halo"
+     x="508"
+     y="162"
+     id="text40">глаз 3</text>
+  <polygon
+     points="455,273 500,215 455,215 "
+     fill="#c4b49a"
+     fill-opacity="0.4"
+     stroke="#c4b49a"
+     stroke-width="14"
+     stroke-linejoin="round"
+     id="polygon40"
+     transform="translate(0,-44)" />
+  <polygon
+     points="435.4,272.1 426.1,260.1 437.4,251.2 446.8,263.2 "
+     fill="#efe8dc"
+     stroke="#2a241e"
+     stroke-width="1"
+     id="polygon42"
+     transform="translate(0,-44)" />
+  <rect
+     x="436.84711"
+     y="-216.94698"
+     width="14"
+     height="14"
+     rx="1.5"
+     fill="#e7f0d4"
+     stroke="#2a241e"
+     transform="rotate(52)"
+     id="rect42" />
+  <circle
+     cx="435.70001"
+     cy="216.70001"
+     r="4.8000002"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="circle42" />
+  <circle
+     cx="435.70001"
+     cy="216.70001"
+     r="1.3"
+     fill="#5c6770"
+     id="circle43" />
+  <circle
+     cx="438.70001"
+     cy="210.8"
+     r="3.5999999"
+     fill="#f4f1ea"
+     stroke="#2a241e"
+     id="circle44" />
+  <circle
+     cx="438.70001"
+     cy="210.8"
+     r="1.1"
+     fill="#5c6770"
+     id="circle45" />
+  <circle
+     cx="429.29999"
+     cy="218.20001"
+     r="3.5999999"
+     fill="#f4f1ea"
+     stroke="#2a241e"
+     id="circle46" />
+  <circle
+     cx="429.29999"
+     cy="218.20001"
+     r="1.1"
+     fill="#5c6770"
+     id="circle47" />
+  <polygon
+     points="447.8,281.8 447.8,266.6 462.2,266.6 462.2,281.8 "
+     fill="#efe8dc"
+     stroke="#2a241e"
+     stroke-width="1"
+     id="polygon47"
+     transform="translate(0,-44)" />
+  <rect
+     x="226.79999"
+     y="-462"
+     width="14"
+     height="14"
+     rx="1.5"
+     fill="#e7f0d4"
+     stroke="#2a241e"
+     transform="rotate(90)"
+     id="rect47" />
+  <circle
+     cx="455"
+     cy="229"
+     r="4.8000002"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="circle48" />
+  <circle
+     cx="455"
+     cy="229"
+     r="1.3"
+     fill="#5c6770"
+     id="circle49" />
+  <circle
+     cx="461"
+     cy="226.20001"
+     r="3.5999999"
+     fill="#f4f1ea"
+     stroke="#2a241e"
+     id="circle50" />
+  <circle
+     cx="461"
+     cy="226.20001"
+     r="1.1"
+     fill="#5c6770"
+     id="circle51" />
+  <circle
+     cx="449"
+     cy="226.20001"
+     r="3.5999999"
+     fill="#f4f1ea"
+     stroke="#2a241e"
+     id="circle52" />
+  <circle
+     cx="449"
+     cy="226.20001"
+     r="1.1"
+     fill="#5c6770"
+     id="circle53" />
+  <circle
+     cx="400"
+     cy="171"
+     r="10"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     stroke-width="1.2"
+     id="circle54" />
+  <circle
+     cx="400"
+     cy="171"
+     r="3.5"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="circle55" />
+  <circle
+     cx="400"
+     cy="171"
+     r="1.3"
+     fill="#5c6770"
+     id="circle56" />
+  <circle
+     cx="455"
+     cy="171"
+     r="10"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     stroke-width="1.2"
+     id="circle57" />
+  <circle
+     cx="455"
+     cy="171"
+     r="3.5"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="circle58" />
+  <circle
+     cx="455"
+     cy="171"
+     r="1.3"
+     fill="#5c6770"
+     id="circle59" />
+  <circle
+     cx="500"
+     cy="171"
+     r="8"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     id="circle60" />
+  <circle
+     cx="500"
+     cy="171"
+     r="3"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="circle61" />
+  <circle
+     cx="500"
+     cy="171"
+     r="1.4"
+     fill="#5c6770"
+     id="circle62" />
+  <text
+     class="sm halo"
+     x="298"
+     y="248"
+     id="text62">мотор A</text>
+  <text
+     class="sm halo"
+     x="470"
+     y="234"
+     id="text63">мотор B</text>
+  <line
+     x1="400"
+     y1="171"
+     x2="538.5"
+     y2="348.29999"
+     stroke="#1e4d7b"
+     stroke-width="15"
+     stroke-linecap="butt"
+     id="line63"
+     style="opacity:0.472753" />
+  <line
+     x1="583.5"
+     y1="346.70001"
+     x2="313.70001"
+     y2="356.20001"
+     stroke="#1f6b4a"
+     stroke-width="15"
+     stroke-linecap="butt"
+     id="line64" />
+  <line
+     x1="400"
+     y1="126"
+     x2="538.5"
+     y2="303.29999"
+     stroke="#6b3a1f"
+     stroke-width="8"
+     stroke-linecap="round"
+     id="line65"
+     style="opacity:0.472753" />
+  <line
+     x1="500"
+     y1="171"
+     x2="583.5"
+     y2="346.70001"
+     stroke="#8a5a32"
+     stroke-width="7"
+     stroke-linecap="round"
+     id="line66"
+     style="opacity:0.472753" />
+  <polyline
+     points="493.6,393.9 403.6,417.0 313.7,368.2"
+     fill="none"
+     stroke="#6b3a1f"
+     stroke-width="8"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="polyline66"
+     transform="translate(0,-44)" />
+  <line
+     x1="538.5"
+     y1="348.29999"
+     x2="538.5"
+     y2="303.29999"
+     stroke="#c4b49a"
+     stroke-width="20"
+     stroke-linecap="round"
+     id="line67" />
+  <line
+     x1="538.5"
+     y1="348.29999"
+     x2="493.60001"
+     y2="349.89999"
+     stroke="#c4b49a"
+     stroke-width="20"
+     stroke-linecap="round"
+     id="line68" />
+  <line
+     x1="538.5"
+     y1="303.29999"
+     x2="493.60001"
+     y2="349.89999"
+     stroke="#c4b49a"
+     stroke-width="20"
+     stroke-linecap="round"
+     id="line69" />
+  <polygon
+     points="538.5,347.3 493.6,393.9 538.5,392.3 "
+     fill="#c4b49a"
+     fill-opacity="0.35"
+     stroke="none"
+     id="polygon69"
+     transform="translate(0,-44)" />
+  <circle
+     cx="538.5"
+     cy="348.29999"
+     r="18"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     stroke-width="1.6"
+     id="circle69" />
+  <circle
+     cx="538.5"
+     cy="348.29999"
+     r="10"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     stroke-width="1.7"
+     id="circle70" />
+  <circle
+     cx="538.5"
+     cy="348.29999"
+     r="3"
+     fill="#5c6770"
+     id="circle71" />
+  <circle
+     cx="538.5"
+     cy="303.29999"
+     r="18"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     stroke-width="1.6"
+     id="circle72" />
+  <circle
+     cx="538.5"
+     cy="303.29999"
+     r="10"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     stroke-width="1.7"
+     id="circle73" />
+  <circle
+     cx="538.5"
+     cy="303.29999"
+     r="3"
+     fill="#5c6770"
+     id="circle74" />
+  <circle
+     cx="493.60001"
+     cy="349.89999"
+     r="18"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     stroke-width="1.6"
+     id="circle75" />
+  <circle
+     cx="493.60001"
+     cy="349.89999"
+     r="10"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     stroke-width="1.7"
+     id="circle76" />
+  <circle
+     cx="493.60001"
+     cy="349.89999"
+     r="3"
+     fill="#5c6770"
+     id="circle77" />
+  <rect
+     x="384"
+     y="155"
+     width="32"
+     height="32"
+     rx="4"
+     fill="#d5e1f8"
+     stroke="#2456c4"
+     stroke-width="1.5"
+     id="rect77" />
+  <circle
+     cx="400"
+     cy="171"
+     r="10"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     stroke-width="1.7"
+     id="circle78" />
+  <circle
+     cx="400"
+     cy="171"
+     r="3"
+     fill="#5c6770"
+     id="circle79" />
+  <rect
+     x="386"
+     y="112"
+     width="28"
+     height="28"
+     rx="4"
+     fill="#d5e1f8"
+     stroke="#2456c4"
+     stroke-width="1.5"
+     id="rect79" />
+  <circle
+     cx="400"
+     cy="126"
+     r="8"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     stroke-width="1.7"
+     id="circle80" />
+  <circle
+     cx="400"
+     cy="126"
+     r="2.5999999"
+     fill="#5c6770"
+     id="circle81" />
+  <rect
+     x="566.5"
+     y="335.70001"
+     width="34"
+     height="22"
+     rx="4"
+     fill="#d5e1f8"
+     stroke="#2456c4"
+     stroke-width="1.5"
+     id="rect81" />
+  <circle
+     cx="583.5"
+     cy="346.70001"
+     r="8"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     stroke-width="1.7"
+     id="circle82" />
+  <circle
+     cx="583.5"
+     cy="346.70001"
+     r="2.5999999"
+     fill="#5c6770"
+     id="circle83" />
+  <line
+     x1="313.70001"
+     y1="324.20001"
+     x2="313.70001"
+     y2="356.20001"
+     stroke="#c4b49a"
+     stroke-width="18"
+     stroke-linecap="round"
+     id="line83" />
+  <line
+     x1="277.70001"
+     y1="378.70001"
+     x2="349.70001"
+     y2="378.70001"
+     stroke="#c4b49a"
+     stroke-width="18"
+     stroke-linecap="round"
+     id="line84" />
+  <rect
+     x="291.70001"
+     y="370.70001"
+     width="44"
+     height="16"
+     rx="2"
+     fill="#f3d2c4"
+     stroke="#8c3b14"
+     id="rect84" />
+  <circle
+     cx="313.70001"
+     cy="356.20001"
+     r="14"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     stroke-width="1.6"
+     id="circle84" />
+  <circle
+     cx="313.70001"
+     cy="356.20001"
+     r="8"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     stroke-width="1.7"
+     id="circle85" />
+  <circle
+     cx="313.70001"
+     cy="356.20001"
+     r="3"
+     fill="#5c6770"
+     id="circle86" />
+  <circle
+     cx="313.70001"
+     cy="324.20001"
+     r="14"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     stroke-width="1.6"
+     id="circle87" />
+  <circle
+     cx="313.70001"
+     cy="324.20001"
+     r="8"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     stroke-width="1.7"
+     id="circle88" />
+  <circle
+     cx="313.70001"
+     cy="324.20001"
+     r="3"
+     fill="#5c6770"
+     id="circle89" />
+  <text
+     class="lab halo"
+     x="382"
+     y="175"
+     text-anchor="end"
+     id="text89">A</text>
+  <text
+     class="lab halo"
+     x="470"
+     y="166"
+     id="text90">B</text>
+  <text
+     class="sm halo"
+     x="416"
+     y="160"
+     id="text91">подшипник</text>
+  <text
+     class="lab halo"
+     x="430"
+     y="306"
+     id="text92">плечо A</text>
+  <text
+     class="sm halo"
+     x="412"
+     y="274"
+     id="text93">прямая тяга</text>
+  <text
+     class="sm halo"
+     x="628"
+     y="274"
+     id="text94">тяга B</text>
+  <text
+     class="sm halo"
+     x="548.5"
+     y="370.29999"
+     id="text95">1</text>
+  <text
+     class="sm halo"
+     x="548.5"
+     y="295.29999"
+     id="text96">зад</text>
+  <text
+     class="sm halo"
+     x="485.60001"
+     y="371.89999"
+     text-anchor="end"
+     id="text97">перед</text>
+  <text
+     class="sm halo"
+     x="599.5"
+     y="338.70001"
+     id="text98">хвост Б</text>
+  <text
+     class="lab halo"
+     x="430"
+     y="396"
+     id="text99">плечо Б</text>
+  <text
+     class="sm halo"
+     x="305.70001"
+     y="406.70001"
+     text-anchor="end"
+     id="text100">инструмент</text>
+  <line
+     x1="400"
+     y1="157"
+     x2="455"
+     y2="157"
+     stroke="#9a3412"
+     stroke-width="1.1"
+     marker-end="url(#ad)"
+     id="line100" />
+  <line
+     x1="455"
+     y1="157"
+     x2="400"
+     y2="157"
+     stroke="#9a3412"
+     stroke-width="1.1"
+     marker-end="url(#ad)"
+     id="line101" />
+  <text
+     class="dim halo"
+     x="427"
+     y="152"
+     text-anchor="middle"
+     id="text101">110</text>
+  <line
+     x1="455"
+     y1="184"
+     x2="500"
+     y2="184"
+     stroke="#9a3412"
+     stroke-width="1.1"
+     marker-end="url(#ad)"
+     id="line102" />
+  <line
+     x1="500"
+     y1="184"
+     x2="455"
+     y2="184"
+     stroke="#9a3412"
+     stroke-width="1.1"
+     marker-end="url(#ad)"
+     id="line103" />
+  <text
+     class="dim halo"
+     x="478"
+     y="198"
+     text-anchor="middle"
+     id="text103">90</text>
 </svg>

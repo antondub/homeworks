@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1100"
+   height="640"
+   viewBox="0 0 1100 640"
+   version="1.1"
+   id="svg28"
+   sodipodi:docname="06-drive.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview28"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0845455"
+     inkscape:cx="534.32523"
+     inkscape:cy="375.27242"
+     inkscape:window-width="2560"
+     inkscape:window-height="1366"
+     inkscape:window-x="0"
+     inkscape:window-y="37"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg28" />
+  <rect
+     width="100%"
+     height="100%"
+     fill="#f6f3ea"
+     id="rect1"
+     x="0"
+     y="-1.8440906" />
+  <style
+     id="style1">
+  text { font-family: &quot;Liberation Sans&quot;, sans-serif; fill: #241c16; }
+  .title { font-size: 22px; font-weight: 700; }
+  .sub { font-size: 13px; fill: #6b6258; }
+  .lab { font-size: 14px; font-weight: 700; }
+  .sm { font-size: 12px; fill: #3c342c; }
+  .dim { font-size: 12px; fill: #9a3412; font-weight: 700; }
+  .halo { stroke: #f6f3ea; stroke-width: 4px; paint-order: stroke fill; }
+</style>
+  <defs
+     id="defs1">
+    <marker
+       id="ad"
+       viewBox="0 0 10 8"
+       refX="9"
+       refY="4"
+       markerWidth="8"
+       markerHeight="6"
+       orient="auto">
+      <path
+         d="M0,0 L10,4 L0,8 Z"
+         fill="#9a3412"
+         id="path1" />
+    </marker>
+  </defs>
+  <text
+     class="title"
+     x="28"
+     y="36"
+     id="text1">Узел Ременной Передачи</text>
+  <text
+     class="sub"
+     x="28"
+     y="56"
+     id="text2">Одна штука. Сверху и сбоку. Кусок обода 10°.</text>
+  <line
+     x1="28"
+     y1="68"
+     x2="1072"
+     y2="68"
+     stroke="#e0d6c6"
+     id="line2" />
+  <text
+     class="lab"
+     x="280"
+     y="96"
+     text-anchor="middle"
+     id="text3">сверху</text>
+  <path
+     d="M211.6,391.1 L221.0,387.9 L230.6,385.2 L240.4,383.0 L250.2,381.2 L260.1,380.0 L270.0,379.2 L280.0,379.0 L290.0,379.2 L299.9,380.0 L309.8,381.2 L319.6,383.0 L329.4,385.2 L339.0,387.9 L348.4,391.1 L342.2,408.0 L333.6,405.1 L324.9,402.6 L316.1,400.6 L307.1,399.0 L298.1,397.9 L289.1,397.2 L280.0,397.0 L270.9,397.2 L261.9,397.9 L252.9,399.0 L243.9,400.6 L235.1,402.6 L226.4,405.1 L217.8,408.0 Z"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     stroke-width="1.2"
+     id="path3" />
+  <line
+     x1="211.6"
+     y1="391.1"
+     x2="209.9"
+     y2="386.4"
+     stroke="#6b3a1f"
+     stroke-width="1.4"
+     id="line3" />
+  <line
+     x1="224.9"
+     y1="386.7"
+     x2="223.5"
+     y2="381.9"
+     stroke="#6b3a1f"
+     stroke-width="1.4"
+     id="line4" />
+  <line
+     x1="238.4"
+     y1="383.4"
+     x2="237.4"
+     y2="378.5"
+     stroke="#6b3a1f"
+     stroke-width="1.4"
+     id="line5" />
+  <line
+     x1="252.2"
+     y1="380.9"
+     x2="251.5"
+     y2="376.0"
+     stroke="#6b3a1f"
+     stroke-width="1.4"
+     id="line6" />
+  <line
+     x1="266.0"
+     y1="379.5"
+     x2="265.7"
+     y2="374.5"
+     stroke="#6b3a1f"
+     stroke-width="1.4"
+     id="line7" />
+  <line
+     x1="280.0"
+     y1="379.0"
+     x2="280.0"
+     y2="374.0"
+     stroke="#6b3a1f"
+     stroke-width="1.4"
+     id="line8" />
+  <line
+     x1="294.0"
+     y1="379.5"
+     x2="294.3"
+     y2="374.5"
+     stroke="#6b3a1f"
+     stroke-width="1.4"
+     id="line9" />
+  <line
+     x1="307.8"
+     y1="380.9"
+     x2="308.5"
+     y2="376.0"
+     stroke="#6b3a1f"
+     stroke-width="1.4"
+     id="line10" />
+  <line
+     x1="321.6"
+     y1="383.4"
+     x2="322.6"
+     y2="378.5"
+     stroke="#6b3a1f"
+     stroke-width="1.4"
+     id="line11" />
+  <line
+     x1="335.1"
+     y1="386.7"
+     x2="336.5"
+     y2="381.9"
+     stroke="#6b3a1f"
+     stroke-width="1.4"
+     id="line12" />
+  <line
+     x1="348.4"
+     y1="391.1"
+     x2="350.1"
+     y2="386.4"
+     stroke="#6b3a1f"
+     stroke-width="1.4"
+     id="line13" />
+  <path
+     d="M 130.21588,404.75339 208,381 c 23.38972,-7.14265 31,-15.87917 31,-33 l -2,-47 c 0,-24.85283 18.14719,-42.99998 43,-42.99998 24.85281,0 43,18.14715 43,42.99998 l -2,49 c 0,17.12083 11.09021,25.00347 31,31 l 77.78412,23.42739"
+     fill="none"
+     stroke="#6b3a1f"
+     stroke-width="3.8"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path13"
+     sodipodi:nodetypes="csccsccsc" />
+  <rect
+     x="208.8"
+     y="227.8"
+     width="142.5"
+     height="142.5"
+     fill="#e7f0d4"
+     fill-opacity="0.22"
+     stroke="#2a241e"
+     id="rect14" />
+  <circle
+     cx="280"
+     cy="301"
+     r="40"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     stroke-width="1.6"
+     id="circle13" />
+  <circle
+     cx="280"
+     cy="301"
+     r="3"
+     fill="#5c6770"
+     id="circle14" />
+  <text
+     class="sm halo"
+     x="280"
+     y="245"
+     text-anchor="middle"
+     id="text14">57HS112</text>
+  <text
+     class="sm halo"
+     x="330"
+     y="291"
+     id="text15">шкив 20T</text>
+  <circle
+     cx="210"
+     cy="350"
+     r="26"
+     fill="#f4f1ea"
+     stroke="#2a241e"
+     stroke-width="1.3"
+     id="circle15" />
+  <circle
+     cx="210"
+     cy="350"
+     r="2.4000001"
+     fill="#5c6770"
+     id="circle16" />
+  <circle
+     cx="350"
+     cy="350"
+     r="26"
+     fill="#f4f1ea"
+     stroke="#2a241e"
+     stroke-width="1.3"
+     id="circle17" />
+  <circle
+     cx="350"
+     cy="350"
+     r="2.4000001"
+     fill="#5c6770"
+     id="circle18" />
+  <text
+     class="sm halo"
+     x="208"
+     y="314"
+     text-anchor="middle"
+     id="text18">ролик</text>
+  <text
+     class="sm halo"
+     x="352"
+     y="320"
+     text-anchor="middle"
+     id="text19">ролик</text>
+  <text
+     class="sm halo"
+     x="265.69119"
+     y="409.46249"
+     id="text20">обод</text>
+  <line
+     x1="208.8"
+     y1="214"
+     x2="351.20001"
+     y2="214"
+     stroke="#9a3412"
+     stroke-width="1.1"
+     marker-end="url(#ad)"
+     id="line20" />
+  <line
+     x1="351.20001"
+     y1="214"
+     x2="208.8"
+     y2="214"
+     stroke="#9a3412"
+     stroke-width="1.1"
+     marker-end="url(#ad)"
+     id="line21" />
+  <text
+     class="dim halo"
+     x="280"
+     y="210"
+     text-anchor="middle"
+     id="text21">57</text>
+  <text
+     class="lab"
+     x="820"
+     y="96"
+     text-anchor="middle"
+     id="text22">сбоку</text>
+  <rect
+     x="760.0"
+     y="70.0"
+     width="142.5"
+     height="280.0"
+     rx="3"
+     fill="#e7f0d4"
+     stroke="#2a241e"
+     id="rect22" />
+  <text
+     class="sm halo"
+     x="910.5"
+     y="88.0"
+     id="text23">57HS112</text>
+  <rect
+     x="744.0"
+     y="350.0"
+     width="174.5"
+     height="20.0"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     id="rect23" />
+  <text
+     class="sm halo"
+     x="742.0"
+     y="344.0"
+     text-anchor="end"
+     id="text24">лист 8</text>
+  <rect
+     x="791.2"
+     y="370.0"
+     width="80.0"
+     height="37.5"
+     rx="1"
+     fill="#efe8dc"
+     stroke="#2a241e"
+     id="rect24" />
+  <text
+     class="sm halo"
+     x="808.3089"
+     y="426.88181"
+     id="text25">шкив Ø32×15</text>
+  <rect
+     x="737.20001"
+     y="369.5"
+     width="50"
+     height="37.5"
+     rx="1"
+     fill="#f4f1ea"
+     stroke="#2a241e"
+     id="rect25" />
+  <rect
+     x="875.20001"
+     y="369.5"
+     width="50"
+     height="37.5"
+     rx="1"
+     fill="#f4f1ea"
+     stroke="#2a241e"
+     id="rect26" />
+  <text
+     class="sm halo"
+     x="731.85748"
+     y="396.30637"
+     text-anchor="end"
+     id="text26">ролик</text>
+  <rect
+     x="748"
+     y="377"
+     width="166.5"
+     height="20"
+     rx="1"
+     fill="#c4b49a"
+     stroke="#2a241e"
+     id="rect27" />
+  <text
+     class="sm halo"
+     x="831.20001"
+     y="391"
+     text-anchor="middle"
+     id="text27">обод</text>
+  <line
+     x1="912.5"
+     y1="70.0"
+     x2="912.5"
+     y2="350.0"
+     stroke="#9a3412"
+     stroke-width="1.1"
+     marker-end="url(#ad)"
+     id="line27" />
+  <line
+     x1="912.5"
+     y1="350.0"
+     x2="912.5"
+     y2="70.0"
+     stroke="#9a3412"
+     stroke-width="1.1"
+     marker-end="url(#ad)"
+     id="line28" />
+  <text
+     class="dim halo"
+     x="918.5"
+     y="210.0"
+     id="text28">112</text>
+</svg>
