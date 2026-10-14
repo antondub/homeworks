@@ -23,8 +23,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.3180912"
-     inkscape:cx="698.35835"
-     inkscape:cy="461.27309"
+     inkscape:cx="569.00463"
+     inkscape:cy="472.65318"
      inkscape:window-width="2560"
      inkscape:window-height="1366"
      inkscape:window-x="0"
@@ -645,6 +645,22 @@
        dy="0.38em"
        id="text34">12</text>
   </g>
+  <g
+     id="n12-3"
+     transform="translate(552.7,407.7)"
+     style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
+    <circle
+       r="14"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.4"
+       id="circle34-6"
+       cx="0"
+       cy="0" />
+    <text
+       dy="0.38em"
+       id="text34-7">15</text>
+  </g>
   <!-- легенда -->
   <text
      x="830"
@@ -1072,5 +1088,33 @@
     <text
        dy="0.38em"
        id="text67">13</text>
+  </g>
+  <path
+     style="fill:#666666;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 358.85226,405.51064 c -22.44467,17.41612 -24.11993,23.27682 -25.03621,39.64065 l 0.0797,12.73089 c 2.28463,11.14784 3.39759,22.59944 18.88707,30.3238 l 49.88274,18.20814 1.32768,-125.56035 z"
+     id="path1"
+     sodipodi:nodetypes="ccccccc" />
+  <g
+     id="n11-3"
+     transform="translate(376.7,449.7)"
+     style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
+    <circle
+       r="14"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.4"
+       id="circle33-6"
+       cx="0"
+       cy="0" />
+    <text
+       dy="0.38em"
+       id="text33-7">14</text>
+    <rect
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1;stroke:none"
+       id="rect9"
+       width="7.510478"
+       height="199.02766"
+       x="153.86165"
+       y="-129.96822" />
   </g>
 </svg>
