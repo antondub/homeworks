@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    width="1280"
-   height="700"
-   viewBox="0 0 1280 700"
+   height="740"
+   viewBox="0 0 1280 740"
    version="1.1"
    id="svg63"
    sodipodi:docname="горизонталка_номера.svg"
@@ -35,7 +35,7 @@
      x="0"
      y="0"
      width="1280"
-     height="700"
+     height="740"
      fill="#f6f3ea"
      id="rect1" />
   <text
@@ -52,7 +52,7 @@
      font-family="Liberation Sans, DejaVu Sans, sans-serif"
      font-size="13"
      fill="#6b6258"
-     id="text2">Квадрат 100×100, вставка с чашей и Вентури, фланец, конус вторички, круглая труба Ø100. Подача топлива сверху через штуцер.</text>
+     id="text2">Квадрат 100×100, вставка с чашей и Вентури, фланец, кожух циклона, круглая труба Ø100. Подача топлива сверху через штуцер.</text>
   <line
      x1="28"
      y1="70"
@@ -717,7 +717,7 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text40">канал из чаши в Вентури</text>
+         id="text40">Канал из чаши в Вентури</text>
     </g>
     <g
        transform="translate(830,182)"
@@ -739,7 +739,7 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text42">подача воздуха к эжекции</text>
+         id="text42">Сопло Вентури</text>
     </g>
     <g
        transform="translate(830,210)"
@@ -761,7 +761,7 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text44">штуцер, подача топлива в чашу</text>
+         id="text44">Штуцер, подача топлива в чашу</text>
     </g>
     <g
        transform="translate(830,238)"
@@ -783,7 +783,7 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text46">низ чаши и верхняя половинка Вентури</text>
+         id="text46">Низ чаши и верхняя половинка Вентури</text>
     </g>
     <g
        transform="translate(830,266)"
@@ -805,7 +805,7 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text48">засос горячего воздуха из циклонки в чашу</text>
+         id="text48">Засос горячего воздуха из циклонки в чашу</text>
     </g>
     <g
        transform="translate(830,294)"
@@ -827,7 +827,7 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text50">вырез во фланце под смотровое</text>
+         id="text50">Вырез во фланце под смотровое</text>
     </g>
     <g
        transform="translate(830,322)"
@@ -849,7 +849,7 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text52">конус, рубашка вторичного воздуха</text>
+         id="text52">Кожух третьей ступени, свой фланец</text>
     </g>
     <g
        transform="translate(830,350)"
@@ -871,7 +871,7 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text54">проход во фланце из короба в конус</text>
+         id="text54">Щель 80×15 из короба в кожух</text>
     </g>
     <g
        transform="translate(830,378)"
@@ -893,7 +893,7 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text56">труба 45° от улитки в короб</text>
+         id="text56">Труба 45° от улитки в короб</text>
     </g>
     <g
        transform="translate(830,406)"
@@ -915,7 +915,7 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text58">дополнительные лопатки в круглой трубе</text>
+         id="text58">Верхняя лопатка после Вентури</text>
     </g>
     <g
        transform="translate(830,434)"
@@ -937,7 +937,7 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text60">ряд циклона (отверстия под углом)</text>
+         id="text60">Двенадцать отверстий Ø2.5, закрутка факела</text>
     </g>
     <g
        transform="translate(830,462)"
@@ -959,11 +959,55 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text62">стояк из короба в нижний канал 100×100</text>
+         id="text62">Три отверстия Ø20 под 90° в Вентури</text>
+    </g>
+    <g
+       transform="translate(830,490)"
+       id="g64">
+      <circle
+         r="10"
+         fill="#c45c12"
+         stroke="#2a241e"
+         stroke-width="1.1"
+         id="circle62" />
+      <text
+         fill="#ffffff"
+         font-size="11"
+         font-weight="700"
+         text-anchor="middle"
+         dy="0.35em"
+         id="text68">14</text>
+      <text
+         x="22"
+         y="4"
+         fill="#3c342c"
+         id="text69">Пластина 2.5 мм: снизу точки, сверху провар с двух сторон</text>
+    </g>
+    <g
+       transform="translate(830,518)"
+       id="g65">
+      <circle
+         r="10"
+         fill="#c45c12"
+         stroke="#2a241e"
+         stroke-width="1.1"
+         id="circle63" />
+      <text
+         fill="#ffffff"
+         font-size="11"
+         font-weight="700"
+         text-anchor="middle"
+         dy="0.35em"
+         id="text70">15</text>
+      <text
+         x="22"
+         y="4"
+         fill="#3c342c"
+         id="text71">Крест из полосы 2.5 мм перед отверстиями циклона</text>
     </g>
     <text
        x="0"
-       y="510"
+       y="566"
        transform="translate(830,0)"
        fill="#241c16"
        font-size="16"
@@ -971,7 +1015,7 @@
        font-family="Liberation Sans, DejaVu Sans, sans-serif"
        id="text35">Потоки</text>
     <g
-       transform="translate(830,536)"
+       transform="translate(830,592)"
        fill="#3c342c"
        font-size="13"
        font-family="Liberation Sans, DejaVu Sans, sans-serif"
@@ -987,7 +1031,7 @@
       <text
          x="30"
          y="4"
-         id="text63">воздух</text>
+         id="text63">Воздух</text>
       <line
          x1="0"
          y1="24"
@@ -999,7 +1043,7 @@
       <text
          x="30"
          y="28"
-         id="text64">топливо</text>
+         id="text64">Топливо</text>
       <line
          x1="0"
          y1="48"
@@ -1011,7 +1055,7 @@
       <text
          x="30"
          y="52"
-         id="text-vap">пары</text>
+         id="text-vap">Пары</text>
       <line
          x1="0"
          y1="72"
@@ -1023,7 +1067,7 @@
       <text
          x="30"
          y="76"
-         id="text65">смесь, богатая</text>
+         id="text65">Смесь, богатая</text>
       <line
          x1="0"
          y1="96"
@@ -1043,7 +1087,7 @@
       <text
          x="30"
          y="100"
-         id="text66">факел: оранжевый → светлый у циклона</text>
+         id="text66">Факел: оранжевый → светлый у циклона</text>
     </g>
   </g>
   <line
