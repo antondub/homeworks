@@ -63,7 +63,7 @@
      id="line2" />
   <!-- полость тракта -->
   <path
-     d="M 50,318.5 H 790 V 520.5 H 50 Z"
+     d="M 50,318.5 H 431 L 448.2,254 575,318.5 h 215 v 202 H 575 L 448.2,585 431,520.5 H 50 Z"
      fill="#f3e4c8"
      stroke="none"
      id="path2" />
@@ -116,7 +116,19 @@
      stroke="#2a241e"
      stroke-width="1.5"
      id="rect6" />
-  <!-- конус у фланца снят: вместо пары пластин одна верхняя (20) левее -->
+  <!-- конус / рубашка -->
+  <path
+     d="M 448.2,247.5 575,312 v 6.5 L 448.2,254 Z"
+     fill="#d9d1c4"
+     stroke="#2a241e"
+     stroke-width="1.6"
+     id="path6" />
+  <path
+     d="M 448.2,585 575,520.5 v 6.5 l -126.8,64.5 z"
+     fill="#d9d1c4"
+     stroke="#2a241e"
+     stroke-width="1.6"
+     id="path7" />
   <!-- круглая труба -->
   <rect
      x="442.23227"
@@ -272,8 +284,20 @@
        fill-opacity="0.22"
        stroke="none" />
     <path
+       id="fill-jacket-top"
+       d="M 448.2,247.5 575,312 v 6.5 L 448.2,254 Z"
+       fill="#2a6f9b"
+       fill-opacity="0.28"
+       stroke="none" />
+    <path
+       id="fill-jacket-bot"
+       d="M 448.2,585 575,520.5 v 6.5 l -126.8,64.5 z"
+       fill="#2a6f9b"
+       fill-opacity="0.28"
+       stroke="none" />
+    <path
        id="fill-bowl"
-       d="M 122,424 V 472 H 314 V 424 Z"
+       d="M 122,428 V 472 H 400 V 428 Z"
        fill="#e08940"
        fill-opacity="0.28"
        stroke="none" />
@@ -328,7 +352,7 @@
          id="path29"
          sodipodi:nodetypes="cccc" />
       <path
-         d="M 470,500 H 640"
+         d="M 465,548 V 280 c 37.31827,4.62696 70.64026,21.38674 79.34389,29.6546"
          id="path30"
          sodipodi:nodetypes="ccc" />
     </g>
@@ -382,7 +406,7 @@
   <!-- вставка v2 -->
   <path
      id="gap-under"
-     d="M 70,480 H 410 V 516 H 70 Z"
+     d="M 80,482 H 400 V 516 H 80 Z"
      fill="#2a6f9b"
      fill-opacity="0.16"
      stroke="none" />
@@ -395,9 +419,10 @@
      fill="#f3e4c8"
      stroke="#2a241e"
      stroke-width="1.2" />
+  <path id="seal-v2" d="M 405,476 V 518" fill="none" stroke="#2a241e" stroke-width="3.4" stroke-linecap="round" />
   <path
      id="bowl-v2"
-     d="M 118,320 V 476 H 318 V 420"
+     d="M 118,320 V 476 H 405 V 420"
      fill="none"
      stroke="#2a241e"
      stroke-width="3.4"
@@ -427,85 +452,85 @@
      fill="#cfc6b8"
      stroke="#2a241e"
      stroke-width="1.5">
-    <rect x="386" y="266" width="14" height="62" rx="1" />
-    <rect x="378" y="258" width="30" height="9" rx="1" />
+    <rect x="414" y="266" width="12" height="62" rx="1" />
+    <rect x="408" y="258" width="24" height="9" rx="1" />
   </g>
   <text
      x="36"
-     y="96"
+     y="100"
      font-family="Liberation Sans, DejaVu Sans, sans-serif"
      font-size="13"
      fill="#3c342c"
-     id="note-v2">Вставка v2: чаша уже канала, воздух снизу и по бокам.</text>
+     id="note-v2">Вставка v2. Воздух только через отверстия.</text>
   <text
      x="36"
-     y="114"
+     y="118"
      font-family="Liberation Sans, DejaVu Sans, sans-serif"
      font-size="13"
      fill="#3c342c"
-     id="note-ign">Розжиг — салфетка в чаше. Без газа и без электроподжига.</text>
+     id="note-ign">Розжиг — салфетка в чаше, без газа.</text>
   <text
      x="36"
-     y="132"
+     y="136"
      font-family="Liberation Sans, DejaVu Sans, sans-serif"
      font-size="13"
      fill="#3c342c"
-     id="note-pri">Сзади отверстия не в плоскости разреза — прямоугольники 18 и 19.</text>
+     id="note-pri">Задние отверстия — прямоугольники на левой стенке.</text>
   <g
      id="n16"
-     transform="translate(230,455)"
+     transform="translate(260,458)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
     <circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4" cx="0" cy="0" />
-    <text dy="0.38em">16</text>
+    <text dy="0.38em">9</text>
   </g>
   <g
      id="n17"
-     transform="translate(370,498)"
+     transform="translate(300,500)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
     <circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4" cx="0" cy="0" />
-    <text dy="0.38em">17</text>
+    <text dy="0.38em">10</text>
   </g>
   <g
      id="n18"
-     transform="translate(250,400)"
+     transform="translate(300,408)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
     <circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4" cx="0" cy="0" />
-    <text dy="0.38em">18</text>
+    <text dy="0.38em">11</text>
   </g>
   <g
      id="n19"
-     transform="translate(78,292)"
+     transform="translate(160,348)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
     <circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4" cx="0" cy="0" />
-    <text dy="0.38em">19</text>
+    <text dy="0.38em">12</text>
   </g>
   <g
      id="n20"
-     transform="translate(300,300)"
+     transform="translate(330,300)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
     <circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4" cx="0" cy="0" />
-    <text dy="0.38em">20</text>
+    <text dy="0.38em">13</text>
   </g>
   <g
      id="n21"
-     transform="translate(424,242)"
+     transform="translate(392,248)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
     <circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4" cx="0" cy="0" />
-    <text dy="0.38em">21</text>
+    <text dy="0.38em">14</text>
   </g>
   <g id="side-holes" fill="#f6f3ea" stroke="#2a6f9b" stroke-width="1.3">
-    <circle cx="146" cy="434" r="2.6" />
-    <circle cx="168" cy="434" r="2.6" />
-    <circle cx="190" cy="434" r="2.6" />
-    <circle cx="212" cy="434" r="2.6" />
-    <circle cx="234" cy="434" r="2.6" />
-    <circle cx="256" cy="434" r="2.6" />
+    <circle cx="155" cy="434" r="2.6" />
+    <circle cx="186" cy="434" r="2.6" />
+    <circle cx="216" cy="434" r="2.6" />
+    <circle cx="247" cy="434" r="2.6" />
     <circle cx="278" cy="434" r="2.6" />
-    <circle cx="300" cy="434" r="2.6" />
+    <circle cx="309" cy="434" r="2.6" />
+    <circle cx="339" cy="434" r="2.6" />
+    <circle cx="370" cy="434" r="2.6" />
   </g>
-  <rect id="rear-pri" x="62" y="488" width="28" height="14" rx="1" fill="#f3e4c8" stroke="#2a6f9b" stroke-width="1.4" />
-  <rect id="rear-sec" x="46" y="324" width="34" height="14" rx="1" fill="#f3e4c8" stroke="#2a6f9b" stroke-width="1.4" />
-  <path id="guide-v2" d="M 210,328 L 360,348" fill="none" stroke="#2a241e" stroke-width="3.6" stroke-linecap="round" />
+  <rect id="rear-pri" x="102" y="428" width="16" height="12" rx="1" fill="#f3e4c8" stroke="#2a6f9b" stroke-width="1.4" />
+  <rect id="rear-sec" x="102" y="324" width="16" height="12" rx="1" fill="#f3e4c8" stroke="#2a6f9b" stroke-width="1.4" />
+  <path id="guide-v2" d="M 255,328 L 405,348" fill="none" stroke="#2a241e" stroke-width="3.6" stroke-linecap="round" />
   <!-- номера -->
   <g
      id="n1"
@@ -539,7 +564,7 @@
        cy="0" />
     <text
        dy="0.38em"
-       id="text26">4</text>
+       id="text26">8</text>
   </g>
   
   
@@ -557,11 +582,11 @@
        cy="0" />
     <text
        dy="0.38em"
-       id="text29">7</text>
+       id="text29">2</text>
   </g>
   <g
      id="n8"
-     transform="translate(520,360)"
+     transform="translate(476,290)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
     <circle
        r="14"
@@ -573,7 +598,7 @@
        cy="0" />
     <text
        dy="0.38em"
-       id="text30">8</text>
+       id="text30">3</text>
   </g>
   <g
      id="n9"
@@ -589,7 +614,7 @@
        cy="0" />
     <text
        dy="0.38em"
-       id="text31">9</text>
+       id="text31">4</text>
   </g>
   <g
      id="n10"
@@ -605,7 +630,7 @@
        cy="0" />
     <text
        dy="0.38em"
-       id="text32">10</text>
+       id="text32">5</text>
   </g>
   
   <g
@@ -622,7 +647,7 @@
        cy="0" />
     <text
        dy="0.38em"
-       id="text34">12</text>
+       id="text34">6</text>
   </g>
   <g
      id="n12-3"
@@ -638,7 +663,7 @@
        cy="0" />
     <text
        dy="0.38em"
-       id="text34-7">15</text>
+       id="text34-7">7</text>
   </g>
   <!-- легенда -->
   <text
@@ -659,88 +684,74 @@
       <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">1</text>
       <text x="22" y="4" fill="#3c342c">Фланец на крышку кеги</text>
     </g>
-
-    <g transform="translate(830,144)" id="leg-4">
+    <g transform="translate(830,142)" id="leg-2">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
-      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">4</text>
-      <text x="22" y="4" fill="#3c342c">Штуцер, подача топлива в чашу</text>
-    </g>
-
-    <g transform="translate(830,170)" id="leg-7">
-      <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
-      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">7</text>
+      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">2</text>
       <text x="22" y="4" fill="#3c342c">Вырез во фланце под смотровое</text>
     </g>
-
-    <g transform="translate(830,196)" id="leg-8">
+    <g transform="translate(830,166)" id="leg-3">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
-      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">8</text>
+      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">3</text>
       <text x="22" y="4" fill="#3c342c">Кожух третьей ступени, свой фланец</text>
     </g>
-
-    <g transform="translate(830,222)" id="leg-9">
+    <g transform="translate(830,190)" id="leg-4">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
-      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">9</text>
+      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">4</text>
       <text x="22" y="4" fill="#3c342c">Щель 80×15 из короба в кожух</text>
     </g>
-
-    <g transform="translate(830,248)" id="leg-10">
+    <g transform="translate(830,214)" id="leg-5">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
-      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">10</text>
+      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">5</text>
       <text x="22" y="4" fill="#3c342c">Труба 45° от улитки в короб</text>
     </g>
-
-    <g transform="translate(830,274)" id="leg-12">
+    <g transform="translate(830,238)" id="leg-6">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
-      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">12</text>
+      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">6</text>
       <text x="22" y="4" fill="#3c342c">Двенадцать отверстий Ø2.5, закрутка факела</text>
     </g>
-
-    <g transform="translate(830,300)" id="leg-15">
+    <g transform="translate(830,262)" id="leg-7">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
-      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">15</text>
+      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">7</text>
       <text x="22" y="4" fill="#3c342c">Крест из полосы 2.5 мм перед циклоном</text>
     </g>
-
-    <g transform="translate(830,326)" id="leg-16">
+    <g transform="translate(830,286)" id="leg-8">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
-      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">16</text>
-      <text x="22" y="4" fill="#3c342c">Испарительная чаша</text>
+      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">8</text>
+      <text x="22" y="4" fill="#3c342c">Штуцер, подача топлива в чашу</text>
     </g>
-
-    <g transform="translate(830,352)" id="leg-17">
+    <g transform="translate(830,310)" id="leg-9">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
-      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">17</text>
-      <text x="22" y="4" fill="#3c342c">Зазор воздуха по бокам и снизу чаши</text>
+      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">9</text>
+      <text x="22" y="4" fill="#3c342c">Испарительная чаша, справа затвор до низа</text>
     </g>
-
-    <g transform="translate(830,378)" id="leg-18">
+    <g transform="translate(830,334)" id="leg-10">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
-      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">18</text>
-      <text x="22" y="4" fill="#3c342c">Первичные: ряд 8×Ø2.5 по бокам; сзади снизу прямоугольник</text>
+      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">10</text>
+      <text x="22" y="4" fill="#3c342c">Зазор воздуха под чашей, закрыт затвором</text>
     </g>
-
-    <g transform="translate(830,404)" id="leg-19">
+    <g transform="translate(830,358)" id="leg-11">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
-      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">19</text>
+      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">11</text>
+      <text x="22" y="4" fill="#3c342c">Первичные: ряд 8×Ø2.5 и прямоугольник сзади снизу</text>
+    </g>
+    <g transform="translate(830,382)" id="leg-12">
+      <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
+      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">12</text>
       <text x="22" y="4" fill="#3c342c">Вторичные 5×Ø4 сзади сверху, прямоугольник</text>
     </g>
-
-    <g transform="translate(830,430)" id="leg-20">
+    <g transform="translate(830,406)" id="leg-13">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
-      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">20</text>
-      <text x="22" y="4" fill="#3c342c">Одна верхняя пластина, выше и левее фланца</text>
+      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">13</text>
+      <text x="22" y="4" fill="#3c342c">Верхняя пластина впритык к фланцу</text>
     </g>
-
-    <g transform="translate(830,456)" id="leg-21">
+    <g transform="translate(830,430)" id="leg-14">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
-      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">21</text>
+      <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">14</text>
       <text x="22" y="4" fill="#3c342c">Датчик пламени, термобатарея M10×1 сверху</text>
     </g>
-
     <text
        x="0"
-       y="498"
+       y="472"
        transform="translate(830,0)"
        fill="#241c16"
        font-size="16"
@@ -748,7 +759,7 @@
        font-family="Liberation Sans, DejaVu Sans, sans-serif"
        id="text35">Потоки</text>
     <g
-       transform="translate(830,520)"
+       transform="translate(830,494)"
        fill="#3c342c"
        font-size="12"
        font-family="Liberation Sans, DejaVu Sans, sans-serif"
