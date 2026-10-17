@@ -63,7 +63,7 @@
      id="line2" />
   <!-- полость тракта -->
   <path
-     d="M 50,318.5 H 431 L 448.2,254 575,318.5 h 215 v 202 H 575 L 448.2,585 431,520.5 H 50 Z"
+     d="M 50,318.5 H 790 V 520.5 H 50 Z"
      fill="#f3e4c8"
      stroke="none"
      id="path2" />
@@ -116,19 +116,7 @@
      stroke="#2a241e"
      stroke-width="1.5"
      id="rect6" />
-  <!-- конус / рубашка -->
-  <path
-     d="M 448.2,247.5 575,312 v 6.5 L 448.2,254 Z"
-     fill="#d9d1c4"
-     stroke="#2a241e"
-     stroke-width="1.6"
-     id="path6" />
-  <path
-     d="M 448.2,585 575,520.5 v 6.5 l -126.8,64.5 z"
-     fill="#d9d1c4"
-     stroke="#2a241e"
-     stroke-width="1.6"
-     id="path7" />
+  <!-- конус у фланца снят: вместо пары пластин одна верхняя (20) левее -->
   <!-- круглая труба -->
   <rect
      x="442.23227"
@@ -233,7 +221,7 @@
      stroke-linecap="round"
      id="path19" />
   <path
-     d="m 51.5,517.3 v -44 l 17.2,-34.4 25.8,-6.5"
+     d="M 51.5,517.3 C 50,430 72,360 118,320"
      fill="none"
      stroke="#2a241e"
      stroke-width="3.2"
@@ -283,27 +271,12 @@
        fill="#2a6f9b"
        fill-opacity="0.22"
        stroke="none" />
-    
     <path
-       id="fill-jacket-top"
-       d="M 448.2,247.5 575,312 v 6.5 L 448.2,254 Z"
-       fill="#2a6f9b"
-       fill-opacity="0.28"
-       stroke="none" />
-    <path
-       id="fill-jacket-bot"
-       d="M 448.2,585 575,520.5 v 6.5 l -126.8,64.5 z"
-       fill="#2a6f9b"
-       fill-opacity="0.28"
-       stroke="none" />
-    <path
-       id="M 152,352 H 288 V 448 H 152 Z"
-       d="M 189.21207,367.04988 171.57368,321.18231 97.236463,321.45054 63.372925,342.11878 60.1,377.6 l 17.2,38.7 23.7,15.1 34.91157,10.95993 2.50848,-31.72907 L 117.1,389.4 l 44.48424,31.91953 z"
+       id="fill-bowl"
+       d="M 122,424 V 472 H 314 V 424 Z"
        fill="#e08940"
        fill-opacity="0.28"
-       stroke="none"
-       sodipodi:nodetypes="cccccccccccc" />
-    
+       stroke="none" />
     <path
        id="fill-flame"
        d="M 498.27753,366 C 571.60753,358 657.13,396.71 740,426 v 2 c -67.7,36.51 -167.6338,79.62066 -240.9638,71.62066 l -24.22679,-24.66007 -0.43007,-69.44995 z"
@@ -355,7 +328,7 @@
          id="path29"
          sodipodi:nodetypes="cccc" />
       <path
-         d="M 465,548 V 280 c 37.31827,4.62696 70.64026,21.38674 79.34389,29.6546"
+         d="M 470,500 H 640"
          id="path30"
          sodipodi:nodetypes="ccc" />
     </g>
@@ -371,11 +344,11 @@
          id="path31"
          style="fill:none;stroke:#000000" />
       <path
-         d="M 190,410 C 210,385 250,385 270,410"
+         d="M 160,440 C 190,420 240,420 270,445"
          id="path32"
          sodipodi:nodetypes="cc" />
       <path
-         d="M 200,430 C 230,405 255,445 235,425"
+         d="M 180,455 C 210,440 250,460 230,448"
          id="path33"
          sodipodi:nodetypes="ccc" />
     </g>
@@ -386,7 +359,7 @@
        stroke-width="2.4"
        stroke-linecap="round">
       <path
-         d="M 230,400 C 320,392 410,380 500,366"
+         d="M 250,430 C 340,410 420,390 520,370"
          id="path34"
          sodipodi:nodetypes="ccccc" />
     </g>
@@ -409,81 +382,42 @@
   <!-- вставка v2 -->
   <path
      id="gap-under"
-     d="M 58,456 H 410 V 516 H 58 Z"
+     d="M 70,480 H 410 V 516 H 70 Z"
      fill="#2a6f9b"
      fill-opacity="0.16"
      stroke="none" />
   <rect
      id="feed-under"
-     x="190"
+     x="160"
      y="516"
-     width="80"
+     width="120"
      height="14"
      fill="#f3e4c8"
      stroke="#2a241e"
      stroke-width="1.2" />
   <path
      id="bowl-v2"
-     d="M 148,348 V 452 H 292 V 348"
+     d="M 118,320 V 476 H 318 V 420"
      fill="none"
      stroke="#2a241e"
      stroke-width="3.4"
      stroke-linecap="round"
      stroke-linejoin="round" />
-  <path
-     id="guide-v2"
-     d="M 156,334 L 268,372"
-     fill="none"
-     stroke="#2a241e"
-     stroke-width="3.6"
-     stroke-linecap="round" />
-  <g
-     id="sec-holes"
-     fill="#f3e4c8"
-     stroke="#2a6f9b"
-     stroke-width="1.6">
-    <circle cx="62" cy="328" r="3.3" />
-    <circle cx="80" cy="328" r="3.3" />
-    <circle cx="98" cy="328" r="3.3" />
-    <circle cx="116" cy="328" r="3.3" />
-    <circle cx="134" cy="328" r="3.3" />
-  </g>
-  <g
-     id="pri-rear"
-     fill="#f3e4c8"
-     stroke="#2a6f9b"
-     stroke-width="1.4">
-    <circle cx="72" cy="486" r="2.3" />
-    <circle cx="88" cy="486" r="2.3" />
-    <circle cx="104" cy="486" r="2.3" />
-    <circle cx="120" cy="486" r="2.3" />
-    <circle cx="136" cy="486" r="2.3" />
-  </g>
-  <g
-     id="pri-side"
-     fill="none"
-     stroke="#2a6f9b"
-     stroke-width="1.3">
-    <circle cx="148" cy="366" r="2.1" />
-    <circle cx="148" cy="378" r="2.1" />
-    <circle cx="148" cy="390" r="2.1" />
-    <circle cx="148" cy="402" r="2.1" />
-    <circle cx="148" cy="414" r="2.1" />
-    <circle cx="148" cy="426" r="2.1" />
-    <circle cx="148" cy="438" r="2.1" />
-    <circle cx="148" cy="450" r="2.1" />
-  </g>
+  
+  
+  
+  
   <path
      id="napkin"
-     d="M 188,418 h 28 l -4,7 h 22 l -3,6 h 16"
+     d="M 160,448 h 26 l -4,6 h 20"
      fill="none"
      stroke="#c45c12"
      stroke-width="1.5"
      stroke-dasharray="3 2"
      stroke-linecap="round" />
   <text
-     x="186"
-     y="448"
+     x="158"
+     y="468"
      font-family="Liberation Sans, DejaVu Sans, sans-serif"
      font-size="11"
      fill="#6b6258"
@@ -516,38 +450,38 @@
      font-family="Liberation Sans, DejaVu Sans, sans-serif"
      font-size="13"
      fill="#3c342c"
-     id="note-pri">Боковые отверстия на разрезе — схема, не в плоскости.</text>
+     id="note-pri">Сзади отверстия не в плоскости разреза — прямоугольники 18 и 19.</text>
   <g
      id="n16"
-     transform="translate(230,385)"
+     transform="translate(230,455)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
     <circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4" cx="0" cy="0" />
     <text dy="0.38em">16</text>
   </g>
   <g
      id="n17"
-     transform="translate(360,488)"
+     transform="translate(370,498)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
     <circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4" cx="0" cy="0" />
     <text dy="0.38em">17</text>
   </g>
   <g
      id="n18"
-     transform="translate(104,456)"
+     transform="translate(250,400)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
     <circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4" cx="0" cy="0" />
     <text dy="0.38em">18</text>
   </g>
   <g
      id="n19"
-     transform="translate(98,268)"
+     transform="translate(78,292)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
     <circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4" cx="0" cy="0" />
     <text dy="0.38em">19</text>
   </g>
   <g
      id="n20"
-     transform="translate(248,352)"
+     transform="translate(300,300)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
     <circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4" cx="0" cy="0" />
     <text dy="0.38em">20</text>
@@ -559,6 +493,19 @@
     <circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4" cx="0" cy="0" />
     <text dy="0.38em">21</text>
   </g>
+  <g id="side-holes" fill="#f6f3ea" stroke="#2a6f9b" stroke-width="1.3">
+    <circle cx="146" cy="434" r="2.6" />
+    <circle cx="168" cy="434" r="2.6" />
+    <circle cx="190" cy="434" r="2.6" />
+    <circle cx="212" cy="434" r="2.6" />
+    <circle cx="234" cy="434" r="2.6" />
+    <circle cx="256" cy="434" r="2.6" />
+    <circle cx="278" cy="434" r="2.6" />
+    <circle cx="300" cy="434" r="2.6" />
+  </g>
+  <rect id="rear-pri" x="62" y="488" width="28" height="14" rx="1" fill="#f3e4c8" stroke="#2a6f9b" stroke-width="1.4" />
+  <rect id="rear-sec" x="46" y="324" width="34" height="14" rx="1" fill="#f3e4c8" stroke="#2a6f9b" stroke-width="1.4" />
+  <path id="guide-v2" d="M 210,328 L 360,348" fill="none" stroke="#2a241e" stroke-width="3.6" stroke-linecap="round" />
   <!-- номера -->
   <g
      id="n1"
@@ -614,7 +561,7 @@
   </g>
   <g
      id="n8"
-     transform="translate(476,290)"
+     transform="translate(520,360)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
     <circle
        r="14"
@@ -770,19 +717,19 @@
     <g transform="translate(830,378)" id="leg-18">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
       <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">18</text>
-      <text x="22" y="4" fill="#3c342c">Первичные: 8×Ø2.5 с боков + 5×Ø2.5 сзади снизу</text>
+      <text x="22" y="4" fill="#3c342c">Первичные: ряд 8×Ø2.5 по бокам; сзади снизу прямоугольник</text>
     </g>
 
     <g transform="translate(830,404)" id="leg-19">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
       <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">19</text>
-      <text x="22" y="4" fill="#3c342c">Вторичные отверстия: 5×Ø4 сзади сверху</text>
+      <text x="22" y="4" fill="#3c342c">Вторичные 5×Ø4 сзади сверху, прямоугольник</text>
     </g>
 
     <g transform="translate(830,430)" id="leg-20">
       <circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1" />
       <text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">20</text>
-      <text x="22" y="4" fill="#3c342c">Направляющая пластина, пламя вниз к чаше</text>
+      <text x="22" y="4" fill="#3c342c">Одна верхняя пластина, выше и левее фланца</text>
     </g>
 
     <g transform="translate(830,456)" id="leg-21">
@@ -819,24 +766,14 @@
       <text x="30" y="84" id="text66">Факел: оранжевый → светлый у циклона</text>
     </g>
   </g>
-  <line
-     x1="433.64252"
-     y1="369.03619"
-     x2="473.64252"
-     y2="407.03619"
-     stroke="#5c2a10"
-     stroke-width="3.2"
-     stroke-linecap="round"
-     id="line12" />
-  <line
-     x1="433.64252"
-     y1="515.03619"
-     x2="473.64252"
-     y2="477.03619"
-     stroke="#5c2a10"
-     stroke-width="3.2"
-     stroke-linecap="round"
-     id="line13" />
+  <rect
+     id="rect9"
+     x="530.56165"
+     y="319.73178"
+     width="7.510478"
+     height="199.02766"
+     fill="#4d4d4d"
+     stroke="none" />
   
   
   
