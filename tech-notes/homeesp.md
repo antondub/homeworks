@@ -4,7 +4,7 @@
 
 ## heatingOld
 
-Котловой контур. Плата ESP8266, NodeMCU v2. Файл: [heater_esp32.yaml](../tech-notes/heater_esp32.yaml). Имя в HA: `heatingOld`.
+Котловой контур. Плата ESP8266, NodeMCU v2. Файл: [heater_esp32.yaml](heater_esp32.yaml). Имя в HA: `heatingOld`.
 
 1-Wire на GPIO5, Dallas, разрешение 12 бит.
 
