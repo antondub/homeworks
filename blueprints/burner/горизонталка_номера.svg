@@ -20,15 +20,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.6590456"
-     inkscape:cx="260.22479"
-     inkscape:cy="273.12222"
+     inkscape:zoom="1.3180912"
+     inkscape:cx="189.28887"
+     inkscape:cy="469.61849"
      inkscape:window-width="2560"
      inkscape:window-height="1366"
      inkscape:window-x="0"
      inkscape:window-y="37"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg63" />
+     inkscape:current-layer="front-view" />
   <defs
      id="defs63">
     <marker
@@ -1464,7 +1464,7 @@
        font-size="16px"
        font-weight="700"
        fill="#241c16"
-       id="front-title">Вид спереди</text>
+       id="front-title">Вставка, вид спереди</text>
     <g
        id="n-front-12"
        transform="translate(545,542)"
