@@ -778,12 +778,11 @@
      stroke-width="1.4" />
   <path
      id="guide-v2"
-     d="m 279,284 150,40"
-     fill="none"
+     d="M 279,284 429,324 423.8,343.52 273.8,303.52 Z"
+     fill="#e4c9a4"
      stroke="#2a241e"
-     stroke-width="3.6"
-     stroke-linecap="round"
-     sodipodi:nodetypes="cc" />
+     stroke-width="1.6"
+     stroke-linejoin="round" />
   <!-- &#1085;&#1086;&#1084;&#1077;&#1088;&#1072; -->
   <g
      id="n1"
@@ -1243,7 +1242,7 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text60">Верхняя отсечная пластина</text>
+         id="text60">Керамическая пластина 10 мм, подвижная, впритык к фланцу</text>
     </g>
     <g
        transform="translate(830,430)"
