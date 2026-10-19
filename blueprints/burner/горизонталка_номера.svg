@@ -11,6 +11,24 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview63"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.6590456"
+     inkscape:cx="260.22479"
+     inkscape:cy="273.12222"
+     inkscape:window-width="2560"
+     inkscape:window-height="1366"
+     inkscape:window-x="0"
+     inkscape:window-y="37"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg63" />
   <defs
      id="defs63">
     <marker
@@ -71,27 +89,9 @@
          id="path135" />
     </marker>
   </defs>
-  <sodipodi:namedview
-     id="namedview63"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.6590456"
-     inkscape:cx="-103.17951"
-     inkscape:cy="122.905"
-     inkscape:window-width="2560"
-     inkscape:window-height="1366"
-     inkscape:window-x="0"
-     inkscape:window-y="37"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="физика" />
   <rect
-     x="0"
-     y="0"
+     x="-1.1380093"
+     y="-0.75867283"
      width="1280"
      height="860"
      fill="#f6f3ea"
@@ -119,7 +119,7 @@
      stroke="#e0d6c6"
      stroke-width="1"
      id="line2" />
-  <!-- полость тракта -->
+  <!-- &#1087;&#1086;&#1083;&#1086;&#1089;&#1090;&#1100; &#1090;&#1088;&#1072;&#1082;&#1090;&#1072; -->
   <path
      d="M 50,280.5 H 431 L 448.2,216 575,280.5 h 215 v 202 H 575 L 448.2,547 431,482.5 H 50 Z"
      fill="#f3e4c8"
@@ -131,7 +131,7 @@
      fill="#2a6f9b"
      fill-opacity="0.16"
      stroke="none" />
-  <!-- квадратная труба -->
+  <!-- &#1082;&#1074;&#1072;&#1076;&#1088;&#1072;&#1090;&#1085;&#1072;&#1103; &#1090;&#1088;&#1091;&#1073;&#1072; -->
   <rect
      x="28"
      y="274"
@@ -159,7 +159,7 @@
      stroke="#2a241e"
      stroke-width="1.4"
      id="rect4" />
-  <!-- фланец -->
+  <!-- &#1092;&#1083;&#1072;&#1085;&#1077;&#1094; -->
   <rect
      x="431"
      y="114.70244"
@@ -169,7 +169,7 @@
      stroke="#2a241e"
      stroke-width="1.8"
      id="rect5" />
-  <!-- смотровое -->
+  <!-- &#1089;&#1084;&#1086;&#1090;&#1088;&#1086;&#1074;&#1086;&#1077; -->
   <rect
      x="434.60001"
      y="148"
@@ -180,7 +180,7 @@
      stroke="#2a241e"
      stroke-width="1.5"
      id="rect6" />
-  <!-- конус / рубашка -->
+  <!-- &#1082;&#1086;&#1085;&#1091;&#1089; / &#1088;&#1091;&#1073;&#1072;&#1096;&#1082;&#1072; -->
   <path
      d="M 448.2,209.5 575,274 v 6.5 L 448.2,216 Z"
      fill="#d9d1c4"
@@ -193,7 +193,7 @@
      stroke="#2a241e"
      stroke-width="1.6"
      id="path7" />
-  <!-- круглая труба -->
+  <!-- &#1082;&#1088;&#1091;&#1075;&#1083;&#1072;&#1103; &#1090;&#1088;&#1091;&#1073;&#1072; -->
   <rect
      x="442.23227"
      y="274"
@@ -204,6 +204,15 @@
      stroke-width="1.6"
      id="rect7" />
   <rect
+     x="513.62372"
+     y="550.57367"
+     width="272.65915"
+     height="292.51968"
+     fill="#d9d1c4"
+     stroke="#2a241e"
+     stroke-width="1.60001"
+     id="rect7-1" />
+  <rect
      x="439.95624"
      y="482.5"
      width="350.04376"
@@ -212,7 +221,7 @@
      stroke="#2a241e"
      stroke-width="1.59999"
      id="rect8" />
-  <!-- ряд циклона -->
+  <!-- &#1088;&#1103;&#1076; &#1094;&#1080;&#1082;&#1083;&#1086;&#1085;&#1072; -->
   <g
      stroke="#8c3b14"
      stroke-width="2.2"
@@ -244,7 +253,7 @@
        y2="355"
        id="line11" />
   </g>
-  <!-- нижний короб и 45° -->
+  <!-- &#1085;&#1080;&#1078;&#1085;&#1080;&#1081; &#1082;&#1086;&#1088;&#1086;&#1073; &#1080; 45&#176; -->
   <rect
      x="198"
      y="489"
@@ -261,7 +270,7 @@
      stroke-width="1.6"
      id="path13"
      sodipodi:nodetypes="cccccc" />
-  <!-- проход 9 во фланец к конусу -->
+  <!-- &#1087;&#1088;&#1086;&#1093;&#1086;&#1076; 9 &#1074;&#1086; &#1092;&#1083;&#1072;&#1085;&#1077;&#1094; &#1082; &#1082;&#1086;&#1085;&#1091;&#1089;&#1091; -->
   <rect
      x="431"
      y="500"
@@ -280,8 +289,8 @@
      stroke="#2a241e"
      stroke-width="1.2"
      id="rect15-3" />
-  <!-- пластины вставки -->
-  <!-- низ вставки / левый контур -->
+  <!-- &#1087;&#1083;&#1072;&#1089;&#1090;&#1080;&#1085;&#1099; &#1074;&#1089;&#1090;&#1072;&#1074;&#1082;&#1080; -->
+  <!-- &#1085;&#1080;&#1079; &#1074;&#1089;&#1090;&#1072;&#1074;&#1082;&#1080; / &#1083;&#1077;&#1074;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; -->
   <path
      d="M 53.144757,479.67937 H 452.58151"
      fill="none"
@@ -298,7 +307,7 @@
      stroke-linecap="round"
      stroke-linejoin="round"
      id="path20" />
-  <!-- штуцер подачи топлива -->
+  <!-- &#1096;&#1090;&#1091;&#1094;&#1077;&#1088; &#1087;&#1086;&#1076;&#1072;&#1095;&#1080; &#1090;&#1086;&#1087;&#1083;&#1080;&#1074;&#1072; -->
   <rect
      x="172.5"
      y="218"
@@ -329,7 +338,7 @@
      stroke="#2a241e"
      stroke-width="1.6"
      id="rect23" />
-  <!-- физика: заливки полостей + широкие копии тех же d, что в слое потоки -->
+  <!-- &#1092;&#1080;&#1079;&#1080;&#1082;&#1072;: &#1079;&#1072;&#1083;&#1080;&#1074;&#1082;&#1080; &#1087;&#1086;&#1083;&#1086;&#1089;&#1090;&#1077;&#1081; + &#1096;&#1080;&#1088;&#1086;&#1082;&#1080;&#1077; &#1082;&#1086;&#1087;&#1080;&#1080; &#1090;&#1077;&#1093; &#1078;&#1077; d, &#1095;&#1090;&#1086; &#1074; &#1089;&#1083;&#1086;&#1077; &#1087;&#1086;&#1090;&#1086;&#1082;&#1080; -->
   <g
      id="физика"
      inkscape:label="физика"
@@ -377,7 +386,7 @@
        style="stroke:#ffb380;stroke-width:3;stroke-dasharray:none"
        sodipodi:nodetypes="ccccc" />
   </g>
-  <!-- потоки: воздух / пары / смесь / факел -->
+  <!-- &#1087;&#1086;&#1090;&#1086;&#1082;&#1080;: &#1074;&#1086;&#1079;&#1076;&#1091;&#1093; / &#1087;&#1072;&#1088;&#1099; / &#1089;&#1084;&#1077;&#1089;&#1100; / &#1092;&#1072;&#1082;&#1077;&#1083; -->
   <g
      id="потоки"
      inkscape:label="потоки"
@@ -476,7 +485,7 @@
          sodipodi:nodetypes="cc" />
     </g>
   </g>
-  <!-- вставка v2 -->
+  <!-- &#1074;&#1089;&#1090;&#1072;&#1074;&#1082;&#1072; v2 -->
   <rect
      id="feed-under"
      x="317.16177"
@@ -505,7 +514,7 @@
      sodipodi:nodetypes="ccccccccc" />
   <g
      id="g16"
-     transform="translate(-325.87172,62)"
+     transform="translate(-477.87172,62)"
      style="fill:#483e37">
     <path
        id="bowl-v2-3"
@@ -527,6 +536,25 @@
        stroke-linejoin="round"
        sodipodi:nodetypes="cc"
        style="fill:#483e37" />
+  </g>
+  <g
+     id="g16-3"
+     transform="translate(-0.1689714,53.947791)"
+     style="fill:#483e37" />
+  <g
+     id="g16-3-3"
+     transform="matrix(0,1.0884161,-1.0858508,0,1370.41,-16.21218)"
+     style="fill:#483e37;stroke-width:0.91985">
+    <path
+       id="bowl-v2-3-3-7-6"
+       d="M 776.46958,769.84234 652.7547,775.36796 533.77509,769.84234 V 557.14785 l 120.81715,-5.52562 121.87734,5.52562 z"
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.1275"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       sodipodi:nodetypes="ccccccc"
+       style="fill:#f3e4c8;fill-opacity:1" />
   </g>
   <path
      id="napkin"
@@ -756,7 +784,7 @@
      stroke-width="3.6"
      stroke-linecap="round"
      sodipodi:nodetypes="cc" />
-  <!-- номера -->
+  <!-- &#1085;&#1086;&#1084;&#1077;&#1088;&#1072; -->
   <g
      id="n1"
      transform="translate(472.53646,121.82732)"
@@ -822,6 +850,22 @@
        id="text30">3</text>
   </g>
   <g
+     id="n8-6"
+     transform="translate(554.7,584.7)"
+     style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
+    <circle
+       r="14"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.4"
+       id="circle30-2"
+       cx="0"
+       cy="0" />
+    <text
+       dy="0.38em"
+       id="text30-6">3</text>
+  </g>
+  <g
      id="n9"
      transform="translate(417.11938,510.61201)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
@@ -870,6 +914,22 @@
        id="text34">6</text>
   </g>
   <g
+     id="n12-7"
+     transform="translate(707.62875,586.5399)"
+     style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
+    <circle
+       r="14"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.4"
+       id="circle34-0"
+       cx="0"
+       cy="0" />
+    <text
+       dy="0.38em"
+       id="text34-9">6</text>
+  </g>
+  <g
      id="n12-3"
      transform="translate(514.7,345.7)"
      style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
@@ -885,7 +945,7 @@
        dy="0.38em"
        id="text34-7">7</text>
   </g>
-  <!-- легенда -->
+  <!-- &#1083;&#1077;&#1075;&#1077;&#1085;&#1076;&#1072; -->
   <text
      x="830"
      y="92"
@@ -1303,7 +1363,7 @@
      stroke-width="1.5" />
   <g
      id="front-view"
-     transform="translate(-346,106)">
+     transform="translate(-498,106)">
     <path
        id="rect11"
        fill="#f3e4c8"
@@ -1437,5 +1497,213 @@
          dy="0.38em"
          id="text4">11</text>
     </g>
+  </g>
+  <path
+     d="m 751.953,693.443 a 102,102 0 0 1 -102,102 102,102 0 0 1 -102,-102 102,102 0 0 1 102,-102 102,102 0 0 1 102,102 z"
+     fill="#f3e4c8"
+     stroke="none"
+     id="path1" />
+  <path
+     d="M 755.17175,693.44298 A 105.21877,105.21877 0 0 1 649.95298,798.66175 105.21877,105.21877 0 0 1 544.73421,693.44298 105.21877,105.21877 0 0 1 649.95298,588.22421 105.21877,105.21877 0 0 1 755.17175,693.44298 Z"
+     fill="none"
+     stroke="#2a241e"
+     stroke-width="3.2"
+     id="path1-2" />
+  <text
+     x="548"
+     y="548"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     font-size="16"
+     font-weight="700"
+     fill="#241c16"
+     id="cyclone-front-title">Циклон, вид спереди</text>
+  <g
+     id="g408"
+     transform="translate(0,-24)">
+    <rect
+       x="796.43396"
+       y="269.2269"
+       width="7.0982461"
+       height="1.6"
+       rx="0.50701755"
+       fill="#f6f3ea"
+       stroke="#2a6f9b"
+       stroke-width="1.3"
+       transform="matrix(-0.478046,0.878305,-0.878305,-0.478046,1371.55,143.899)"
+       id="rect397" />
+    <rect
+       x="796.43396"
+       y="269.2269"
+       width="7.0982461"
+       height="1.6"
+       rx="0.50701755"
+       fill="#f6f3ea"
+       stroke="#2a6f9b"
+       stroke-width="1.3"
+       transform="matrix(-0.84179,0.539621,-0.539621,-0.84179,1557.39,564.048)"
+       id="rect398" />
+    <rect
+       x="796.43396"
+       y="269.2269"
+       width="7.0982461"
+       height="1.6"
+       rx="0.50701755"
+       fill="#f6f3ea"
+       stroke="#2a6f9b"
+       stroke-width="1.3"
+       transform="matrix(-0.99949,0.0286569,-0.0286569,-0.99949,1508.25,1052.72)"
+       id="rect399" />
+    <rect
+       x="796.43396"
+       y="269.2269"
+       width="7.0982461"
+       height="1.6"
+       rx="0.50701755"
+       fill="#f6f3ea"
+       stroke="#2a6f9b"
+       stroke-width="1.3"
+       transform="matrix(-0.878305,-0.478046,0.478046,-0.878305,1223.5,1439.04)"
+       id="rect400" />
+    <rect
+       x="796.43396"
+       y="269.2269"
+       width="7.0982461"
+       height="1.6"
+       rx="0.50701755"
+       fill="#f6f3ea"
+       stroke="#2a6f9b"
+       stroke-width="1.3"
+       transform="matrix(-0.539621,-0.84179,0.84179,-0.539621,803.348,1624.88)"
+       id="rect401" />
+    <rect
+       x="796.43396"
+       y="269.2269"
+       width="7.0982461"
+       height="1.6"
+       rx="0.50701755"
+       fill="#f6f3ea"
+       stroke="#2a6f9b"
+       stroke-width="1.3"
+       transform="matrix(-0.0286569,-0.99949,0.99949,-0.0286569,314.677,1575.74)"
+       id="rect402" />
+    <rect
+       x="796.43396"
+       y="269.2269"
+       width="7.0982461"
+       height="1.6"
+       rx="0.50701755"
+       fill="#f6f3ea"
+       stroke="#2a6f9b"
+       stroke-width="1.3"
+       transform="matrix(0.456116,-0.889891,0.889891,0.456116,-57.2267,1306.18)"
+       id="rect403" />
+    <rect
+       x="796.43396"
+       y="269.2269"
+       width="7.0982461"
+       height="1.6"
+       rx="0.50701755"
+       fill="#f6f3ea"
+       stroke="#2a6f9b"
+       stroke-width="1.3"
+       transform="matrix(0.84179,-0.539621,0.539621,0.84179,-257.489,870.838)"
+       id="rect404" />
+    <rect
+       x="796.43396"
+       y="269.2269"
+       width="7.0982461"
+       height="1.6"
+       rx="0.50701755"
+       fill="#f6f3ea"
+       stroke="#2a6f9b"
+       stroke-width="1.3"
+       transform="matrix(0.99949,-0.0286569,0.0286569,0.99949,-208.347,382.167)"
+       id="rect405" />
+    <rect
+       x="796.43396"
+       y="269.2269"
+       width="7.0982461"
+       height="1.6"
+       rx="0.50701755"
+       fill="#f6f3ea"
+       stroke="#2a6f9b"
+       stroke-width="1.3"
+       transform="matrix(0.878305,0.478046,-0.478046,0.878305,76.4086,-4.15166)"
+       id="rect406" />
+    <rect
+       x="796.43396"
+       y="269.2269"
+       width="7.0982461"
+       height="1.6"
+       rx="0.50701755"
+       fill="#f6f3ea"
+       stroke="#2a6f9b"
+       stroke-width="1.3"
+       transform="matrix(0.539621,0.84179,-0.84179,0.539621,496.558,-189.999)"
+       id="rect407" />
+    <rect
+       x="796.43396"
+       y="269.2269"
+       width="7.0982461"
+       height="1.6"
+       rx="0.50701755"
+       fill="#f6f3ea"
+       stroke="#2a6f9b"
+       stroke-width="1.3"
+       transform="matrix(0.0286569,0.99949,-0.99949,0.0286569,985.229,-140.857)"
+       id="rect408" />
+  </g>
+  <rect
+     id="rect67-2"
+     x="649.203"
+     y="593.92914"
+     width="1.5"
+     height="199.02766"
+     fill="#cfc6b8"
+     stroke="#2a241e"
+     stroke-width="1.5" />
+  <rect
+     id="rect67-2-9"
+     x="692.69299"
+     y="-749.46686"
+     width="1.5"
+     height="199.02766"
+     fill="#cfc6b8"
+     stroke="#2a241e"
+     stroke-width="1.5"
+     transform="rotate(90)" />
+  <rect
+     fill="#cfc6b8"
+     stroke="#2a241e"
+     stroke-width="1.5"
+     id="rect409"
+     width="97.904442"
+     height="7.5104785"
+     x="651.80219"
+     y="685.74017" />
+  <rect
+     fill="#cfc6b8"
+     stroke="#2a241e"
+     stroke-width="1.5"
+     id="rect409-1"
+     width="97.904442"
+     height="6.7057843"
+     x="550.24225"
+     y="693.5155" />
+  <g
+     id="n12-3-3"
+     transform="translate(670.35535,674.66531)"
+     style="font-weight:700;font-size:15px;font-family:'Liberation Sans', 'DejaVu Sans', sans-serif;text-anchor:middle;fill:#ffffff">
+    <circle
+       r="14"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.4"
+       id="circle34-6-6"
+       cx="0"
+       cy="0" />
+    <text
+       dy="0.38em"
+       id="text34-7-0">7</text>
   </g>
 </svg>
