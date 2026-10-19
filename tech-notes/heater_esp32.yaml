@@ -1,0 +1,555 @@
+esphome:
+  name: heatingold
+  friendly_name: heatingOld
+  platform: ESP8266
+  board: nodemcuv2
+  esp8266_restore_from_flash: yes
+
+logger:
+
+api:
+  encryption:
+    key: ""
+
+ota:
+  - platform: esphome
+    password: ""
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+captive_portal:
+
+web_server:
+  port: 80
+
+time:
+  - platform: homeassistant
+    timezone: "Europe/Moscow"
+    id: ha_time
+
+globals:
+  - id: g_automatic_mode
+    type: bool
+    restore_value: yes
+    initial_value: "true"
+
+  - id: g_daynight_mode
+    type: bool
+    restore_value: yes
+    initial_value: "true"
+
+  - id: g_threshold_temp_off
+    type: float
+    restore_value: no
+    initial_value: "65.0"
+
+  - id: g_threshold_temp_k
+    type: float
+    restore_value: no
+    initial_value: "0.4"
+
+  - id: g_threshold_temp_targ
+    type: float
+    restore_value: no
+    initial_value: "25.0"
+
+  - id: g_threshold_temp_night
+    type: float
+    restore_value: no
+    initial_value: "20.0"
+
+  - id: g_prev_temp_targ
+    type: float
+    restore_value: yes
+    initial_value: "20.0"
+
+  - id: g_room_volume
+    type: float
+    restore_value: yes
+    initial_value: "0.0"
+
+  - id: g_heat_per_m3
+    type: float
+    restore_value: yes
+    initial_value: "0.0"
+
+  - id: g_water_flow
+    type: float
+    restore_value: yes
+    initial_value: "0.0"
+
+  - id: g_tin_w
+    type: float
+    restore_value: yes
+    initial_value: "0.0"
+
+  - id: g_q_need
+    type: float
+    restore_value: no
+    initial_value: "0.0"
+
+  - id: g_q_now
+    type: float
+    restore_value: no
+    initial_value: "0.0"
+
+  - id: g_heater1_kw
+    type: float
+    restore_value: yes
+    initial_value: "2.0"
+
+  - id: g_heater2_kw
+    type: float
+    restore_value: yes
+    initial_value: "4.0"
+
+  - id: g_power_kw
+    type: float
+    restore_value: no
+    initial_value: "0.0"
+
+one_wire:
+  - platform: gpio
+    pin: GPIO5
+    #update_interval: 30s
+
+sensor:
+  - platform: dallas_temp
+    address: 0x5e358ad443b15d28
+    name: "TempHeaterTop"
+    update_interval: 30s
+    id: tempTop
+    resolution: 12
+    on_value:
+      then:
+        - lambda: |-
+            float tT = id(tempTop).state;
+            if ( tT > id(g_threshold_temp_off)){
+              id(heater1).turn_off();
+              id(heater2).turn_off();
+            }
+
+            if(!id(g_automatic_mode)){
+              id(climatContoller).target_temperature = 0;
+              return;
+            }
+          
+            float t1 = id(tempOut).state;
+            float tD = id(tempDown).state;
+            float targ = id(g_threshold_temp_targ);
+            auto time = id(ha_time).now();
+            if(id(g_daynight_mode))
+              if(time.hour < 7 or time.hour > 21) {
+                targ = id(g_threshold_temp_night);
+                ESP_LOGD("day/night","night, temp targ %.2f", targ);
+              }
+
+            float prev = id(g_prev_temp_targ);
+            float vol = id(g_room_volume);
+            float kv = id(g_heat_per_m3);
+            float flow = id(g_water_flow);
+            float q_loss = vol * kv * (targ - t1);
+            float q_in = 0;
+            if (!isnan(id(tempIn).state)) q_in = id(g_tin_w) * (targ - id(tempIn).state);
+            float q_need = q_loss + q_in;
+            if (q_need < 0) q_need = 0;
+            float q_now = 1.163f * flow * (tT - tD);
+            id(g_q_need) = q_need;
+            id(g_q_now) = q_now;
+            float out = prev;
+            if (flow > 1) out = q_need / (1.163f * flow);
+            if(out < 0) out = 0;
+            if(out > 40) out = 40;
+            
+            if(isnan(out)) out = prev;
+
+            id(g_prev_temp_targ) = out;
+            id(climatContoller).target_temperature = out;
+
+            ESP_LOGD("calculation", "targ %.2f, tOut %.2f, q_loss %.2f, q_in %.2f, q_need %.2f, q_now %.2f, out %.2f", targ, t1, q_loss, q_in, q_need, q_now, out);
+
+    filters:
+      - calibrate_polynomial:
+          degree: 2
+          datapoints:
+          - -11.5 -> -10.5
+          - 0.2 -> -0.7
+          - 23.0 -> 23.0
+          - 53.0 -> 48.0
+
+  - platform: dallas_temp
+    address: 0x3b3ce10457bc9928
+    name: "TempHeaterDown"
+    update_interval: 30s
+    id: tempDown
+    resolution: 12
+    filters:
+      - calibrate_polynomial:
+          degree: 2
+          datapoints:
+          - -11.5 -> -10.5
+          - 0.2 -> -0.7
+          - 23.0 -> 23.0
+          - 53.0 -> 48.0
+
+  - platform: template
+    name: "TempHeaterDrop"
+    id: tempDrop
+    unit_of_measurement: "°C"
+    accuracy_decimals: 1
+    device_class: temperature
+    update_interval: 30s
+    lambda: |-
+      if (isnan(id(tempTop).state) || isnan(id(tempDown).state)) return NAN;
+      return id(tempTop).state - id(tempDown).state;
+
+  - platform: template
+    name: "Heat Need"
+    id: heat_need
+    unit_of_measurement: "W"
+    accuracy_decimals: 0
+    device_class: power
+    update_interval: 30s
+    lambda: |-
+      return id(g_q_need);
+
+  - platform: template
+    name: "Heat Now"
+    id: heat_now
+    unit_of_measurement: "W"
+    accuracy_decimals: 0
+    device_class: power
+    update_interval: 30s
+    lambda: |-
+      return id(g_q_now);
+
+  - platform: template
+    name: "Heat Power"
+    id: heat_power
+    unit_of_measurement: "kW"
+    accuracy_decimals: 2
+    device_class: power
+    update_interval: 30s
+    lambda: |-
+      return id(g_power_kw);
+    filters:
+      - sliding_window_moving_average:
+          window_size: 10
+          send_every: 1
+
+  - platform: dallas_temp
+    address: 0x047ac9d443851128
+    name: "TempOut"
+    update_interval: 120s
+    id: tempOut
+    resolution: 12
+    filters:
+      - calibrate_polynomial:
+          degree: 2
+          datapoints:
+          - -11.5 -> -10.5
+          - 0.2 -> -0.7
+          - 23.0 -> 23.0
+          - 53.0 -> 48.0
+
+  - platform: dallas_temp
+    address: 0x4d3ce10457242228
+    name: "TempIn"
+    update_interval: 60s
+    id: tempIn
+    resolution: 12
+    filters:
+      - calibrate_polynomial:
+          degree: 2
+          datapoints:
+          - -11.5 -> -10.5
+          - 0.2 -> -0.7
+          - 23.0 -> 23.0
+          - 53.0 -> 48.0
+
+  - platform: template
+    device_class: power_factor
+    unit_of_measurement: "%"
+    name: "Heater PWM"
+    id: heater_pwm
+
+
+  - platform: template
+    device_class: temperature
+    unit_of_measurement: "°C"
+    update_interval: 30s
+    name: "Climate Target"
+    lambda: |-
+      return id(climatContoller).target_temperature;
+
+switch:
+  - platform: gpio
+    pin: GPIO14
+    name: "pin1"
+
+  - platform: gpio
+    pin: GPIO12
+    name: "pin2"
+    id: out_heater2
+    on_turn_on:
+      then:
+        - lambda: |-
+            auto water_temperature = id(tempTop).state;
+            if ( water_temperature > id(g_threshold_temp_off)){
+              id(out_heater2).turn_off();
+              ESP_LOGD("pin2", "g_threshold_temp_off tempTop.state %.2f", water_temperature);
+            }
+
+  - platform: gpio
+    pin: GPIO13
+    name: "pin3"
+
+  - platform: gpio
+    pin: GPIO15
+    name: "pin4"
+    id: out_heater1
+    on_turn_on:
+      then:
+        - lambda: |-
+            auto water_temperature = id(tempTop).state;
+            if ( water_temperature > id(g_threshold_temp_off)){
+              id(out_heater1).turn_off();
+              ESP_LOGD("pin4", "g_threshold_temp_off tempTop.state %.2f", water_temperature);
+            }
+  
+  - platform: template
+    name: "Climat Manual/Automatic"
+    id: sw_automatic_mode
+    restore_mode: RESTORE_DEFAULT_OFF
+    lambda: return id(g_automatic_mode);
+    turn_on_action:
+      - globals.set:
+          id: g_automatic_mode
+          value: "true"
+    turn_off_action:
+      - globals.set:
+          id: g_automatic_mode
+          value: "false"
+
+  - platform: template
+    name: "Climat Day/Night"
+    id: sw_daynight_mode
+    restore_mode: RESTORE_DEFAULT_OFF
+    lambda: return id(g_daynight_mode);
+    turn_on_action:
+      - globals.set:
+          id: g_daynight_mode
+          value: "true"
+    turn_off_action:
+      - globals.set:
+          id: g_daynight_mode
+          value: "false"
+
+number:
+  - platform: template
+    name: "Climat Desired Temp"
+    id: val_target_temp
+    device_class: temperature
+    mode: box
+    unit_of_measurement: "°C"
+    optimistic: true
+    restore_value: true
+    min_value: 18
+    max_value: 25
+    step: 0.1
+    on_value:
+      then:
+      - lambda: |-
+          id(g_threshold_temp_targ) = float(x);
+
+  - platform: template
+    name: "Climat Night Temp"
+    id: val_night_temp
+    device_class: temperature
+    mode: box
+    unit_of_measurement: "°C"
+    optimistic: true
+    restore_value: true
+    min_value: 18
+    max_value: 25
+    step: 0.1
+    on_value:
+      then:
+      - lambda: |-
+          id(g_threshold_temp_night) = float(x);
+
+  - platform: template
+    name: "Room Volume"
+    id: val_room_volume
+    mode: box
+    unit_of_measurement: "m³"
+    optimistic: true
+    restore_value: true
+    min_value: 0
+    max_value: 500
+    step: 0.1
+    initial_value: 0
+    on_value:
+      then:
+      - lambda: |-
+          id(g_room_volume) = float(x);
+
+  - platform: template
+    name: "Heat Loss K"
+    id: val_heat_per_m3
+    mode: box
+    unit_of_measurement: "W/m³K"
+    optimistic: true
+    restore_value: true
+    min_value: 0
+    max_value: 5
+    step: 0.01
+    initial_value: 0
+    on_value:
+      then:
+      - lambda: |-
+          id(g_heat_per_m3) = float(x);
+
+  - platform: template
+    name: "Water Flow"
+    id: val_water_flow
+    mode: box
+    unit_of_measurement: "L/h"
+    optimistic: true
+    restore_value: true
+    min_value: 0
+    max_value: 3000
+    step: 1
+    initial_value: 0
+    on_value:
+      then:
+      - lambda: |-
+          id(g_water_flow) = float(x);
+
+  - platform: template
+    name: "TempIn Trim"
+    id: val_tin_w
+    mode: box
+    unit_of_measurement: "W/K"
+    optimistic: true
+    restore_value: true
+    min_value: 0
+    max_value: 100
+    step: 0.5
+    initial_value: 0
+    on_value:
+      then:
+      - lambda: |-
+          id(g_tin_w) = float(x);
+
+  - platform: template
+    name: "Heater 1 Power"
+    id: val_heater1_kw
+    mode: box
+    unit_of_measurement: "kW"
+    optimistic: true
+    restore_value: true
+    min_value: 0
+    max_value: 10
+    step: 0.1
+    initial_value: 2
+    on_value:
+      then:
+      - lambda: |-
+          id(g_heater1_kw) = float(x);
+
+  - platform: template
+    name: "Heater 2 Power"
+    id: val_heater2_kw
+    mode: box
+    unit_of_measurement: "kW"
+    optimistic: true
+    restore_value: true
+    min_value: 0
+    max_value: 10
+    step: 0.1
+    initial_value: 4
+    on_value:
+      then:
+      - lambda: |-
+          id(g_heater2_kw) = float(x);
+
+output:
+  - platform: template
+    id: heater
+    type: float
+    min_power: 0.00
+    max_power: 0.85
+    write_action:
+      - lambda: |-
+          float l1 = 0;
+          float l2 = 0;
+          if(state == 0){
+          }else if(state < 0.275){
+            l1 = state*3+0.033;
+          }else if(state < 0.55){
+            l2 = state*1.5+0.033;
+          }else {
+            l1 = state+0.033;
+            l2 = state+0.033;
+          }
+          id(heater1).set_level(l1);
+          id(heater2).set_level(l2);
+          id(g_power_kw) = l1 * id(g_heater1_kw) + l2 * id(g_heater2_kw);
+          id(heater_pwm).publish_state(state*100);
+          
+          ESP_LOGD("Heater PWM", "state %.2f, kW %.2f", state, id(g_power_kw));
+
+  - platform: slow_pwm
+    id: heater2
+    period: 30s
+    restart_cycle_on_state_change: false
+    turn_on_action:
+      - lambda: |-
+          auto *out = id(out_heater2);
+          out->turn_on();
+    turn_off_action:
+      - lambda: |-
+          auto *out = id(out_heater2);
+          out->turn_off();
+
+  - platform: slow_pwm
+    id: heater1
+    period: 30s
+    restart_cycle_on_state_change: false
+    turn_on_action:
+      - lambda: |-
+          auto *out = id(out_heater1);
+          out->turn_on();
+    turn_off_action:
+      - lambda: |-
+          auto *out = id(out_heater1);
+          out->turn_off();
+
+button:
+  platform: template
+  name: "PID Autotune"
+  on_press:
+    - climate.pid.autotune: climatContoller
+    
+climate:
+  - platform: pid
+    name: "Climate Controller"
+    sensor: tempDrop
+    id: climatContoller
+    heat_output: heater
+    default_target_temperature: 0 °C
+    visual:
+      min_temperature: 0 °C
+      max_temperature: 40 °C
+    control_parameters:
+      kp: 0.21236
+      ki: 0.00177
+      kd: 6.37080
+      output_averaging_samples: 2
+      derivative_averaging_samples: 2
+    deadband_parameters:
+      threshold_high: 0.5 °C
+      threshold_low: -0.1 °C
