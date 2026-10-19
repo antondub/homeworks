@@ -1,0 +1,696 @@
+esphome:
+  name: oilburner
+  friendly_name: OilBurner
+  on_loop:
+    then:
+      - lambda: |-
+
+          if(!id(fanOn)){
+            if(millis() >= id(fan_off_timer)) {
+              id(out_fan).turn_off();
+              id(fanSpeedSens).publish_state(0);
+              id(fan_off_timer) = millis()+60000;
+              ESP_LOGI("loop", "Fan off. fan_off_timer: %d ", id(fan_off_timer));
+            }
+          }
+
+          if(!id(pumpOn)) {
+
+            id(next_pulse_timer) = millis()+50;
+            id(pulse_started_off_at) = millis()-50;
+
+          } else {
+
+            if(millis() >= id(pulse_started_off_at)) {
+
+              if(id(state) <= 1) {
+              
+                  id(out_power_pulse).turn_off();
+                  id(state) = 0;
+                  id(pulse_started_off_at) = millis() + id(pdelay)*1000;
+                  id(pump_off).turn_off();
+                  //ESP_LOGD("loop", "deccel is ok,  state: %d, pulse_started_off_at:%d, next_pulse_timer: %d, millis: %d ", id(state), id(pulse_started_off_at), id(next_pulse_timer), millis());
+              
+              } else {
+              
+                int freq = id(startFreq) + (id(state)-1) * id(pumpAccel);
+                id(out_power_pulse).update_frequency(freq);
+                id(pulse_started_off_at) = millis() + 1;
+                id(state) -= 1;
+              
+              }
+            }
+            
+            if(millis() >= id(next_pulse_timer)) {
+              
+              if(!id(pump_off).state)
+                id(pump_off).turn_on();
+
+              id(next_pulse_timer) = millis() + 1;
+
+              if(id(state) < 1) {
+
+                id(out_power_pulse).set_frequency(id(startFreq));
+                id(out_power_pulse).turn_on();
+                id(out_power_pulse).set_level(0.5);
+
+              } else if(id(state) >= id(steps)) {
+
+                if(id(maxSpeedTime) > 0) {
+                  id(out_power_pulse).update_frequency(id(pumpMaxSpeed));
+                  id(out_power_pulse).set_level(0.5);
+                }
+                id(next_pulse_timer) = millis() + id(maxSpeedTime) + id(pdelay)*1000;
+                //ESP_LOGD("loop", "accel is ok,  state: %d, pulse_started_off_at:%d, next_pulse_timer: %d, millis: %d ", id(state), id(pulse_started_off_at), id(next_pulse_timer), millis());
+
+              } else {
+
+                int freq = id(startFreq) + id(state) * id(pumpAccel);
+                id(out_power_pulse).update_frequency(freq);
+                id(out_power_pulse).set_level(0.5);
+
+              }
+
+              id(pulse_started_off_at) = millis() + id(maxSpeedTime) + id(steps);
+  
+              id(state) += 1;
+  
+            }
+          }
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+  level: INFO
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: !secret apikey_oilburner
+
+ota:
+  - platform: esphome
+    password: !secret otapass_oilburner
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: !secret wifissid_oilburner
+    password: !secret wifipass_oilburner
+
+captive_portal:
+
+web_server:
+  port: 80
+
+spi:
+  miso_pin: GPIO12
+  mosi_pin: GPIO13
+  clk_pin: GPIO14
+
+globals:
+  - id: pulses
+    type: long
+    restore_value: no
+    initial_value: '0'
+  - id: next_pulse_timer
+    type: unsigned long
+    restore_value: no
+    initial_value: '0'
+  - id: pulse_started_off_at
+    type: unsigned long
+    restore_value: no
+    initial_value: '0'
+  - id: fan_off_timer
+    type: unsigned long
+    restore_value: no
+    initial_value: '0'
+  - id: fanOn
+    type: bool
+    restore_value: no
+    initial_value: 'false'
+  - id: fan_speed
+    type: int
+    restore_value: no
+    initial_value: '0'
+  - id: pumpOn
+    type: bool
+    restore_value: no
+    initial_value: 'false'
+  - id: ppt
+    type: int
+    restore_value: no
+    initial_value: '20000'
+  - id: mlpt
+    type: int
+    restore_value: no
+    initial_value: '5'
+  - id: pumpAccel
+    type: float
+    restore_value: no
+    initial_value: '1200'
+  - id: pumpMaxSpeed
+    type: float
+    restore_value: no
+    initial_value: '20000'
+  - id: period
+    type: int
+    restore_value: no
+    initial_value: '4'
+  - id: pdelay
+    type: float
+    restore_value: no
+    initial_value: '2.0'
+  - id: steps
+    type: int
+    restore_value: no
+    initial_value: '0'
+  - id: maxSpeedTime
+    type: long
+    restore_value: no
+    initial_value: '0'
+  - id: state
+    type: int
+    restore_value: no
+    initial_value: '0'
+  - id: startFreq
+    type: int
+    restore_value: no
+    initial_value: '2000'
+  - id: g_automatic_mode
+    type: bool
+    restore_value: no
+    initial_value: "false"
+  - id: g_automatic_temp
+    type: float
+    restore_value: no
+    initial_value: "40.0"
+  - id: g_automatic_flow
+    type: int
+    restore_value: no
+    initial_value: "20"
+  - id: g_automatic_off
+    type: int
+    restore_value: no
+    initial_value: "0"
+  - id: g_automatic_stage
+    type: int
+    restore_value: no
+    initial_value: "0"
+  - id: g_heatonce_mode
+    type: bool
+    restore_value: no
+    initial_value: "false"
+
+switch:
+  # - platform: gpio
+  #   pin: GPIO18
+  #   id: ds_vcc
+  - platform: gpio
+    pin: GPIO5
+    inverted: True
+    id: pump_off
+  # - platform: gpio
+  #   pin: GPIO22
+  #   inverted: False
+  #   id: fan1
+  - platform: template
+    name: "Manual/Automatic"
+    id: sw_automatic_mode
+    restore_mode: RESTORE_DEFAULT_OFF
+    lambda: return id(g_automatic_mode);
+    turn_on_action:
+      - globals.set:
+          id: g_automatic_mode
+          value: "true"
+      - globals.set:
+          id: g_automatic_off
+          value: "0"
+    turn_off_action:
+      - globals.set:
+          id: g_automatic_mode
+          value: "false"
+  - platform: template
+    name: "Heating Once"
+    id: sw_heatonce_mode
+    restore_mode: RESTORE_DEFAULT_OFF
+    lambda: return id(g_heatonce_mode);
+    turn_on_action:
+      - globals.set:
+          id: g_heatonce_mode
+          value: "true"
+    turn_off_action:
+      - globals.set:
+          id: g_heatonce_mode
+          value: "false"
+
+binary_sensor:
+  #- platform: gpio
+  #  pin:
+  #    number: GPIO19
+  #    inverted: true
+  #  name: "Start Btn"
+  #  filters:
+  #    - delayed_off: 10ms
+  #  on_press:
+  #    then:
+  #      - button.press: startBtn
+
+  #- platform: gpio
+  #  pin:
+  #    number: GPIO21
+  #    inverted: true
+  #  name: "Stop/Auto Btn"
+  #  filters:
+  #    - delayed_off: 10ms
+  #  on_press:
+  #    then:
+  #      - button.press: AutoBtn
+
+button:
+  - platform: template
+    name: "Start Btn"
+    icon: "mdi:reload"
+    id: startBtn
+    on_press:
+      then:
+        - lambda: |-
+            id(g_automatic_off)=-5;
+            auto call = id(mlValMin).make_call();
+            call.set_value(10);
+            call.perform();
+            id(fanOn) = true;
+            id(out_fan).turn_on();
+            int gFan = id(fan_speed);
+            float sFan = 0.1;
+            float bT = id(burnTemp).state;
+
+            if(bT < 150) {
+              sFan = gFan * 0.25;
+              if(sFan < 12.5) sFan = 12.5;
+            } else if(bT < 75) {
+              sFan = gFan * 0.66;
+            } else {
+              sFan = gFan;
+            }
+
+            id(out_fan).set_level(sFan/100);
+            id(fanSpeedSens).publish_state(sFan);
+            id(fan_off_timer) = millis()+200*1000;
+
+            ESP_LOGI("loop", "Click Start");
+        
+  - platform: template
+    name: "Stop/Auto Btn"
+    icon: "mdi:gas-burner"
+    id: AutoBtn
+    on_press:
+      then:
+        - lambda: |-
+            if(id(g_automatic_mode)) {
+              id(g_automatic_mode) = false;
+              auto call = id(mlValMin).make_call();
+              call.set_value(0);
+              call.perform();
+              id(g_automatic_stage) = 2;
+            } else {
+              id(g_automatic_mode) = true;
+              id(g_automatic_off) = -5;
+              id(fanOn) = true;
+              id(out_fan).turn_on();
+              int gFan = id(fan_speed);
+              float sFan = 0.1;
+              float bT = id(burnTemp).state;
+
+              if(bT < 200) {
+                sFan = gFan * 0.25;
+                if(sFan < 12.5) sFan = 12.5;
+              } else if(bT < 75) {
+                sFan = gFan * 0.66;
+              } else {
+                sFan = gFan;
+              }
+
+              id(out_fan).set_level(sFan/100);
+              id(fanSpeedSens).publish_state(sFan);
+              id(fan_off_timer) = millis()+200*1000;
+              id(g_automatic_stage) = 1;
+            }
+
+            ESP_LOGI("loop", "Toggle Auto, %d %d", id(g_automatic_mode), id(g_automatic_off));
+
+  - platform: template
+    name: "Fan Btn"
+    icon: "mdi:fan"
+    id: fanBtn
+    on_press:
+      then:
+        - lambda: |-
+            if(!id(fanOn)) {
+              id(fanOn) = true;
+              id(out_fan).turn_on();
+
+              int gFan = id(fan_speed);
+              float sFan = 0.1;
+              float bT = id(burnTemp).state;
+
+              if(bT < 150) {
+                sFan = gFan * 0.25;
+                if(sFan < 12.5) sFan = 12.5;
+              /*} else if(bT < 75) {
+                sFan = gFan * 0.66;*/
+              } else {
+                sFan = gFan;
+              }
+
+              id(out_fan).set_level(sFan/100);
+              id(fanSpeedSens).publish_state(sFan);
+              id(fan_off_timer) = millis()+200*1000;
+
+              ESP_LOGI("loop", "Enable Fan");
+            }
+
+one_wire:
+  - platform: gpio
+    pin: GPIO32
+
+sensor:
+  - platform: max6675
+    id: burnTemp
+    name: "Burning temp"
+    cs_pin: GPIO27
+    update_interval: 1s
+    filters:
+      - sliding_window_moving_average:
+          window_size: 15
+          send_every: 5
+          send_first_at: 5
+
+  - platform: dallas_temp
+    id: waterTemp
+    name: "Water Temp"
+    update_interval: 10s
+    filters:
+      - sliding_window_moving_average:
+          window_size: 9
+          send_every: 3
+          send_first_at: 3
+  - platform: template
+    id: fanSpeedSens
+    name: "Fan Speed"
+
+interval:
+  - interval: 10s
+    then:
+      - lambda: |-
+          float bT = id(burnTemp).state;
+          float tT = id(waterTemp).state;
+          float aT = id(g_automatic_temp);
+          int flow = id(g_automatic_flow);
+          int gFan = id(fan_speed);
+          float sFan = 12.5;
+
+          if(bT < 200) {
+            if((id(g_automatic_off) > 2 && id(g_automatic_stage) == 2) || (id(g_automatic_off) > 10 && id(g_automatic_stage) == 1 && bT < 50 )) {
+              if(id(g_automatic_mode)) {
+                id(g_automatic_mode) = false;
+                auto call = id(mlValMin).make_call();
+                call.set_value(0);
+                call.perform();
+              }
+            } else if(id(g_automatic_stage) > 0)
+              id(g_automatic_off)+=1;
+
+            if(id(fanOn)) {
+              id(fanOn) = false;
+              id(fan_off_timer) = millis()+600*1000;
+            }
+          } else {
+            id(g_automatic_off)=0;
+            if(!id(fanOn)) {
+              id(fanOn) = true;
+            }
+          }
+
+          if(bT > 200 && id(g_automatic_stage) < 2) {
+            id(g_automatic_stage) = 2;
+          }
+
+          if(id(g_automatic_mode)) {
+            bool updateFlag = false;
+            auto call = id(mlValMin).make_call();
+
+            if(tT >= aT) {
+              flow = 10;
+              if(id(g_heatonce_mode)) {
+                id(g_automatic_mode) = false;
+                id(g_heatonce_mode) = false;
+                flow = 0;
+              }
+              updateFlag = true;
+
+            } else if(tT <= aT-0.5) {
+              if(bT < 100 && flow > 10)
+                flow = 10;
+              else if(bT < 250 && flow > 15)
+                flow = 15;
+              if(id(mlValMin).state < flow - 5)
+                flow *= 1.1;
+              updateFlag = true;
+            }
+
+            if(id(mlValMin).state != flow && updateFlag) {
+              call.set_value(flow);
+              call.perform();
+            }
+
+            id(fanOn) = true;
+            id(out_fan).turn_on();
+            id(out_fan).update_frequency(25000);
+
+            if(bT < 100 && id(g_automatic_stage) != 2) {
+              sFan = gFan * 0.45;
+              if(sFan < 12.5) sFan = 12.5;
+            } else if(bT > 250) {
+              sFan = gFan * 1.45;
+            } else {
+              sFan = gFan * 0.9;
+              //if(sFan > gFan) sFan = gFan;
+              //if(flow < 30) sFan *= 0.50;
+            }
+
+            id(out_fan).set_level(sFan/100);
+            id(fanSpeedSens).publish_state(sFan);
+
+            id(fan_off_timer) = millis()+200*1000;
+
+          } else if(id(fanOn)) {
+            id(out_fan).turn_on();
+            id(out_fan).update_frequency(25000);
+
+            if(bT < 100) {
+              sFan = gFan * 0.45;
+              if(sFan < 12.5) sFan = 12.5;
+            /*} else if(bT < 75) {
+              sFan = gFan * 0.66;*/
+            } else {
+              sFan = gFan;
+            }
+
+            id(out_fan).set_level(sFan/100);
+            id(fanSpeedSens).publish_state(sFan);
+
+            id(fan_off_timer) = millis()+200*1000;
+
+          }
+
+          ESP_LOGI("loop", "Mode: %d, Stage: %d, fanOn: %d, fanSpeed: %f, fanOff: %ld, autoOff: %ld, millis: %ld ", id(g_automatic_mode), id(g_automatic_stage), id(fanOn), sFan, id(fan_off_timer), id(g_automatic_off), millis());
+
+output:
+  - platform: ledc
+    id: out_power_pulse
+    pin: GPIO04
+    inverted: false
+    frequency: 10khz
+    channel: 0
+  - platform: ledc
+    id: out_fan
+    pin: GPIO22
+    inverted: false
+    frequency: 25khz
+    channel: 6
+
+number:
+  - platform: template
+    id: mlValMin
+    name: "MlMin"
+    min_value: 0
+    max_value: 150
+    step: 5
+    initial_value: 0
+    optimistic: true
+    mode: BOX
+    on_value:
+      then:
+      - lambda: |-
+
+          if(float(x) == 0) {
+
+            id(pumpOn) = false;
+            id(pulses) = 0;
+            id(steps) = 0;
+            id(out_power_pulse).turn_off();
+            id(pdelay) = id(period)*1.0;
+
+          }
+          else {
+
+            ///расчеты со скоростями и ускорением на 1ms
+            float mlper = float(x)/60 * id(period);
+            id(pulses) = mlper/id(mlpt) * id(ppt);
+            float pumpMaxSpeed_ = id(pumpMaxSpeed) / 1000;
+            float pumpAccel_ = id(pumpAccel) / 1000;
+            float startFreq_ = id(startFreq) / 1000;
+
+            if(id(pulses) > pumpMaxSpeed_*2)
+            {
+
+              id(steps) = (pumpMaxSpeed_ - startFreq_)/pumpAccel_;
+              long pulsesToMax = id(steps)*pumpAccel_ + startFreq_;
+              id(maxSpeedTime) = (id(pulses) - pulsesToMax)/pumpMaxSpeed_;
+
+            } else {
+
+              id(steps) = round(id(pulses)/1000 + 1) / pumpAccel_;
+              //long pulsesToMax = id(steps)*pumpAccel_ + startFreq_;
+              id(maxSpeedTime) = 0;
+
+            }
+
+            if(id(maxSpeedTime) < 0) id(maxSpeedTime) = 0;
+            id(next_pulse_timer) = millis()+1;
+            id(pulse_started_off_at) = millis() + id(maxSpeedTime) + id(steps);
+            id(pdelay) = (float) id(period) - (id(maxSpeedTime)/1000.0 + id(steps)/10.0);
+            if(id(pdelay) < 0.1) id(pdelay) = 0.1;
+            id(pumpOn) = true;
+          }
+
+          ESP_LOGI("loop", "pulses: %d, mlpt: %d, ppt: %d, steps: %d, maxSpeedTime: %d, delay: %f", id(pulses), id(mlpt), id(ppt), id(steps), id(maxSpeedTime), id(pdelay));
+
+  # - platform: template
+  #   id: pumpMLPT
+  #   name: "ml на оборот"
+  #   min_value: 1
+  #   max_value: 100
+  #   step: 1
+  #   initial_value: 10
+  #   optimistic: true
+  #   on_value:
+  #     then:
+  #     - lambda: |-
+  #         id(mlpt) = int(x);
+
+  # - platform: template
+  #   id: pumpPPT
+  #   name: "Импульсов на оборот"
+  #   min_value: 200
+  #   max_value: 100000
+  #   step: 100
+  #   initial_value: 20000
+  #   optimistic: true
+  #   on_value:
+  #     then:
+  #     - lambda: |-
+  #         id(ppt) = int(x);
+
+  # - platform: template
+  #   id: pumpACCEL
+  #   name: "Ускорение двигателя насоса"
+  #   min_value: 100
+  #   max_value: 10000
+  #   step: 100
+  #   initial_value: 1000
+  #   optimistic: true
+  #   on_value:
+  #     then:
+  #     - lambda: |-
+  #         id(pumpAccel) = int(x);
+
+  # - platform: template
+  #   id: pumpSFQ
+  #   name: "Начальная скорость двигателя насоса"
+  #   min_value: 100
+  #   max_value: 10000
+  #   step: 100
+  #   initial_value: 1000
+  #   optimistic: true
+  #   on_value:
+  #     then:
+  #     - lambda: |-
+  #         id(startFreq) = int(x);
+
+  # - platform: template
+  #   id: pumpMS
+  #   name: "Максимальная скорость двигателя насоса"
+  #   min_value: 1000
+  #   max_value: 100000
+  #   step: 100
+  #   initial_value: 20000
+  #   optimistic: true
+  #   on_value:
+  #     then:
+  #     - lambda: |-
+  #         id(pumpMaxSpeed) = int(x);
+
+
+  - platform: template
+    id: autoTemp
+    name: "Auto Temp"
+    min_value: 10
+    max_value: 80
+    step: 1
+    initial_value: 20
+    restore_value: True
+    optimistic: true
+    mode: BOX
+    on_value:
+      then:
+      - lambda: |-
+          id(g_automatic_temp) = float(x);
+
+  - platform: template
+    id: autoFlow
+    name: "Forsauge"
+    min_value: 10
+    max_value: 150
+    step: 1
+    initial_value: 20
+    restore_value: True
+    optimistic: true
+    mode: BOX
+    on_value:
+      then:
+      - lambda: |-
+          id(g_automatic_flow) = int(x);
+
+  - platform: template
+    id: fanSpeed
+    name: "Fan Speed"
+    min_value: 10
+    max_value: 90
+    step: 1
+    initial_value: 50
+    restore_value: True
+    optimistic: true
+    mode: BOX
+    on_value:
+      then:
+      - lambda: |-
+          id(fan_speed) = float(x);
