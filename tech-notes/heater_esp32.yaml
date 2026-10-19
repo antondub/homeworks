@@ -9,11 +9,11 @@ logger:
 
 api:
   encryption:
-    key: ""
+    key: !secret apikey_oldheater
 
 ota:
   - platform: esphome
-    password: ""
+    password: !secret otapass_oldheater
 
 wifi:
   ssid: !secret wifi_ssid
