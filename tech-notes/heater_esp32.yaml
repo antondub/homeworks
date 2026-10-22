@@ -132,7 +132,7 @@ sensor:
             }
 
             if(!id(g_automatic_mode)){
-              id(climatContoller).target_temperature = 0;
+              id(climatContoller).target_temperature = 20;
               return;
             }
           
@@ -152,17 +152,22 @@ sensor:
             float flow = id(g_water_flow);
             float q_loss = vol * kv * (targ - t1);
             float q_in = 0;
-            if (!isnan(id(tempIn).state)) q_in = id(g_tin_w) * (targ - id(tempIn).state);
+            if (!isnan(id(tempIn).state)) {
+              q_in = vol * kv * (targ - id(tempIn).state);
+              q_in += id(g_tin_w) * (targ - id(tempIn).state);
+            }
             float q_need = q_loss + q_in;
             if (q_need < 0) q_need = 0;
             float q_now = 1.163f * flow * (tT - tD);
             id(g_q_need) = q_need;
             id(g_q_now) = q_now;
+            float drop = 0;
+            if (flow > 1) drop = q_need / (1.163f * flow);
+            if(drop < 0) drop = 0;
+            if(drop > 40) drop = 40;
             float out = prev;
-            if (flow > 1) out = q_need / (1.163f * flow);
-            if(out < 0) out = 0;
-            if(out > 40) out = 40;
-            
+            if(!isnan(tD)) out = tD + drop;
+            if(out > id(g_threshold_temp_off) - 10) out = id(g_threshold_temp_off) - 10;
             if(isnan(out)) out = prev;
 
             id(g_prev_temp_targ) = out;
@@ -537,13 +542,13 @@ button:
 climate:
   - platform: pid
     name: "Climate Controller"
-    sensor: tempDrop
+    sensor: tempTop
     id: climatContoller
     heat_output: heater
-    default_target_temperature: 0 °C
+    default_target_temperature: 20 °C
     visual:
-      min_temperature: 0 °C
-      max_temperature: 40 °C
+      min_temperature: 10 °C
+      max_temperature: 60 °C
     control_parameters:
       kp: 0.21236
       ki: 0.00177

@@ -1,0 +1,385 @@
+esphome:
+  name: heatingold
+  friendly_name: heatingOld
+  platform: ESP8266
+  board: nodemcuv2
+  esp8266_restore_from_flash: yes
+
+logger:
+
+api:
+  encryption:
+    key: !secret apikey_oldheater
+
+ota:
+  - platform: esphome
+    password: !secret otapass_oldheater
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+captive_portal:
+
+web_server:
+  port: 80
+
+time:
+  - platform: homeassistant
+    timezone: "Europe/Moscow"
+    id: ha_time
+
+globals:
+  - id: g_automatic_mode
+    type: bool
+    restore_value: yes
+    initial_value: "true"
+
+  - id: g_daynight_mode
+    type: bool
+    restore_value: yes
+    initial_value: "true"
+
+  - id: g_threshold_temp_off
+    type: float
+    restore_value: no
+    initial_value: "65.0"
+
+  - id: g_threshold_temp_k
+    type: float
+    restore_value: no
+    initial_value: "0.4"
+
+  - id: g_threshold_temp_targ
+    type: float
+    restore_value: no
+    initial_value: "25.0"
+
+  - id: g_threshold_temp_night
+    type: float
+    restore_value: no
+    initial_value: "20.0"
+
+  - id: g_prev_temp_targ
+    type: float
+    restore_value: yes
+    initial_value: "20.0"
+
+one_wire:
+  - platform: gpio
+    pin: GPIO5
+    #update_interval: 30s
+
+#//  TempIn    0x4d 3c e1 04 57 24 22 28
+#//  TempOut   0x04 7a c9 d4 43 85 11 28
+#//  TempDown  0x3b 3c e1 04 57 bc 99 28
+#//  TempTop   0x5e 35 8a d4 43 b1 5d 28
+
+sensor:
+  - platform: dallas_temp
+    address: 0x5e358ad443b15d28
+    name: "TempHeaterTop"
+    update_interval: 30s
+    id: tempTop
+    resolution: 12
+    on_value:
+      then:
+        - lambda: |-
+            float tT = id(tempTop).state;
+            if ( tT > id(g_threshold_temp_off)){
+              id(heater1).turn_off();
+              id(heater2).turn_off();
+            }
+
+            if(!id(g_automatic_mode)){
+              id(climatContoller).target_temperature = 20;
+              return;
+            }
+          
+            float t1 = id(tempOut).state;
+            float t2 = id(tempIn).state;
+            float tD = id(tempDown).state;
+            float k = id(g_threshold_temp_k);
+            float targ = id(g_threshold_temp_targ);
+            auto time = id(ha_time).now();
+            if(id(g_daynight_mode))
+              if(time.hour < 7 or time.hour > 21) {
+                targ = id(g_threshold_temp_night);
+                ESP_LOGD("day/night","night, temp targ %.2f", targ);
+              }
+
+            if(targ > t1){
+              float delta = (targ - t1)*0.04;
+              targ -= delta;
+            }
+
+            float prev = id(g_prev_temp_targ);
+
+            float tempOut_a = -0.21 * k - 0.06;
+            float tempOut_b = 6.04 * k + 1.98;
+            float tempOut_c = -5.06 * k + 18.06;
+            float tempOut_x = -0.5*k*t1 + 5;
+            float tempOut_y = tempOut_x*tempOut_x*tempOut_a + tempOut_x*tempOut_b + tempOut_c;
+
+            float tempOut_y2 = (targ-20)*1.5;
+            float tempOut_y3 = (targ-t2)*5;
+            float tempOut_y4 = (tT - tD)*0.5;
+            float tempOut_y5 = (tT - prev)*0.15;
+            if(isnan(tempOut_y5)) tempOut_y5 = 0;
+            if(tT - tD - 10 > 0)
+              tempOut_y4 = (tT - tD - 10)*0.65;
+            float out = tempOut_y + tempOut_y2 + tempOut_y3 + tempOut_y4 + tempOut_y5;
+
+            if(out > id(g_threshold_temp_off) - 10){
+              out = id(g_threshold_temp_off) - 10;
+            }
+
+            if(out < targ){
+              out = targ;
+            }
+            
+            if(isnan(out)) out = prev;
+
+            id(g_prev_temp_targ) = out;
+            id(climatContoller).target_temperature = out;
+
+            ESP_LOGD("calculation", "targ %.2f, tempOut_y %.2f, tempOut_x %.2f, tempOut_a %.2f, tempOut_b %.2f, tempOut_c %.2f, tempOut_y2 %.2f, tempOut_y3 %.2f, tempOut_y4 %.2f, tempOut_y5 %.2f", targ, tempOut_y, tempOut_x, tempOut_a, tempOut_b, tempOut_c, tempOut_y2, tempOut_y3, tempOut_y4, tempOut_y5);
+
+    filters:
+      - calibrate_polynomial:
+          degree: 2
+          datapoints:
+          - -11.5 -> -10.5
+          - 0.2 -> -0.7
+          - 23.0 -> 23.0
+          - 53.0 -> 48.0
+
+  - platform: dallas_temp
+    address: 0x3b3ce10457bc9928
+    name: "TempHeaterDown"
+    update_interval: 30s
+    id: tempDown
+    resolution: 12
+    filters:
+      - calibrate_polynomial:
+          degree: 2
+          datapoints:
+          - -11.5 -> -10.5
+          - 0.2 -> -0.7
+          - 23.0 -> 23.0
+          - 53.0 -> 48.0
+
+  - platform: dallas_temp
+    address: 0x047ac9d443851128
+    name: "TempOut"
+    update_interval: 120s
+    id: tempOut
+    resolution: 12
+    filters:
+      - calibrate_polynomial:
+          degree: 2
+          datapoints:
+          - -11.5 -> -10.5
+          - 0.2 -> -0.7
+          - 23.0 -> 23.0
+          - 53.0 -> 48.0
+
+  - platform: dallas_temp
+    address: 0x4d3ce10457242228
+    name: "TempIn"
+    update_interval: 60s
+    id: tempIn
+    resolution: 12
+    filters:
+      - calibrate_polynomial:
+          degree: 2
+          datapoints:
+          - -11.5 -> -10.5
+          - 0.2 -> -0.7
+          - 23.0 -> 23.0
+          - 53.0 -> 48.0
+
+  - platform: template
+    device_class: power_factor
+    unit_of_measurement: "%"
+    name: "Heater PWM"
+    id: heater_pwm
+
+
+  - platform: template
+    device_class: temperature
+    unit_of_measurement: "°C"
+    update_interval: 30s
+    name: "Climate Target"
+    lambda: |-
+      return id(climatContoller).target_temperature;
+
+switch:
+  - platform: gpio
+    pin: GPIO14
+    name: "pin1"
+
+  - platform: gpio
+    pin: GPIO12
+    name: "pin2"
+    id: out_heater2
+    on_turn_on:
+      then:
+        - lambda: |-
+            auto water_temperature = id(tempTop).state;
+            if ( water_temperature > id(g_threshold_temp_off)){
+              id(out_heater2).turn_off();
+              ESP_LOGD("pin2", "g_threshold_temp_off tempTop.state %.2f", water_temperature);
+            }
+
+  - platform: gpio
+    pin: GPIO13
+    name: "pin3"
+
+  - platform: gpio
+    pin: GPIO15
+    name: "pin4"
+    id: out_heater1
+    on_turn_on:
+      then:
+        - lambda: |-
+            auto water_temperature = id(tempTop).state;
+            if ( water_temperature > id(g_threshold_temp_off)){
+              id(out_heater1).turn_off();
+              ESP_LOGD("pin4", "g_threshold_temp_off tempTop.state %.2f", water_temperature);
+            }
+  
+  - platform: template
+    name: "Climat Manual/Automatic"
+    id: sw_automatic_mode
+    restore_mode: RESTORE_DEFAULT_OFF
+    lambda: return id(g_automatic_mode);
+    turn_on_action:
+      - globals.set:
+          id: g_automatic_mode
+          value: "true"
+    turn_off_action:
+      - globals.set:
+          id: g_automatic_mode
+          value: "false"
+
+  - platform: template
+    name: "Climat Day/Night"
+    id: sw_daynight_mode
+    restore_mode: RESTORE_DEFAULT_OFF
+    lambda: return id(g_daynight_mode);
+    turn_on_action:
+      - globals.set:
+          id: g_daynight_mode
+          value: "true"
+    turn_off_action:
+      - globals.set:
+          id: g_daynight_mode
+          value: "false"
+
+number:
+  - platform: template
+    name: "Climat Desired Temp"
+    id: val_target_temp
+    device_class: temperature
+    mode: box
+    unit_of_measurement: "°C"
+    optimistic: true
+    restore_value: true
+    min_value: 18
+    max_value: 25
+    step: 0.1
+    on_value:
+      then:
+      - lambda: |-
+          id(g_threshold_temp_targ) = float(x);
+
+  - platform: template
+    name: "Climat Night Temp"
+    id: val_night_temp
+    device_class: temperature
+    mode: box
+    unit_of_measurement: "°C"
+    optimistic: true
+    restore_value: true
+    min_value: 18
+    max_value: 25
+    step: 0.1
+    on_value:
+      then:
+      - lambda: |-
+          id(g_threshold_temp_night) = float(x);
+
+output:
+  - platform: template
+    id: heater
+    type: float
+    min_power: 0.00
+    max_power: 0.85
+    write_action:
+      - lambda: |-
+          if(state == 0){
+            id(heater1).set_level(0);
+            id(heater2).set_level(0);
+          }else if(state < 0.275){
+            id(heater1).set_level(state*3+0.033);
+            id(heater2).set_level(0);
+          }else if(state < 0.55){
+            id(heater1).set_level(0);
+            id(heater2).set_level(state*1.5+0.033);
+          }else {
+            id(heater1).set_level(state+0.033);
+            id(heater2).set_level(state+0.033);
+          }
+          id(heater_pwm).publish_state(state*100);
+          
+          ESP_LOGD("Heater PWM", "state %.2f", state);
+
+  - platform: slow_pwm
+    id: heater2
+    period: 30s
+    restart_cycle_on_state_change: false
+    turn_on_action:
+      - lambda: |-
+          auto *out = id(out_heater2);
+          out->turn_on();
+    turn_off_action:
+      - lambda: |-
+          auto *out = id(out_heater2);
+          out->turn_off();
+
+  - platform: slow_pwm
+    id: heater1
+    period: 30s
+    restart_cycle_on_state_change: false
+    turn_on_action:
+      - lambda: |-
+          auto *out = id(out_heater1);
+          out->turn_on();
+    turn_off_action:
+      - lambda: |-
+          auto *out = id(out_heater1);
+          out->turn_off();
+
+button:
+  platform: template
+  name: "PID Autotune"
+  on_press:
+    - climate.pid.autotune: climatContoller
+    
+climate:
+  - platform: pid
+    name: "Climate Controller"
+    sensor: tempTop
+    id: climatContoller
+    heat_output: heater
+    default_target_temperature: 20 °C
+    control_parameters:
+      kp: 0.21236
+      ki: 0.00177
+      kd: 6.37080
+      output_averaging_samples: 2
+      derivative_averaging_samples: 2
+    deadband_parameters:
+      threshold_high: 0.5 °C
+      threshold_low: -0.1 °C
