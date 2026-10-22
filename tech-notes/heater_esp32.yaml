@@ -60,6 +60,16 @@ globals:
     restore_value: no
     initial_value: "20.0"
 
+  - id: g_night_start
+    type: int
+    restore_value: yes
+    initial_value: "0"
+
+  - id: g_night_end
+    type: int
+    restore_value: yes
+    initial_value: "6"
+
   - id: g_prev_temp_targ
     type: float
     restore_value: yes
@@ -115,6 +125,24 @@ one_wire:
     pin: GPIO5
     #update_interval: 30s
 
+text_sensor:
+  - platform: template
+    name: "Climat Period"
+    id: climat_period
+    update_interval: 60s
+    lambda: |-
+      auto time = id(ha_time).now();
+      if(!time.is_valid()) return {"no time"};
+      if(!id(g_daynight_mode)) return {"day"};
+      int h = time.hour;
+      int a = id(g_night_start);
+      int b = id(g_night_end);
+      bool night = false;
+      if(a < b) night = h >= a && h < b;
+      else if(a > b) night = h >= a || h < b;
+      if(night) return {"night"};
+      return {"day"};
+
 sensor:
   - platform: dallas_temp
     address: 0x5e358ad443b15d28
@@ -140,11 +168,15 @@ sensor:
             float tD = id(tempDown).state;
             float targ = id(g_threshold_temp_targ);
             auto time = id(ha_time).now();
-            if(id(g_daynight_mode))
-              if(time.hour < 7 or time.hour > 21) {
-                targ = id(g_threshold_temp_night);
-                ESP_LOGD("day/night","night, temp targ %.2f", targ);
-              }
+            if(id(g_daynight_mode) && time.is_valid()) {
+              int h = time.hour;
+              int a = id(g_night_start);
+              int b = id(g_night_end);
+              bool night = false;
+              if(a < b) night = h >= a && h < b;
+              else if(a > b) night = h >= a || h < b;
+              if(night) targ = id(g_threshold_temp_night);
+            }
 
             float prev = id(g_prev_temp_targ);
             float vol = id(g_room_volume);
@@ -384,6 +416,38 @@ number:
       then:
       - lambda: |-
           id(g_threshold_temp_night) = float(x);
+
+  - platform: template
+    name: "Night Start"
+    id: val_night_start
+    mode: box
+    unit_of_measurement: "h"
+    optimistic: true
+    restore_value: true
+    min_value: 0
+    max_value: 23
+    step: 1
+    initial_value: 0
+    on_value:
+      then:
+      - lambda: |-
+          id(g_night_start) = int(x);
+
+  - platform: template
+    name: "Night End"
+    id: val_night_end
+    mode: box
+    unit_of_measurement: "h"
+    optimistic: true
+    restore_value: true
+    min_value: 0
+    max_value: 23
+    step: 1
+    initial_value: 6
+    on_value:
+      then:
+      - lambda: |-
+          id(g_night_end) = int(x);
 
   - platform: template
     name: "Room Volume"
