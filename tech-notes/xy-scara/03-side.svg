@@ -21,9 +21,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.533779"
-     inkscape:cx="451.17321"
-     inkscape:cy="196.24731"
+     inkscape:zoom="1.0845455"
+     inkscape:cx="361.90274"
+     inkscape:cy="182.56495"
      inkscape:window-width="2560"
      inkscape:window-height="1366"
      inkscape:window-x="0"
@@ -159,7 +159,7 @@
   <rect
      x="117.95097"
      y="237.27954"
-     width="121.42447"
+     width="136.4077"
      height="8"
      fill="#c4b49a"
      stroke="#2a241e"
@@ -203,8 +203,8 @@
      id="rect10" />
   <text
      class="sm halo"
-     x="240"
-     y="250"
+     x="236"
+     y="254"
      id="text13">обод B</text>
   <line
      x1="120.40514"
@@ -295,22 +295,22 @@
      id="circle22"
      style="stroke-width:1" />
   <circle
-     cx="168"
+     cx="246"
      cy="240.5"
      r="6"
      fill="#efe8dc"
      stroke="#2a241e"
      id="circle23" />
   <circle
-     cx="168"
+     cx="246"
      cy="240.5"
      r="2.2"
      fill="#5c6770"
      id="circle24" />
   <line
-     x1="166.12727"
+     x1="244.59836"
      y1="262.5"
-     x2="631.80652"
+     x2="632.22552"
      y2="262.5"
      stroke="#8a5a32"
      stroke-width="5"
@@ -415,9 +415,9 @@
      stroke-width="3"
      id="line38-6" />
   <line
-     x1="168.00504"
+     x1="246.00504"
      y1="240.83559"
-     x2="168.00504"
+     x2="246.00504"
      y2="263.95261"
      stroke="#5c6770"
      stroke-width="2.99999"
