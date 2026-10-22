@@ -52,13 +52,13 @@ globals:
 
   - id: g_threshold_temp_targ
     type: float
-    restore_value: no
-    initial_value: "25.0"
+    restore_value: yes
+    initial_value: "21.0"
 
   - id: g_threshold_temp_night
     type: float
-    restore_value: no
-    initial_value: "20.0"
+    restore_value: yes
+    initial_value: "20.5"
 
   - id: g_night_start
     type: int
@@ -75,20 +75,20 @@ globals:
     restore_value: yes
     initial_value: "20.0"
 
-  - id: g_room_volume
+  - id: g_room_m3
     type: float
     restore_value: yes
-    initial_value: "0.0"
+    initial_value: "125.0"
 
-  - id: g_heat_per_m3
+  - id: g_heat_k
     type: float
     restore_value: yes
-    initial_value: "0.0"
+    initial_value: "0.95"
 
-  - id: g_water_flow
+  - id: g_flow_lph
     type: float
     restore_value: yes
-    initial_value: "0.0"
+    initial_value: "170.0"
 
   - id: g_tin_w
     type: float
@@ -127,7 +127,7 @@ one_wire:
 
 text_sensor:
   - platform: template
-    name: "Climat Period"
+    name: "Climat Period — день, ночь или нет времени"
     id: climat_period
     update_interval: 60s
     lambda: |-
@@ -146,7 +146,7 @@ text_sensor:
 sensor:
   - platform: dallas_temp
     address: 0x5e358ad443b15d28
-    name: "TempHeaterTop"
+    name: "TempHeaterTop — температура подачи"
     update_interval: 30s
     id: tempTop
     resolution: 12
@@ -179,9 +179,9 @@ sensor:
             }
 
             float prev = id(g_prev_temp_targ);
-            float vol = id(g_room_volume);
-            float kv = id(g_heat_per_m3);
-            float flow = id(g_water_flow);
+            float vol = id(g_room_m3);
+            float kv = id(g_heat_k);
+            float flow = id(g_flow_lph);
             float q_loss = vol * kv * (targ - t1);
             float q_in = 0;
             if (!isnan(id(tempIn).state)) {
@@ -218,7 +218,7 @@ sensor:
 
   - platform: dallas_temp
     address: 0x3b3ce10457bc9928
-    name: "TempHeaterDown"
+    name: "TempHeaterDown — температура обратки"
     update_interval: 30s
     id: tempDown
     resolution: 12
@@ -232,7 +232,7 @@ sensor:
           - 53.0 -> 48.0
 
   - platform: template
-    name: "TempHeaterDrop"
+    name: "TempHeaterDrop — подача минус обратка"
     id: tempDrop
     unit_of_measurement: "°C"
     accuracy_decimals: 1
@@ -243,7 +243,7 @@ sensor:
       return id(tempTop).state - id(tempDown).state;
 
   - platform: template
-    name: "Heat Need"
+    name: "Heat Need — нужная мощность"
     id: heat_need
     unit_of_measurement: "W"
     accuracy_decimals: 0
@@ -253,7 +253,7 @@ sensor:
       return id(g_q_need);
 
   - platform: template
-    name: "Heat Now"
+    name: "Heat Now — мощность по перепаду воды"
     id: heat_now
     unit_of_measurement: "W"
     accuracy_decimals: 0
@@ -263,7 +263,7 @@ sensor:
       return id(g_q_now);
 
   - platform: template
-    name: "Heat Power"
+    name: "Heat Power — средняя мощность тэнов"
     id: heat_power
     unit_of_measurement: "kW"
     accuracy_decimals: 2
@@ -278,7 +278,7 @@ sensor:
 
   - platform: dallas_temp
     address: 0x047ac9d443851128
-    name: "TempOut"
+    name: "TempOut — улица"
     update_interval: 120s
     id: tempOut
     resolution: 12
@@ -293,7 +293,7 @@ sensor:
 
   - platform: dallas_temp
     address: 0x4d3ce10457242228
-    name: "TempIn"
+    name: "TempIn — воздух у контроллера"
     update_interval: 60s
     id: tempIn
     resolution: 12
@@ -309,7 +309,7 @@ sensor:
   - platform: template
     device_class: power_factor
     unit_of_measurement: "%"
-    name: "Heater PWM"
+    name: "Heater PWM — выход PID"
     id: heater_pwm
 
 
@@ -317,18 +317,18 @@ sensor:
     device_class: temperature
     unit_of_measurement: "°C"
     update_interval: 30s
-    name: "Climate Target"
+    name: "Climate Target — заданная температура подачи"
     lambda: |-
       return id(climatContoller).target_temperature;
 
 switch:
   - platform: gpio
     pin: GPIO14
-    name: "pin1"
+    name: "pin1 — GPIO14"
 
   - platform: gpio
     pin: GPIO12
-    name: "pin2"
+    name: "pin2 — тэн 4 кВт, GPIO12"
     id: out_heater2
     on_turn_on:
       then:
@@ -341,11 +341,11 @@ switch:
 
   - platform: gpio
     pin: GPIO13
-    name: "pin3"
+    name: "pin3 — GPIO13"
 
   - platform: gpio
     pin: GPIO15
-    name: "pin4"
+    name: "pin4 — тэн 2 кВт, GPIO15"
     id: out_heater1
     on_turn_on:
       then:
@@ -357,9 +357,9 @@ switch:
             }
   
   - platform: template
-    name: "Climat Manual/Automatic"
+    name: "Climat Manual/Automatic — авто считает подачу"
     id: sw_automatic_mode
-    restore_mode: RESTORE_DEFAULT_OFF
+    restore_mode: DISABLED
     lambda: return id(g_automatic_mode);
     turn_on_action:
       - globals.set:
@@ -371,9 +371,9 @@ switch:
           value: "false"
 
   - platform: template
-    name: "Climat Day/Night"
+    name: "Climat Day/Night — ночью берётся Night Temp"
     id: sw_daynight_mode
-    restore_mode: RESTORE_DEFAULT_OFF
+    restore_mode: DISABLED
     lambda: return id(g_daynight_mode);
     turn_on_action:
       - globals.set:
@@ -386,164 +386,146 @@ switch:
 
 number:
   - platform: template
-    name: "Climat Desired Temp"
+    name: "Climat Desired Temp — дневная температура воздуха"
     id: val_target_temp
     device_class: temperature
     mode: box
     unit_of_measurement: "°C"
-    optimistic: true
-    restore_value: true
     min_value: 18
     max_value: 25
     step: 0.1
-    on_value:
-      then:
-      - lambda: |-
-          id(g_threshold_temp_targ) = float(x);
+    lambda: return id(g_threshold_temp_targ);
+    set_action:
+      - globals.set:
+          id: g_threshold_temp_targ
+          value: !lambda return x;
 
   - platform: template
-    name: "Climat Night Temp"
+    name: "Climat Night Temp — ночная температура воздуха"
     id: val_night_temp
     device_class: temperature
     mode: box
     unit_of_measurement: "°C"
-    optimistic: true
-    restore_value: true
     min_value: 18
     max_value: 25
     step: 0.1
-    on_value:
-      then:
-      - lambda: |-
-          id(g_threshold_temp_night) = float(x);
+    lambda: return id(g_threshold_temp_night);
+    set_action:
+      - globals.set:
+          id: g_threshold_temp_night
+          value: !lambda return x;
 
   - platform: template
-    name: "Night Start"
+    name: "Night Start — час начала ночи"
     id: val_night_start
     mode: box
     unit_of_measurement: "h"
-    optimistic: true
-    restore_value: true
     min_value: 0
     max_value: 23
     step: 1
-    initial_value: 0
-    on_value:
-      then:
-      - lambda: |-
-          id(g_night_start) = int(x);
+    lambda: return id(g_night_start);
+    set_action:
+      - globals.set:
+          id: g_night_start
+          value: !lambda return (int) x;
 
   - platform: template
-    name: "Night End"
+    name: "Night End — час конца ночи, не входит"
     id: val_night_end
     mode: box
     unit_of_measurement: "h"
-    optimistic: true
-    restore_value: true
     min_value: 0
     max_value: 23
     step: 1
-    initial_value: 6
-    on_value:
-      then:
-      - lambda: |-
-          id(g_night_end) = int(x);
+    lambda: return id(g_night_end);
+    set_action:
+      - globals.set:
+          id: g_night_end
+          value: !lambda return (int) x;
 
   - platform: template
-    name: "Room Volume"
+    name: "Room Volume — объём дома"
     id: val_room_volume
     mode: box
     unit_of_measurement: "m³"
-    optimistic: true
-    restore_value: true
     min_value: 0
     max_value: 500
     step: 0.1
-    initial_value: 0
-    on_value:
-      then:
-      - lambda: |-
-          id(g_room_volume) = float(x);
+    lambda: return id(g_room_m3);
+    set_action:
+      - globals.set:
+          id: g_room_m3
+          value: !lambda return x;
 
   - platform: template
-    name: "Heat Loss K"
+    name: "Heat Loss K — удельные теплопотери"
     id: val_heat_per_m3
     mode: box
     unit_of_measurement: "W/m³K"
-    optimistic: true
-    restore_value: true
     min_value: 0
     max_value: 5
     step: 0.01
-    initial_value: 0
-    on_value:
-      then:
-      - lambda: |-
-          id(g_heat_per_m3) = float(x);
+    lambda: return id(g_heat_k);
+    set_action:
+      - globals.set:
+          id: g_heat_k
+          value: !lambda return x;
 
   - platform: template
-    name: "Water Flow"
+    name: "Water Flow — расход воды"
     id: val_water_flow
     mode: box
     unit_of_measurement: "L/h"
-    optimistic: true
-    restore_value: true
     min_value: 0
     max_value: 3000
     step: 1
-    initial_value: 0
-    on_value:
-      then:
-      - lambda: |-
-          id(g_water_flow) = float(x);
+    lambda: return id(g_flow_lph);
+    set_action:
+      - globals.set:
+          id: g_flow_lph
+          value: !lambda return x;
 
   - platform: template
-    name: "TempIn Trim"
+    name: "TempIn Trim — добавка по TempIn"
     id: val_tin_w
     mode: box
     unit_of_measurement: "W/K"
-    optimistic: true
-    restore_value: true
     min_value: 0
     max_value: 100
     step: 0.5
-    initial_value: 0
-    on_value:
-      then:
-      - lambda: |-
-          id(g_tin_w) = float(x);
+    lambda: return id(g_tin_w);
+    set_action:
+      - globals.set:
+          id: g_tin_w
+          value: !lambda return x;
 
   - platform: template
-    name: "Heater 1 Power"
+    name: "Heater 1 Power — мощность тэна GPIO15"
     id: val_heater1_kw
     mode: box
     unit_of_measurement: "kW"
-    optimistic: true
-    restore_value: true
     min_value: 0
     max_value: 10
     step: 0.1
-    initial_value: 2
-    on_value:
-      then:
-      - lambda: |-
-          id(g_heater1_kw) = float(x);
+    lambda: return id(g_heater1_kw);
+    set_action:
+      - globals.set:
+          id: g_heater1_kw
+          value: !lambda return x;
 
   - platform: template
-    name: "Heater 2 Power"
+    name: "Heater 2 Power — мощность тэна GPIO12"
     id: val_heater2_kw
     mode: box
     unit_of_measurement: "kW"
-    optimistic: true
-    restore_value: true
     min_value: 0
     max_value: 10
     step: 0.1
-    initial_value: 4
-    on_value:
-      then:
-      - lambda: |-
-          id(g_heater2_kw) = float(x);
+    lambda: return id(g_heater2_kw);
+    set_action:
+      - globals.set:
+          id: g_heater2_kw
+          value: !lambda return x;
 
 output:
   - platform: template
@@ -599,13 +581,13 @@ output:
 
 button:
   platform: template
-  name: "PID Autotune"
+    name: "PID Autotune — автонастройка PID"
   on_press:
     - climate.pid.autotune: climatContoller
     
 climate:
   - platform: pid
-    name: "Climate Controller"
+    name: "Climate Controller — PID по температуре подачи"
     sensor: tempTop
     id: climatContoller
     heat_output: heater
