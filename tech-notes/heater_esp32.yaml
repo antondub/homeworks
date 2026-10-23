@@ -70,6 +70,16 @@ globals:
     restore_value: yes
     initial_value: "6"
 
+  - id: g_boost_c
+    type: float
+    restore_value: yes
+    initial_value: "2.0"
+
+  - id: g_boost_min
+    type: int
+    restore_value: yes
+    initial_value: "60"
+
   - id: g_prev_temp_targ
     type: float
     restore_value: yes
@@ -127,7 +137,7 @@ one_wire:
 
 text_sensor:
   - platform: template
-    name: "Climat Period — день, ночь или нет времени"
+    name: "Climat Period — день, ночь, разгон или нет времени"
     id: climat_period
     update_interval: 60s
     lambda: |-
@@ -141,6 +151,12 @@ text_sensor:
       if(a < b) night = h >= a && h < b;
       else if(a > b) night = h >= a || h < b;
       if(night) return {"night"};
+      if(a != b && id(g_boost_c) > 0 && id(g_boost_min) > 0) {
+        int elapsed = h * 60 + time.minute - b * 60;
+        if(elapsed < 0) elapsed += 1440;
+        float span = id(g_threshold_temp_targ) - id(tempOut).state;
+        if(elapsed < id(g_boost_min) && span > 0) return {"boost"};
+      }
       return {"day"};
 
 sensor:
@@ -176,6 +192,12 @@ sensor:
               if(a < b) night = h >= a && h < b;
               else if(a > b) night = h >= a || h < b;
               if(night) targ = id(g_threshold_temp_night);
+              else if(a != b && id(g_boost_c) > 0 && id(g_boost_min) > 0) {
+                int elapsed = h * 60 + time.minute - b * 60;
+                if(elapsed < 0) elapsed += 1440;
+                float span = id(g_threshold_temp_targ) - t1;
+                if(elapsed < id(g_boost_min) && span > 0) targ += id(g_boost_c) * span / 8.0f;
+              }
             }
 
             float prev = id(g_prev_temp_targ);
@@ -441,6 +463,35 @@ number:
     set_action:
       - globals.set:
           id: g_night_end
+          value: !lambda return (int) x;
+
+  - platform: template
+    name: "Morning Boost — градусы при перепаде с улицей 8 °C"
+    id: val_boost_c
+    device_class: temperature
+    mode: box
+    unit_of_measurement: "°C"
+    min_value: 0
+    max_value: 5
+    step: 0.1
+    lambda: return id(g_boost_c);
+    set_action:
+      - globals.set:
+          id: g_boost_c
+          value: !lambda return x;
+
+  - platform: template
+    name: "Morning Boost Time — минуты разгона после ночи"
+    id: val_boost_min
+    mode: box
+    unit_of_measurement: "min"
+    min_value: 0
+    max_value: 180
+    step: 5
+    lambda: return id(g_boost_min);
+    set_action:
+      - globals.set:
+          id: g_boost_min
           value: !lambda return (int) x;
 
   - platform: template

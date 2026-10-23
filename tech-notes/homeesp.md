@@ -26,7 +26,7 @@ GPIO14 и GPIO13 в конфиге есть, к ТЭНам не подключе
 
 Считается каждые 30 с по приходу `TempHeaterTop`. Ручной режим: уставка перепада 0.
 
-Уставка комнаты `targ` — дневная, из Climat Desired Temp. Время с Home Assistant, пояс Europe/Moscow. Если время ещё не пришло, остаётся дневная. При включённом день/ночь и часе в интервале Night Start…Night End (по умолчанию 0…6, конец не входит) `targ` берётся из Climat Night Temp. Сейчас ночь с 00:00 до 06:00. Датчик `Climat Period`: `night`, `day` или `no time`.
+Уставка комнаты `targ` — дневная, из Climat Desired Temp. Время с Home Assistant, пояс Europe/Moscow. Если время ещё не пришло, остаётся дневная. При включённом день/ночь и часе в интервале Night Start…Night End (по умолчанию 0…6, конец не входит) `targ` берётся из Climat Night Temp. Сейчас ночь с 00:00 до 06:00. Следующие Morning Boost Time минут (по умолчанию 60) к дневной уставке прибавляется `Morning Boost · max(дневная − TempOut, 0) / 8`. 8 °C — перепад, при котором поле берётся как есть (по умолчанию 2 °C: улица 13 °C и дневная 21). Затем снова дневная. Датчик `Climat Period`: `night`, `boost`, `day` или `no time`.
 
 ```
 Q_loss = V · k · (targ − TempOut)
