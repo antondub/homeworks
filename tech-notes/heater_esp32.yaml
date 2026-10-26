@@ -631,10 +631,10 @@ output:
           out->turn_off();
 
 button:
-  platform: template
+  - platform: template
     name: "PID Autotune — автонастройка PID"
-  on_press:
-    - climate.pid.autotune: climatContoller
+    on_press:
+      - climate.pid.autotune: climatContoller
     
 climate:
   - platform: pid
