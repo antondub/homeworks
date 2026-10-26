@@ -264,7 +264,7 @@ sensor:
     internal: true
     filters:
       - sliding_window_moving_average:
-          window_size: 10
+          window_size: 4
           send_every: 1
 
   - platform: copy
@@ -273,7 +273,7 @@ sensor:
     internal: true
     filters:
       - sliding_window_moving_average:
-          window_size: 10
+          window_size: 4
           send_every: 1
 
   - platform: template
@@ -673,8 +673,5 @@ climate:
       kp: 0.21236
       ki: 0.00177
       kd: 6.37080
-      output_averaging_samples: 2
-      derivative_averaging_samples: 2
-    deadband_parameters:
-      threshold_high: 0.5 °C
-      threshold_low: -0.1 °C
+      output_averaging_samples: 4
+      derivative_averaging_samples: 4
