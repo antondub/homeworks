@@ -163,7 +163,7 @@ sensor:
   - platform: dallas_temp
     address: 0x5e358ad443b15d28
     name: "TempHeaterTop"
-    update_interval: 30s
+    update_interval: 5s
     id: tempTop
     resolution: 12
     on_value:
@@ -173,15 +173,23 @@ sensor:
             if ( tT > id(g_threshold_temp_off)){
               id(heater1).turn_off();
               id(heater2).turn_off();
+              id(g_power_kw) = 0;
+              id(heater_pwm).publish_state(0);
+              return;
             }
 
             if(!id(g_automatic_mode)){
-              id(climatContoller).target_temperature = 0;
+              id(heater1).turn_off();
+              id(heater2).turn_off();
+              id(g_power_kw) = 0;
+              id(heater_pwm).publish_state(0);
+              id(g_prev_temp_targ) = 0;
               return;
             }
           
             float t1 = id(tempOut).state;
             float tD = id(tempDown).state;
+            if(isnan(t1)) return;
             float targ = id(g_threshold_temp_targ);
             auto time = id(ha_time).now();
             if(id(g_daynight_mode) && time.is_valid()) {
@@ -222,7 +230,30 @@ sensor:
             if(isnan(out)) out = prev;
 
             id(g_prev_temp_targ) = out;
-            id(climatContoller).target_temperature = out;
+
+            float w1 = id(g_heater1_kw) * 1000.0f;
+            float w2 = id(g_heater2_kw) * 1000.0f;
+            float l1 = 0;
+            float l2 = 0;
+            if(q_need > 0 && w1 > 1 && q_need <= w1 * 0.5f){
+              l1 = q_need / w1;
+            }else if(q_need > 0 && w2 > 1 && q_need <= w2){
+              l2 = q_need / w2;
+            }else if(q_need > 0 && w2 > 1){
+              l1 = 1;
+              l2 = (q_need - w1) / w2;
+              if(l2 > 1) l2 = 1;
+            }else if(q_need > 0 && w1 > 1){
+              l1 = q_need / w1;
+              if(l1 > 1) l1 = 1;
+            }
+            id(heater1).set_level(l1);
+            id(heater2).set_level(l2);
+            id(g_power_kw) = l1 * id(g_heater1_kw) + l2 * id(g_heater2_kw);
+            float wsum = id(g_heater1_kw) + id(g_heater2_kw);
+            float pwm = 0;
+            if(wsum > 0) pwm = id(g_power_kw) / wsum * 100;
+            id(heater_pwm).publish_state(pwm);
 
             ESP_LOGD("calculation", "targ %.2f, tOut %.2f, q_loss %.2f, q_in %.2f, q_need %.2f, q_now %.2f, out %.2f", targ, t1, q_loss, q_in, q_need, q_now, out);
 
@@ -238,7 +269,7 @@ sensor:
   - platform: dallas_temp
     address: 0x3b3ce10457bc9928
     name: "TempHeaterDown"
-    update_interval: 30s
+    update_interval: 5s
     id: tempDown
     resolution: 12
     filters:
@@ -277,9 +308,13 @@ sensor:
     unit_of_measurement: "W"
     accuracy_decimals: 0
     device_class: power
-    update_interval: 30s
+    update_interval: 5s
     lambda: |-
       return id(g_q_now);
+    filters:
+      - sliding_window_moving_average:
+          window_size: 6
+          send_every: 1
 
   - platform: template
     name: "Heat Power"
@@ -338,7 +373,7 @@ sensor:
     update_interval: 30s
     name: "Climate Target"
     lambda: |-
-      return id(climatContoller).target_temperature;
+      return id(g_prev_temp_targ);
 
 switch:
   - platform: gpio
@@ -576,31 +611,6 @@ number:
           value: !lambda return x;
 
 output:
-  - platform: template
-    id: heater
-    type: float
-    min_power: 0.00
-    max_power: 0.85
-    write_action:
-      - lambda: |-
-          float l1 = 0;
-          float l2 = 0;
-          if(state == 0){
-          }else if(state < 0.275){
-            l1 = state*3+0.033;
-          }else if(state < 0.55){
-            l2 = state*1.5+0.033;
-          }else {
-            l1 = state+0.033;
-            l2 = state+0.033;
-          }
-          id(heater1).set_level(l1);
-          id(heater2).set_level(l2);
-          id(g_power_kw) = l1 * id(g_heater1_kw) + l2 * id(g_heater2_kw);
-          id(heater_pwm).publish_state(state*100);
-          
-          ESP_LOGD("Heater PWM", "state %.2f, kW %.2f", state, id(g_power_kw));
-
   - platform: slow_pwm
     id: heater2
     period: 30s
@@ -626,29 +636,3 @@ output:
       - lambda: |-
           auto *out = id(out_heater1);
           out->turn_off();
-
-button:
-  - platform: template
-    name: "PID Autotune"
-    on_press:
-      - climate.pid.autotune: climatContoller
-    
-climate:
-  - platform: pid
-    name: "Climate Controller"
-    sensor: tempDrop
-    id: climatContoller
-    heat_output: heater
-    default_target_temperature: 0 °C
-    visual:
-      min_temperature: 0 °C
-      max_temperature: 40 °C
-    control_parameters:
-      kp: 0.21236
-      ki: 0.00177
-      kd: 6.37080
-      output_averaging_samples: 2
-      derivative_averaging_samples: 2
-    deadband_parameters:
-      threshold_high: 0.5 °C
-      threshold_low: -0.1 °C
