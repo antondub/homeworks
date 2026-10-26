@@ -212,15 +212,20 @@ sensor:
             }
             float q_need = q_loss + q_in;
             if (q_need < 0) q_need = 0;
+            float tTm = id(tempTopMean).state;
+            float tDm = id(tempDownMean).state;
             float q_now = 1.163f * flow * (tT - tD);
+            if(!isnan(tTm) && !isnan(tDm)) q_now = 1.163f * flow * (tTm - tDm);
             id(g_q_need) = q_need;
             id(g_q_now) = q_now;
             float drop = 0;
             if (flow > 1) drop = q_need / (1.163f * flow);
             if(drop < 0) drop = 0;
             if(drop > 40) drop = 40;
+            float base = tD;
+            if(!isnan(tDm)) base = tDm;
             float out = prev;
-            if(!isnan(tD)) out = tD + drop;
+            if(!isnan(base)) out = base + drop;
             if(out > id(g_threshold_temp_off) - 10) out = id(g_threshold_temp_off) - 10;
             if(isnan(out)) out = prev;
 
@@ -252,6 +257,24 @@ sensor:
           - 0.2 -> -0.7
           - 23.0 -> 23.0
           - 53.0 -> 48.0
+
+  - platform: copy
+    source_id: tempTop
+    id: tempTopMean
+    internal: true
+    filters:
+      - sliding_window_moving_average:
+          window_size: 10
+          send_every: 1
+
+  - platform: copy
+    source_id: tempDown
+    id: tempDownMean
+    internal: true
+    filters:
+      - sliding_window_moving_average:
+          window_size: 10
+          send_every: 1
 
   - platform: template
     name: "TempHeaterDrop"
@@ -639,7 +662,7 @@ button:
 climate:
   - platform: pid
     name: "Climate Controller"
-    sensor: tempTop
+    sensor: tempTopMean
     id: climatContoller
     heat_output: heater
     default_target_temperature: 20 °C
