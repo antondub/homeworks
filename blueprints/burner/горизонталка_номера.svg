@@ -20,15 +20,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.3180912"
-     inkscape:cx="189.28887"
-     inkscape:cy="469.61849"
+     inkscape:zoom="0.93203123"
+     inkscape:cx="551.48367"
+     inkscape:cy="462.43086"
      inkscape:window-width="2560"
      inkscape:window-height="1366"
      inkscape:window-x="0"
      inkscape:window-y="37"
      inkscape:window-maximized="1"
-     inkscape:current-layer="front-view" />
+     inkscape:current-layer="leg-6" />
   <defs
      id="defs63">
     <marker
@@ -1088,7 +1088,7 @@
          x="22"
          y="4"
          fill="#3c342c"
-         id="text46">Двенадцать отверстий Ø2.5, закрутка факела</text>
+         id="text46">Двенадцать отверстий Ø3.2, закрутка факела</text>
     </g>
     <g
        transform="translate(830,262)"

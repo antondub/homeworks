@@ -240,17 +240,22 @@
 ---
 
 ## Порядок сборки и прогресс
-<p>
-<img src="./photos/фото-короб-воздух.jpg" alt="Короб воздуха, труба и сужение за фланец" width="50%" />
-<img src="./photos/фото-сердечник.jpg" alt="Сердечник и общий корпус горелки" width="50%" />
-<img src="./photos/фото-кожух-фланец.jpg" alt="Кожух циклона со своим фланцем у фланца горелки" width="50%" />
-</p>
+
+<div style="display: flex; gap: 10px; align-items: flex-start;">
+    <div style="flex: 2; display: flex; flex-direction: column; gap: 10px;">
+        <img src="./photos/фото-короб-воздух.jpg" alt="Короб воздуха, труба и сужение за фланец" width="50%" />
+        <img src="./photos/фото-сердечник.jpg" alt="Сердечник и общий корпус горелки" width="50%" />
+    </div>
+    <div style="flex: 1;">
+        <img src="./photos/фото-кожух-фланец.jpg" alt="Кожух циклона со своим фланцем у фланца горелки" width="33%" />
+    </div>
+</div>
 
 **Новый теплообменник котла:**
 
 <p>
-<img src="./photos/котел-1.jpg" alt="Котел" width="50%" />
-<img src="./photos/котел-2.jpg" alt="Котел" width="50%" />
+    <img src="./photos/котел-1.jpg" alt="Котел" width="33%" />
+    <img src="./photos/котел-2.jpg" alt="Котел" width="30%" />
 </p>
 
 ### Горелка
