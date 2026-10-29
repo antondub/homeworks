@@ -282,9 +282,9 @@
 ## Порядок сборки и прогресс
 
 <p>
-    <img src="./photos/фото-кожух-фланец.jpg" alt="Кожух циклона со своим фланцем у фланца горелки" width="33%" align="right" style="margin-left: 15px; margin-bottom: 10px;" />
-    <img src="./photos/фото-короб-воздух.jpg" alt="Короб воздуха, труба и сужение за фланец" width="62%" style="margin-bottom: 10px;" />
-    <img src="./photos/фото-сердечник.jpg" alt="Сердечник и общий корпус горелки" width="62%" />
+    <img src="./photos/фото-кожух-фланец.jpg" alt="Кожух циклона со своим фланцем у фланца горелки" width="37%" align="right" style="margin-left: 15px; margin-bottom: 10px;" />
+    <img src="./photos/фото-короб-воздух.jpg" alt="Короб воздуха, труба и сужение за фланец" width="58%" style="margin-bottom: 10px;" />
+    <img src="./photos/фото-сердечник.jpg" alt="Сердечник и общий корпус горелки" width="58%" />
     <br clear="right">
 </p>
 
