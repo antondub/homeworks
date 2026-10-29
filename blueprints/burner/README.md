@@ -243,11 +243,11 @@
 
 <div style="display: flex; gap: 10px; align-items: flex-start;">
     <div style="flex: 2; display: flex; flex-direction: column; gap: 10px;">
-        <img src="./photos/фото-короб-воздух.jpg" alt="Короб воздуха, труба и сужение за фланец" width="40%" />
-        <img src="./photos/фото-сердечник.jpg" alt="Сердечник и общий корпус горелки" width="40%" />
+        <img src="./photos/фото-короб-воздух.jpg" alt="Короб воздуха, труба и сужение за фланец" width="100%" />
+        <img src="./photos/фото-сердечник.jpg" alt="Сердечник и общий корпус горелки" width="100%" />
     </div>
     <div style="flex: 1;">
-        <img src="./photos/фото-кожух-фланец.jpg" alt="Кожух циклона со своим фланцем у фланца горелки" width="33%" />
+        <img src="./photos/фото-кожух-фланец.jpg" alt="Кожух циклона со своим фланцем у фланца горелки" width="100%" />
     </div>
 </div>
 
