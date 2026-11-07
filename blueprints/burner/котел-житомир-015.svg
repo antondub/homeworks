@@ -22,17 +22,18 @@
     <rect x="52" y="388" width="178" height="14" fill="none" stroke="#1c1916" stroke-width="2"/>
     <rect x="38" y="300" width="14" height="88" fill="none" stroke="#1c1916" stroke-width="2"/>
     <rect x="230" y="300" width="14" height="88" fill="none" stroke="#1c1916" stroke-width="2"/>
-    <text x="141" y="332" text-anchor="middle" font-size="13" font-weight="700">проём</text>
-    <text x="141" y="350" text-anchor="middle" font-size="12">высота 240 мм</text>
-    <text x="141" y="368" text-anchor="middle" font-size="11" fill="#8a4e10">корпус этим не масштабируется</text>
+    <text x="141" y="326" text-anchor="middle" font-size="13" font-weight="700">проём в свету</text>
+    <text x="141" y="344" text-anchor="middle" font-size="12">H = 240 мм</text>
+    <text x="141" y="362" text-anchor="middle" font-size="11">B = B внутри ТО</text>
+    <text x="141" y="378" text-anchor="middle" font-size="11" fill="#8a4e10">число B не снято</text>
     <text x="141" y="430" text-anchor="middle" font-size="11">крышка 2 мм, перед ниже</text>
     <path d="M36 478 h28 l14 28 h-28 z M218 478 h28 l-14 28 h-28 z" fill="none" stroke="#1c1916" stroke-width="1.6" stroke-dasharray="4 2"/>
     <text x="141" y="528" text-anchor="middle" font-size="11" fill="#8a4e10">опоры низкие, контур условный</text>
   </g>
   <text x="28" y="650" font-size="12">Полки: верх вверх, низ вниз,</text>
   <text x="28" y="668" font-size="12">бока в стороны.</text>
-  <text x="28" y="686" font-size="12">Ширина проёма не снята.</text>
-  <text x="28" y="704" font-size="12" fill="#8a4e10">240 мм не делит корпус.</text>
+  <text x="28" y="686" font-size="12">B проёма = B внутри ТО.</text>
+  <text x="28" y="704" font-size="12" fill="#8a4e10">Число B нет. Не рама 240×170.</text>
 
   <text x="430" y="82" font-size="15" font-weight="700">Сбоку, по фото, не обмер</text>
   <g transform="translate(430,96)">
@@ -76,10 +77,11 @@
     <line x1="24" y1="40" x2="24" y2="200" stroke="#1c1916" stroke-width="2"/>
     <line x1="16" y1="40" x2="32" y2="40" stroke="#1c1916"/>
     <line x1="16" y1="200" x2="32" y2="200" stroke="#1c1916"/>
-    <text x="40" y="124" font-size="12">проём 240 мм</text>
+    <text x="36" y="100" font-size="12">H = 240 мм</text>
+    <text x="36" y="118" font-size="11" fill="#8a4e10">B не 240</text>
     <text x="180" y="48" font-size="12" font-weight="700">Увеличено, не в масштабе линейки</text>
     <line x1="180" y1="70" x2="180" y2="150" stroke="#1c1916" stroke-width="3"/>
-    <text x="150" y="110" font-size="11">ТО</text>
+    <text x="158" y="96" font-size="11">ТО</text>
     <line x1="180" y1="150" x2="210" y2="150" stroke="#c46a12" stroke-width="1.4"/>
     <line x1="186" y1="146" x2="186" y2="154" stroke="#c46a12"/>
     <line x1="204" y1="146" x2="204" y2="154" stroke="#c46a12"/>
