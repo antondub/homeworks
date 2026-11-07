@@ -2,15 +2,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1080" viewBox="0 0 1680 1080" font-family="DejaVu Sans, Liberation Sans, sans-serif">
   <rect width="1680" height="1080" fill="#f7f4ee"/>
   <text x="28" y="32" font-size="22" font-weight="700" fill="#1c1916">Шкаф котла, предварительная компоновка</text>
-  <text x="28" y="54" font-size="13" fill="#3d3832">Не обмер и не доказательство, что оборудование помещается. Серое — каталог, не этот котёл. Оранжевый пунктир — размер не задан.</text>
+  <text x="28" y="54" font-size="13" fill="#3d3832">Рамка в пропорции Ш1000×В1500 и план Ш1000×Г400. Всё оборудование внутри без масштаба.</text>
 
   <text x="36" y="84" font-size="15" font-weight="700">Вид спереди фасада</text>
   <g transform="translate(36,96)">
-    <rect x="0" y="0" width="400" height="560" fill="#fff" stroke="#1c1916" stroke-width="2"/>
+    <rect x="0" y="0" width="400" height="600" fill="#fff" stroke="#1c1916" stroke-width="2"/>
     <text x="200" y="18" text-anchor="middle" font-size="11" fill="#6a6258">Ш около 1000, В около 1500, предварительно</text>
-    <rect x="28" y="200" width="160" height="280" fill="#d5e4f0" stroke="#1c1916" stroke-width="1.6"/>
-    <text x="108" y="320" text-anchor="middle" font-size="13" font-weight="700">котёл боком</text>
-    <text x="108" y="338" text-anchor="middle" font-size="11" fill="#6a6258">габарит не снят</text>
+    <rect x="28" y="200" width="160" height="280" fill="none" stroke="#1c1916" stroke-dasharray="5 3"/>
+    <text x="108" y="320" text-anchor="middle" font-size="13" font-weight="700">котёл v2</text>
+    <text x="108" y="338" text-anchor="middle" font-size="11" fill="#6a6258">не в масштабе</text>
     <rect x="188" y="390" width="78" height="64" fill="#f4efe4" stroke="#1c1916"/>
     <text x="227" y="418" text-anchor="middle" font-size="12">горелка</text>
     <text x="227" y="434" text-anchor="middle" font-size="10" fill="#6a6258">вылет не снят</text>
@@ -38,20 +38,18 @@
     <text x="88" y="532" text-anchor="middle" font-size="10" fill="#6a6258">размер не снят</text>
 
   </g>
-  <text x="36" y="674" font-size="12">Кран подачи и кран обратки. Не два подряд.</text>
-  <text x="36" y="692" font-size="12">Дальше 90 градусов в стену, см. план.</text>
-  <text x="36" y="710" font-size="12">Это не гидравлическая схема.</text>
-  <text x="36" y="736" font-size="12">Насос топлива, насос контура, вентилятор</text>
-  <text x="36" y="754" font-size="12">внутри. Места не назначены.</text>
+  <text x="36" y="716" font-size="12">Кран подачи и кран обратки. Не два подряд.</text>
+  <text x="36" y="734" font-size="12">Дальше 90 градусов в стену, см. план.</text>
+  <text x="36" y="752" font-size="12">Блоки внутри рамки не в масштабе.</text>
 
   <text x="470" y="84" font-size="15" font-weight="700">План, фасад снизу листа</text>
   <g transform="translate(470,108)">
     <rect x="0" y="36" width="400" height="160" fill="#fff" stroke="#1c1916" stroke-width="2"/>
     <rect x="0" y="20" width="400" height="16" fill="#4a453f"/>
     <text x="200" y="14" text-anchor="middle" font-size="12">стена, сторона на схеме условная</text>
-    <rect x="24" y="70" width="150" height="96" fill="#d5e4f0" stroke="#1c1916"/>
-    <text x="99" y="114" text-anchor="middle" font-size="12" font-weight="700">котёл боком</text>
-    <text x="99" y="130" text-anchor="middle" font-size="10" fill="#6a6258">каталог не этот котёл</text>
+    <rect x="24" y="70" width="150" height="96" fill="none" stroke="#1c1916" stroke-dasharray="5 3"/>
+    <text x="99" y="114" text-anchor="middle" font-size="12" font-weight="700">котёл v2</text>
+    <text x="99" y="130" text-anchor="middle" font-size="10" fill="#6a6258">не в масштабе рамки</text>
     <rect x="174" y="86" width="64" height="52" fill="#f4efe4" stroke="#1c1916"/>
     <text x="206" y="116" text-anchor="middle" font-size="11">горелка</text>
     <rect x="250" y="52" width="130" height="128" fill="none" stroke="#c46a12" stroke-dasharray="5 3"/>
