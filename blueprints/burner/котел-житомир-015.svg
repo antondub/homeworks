@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1100" viewBox="0 0 1680 1100" font-family="DejaVu Sans, Liberation Sans, sans-serif">
   <rect width="1680" height="1100" fill="#f7f4ee"/>
   <text x="28" y="30" font-size="20" font-weight="700" fill="#1c1916">Котёл v2 — теплообменник Житомир-3 КС-Г-015 после переделки</text>
-  <text x="28" y="52" font-size="13" fill="#3d3832">Корпус по фото котел-1 и котел-2, без размерных линий. Каталог 860×280 этот лист не масштабирует.</text>
+  <text x="28" y="52" font-size="13" fill="#3d3832">ОТВЕРГНУТ как вид переда. Не рабочий чертёж. Актуальный перед: photos/котел-перед.jpg</text>
 
   <text x="28" y="82" font-size="15" font-weight="700">Спереди, по фото, не обмер</text>
   <g transform="translate(28,96)">
