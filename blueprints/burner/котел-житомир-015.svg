@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1070" viewBox="0 0 1720 1070" font-family="DejaVu Sans, Liberation Sans, sans-serif">
+  <rect width="1720" height="1070" fill="#f7f4ee"/>
+  <text x="28" y="34" font-size="22" font-weight="700" fill="#1c1916">Теплообменник Житомир-3 КС-Г-015 после переделки</text>
+  <text x="28" y="56" font-size="13" fill="#3d3832">Схема, не обмер. Чёрное — слова Антона. Серое — каталог паспорта, не размер этого котла. Оранжевый пунктир — не сверено. Красное — повреждение.</text>
+
+  <text x="36" y="88" font-size="15" font-weight="700" fill="#1c1916">Вид спереди</text>
+  <text x="36" y="106" font-size="12" fill="#6a6258">Наружный контур — каталог А на Б, не обмер</text>
+  <g transform="translate(56,118)">
+    <rect x="0" y="0" width="210" height="640" fill="none" stroke="#8a8378" stroke-width="1.4" stroke-dasharray="5 3"/>
+    <text x="105" y="16" text-anchor="middle" font-size="11" fill="#6a6258">каталог: высота 860, ширина 280</text>
+    <rect x="22" y="28" width="166" height="548" fill="#d5e4f0" stroke="#1c1916" stroke-width="2"/>
+    <text x="105" y="46" text-anchor="middle" font-size="11" fill="#1c1916">рубашка, толщина не снята</text>
+    <g stroke="#c46a12" stroke-width="1.3" stroke-dasharray="4 3" fill="#fff8ef">
+      <rect x="34" y="62" width="16" height="120"/>
+      <rect x="56" y="62" width="16" height="120"/>
+      <rect x="78" y="62" width="16" height="120"/>
+      <rect x="100" y="62" width="16" height="120"/>
+      <rect x="122" y="62" width="16" height="120"/>
+      <rect x="144" y="62" width="16" height="120"/>
+    </g>
+    <text x="105" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#c46a12">6 каналов?</text>
+    <text x="105" y="136" text-anchor="middle" font-size="11" fill="#8a4e10">не сверено</text>
+    <rect x="30" y="250" width="150" height="200" fill="#f4efe4" stroke="#1c1916" stroke-width="2"/>
+    <path d="M30 250 h-12 v12 M180 250 h12 v12 M30 450 h-12 v-12 M180 450 h12 v-12" fill="none" stroke="#1c1916" stroke-width="2"/>
+    <text x="105" y="310" text-anchor="middle" font-size="13" font-weight="700" fill="#1c1916">передний проём</text>
+    <text x="105" y="330" text-anchor="middle" font-size="13" fill="#1c1916">высота 240 мм</text>
+    <text x="105" y="350" text-anchor="middle" font-size="12" fill="#1c1916">на всю ширину</text>
+    <text x="105" y="370" text-anchor="middle" font-size="12" fill="#8a4e10">ширина не снята</text>
+    <text x="105" y="390" text-anchor="middle" font-size="12" fill="#1c1916">полка уголка наружу</text>
+    <text x="105" y="410" text-anchor="middle" font-size="12" fill="#8a4e10">размер уголка не снят</text>
+    <text x="105" y="500" text-anchor="middle" font-size="12" fill="#1c1916">дно: пластины 2 мм</text>
+    <rect x="40" y="576" width="26" height="40" fill="#4a453f"/>
+    <rect x="144" y="576" width="26" height="40" fill="#4a453f"/>
+  </g>
+  <text x="161" y="776" text-anchor="middle" font-size="12" fill="#1c1916">ноги подрезаны и переварены</text>
+  <text x="36" y="800" font-size="12" fill="#1c1916">Уголки по углам проёма: полка смотрит наружу.</text>
+  <text x="36" y="818" font-size="12" fill="#8a4e10">240 мм — высота этого проёма.</text>
+  <text x="36" y="836" font-size="12" fill="#8a4e10">Не путать с рамой горелки 240 на 170.</text>
+
+  <text x="400" y="88" font-size="15" font-weight="700" fill="#1c1916">Разрез сбоку, горелка слева</text>
+  <text x="400" y="106" font-size="12" fill="#6a6258">Каналы без масштаба. Глубина контура — каталог</text>
+  <g transform="translate(420,124)">
+    <rect x="0" y="0" width="400" height="620" fill="none" stroke="#8a8378" stroke-dasharray="5 3"/>
+    <rect x="24" y="36" width="300" height="500" fill="#d5e4f0" stroke="#1c1916" stroke-width="2"/>
+    <g fill="#fff8ef" stroke="#c46a12" stroke-width="1.2" stroke-dasharray="4 3">
+      <rect x="40" y="52" width="34" height="150"/>
+      <rect x="82" y="52" width="34" height="150"/>
+      <rect x="124" y="52" width="34" height="150"/>
+      <rect x="166" y="52" width="34" height="150"/>
+      <rect x="208" y="52" width="34" height="150"/>
+      <rect x="250" y="52" width="34" height="150"/>
+    </g>
+    <polyline points="258,64 276,82 258,100 276,118 258,136 276,154 258,172" fill="none" stroke="#5c564e" stroke-width="1.3"/>
+    <rect x="40" y="240" width="268" height="250" fill="#f4efe4" stroke="#1c1916" stroke-width="1.5"/>
+    <text x="174" y="270" text-anchor="middle" font-size="14" font-weight="700" fill="#1c1916">топка</text>
+    <text x="174" y="292" text-anchor="middle" font-size="12" fill="#c46a12">6 каналов выше — память, не сверено</text>
+    <text x="174" y="312" text-anchor="middle" font-size="12" fill="#5c564e">газы вверх, в каналы, в газоход</text>
+    <line x1="24" y1="310" x2="24" y2="470" stroke="#1c1916" stroke-width="5"/>
+    <line x1="12" y1="310" x2="46" y2="310" stroke="#1c1916" stroke-width="1.2"/>
+    <line x1="12" y1="470" x2="46" y2="470" stroke="#1c1916" stroke-width="1.2"/>
+    <text x="56" y="370" font-size="13" font-weight="700" fill="#1c1916">проём, высота 240</text>
+    <text x="56" y="388" font-size="12" fill="#8a4e10">от дна не измерено</text>
+    <rect x="40" y="478" width="268" height="8" fill="#1c1916"/>
+    <text x="174" y="466" text-anchor="middle" font-size="12" fill="#1c1916">дно вварено, пластины 2 мм</text>
+    <path d="M12 520 h324 v-24 h-14 v12 H26 v-12 h-14 z" fill="none" stroke="#1c1916" stroke-width="3"/>
+    <text x="174" y="514" text-anchor="middle" font-size="12" fill="#1c1916">уголок 25 мм: низ и зад</text>
+    <rect x="48" y="536" width="20" height="52" fill="#4a453f"/>
+    <rect x="280" y="536" width="20" height="52" fill="#4a453f"/>
+    <text x="174" y="608" text-anchor="middle" font-size="12" fill="#1c1916">ноги подрезаны и переварены</text>
+    <rect x="230" y="16" width="78" height="22" fill="#e7e2da" stroke="#1c1916"/>
+    <text x="269" y="31" text-anchor="middle" font-size="11" fill="#1c1916">газоход</text>
+    <path d="M324 80 C368 130 368 210 324 270" fill="none" stroke="#b42318" stroke-width="2"/>
+    <text x="408" y="140" font-size="12" fill="#b42318">раздутие</text>
+    <text x="408" y="156" font-size="12" fill="#b42318">после 4 атм</text>
+    <text x="408" y="172" font-size="11" fill="#b42318">не в масштабе</text>
+  </g>
+  <text x="400" y="764" font-size="12" fill="#1c1916">Вода в рубашке вокруг топки и между каналами.</text>
+  <text x="400" y="782" font-size="12" fill="#1c1916">Дно топки сухое, стальное, не водяное.</text>
+  <text x="400" y="800" font-size="12" fill="#5c564e">Паспорт, рис. 1: топка снизу, турбулизаторы,</text>
+  <text x="400" y="818" font-size="12" fill="#5c564e">смотровое окно спереди. Сечения не заданы.</text>
+  <text x="400" y="836" font-size="12" fill="#5c564e">Ломаная в правом канале — турбулизатор.</text>
+  <text x="400" y="854" font-size="12" fill="#8a4e10">Один турбулизатор в списке недостаёт.</text>
+  <text x="400" y="872" font-size="12" fill="#8a4e10">Сколько их было — не пересчитано.</text>
+
+  <text x="980" y="88" font-size="15" font-weight="700" fill="#1c1916">Рама горелки, отдельно</text>
+  <g transform="translate(980,104)">
+    <rect width="280" height="156" fill="#fff" stroke="#1c1916"/>
+    <rect x="36" y="28" width="168" height="100" fill="#f4efe4" stroke="#1c1916" stroke-width="7"/>
+    <text x="120" y="78" text-anchor="middle" font-size="16" font-weight="700">240 на 170</text>
+    <text x="120" y="98" text-anchor="middle" font-size="12" fill="#8a4e10">какая сторона 240 — не сказано</text>
+    <text x="214" y="24" font-size="13">уголок 25</text>
+  </g>
+  <text x="980" y="278" font-size="12" fill="#1c1916">Внутренний проём рамы. Это не передний проём.</text>
+  <text x="980" y="296" font-size="12" fill="#5c564e">Посадка не сделана: эксцентрики, плита 4–6 мм,</text>
+  <text x="980" y="314" font-size="12" fill="#5c564e">печной шнур, зазор на расширение 1–2 мм.</text>
+
+  <g transform="translate(980,336)">
+    <rect width="700" height="198" fill="#fff6f5" stroke="#b42318"/>
+    <text x="16" y="24" font-size="15" font-weight="700" fill="#b42318">Опрессовка 4 атм — неудачная</text>
+    <text x="16" y="48" font-size="13" fill="#1c1916">Стенки рубашки заметно выпучило. Швы медленно сочились.</text>
+    <text x="16" y="68" font-size="13" fill="#1c1916">Это не допуск по давлению и не годность сосуда.</text>
+    <text x="16" y="88" font-size="13" fill="#1c1916">Осмотра и ремонта нет. Топить нельзя.</text>
+    <text x="16" y="114" font-size="12" fill="#5c564e">Паспорт Атем 2026, табл. 1: КС-Г-015СН в группе от 012СН,</text>
+    <text x="16" y="132" font-size="12" fill="#5c564e">рабочее не более 3 бар, максимальное не более 4 бар.</text>
+    <text x="16" y="150" font-size="12" fill="#5c564e">Тот же паспорт запрещает заполнение выше 1,5 кг/см2 (п. 4.7)</text>
+    <text x="16" y="168" font-size="12" fill="#5c564e">и выше 1 атм (п. 6.13). Закрытая система: клапан 0,15 МПа,</text>
+    <text x="16" y="186" font-size="12" fill="#8a4e10">кроме 060СН. Год этого котла неизвестен. Цифры сюда не переносить.</text>
+  </g>
+
+  <g transform="translate(980,548)">
+    <rect width="700" height="132" fill="#fff" stroke="#1c1916"/>
+    <text x="16" y="24" font-size="15" font-weight="700">План, не то, что уже стоит</text>
+    <text x="16" y="48" font-size="13">Закрытая система не выше 1 атм. Клапан не выбран. Это намерение.</text>
+    <text x="16" y="70" font-size="13">Насос обратки: холодный выключен, импульсы при верхе 60–70 C,</text>
+    <text x="16" y="88" font-size="13">затем постоянно. Предложение, не защита от перегрева.</text>
+    <text x="16" y="110" font-size="13" fill="#5c564e">Отсечки горелки и удержания обратки 55–60 C нет. Отбойник не сделан.</text>
+  </g>
+
+  <g transform="translate(980,694)">
+    <rect width="700" height="118" fill="#f3f1ea" stroke="#8a8378" stroke-dasharray="5 3"/>
+    <text x="16" y="24" font-size="15" font-weight="700">Шкаф не чертится</text>
+    <text x="16" y="48" font-size="13">Предварительно: глубина около 400 мм, высота около 1500 мм.</text>
+    <text x="16" y="68" font-size="13">Ширина неизвестна. Не окончательно. Вмещаемость не проверялась.</text>
+    <text x="16" y="88" font-size="12" fill="#5c564e">Каталог глубины котла 500 и 530 мм больше этих 400. Снять факт.</text>
+    <text x="16" y="106" font-size="12" fill="#5c564e">В задумке: котёл, малый бак, насос форсунки, насос, вентилятор, контроллер.</text>
+  </g>
+
+  <text x="28" y="900" font-size="14" font-weight="700" fill="#1c1916">Источники. Похожие модели не смешивать</text>
+  <text x="28" y="922" font-size="12" fill="#3d3832">Паспорт Житомир-3, 2026-01: atem.ua/files/2026/passport-zh-3-2026.pdf</text>
+  <text x="28" y="940" font-size="12" fill="#3d3832">КС-Г-015СН: 16 кВт, А 860, Б 280, В 500, Г 530, дымоход Л 126, вода около 18 л. КС-ГВ-015СН — второй контур, около 16 л.</text>
+  <text x="28" y="958" font-size="12" fill="#3d3832">Рядом: КС-Г-010СН 10 кВт и ширина 230; КС-Г-012СН 12,5 кВт и тоже ширина 230. Буква СН на этом доноре не подтверждена.</text>
+  <text x="28" y="976" font-size="12" fill="#3d3832">Прямоугольные жаровые трубы есть у дилеров. Числа труб и их сечения в паспорте нет. Шесть каналов — только память, нужна сверка.</text>
+  <text x="28" y="994" font-size="12" fill="#3d3832">Файл 2020 года atem.ua/files/Pasports/re-zhitomir-3.pdf даёт другие давления. Карточки магазинов (0,1 МПа, 1,5 бар, 3 бар) не берутся за допуск.</text>
+  <text x="28" y="1018" font-size="12" fill="#5c564e">Фото уже в репозитории: photos/котел-1.jpg и photos/котел-2.jpg. Новые копии не добавлялись.</text>
+  <text x="28" y="1036" font-size="12" fill="#5c564e">Схема накопителя 240 л — отдельный лист Антона. Прямой вход в бак или гидрострелка не выбраны.</text>
+</svg>
