@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="460mm" height="400mm" viewBox="-230 -70 460 400" font-family="Sans, DejaVu Sans, sans-serif">
+  <rect x="-230" y="-70" width="460" height="400" fill="#ffffff"/>
+  <defs>
+    <marker id="arr" markerUnits="userSpaceOnUse" markerWidth="3.2" markerHeight="2.2" refX="3.2" refY="1.1" orient="auto">
+      <path d="M 0 0 L 3.2 1.1 L 0 2.2 z" fill="#000"/>
+    </marker>
+    <marker id="arrs" markerUnits="userSpaceOnUse" markerWidth="3.2" markerHeight="2.2" refX="0" refY="1.1" orient="auto">
+      <path d="M 3.2 0 L 0 1.1 L 3.2 2.2 z" fill="#000"/>
+    </marker>
+  </defs>
+  <text x="-220" y="-52" font-size="5" font-weight="700" fill="#000">Котёл v2, вид сбоку. Эскиз для согласования</text>
+  <text x="-220" y="-44" font-size="3.2" fill="#000">Не рабочий чертёж корпуса. Размеры без выноски не заданы. Горелка пунктиром, тот же масштаб, что её модель.</text>
+
+  <!-- горелка, под контуром котла -->
+  <g fill="#333333" fill-opacity="0.08" stroke="#000" stroke-width="0.35" stroke-dasharray="2.2 1.1">
+    <rect x="-180" y="70" width="172" height="100"/>
+    <rect x="-8" y="70" width="8" height="100"/>
+    <polygon points="0,70 50,85 50,155 0,170"/>
+    <rect x="50" y="85" width="100" height="70"/>
+  </g>
+  <line x1="0" y1="55" x2="0" y2="190" stroke="#000" stroke-width="0.45"/>
+
+  <!-- корпус и нижний каркас одним контуром. Обрыв = размер не снят -->
+  <path d="M 0 0 L 0 270 L 70 240 L 78 246 L 88 238 L 96 246" fill="none" stroke="#000" stroke-width="0.6"/>
+  <path d="M 0 0 L 16 -8 L 26 0 L 36 -8" fill="none" stroke="#000" stroke-width="0.6"/>
+  <path d="M 0 60 L 40 60 L 48 54 L 58 62 L 68 54" fill="none" stroke="#000" stroke-width="0.45"/>
+  <path d="M 150 78 L 168 78 L 176 72 L 186 80" fill="none" stroke="#000" stroke-width="0.45"/>
+
+  <text x="-96" y="64" font-size="3.2" fill="#000">квадрат 100×100</text>
+  <text x="8" y="64" font-size="3.2" fill="#000">внутрь, пунктир</text>
+  <text x="4" y="206" font-size="3.2" fill="#000">плоскость рамки = плоскость фланца</text>
+  <text x="96" y="36" font-size="3.2" fill="#000">глубина корпуса не снята</text>
+  <text x="6" y="-12" font-size="3.2" fill="#000">выше проёма размер не снят</text>
+  <text x="4" y="286" font-size="3.2" fill="#000">длина ската не снята, угол не строится</text>
+  <text x="-176" y="58" font-size="3.2" fill="#000">по высоте проёма не снято</text>
+
+  <!-- размеры -->
+  <g fill="none" stroke="#000" stroke-width="0.25" marker-start="url(#arrs)" marker-end="url(#arr)">
+    <line x1="-210" y1="70" x2="-210" y2="170"/>
+    <line x1="-180" y1="200" x2="0" y2="200"/>
+    <line x1="20" y1="78" x2="20" y2="162"/>
+    <line x1="-200" y1="0" x2="-200" y2="240"/>
+    <line x1="8" y1="240" x2="8" y2="270"/>
+    <line x1="-8" y1="188" x2="0" y2="188"/>
+  </g>
+  <text x="-216" y="124" font-size="3.5" fill="#000">100</text>
+  <text x="-96" y="196" font-size="3.5" fill="#000">180</text>
+  <text x="24" y="124" font-size="3.5" fill="#000">150</text>
+  <text x="-222" y="122" font-size="3.2" fill="#000"> </text>
+  <text x="-198" y="20" font-size="3.5" fill="#000">240</text>
+  <text x="10" y="258" font-size="3.5" fill="#000">≈30</text>
+  <text x="-8" y="184" font-size="3.2" fill="#000">8</text>
+
+  <text x="-220" y="300" font-size="3.2" fill="#000">100 — сторона квадрата. 180 — длина квадрата снаружи от плоскости фланца, модель горизонталка.scad.</text>
+  <text x="-220" y="306" font-size="3.2" fill="#000">150 — переход 50 и труба 100 внутрь. Диаметр трубы по листу v2 Ø100, в SCAD ещё Ø90.</text>
+  <text x="-220" y="312" font-size="3.2" fill="#000">240 — H проёма в свету. B проёма = B внутри теплообменника, число не снято. ≈30 — перепад по словам Антона.</text>
+  <text x="-220" y="318" font-size="3.2" fill="#000">Шнур, если есть, толщиной не задан. Запас хода сверх 150 мм не задан. Опора на фото есть, профиль не строится.</text>
+</svg>
