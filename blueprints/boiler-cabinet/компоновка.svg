@@ -12,8 +12,8 @@
     <text x="108" y="320" text-anchor="middle" font-size="13" font-weight="700">котёл v2</text>
     <text x="108" y="338" text-anchor="middle" font-size="11" fill="#6a6258">не в масштабе</text>
     <rect x="188" y="390" width="78" height="64" fill="#f4efe4" stroke="#1c1916"/>
-    <text x="227" y="418" text-anchor="middle" font-size="12">горелка</text>
-    <text x="227" y="434" text-anchor="middle" font-size="10" fill="#6a6258">вылет не снят</text>
+    <text x="227" y="416" text-anchor="middle" font-size="11">горелка v2</text>
+    <text x="227" y="432" text-anchor="middle" font-size="10">100×100</text>
     <rect x="278" y="360" width="108" height="130" fill="none" stroke="#c46a12" stroke-width="1.4" stroke-dasharray="5 3"/>
     <text x="332" y="414" text-anchor="middle" font-size="12" fill="#8a4e10">ход</text>
     <text x="332" y="430" text-anchor="middle" font-size="12" fill="#8a4e10">уточнить</text>
@@ -40,7 +40,11 @@
   </g>
   <text x="36" y="716" font-size="12">Кран подачи и кран обратки. Не два подряд.</text>
   <text x="36" y="734" font-size="12">Дальше 90 градусов в стену, см. план.</text>
-  <text x="36" y="752" font-size="12">Блоки внутри рамки не в масштабе.</text>
+  <text x="36" y="752" font-size="12">Блоки рамки не в масштабе.</text>
+  <text x="36" y="770" font-size="12">От фланца наружу квадрат 180 мм.</text>
+  <text x="36" y="788" font-size="12">Внутрь тракт 150 мм.</text>
+  <text x="36" y="806" font-size="12">Ход по оси не меньше 150.</text>
+  <text x="36" y="824" font-size="12">Запас руки не задан.</text>
 
   <text x="470" y="84" font-size="15" font-weight="700">План, фасад снизу листа</text>
   <g transform="translate(470,108)">
@@ -51,7 +55,7 @@
     <text x="99" y="114" text-anchor="middle" font-size="12" font-weight="700">котёл v2</text>
     <text x="99" y="130" text-anchor="middle" font-size="10" fill="#6a6258">не в масштабе рамки</text>
     <rect x="174" y="86" width="64" height="52" fill="#f4efe4" stroke="#1c1916"/>
-    <text x="206" y="116" text-anchor="middle" font-size="11">горелка</text>
+    <text x="206" y="116" text-anchor="middle" font-size="10">100×100</text>
     <rect x="250" y="52" width="130" height="128" fill="none" stroke="#c46a12" stroke-dasharray="5 3"/>
     <text x="315" y="112" text-anchor="middle" font-size="12" fill="#8a4e10">ход уточнить</text>
     <line x1="238" y1="112" x2="268" y2="112" stroke="#c46a12" stroke-width="1.6"/>
