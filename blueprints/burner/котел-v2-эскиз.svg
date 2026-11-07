@@ -16,25 +16,34 @@
 <g transform="translate(0,32)">
 
 <g fill="#000" fill-opacity="0.05" stroke="#000" stroke-width="0.45" stroke-dasharray="2.6 1.2">
-<rect x="555" y="513" width="8" height="250"/>
 <rect x="563" y="588" width="172" height="100"/>
 <rect x="405" y="588" width="150" height="100"/>
 <line x1="505" y1="588" x2="505" y2="688"/>
 </g>
-<line x1="555" y1="509" x2="555" y2="767" stroke="#000" stroke-width="0.5"/>
+<rect x="551" y="528" width="8" height="210" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="2.2 1.1"/>
+<line x1="555" y1="518" x2="555" y2="758" stroke="#000" stroke-width="0.5"/>
 <path fill="none" stroke="#000" stroke-width="0.75" d="M 175 108 H 510 V 518 H 555 V 758 H 510 V 778 L 175 748 Z"/>
 <circle cx="175" cy="748" r="1.2" fill="#000"/>
 <text x="183" y="732" font-size="4">изгиб к низу воды, обратка. Штуцер не обмерен</text>
 <text x="183" y="124" font-size="4">вид сбоку. От верха до проёма размер не снят</text>
-<text x="567" y="525" font-size="3.8">фланец Ø250×8</text>
-<text x="567" y="535" font-size="3.8">к плоскости рамки</text>
+<text x="564" y="546" font-size="3.5">фланец прямоугольный</text>
+<text x="564" y="556" font-size="3.5">наружу не снято, прижат</text>
 <text x="413" y="606" font-size="3.8">труба Ø100</text>
 <text x="571" y="680" font-size="3.8">квадрат 100×100</text>
-<g fill="none" stroke="#000" stroke-width="0.5" stroke-dasharray="2.4 1.3">
-<path d="M 181 748 L 189 808 H 223 L 209 764"/>
-<path d="M 458 778 L 466 808 H 500 L 492 778"/>
+<g fill="none" stroke="#000" stroke-width="0.55">
+<line x1="220" y1="800" x2="488" y2="800"/>
+<line x1="220" y1="808" x2="488" y2="808"/>
+<polyline points="488,808 514,808 514,786 498,770"/>
+<line x1="498" y1="770" x2="498" y2="778"/>
 </g>
-<text x="175" y="866" font-size="3.8">опоры короткие, профиль реза не снят</text>
+<text x="220" y="866" font-size="3.5">гнутый лист и перемычка, промежуток открыт. Число не назначено</text>
+<line x1="178" y1="745" x2="508" y2="775" stroke="#000" stroke-width="0.35" stroke-dasharray="1.2 0.8"/>
+<line x1="181" y1="741" x2="506" y2="771" stroke="#000" stroke-width="0.45"/>
+<text x="390" y="756" font-size="3.4">шамот на тонком теплоизоляторе, толщина не задана</text>
+<circle cx="248" cy="708" r="7" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="1.3 0.9"/>
+<line x1="255" y1="704" x2="292" y2="692" stroke="#000" stroke-width="0.25"/>
+<text x="294" y="690" font-size="3.3">круглая пластина, керамика с графитом</text>
+<text x="294" y="700" font-size="3.3">дальний конец. Размер, крепление, ориентация не заданы</text>
 <g fill="none" stroke="#000" stroke-width="0.3" marker-start="url(#arrs)" marker-end="url(#arr)">
 <line x1="133" y1="108" x2="133" y2="808"/>
 </g>
@@ -56,16 +65,16 @@
 <line x1="405" y1="499" x2="555" y2="499"/>
 </g>
 <g fill="none" stroke="#000" stroke-width="0.22">
-<line x1="405" y1="513" x2="405" y2="499"/>
-<line x1="555" y1="513" x2="555" y2="499"/>
+<line x1="405" y1="588" x2="405" y2="499"/>
+<line x1="555" y1="588" x2="555" y2="499"/>
 </g>
 <text x="480.0" y="496" font-size="4.6" text-anchor="middle">150 вдоль оси</text>
 <g fill="none" stroke="#000" stroke-width="0.3" marker-start="url(#arrs)" marker-end="url(#arr)">
 <line x1="555" y1="781" x2="735" y2="781"/>
 </g>
 <g fill="none" stroke="#000" stroke-width="0.22">
-<line x1="555" y1="763" x2="555" y2="781"/>
-<line x1="735" y1="763" x2="735" y2="781"/>
+<line x1="555" y1="688" x2="555" y2="781"/>
+<line x1="735" y1="688" x2="735" y2="781"/>
 </g>
 <text x="645.0" y="778" font-size="4.6" text-anchor="middle">180</text>
 <g fill="none" stroke="#000" stroke-width="0.3" marker-start="url(#arrs)" marker-end="url(#arr)">
@@ -112,15 +121,17 @@
 <rect x="830" y="108" width="200" height="700" fill="none" stroke="#000" stroke-width="0.5" stroke-dasharray="2.6 1.4"/>
 <rect x="825" y="518" width="210" height="240" fill="#fff" stroke="#000" stroke-width="0.5" stroke-dasharray="2.4 1.3"/>
 <rect x="845" y="518" width="170" height="240" fill="#fff" stroke="#000" stroke-width="0.8"/>
-<g fill="#000" fill-opacity="0.05" stroke="#000" stroke-width="0.45" stroke-dasharray="2.4 1.2">
-<circle cx="930.0" cy="638.0" r="125"/>
+<g fill="#000" fill-opacity="0.04" stroke="#000" stroke-width="0.4" stroke-dasharray="2.2 1.1">
+<rect x="820" y="496" width="220" height="274"/>
 <rect x="880.0" y="588" width="100" height="100"/>
 </g>
-<text x="851" y="534" font-size="3.8">горелка по высоте не снята</text>
-<g fill="none" stroke="#000" stroke-width="0.5" stroke-dasharray="2.4 1.3">
-<path d="M 840 768 L 848 808 H 882 L 870 768"/>
-<path d="M 978 768 L 986 808 H 1020 L 1012 768"/>
+<text x="816" y="508" font-size="3.3">фланец прямоугольный, наружу не снято</text>
+<text x="851" y="534" font-size="3.4">горелка по высоте не снята</text>
+<g fill="none" stroke="#000" stroke-width="0.55">
+<polyline points="832,808 870,808 870,794 854,780 838,788"/>
+<circle cx="852" cy="798" r="1.5" fill="none" stroke="#000" stroke-width="0.4"/>
 </g>
+<text x="874" y="800" font-size="3.2">отв. без размера</text>
 <text x="830" y="874" font-size="3.8">низ 2 мм, уклон виден на виде сбоку</text>
 <g fill="none" stroke="#000" stroke-width="0.3" marker-start="url(#arrs)" marker-end="url(#arr)">
 <line x1="845" y1="828" x2="1015" y2="828"/>
@@ -163,16 +174,15 @@
 </g>
 <text x="930.0" y="69" font-size="4.6" text-anchor="middle">≈200 верх</text>
 <text x="830" y="848" font-size="3.8">≈210 и ≈200 — фото. С 170 не складывать</text>
-<text x="830" y="860" font-size="3.8">полка уголка 25 в 5 мм от рубашки, точку сверить</text>
-<text x="175" y="894" font-size="4.6">вид сверху. 6 каналов видны, сечение и шаг не сняты</text>
+<text x="830" y="860" font-size="3.5">край уголков до теплообменника ≈15. Не зазор фланца</text>
+<text x="175" y="894" font-size="4.6">вид сверху. 6 каналов длинной стороной поперёк, как на фото. Сечение и шаг не сняты</text>
 <rect x="175" y="904" width="335" height="200" fill="none" stroke="#000" stroke-width="0.6" stroke-dasharray="2.6 1.4"/>
-<rect x="211" y="922" width="230" height="16" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="1.6 1.1"/>
-<rect x="211" y="950" width="230" height="16" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="1.6 1.1"/>
-<rect x="211" y="978" width="230" height="16" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="1.6 1.1"/>
-<rect x="211" y="1006" width="230" height="16" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="1.6 1.1"/>
-<rect x="211" y="1034" width="230" height="16" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="1.6 1.1"/>
-<rect x="211" y="1062" width="230" height="16" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="1.6 1.1"/>
-<text x="453" y="1012" font-size="4.2">6</text>
+<rect x="209" y="922" width="28" height="164" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="1.6 1.1"/>
+<rect x="257" y="922" width="28" height="164" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="1.6 1.1"/>
+<rect x="305" y="922" width="28" height="164" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="1.6 1.1"/>
+<rect x="353" y="922" width="28" height="164" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="1.6 1.1"/>
+<rect x="401" y="922" width="28" height="164" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="1.6 1.1"/>
+<rect x="449" y="922" width="28" height="164" fill="none" stroke="#000" stroke-width="0.4" stroke-dasharray="1.6 1.1"/>
 <g fill="none" stroke="#000" stroke-width="0.3" stroke-dasharray="2 1.2" marker-start="url(#arrs)" marker-end="url(#arr)">
 <line x1="175" y1="1126" x2="510" y2="1126"/>
 </g>
@@ -189,10 +199,21 @@
 <line x1="510" y1="1104" x2="533" y2="1104"/>
 </g>
 <text x="536" y="1005.5" font-size="4.6" text-anchor="start">≈200</text>
+<text x="640" y="900" font-size="4">узел опоры по фото, не масштаб</text>
+<polyline points="640,1010 710,1010 710,958 672,926 652,942" fill="none" stroke="#000" stroke-width="0.75"/>
+<circle cx="682" cy="982" r="3" fill="none" stroke="#000" stroke-width="0.45"/>
+<text x="716" y="984" font-size="3.4">отверстие без размера</text>
+<line x1="640" y1="1076" x2="770" y2="1076" stroke="#000" stroke-width="0.65"/>
+<line x1="640" y1="1088" x2="770" y2="1088" stroke="#000" stroke-width="0.65"/>
+<polyline points="770,1088 804,1088 804,1050 780,1026" fill="none" stroke="#000" stroke-width="0.75"/>
+<text x="640" y="1110" font-size="3.4">щека со срезом, снизу перемычка, сверху промежуток открыт</text>
+<text x="640" y="1124" font-size="3.4">число опор не назначено. Это не труба и не трапеция</text>
 <text x="24" y="1156" font-size="4.3">700 и проём B170 × H240 — прямой замер Антона. 700 — общая высота с опорами, не высота рубашки.</text>
 <text x="24" y="1170" font-size="4.3">≈335±5 вдоль и ≈200±5 поперёк — чтение фото верха, ноль крючка на дальнем крае. Антон не подтвердил.</text>
 <text x="24" y="1184" font-size="4.3">≈340 до внутренней кромки и ≈380 до наружной полки — фото глубины. Крючок у задней стенки неясен.</text>
-<text x="24" y="1198" font-size="4.3">≈210±5 — наружная ширина рамки по фото. 25 мм, 5 мм и ≈30 — со слов Антона, в габарит не переведены.</text>
+<text x="24" y="1198" font-size="4.3">≈210±5 — рамка по фото. Край уголков до теплообменника ≈15 мм, не зазор фланца. ≈30 — перепад низа.</text>
+<text x="24" y="1240" font-size="4.3">Дно залито: тонкий теплоизолятор и шамот на плите 2 мм. Толщины и марки не заданы. Проём 240 не перемерен.</text>
+<text x="24" y="1254" font-size="4.3">Дальний конец: круглая пластина, керамика с графитом. Размер, крепление и ориентация не заданы. Сушка и розжиг не назначены.</text>
 <text x="24" y="1212" font-size="4.3">Горелка по модели: наружу квадрат 180, внутрь 150 вдоль оси (переход 50 + труба 100, Ø100). В SCAD ещё Ø90.</text>
 <text x="24" y="1226" font-size="4.3">Запас хода сверх 150 не задан. Прежние 295, 160, 170–190 мм и 20–29 см в расчёт не входят.</text>
 </g>
