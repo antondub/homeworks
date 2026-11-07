@@ -21,16 +21,18 @@
 <text x="330" y="650" font-size="26.0">труба Ø100</text>
 <text x="590" y="730" font-size="26.0">квадрат 100×100</text>
 <g fill="none" stroke="#2a241e" stroke-width="3.40">
-<line x1="220" y1="800" x2="470" y2="800"/>
-<line x1="220" y1="808" x2="470" y2="808"/>
-<line x1="470" y1="808" x2="470" y2="778"/>
-<line x1="508" y1="808" x2="508" y2="778"/>
-<line x1="470" y1="808" x2="508" y2="808"/>
-<circle cx="489" cy="794" r="1.5" fill="none" stroke="#2a241e" stroke-width="3.40"/>
+<line x1="175" y1="808" x2="218" y2="808"/>
+<line x1="175" y1="808" x2="175" y2="748"/>
+<line x1="218" y1="808" x2="218" y2="752"/>
+<circle cx="196" cy="782" r="6" fill="none" stroke="#2a241e" stroke-width="2.2"/>
+<line x1="468" y1="808" x2="510" y2="808"/>
+<line x1="468" y1="808" x2="468" y2="774"/>
+<line x1="510" y1="808" x2="510" y2="778"/>
+<circle cx="489" cy="792" r="6" fill="none" stroke="#2a241e" stroke-width="2.2"/>
 </g>
 <text x="512" y="796" font-size="26.0">6</text>
-<line x1="178" y1="745" x2="508" y2="775" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0"/>
-<line x1="181" y1="741" x2="506" y2="771" stroke="#2a241e" stroke-width="3.40"/>
+<line x1="230" y1="750" x2="450" y2="770" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0"/>
+<line x1="232" y1="746" x2="448" y2="766" stroke="#2a241e" stroke-width="3.40"/>
 <text x="390" y="756" font-size="26.0">3</text>
 <circle cx="248" cy="708" r="7" fill="none" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0"/>
 <line x1="255" y1="704" x2="292" y2="692" stroke="#2a241e" stroke-width="3.40"/>
@@ -120,9 +122,12 @@
 </g>
 <text x="851" y="534" font-size="29.5">5</text>
 <g fill="none" stroke="#2a241e" stroke-width="3.86">
-<line x1="850" y1="798" x2="960" y2="798"/>
-<line x1="850" y1="808" x2="960" y2="808"/>
-<polyline points="960,808 988,808 988,788 972,774"/>
+<line x1="820" y1="800" x2="840" y2="800"/>
+<line x1="820" y1="808" x2="840" y2="808"/>
+<polyline points="820,808 812,808 812,790 828,774"/>
+<line x1="1020" y1="800" x2="1040" y2="800"/>
+<line x1="1020" y1="808" x2="1040" y2="808"/>
+<polyline points="1040,808 1048,808 1048,790 1032,774"/>
 </g>
 <g fill="none" stroke="#2a241e" stroke-width="3.86" marker-start="url(#fs)" marker-end="url(#fe)">
 <line x1="845" y1="828" x2="1015" y2="828"/>
@@ -194,5 +199,5 @@
 
 </g>
 <g transform="translate(222,213)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">1</text></g><g transform="translate(290,445)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">3</text></g><g transform="translate(412,408)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">5</text></g><g transform="translate(300,505)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">6</text></g><g transform="translate(214,420)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">7</text></g><g transform="translate(527,369)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">4</text></g><g transform="translate(150,640)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">2</text></g>
-<text x="360" y="530" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#241c16">Номера</text><g transform="translate(374,568)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">1</text><text x="18" y="4" fill="#3c342c" font-size="12">Корпус, проём 170×240, высота 700</text></g><g transform="translate(374,602)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">2</text><text x="18" y="4" fill="#3c342c" font-size="12">Шесть каналов</text></g><g transform="translate(374,636)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">3</text><text x="18" y="4" fill="#3c342c" font-size="12">Плита 2 мм, перепад ≈30, шамот</text></g><g transform="translate(374,670)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">4</text><text x="18" y="4" fill="#3c342c" font-size="12">Рамка ≈210, край уголка ≈15, фланец</text></g><g transform="translate(374,704)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">5</text><text x="18" y="4" fill="#3c342c" font-size="12">Горелка: 180 наружу, 150 внутрь</text></g><g transform="translate(374,738)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">6</text><text x="18" y="4" fill="#3c342c" font-size="12">Опора, перемычка, отверстие</text></g><g transform="translate(374,772)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">7</text><text x="18" y="4" fill="#3c342c" font-size="12">Пластина, керамика с графитом</text></g>
+<text x="360" y="530" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#241c16">Номера</text><g transform="translate(374,568)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">1</text><text x="18" y="4" fill="#3c342c" font-size="12">Корпус, проём 170×240, высота 700</text></g><g transform="translate(374,602)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">2</text><text x="18" y="4" fill="#3c342c" font-size="12">Шесть каналов</text></g><g transform="translate(374,636)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">3</text><text x="18" y="4" fill="#3c342c" font-size="12">Плита 2 мм, перепад ≈30, шамот</text></g><g transform="translate(374,670)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">4</text><text x="18" y="4" fill="#3c342c" font-size="12">Рамка ≈210, край уголка ≈15, фланец</text></g><g transform="translate(374,704)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">5</text><text x="18" y="4" fill="#3c342c" font-size="12">Горелка: 180 наружу, 150 внутрь</text></g><g transform="translate(374,738)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">6</text><text x="18" y="4" fill="#3c342c" font-size="12">Две опоры, зеркально, отверстие</text></g><g transform="translate(374,772)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">7</text><text x="18" y="4" fill="#3c342c" font-size="12">Пластина, керамика с графитом</text></g>
 </svg>
