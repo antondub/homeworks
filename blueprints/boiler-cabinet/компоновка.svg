@@ -21,10 +21,14 @@
 <line x1="0" y1="1450" x2="18" y2="1422" stroke="#2a241e" stroke-width="3"/>
 <line x1="1000" y1="1450" x2="982" y2="1422" stroke="#2a241e" stroke-width="3"/>
 
-<rect x="0" y="430" width="250" height="170" fill="#fff6e8" stroke="#8a4e10" stroke-width="3" stroke-dasharray="10 7"/>
-<rect x="90" y="412" width="50" height="22" fill="#fff6e8" stroke="#8a4e10" stroke-width="3"/>
-<text x="125" y="510" text-anchor="middle" font-size="28" fill="#8a4e10" font-weight="700">бак</text>
-<text x="125" y="546" text-anchor="middle" font-size="24" fill="#8a4e10">топлива</text>
+<rect x="0" y="388" width="250" height="100" fill="#fff6e8" stroke="#8a4e10" stroke-width="3" stroke-dasharray="10 7"/>
+<rect x="100" y="388" width="40" height="16" fill="#fff6e8" stroke="#8a4e10" stroke-width="3"/>
+<text x="125" y="432" text-anchor="middle" font-size="22" fill="#8a4e10" font-weight="700">бак</text>
+<text x="125" y="458" text-anchor="middle" font-size="20" fill="#8a4e10">отопителя</text>
+<rect x="0" y="500" width="250" height="100" fill="#fffdf8" stroke="#8a4e10" stroke-width="3" stroke-dasharray="10 7"/>
+<rect x="105" y="500" width="36" height="14" fill="#fffdf8" stroke="#8a4e10" stroke-width="3"/>
+<text x="125" y="548" text-anchor="middle" font-size="22" fill="#8a4e10" font-weight="700">бак</text>
+<text x="125" y="574" text-anchor="middle" font-size="20" fill="#8a4e10">горелки</text>
 <line x1="0" y1="640" x2="250" y2="640" stroke="#8a4e10" stroke-width="2.6" marker-start="url(#ao)" marker-end="url(#ao)"/>
 <text x="125" y="678" text-anchor="middle" font-size="26" fill="#8a4e10">250</text>
 
@@ -125,7 +129,7 @@
 <g transform="translate(340,1054)"><circle r="20" fill="#c45c12"/><text dy="0.35em">9</text></g>
 <g transform="translate(150,1060)"><circle r="20" fill="#c45c12"/><text dy="0.35em">10</text></g>
 <g transform="translate(960,1000)"><circle r="20" fill="#c45c12"/><text dy="0.35em">5</text></g>
-<g transform="translate(200,490)"><circle r="20" fill="#c45c12"/><text dy="0.35em">6</text></g>
+<g transform="translate(36,438)"><circle r="20" fill="#c45c12"/><text dy="0.35em">6</text></g>
 <g transform="translate(320,230)"><circle r="20" fill="#c45c12"/><text dy="0.35em">7</text></g>
 </g>
 </g>
@@ -140,7 +144,13 @@
 <text x="310" y="175" font-size="22">1343</text>
 
 <line x1="155" y1="370" x2="380" y2="370" stroke="#2a241e" stroke-width="3"/>
-<text x="370" y="352" text-anchor="end" font-size="24" fill="#3c342c">полка</text>
+<text x="200" y="360" text-anchor="end" font-size="22" fill="#3c342c">полка</text>
+<rect x="210" y="388" width="160" height="100" fill="none" stroke="#8a4e10" stroke-width="2.4" stroke-dasharray="8 6"/>
+<text x="290" y="432" text-anchor="middle" font-size="16" fill="#8a4e10">бак</text>
+<text x="290" y="454" text-anchor="middle" font-size="16" fill="#8a4e10">отопителя</text>
+<rect x="210" y="500" width="160" height="100" fill="none" stroke="#8a4e10" stroke-width="2.4" stroke-dasharray="8 6"/>
+<text x="290" y="544" text-anchor="middle" font-size="16" fill="#8a4e10">бак</text>
+<text x="290" y="566" text-anchor="middle" font-size="16" fill="#8a4e10">горелки</text>
 <rect x="175" y="193" width="216" height="177" fill="#fffdf8" stroke="#8a8378" stroke-width="2.4" stroke-dasharray="8 6"/>
 <text x="283" y="292" text-anchor="middle" font-size="22" fill="#3c342c">216×177</text>
 
@@ -175,8 +185,8 @@
 <text x="320" y="934" text-anchor="middle" font-size="20" fill="#3c342c">электро-</text>
 <text x="320" y="960" text-anchor="middle" font-size="20" fill="#3c342c">ника</text>
 
-<line x1="400" y1="500" x2="430" y2="500" stroke="#c45c12" stroke-width="3"/>
-<text x="392" y="488" text-anchor="end" font-size="24" fill="#8a4e10">дверь</text>
+<line x1="400" y1="720" x2="430" y2="720" stroke="#c45c12" stroke-width="3"/>
+<text x="392" y="708" text-anchor="end" font-size="24" fill="#8a4e10">дверь</text>
 
 <g fill="none" stroke="#2a241e" stroke-width="2.4" marker-start="url(#ah)" marker-end="url(#ah)">
 <line x1="0" y1="1510" x2="400" y2="1510"/>
@@ -185,7 +195,7 @@
 <line x1="400" y1="1450" x2="400" y2="1510" stroke="#2a241e" stroke-width="2.4"/>
 <text x="200" y="1550" text-anchor="middle" font-size="26">400</text>
 <g font-weight="700" fill="#fff" font-size="22" text-anchor="middle">
-<g transform="translate(360,520)"><circle r="20" fill="#c45c12"/><text dy="0.35em">4</text></g>
+<g transform="translate(360,690)"><circle r="20" fill="#c45c12"/><text dy="0.35em">4</text></g>
 <g transform="translate(360,820)"><circle r="20" fill="#c45c12"/><text dy="0.35em">8</text></g>
 <g transform="translate(40,1240)"><circle r="20" fill="#c45c12"/><text dy="0.35em">11</text></g>
 </g>
@@ -221,7 +231,8 @@
 <text x="8" y="140" font-size="20" fill="#8a4e10">вставка</text>
 
 <rect x="0" y="300" width="250" height="70" fill="none" stroke="#8a4e10" stroke-width="3" stroke-dasharray="10 7"/>
-<text x="125" y="344" text-anchor="middle" font-size="24" fill="#8a4e10">250</text>
+<text x="125" y="328" text-anchor="middle" font-size="18" fill="#8a4e10">два бака</text>
+<text x="125" y="352" text-anchor="middle" font-size="18" fill="#8a4e10">250</text>
 
 <line x1="250" y1="330" x2="780" y2="330" stroke="#8a8378" stroke-width="3" stroke-dasharray="10 7"/>
 <text x="260" y="358" font-size="22" fill="#3c342c">полка</text>
@@ -256,7 +267,7 @@
 <g transform="translate(800,584)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">3</text><text x="20" y="4">Квадрат горелки</text></g>
 <g transform="translate(800,612)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">4</text><text x="20" y="4">Дверь фасада</text></g>
 <g transform="translate(800,640)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">5</text><text x="20" y="4">Подача и обратка</text></g>
-<g transform="translate(800,668)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">6</text><text x="20" y="4">Бак</text></g>
+<g transform="translate(800,668)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">6</text><text x="20" y="4">Баки горелки и отопителя</text></g>
 <g transform="translate(800,696)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">7</text><text x="20" y="4">Полка, отопитель</text></g>
 <g transform="translate(980,528)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">8</text><text x="20" y="4">Панель электроники</text></g>
 <g transform="translate(980,556)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">9</text><text x="20" y="4">Наддув</text></g>

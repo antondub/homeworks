@@ -80,7 +80,8 @@
 <text x="420" y="46" font-size="36" fill="#c45c12" stroke="none" font-weight="700">С1</text>
 <text x="420" y="346" font-size="36" fill="#c45c12" stroke="none" font-weight="700">С1</text>
 <text x="600" y="210" font-size="36" fill="#c45c12" stroke="none" font-weight="700">С2</text>
-<text x="55" y="210" font-size="28" fill="#8a4e10" stroke="none">250 под бак</text>
+<text x="40" y="200" font-size="26" fill="#8a4e10" stroke="none">250</text>
+<text x="40" y="232" font-size="22" fill="#8a4e10" stroke="none">два бака</text>
 </g>
 
 <text x="790" y="92" font-size="15" font-weight="700" fill="#241c16">Угол сверху</text>
@@ -111,4 +112,5 @@
 <text x="790" y="762" font-size="14" fill="#3c342c">С2 стоит между полками С1, длина 300.</text>
 <text x="790" y="784" font-size="14" fill="#3c342c">Дверка вставки: Д1 250, Д2 200, проём 200×200.</text>
 <text x="790" y="806" font-size="14" fill="#3c342c">Площадки подачи и наддува в каркас не входят.</text>
+<text x="790" y="828" font-size="14" fill="#3c342c">Полка С1 — верх зоны баков. Уголка между баками нет.</text>
 </svg>
