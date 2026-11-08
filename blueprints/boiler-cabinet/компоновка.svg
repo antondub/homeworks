@@ -6,10 +6,10 @@
 <marker id="ao" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="10" refX="12" refY="5" orient="auto"><path d="M0 0 L14 5 L0 10 Z" fill="#c45c12"/></marker>
 </defs>
 <text x="28" y="34" font-size="22" font-weight="700" fill="#241c16">Шкаф уличного котла</text>
-<text x="28" y="54" font-size="13" fill="#6b6258">Котёл боком к фасаду. Шкаф около 1000×400×1500, размеры котла с эскиза. Контуры без числа — места, не обмер.</text>
+<text x="28" y="54" font-size="13" fill="#6b6258">Котёл боком к фасаду. Шкаф около 1000×400×1500.</text>
 <line x1="28" y1="66" x2="1212" y2="66" stroke="#e0d6c6" stroke-width="1"/>
 
-<!-- Вид спереди. y вниз, пол 1500. Котёл: зад слева, горелка вправо. -->
+<!-- Вид спереди. Зад котла справа, горелка влево. Пол 1500, верх котла 800. -->
 <text x="48" y="88" font-size="15" font-weight="700" fill="#241c16">Вид спереди, фасад открыт</text>
 <g transform="translate(64,108) scale(0.42)">
 <rect x="0" y="0" width="1000" height="1500" fill="#fffdf8" stroke="#2a241e" stroke-width="4"/>
@@ -18,69 +18,84 @@
 <line x1="0" y1="1500" x2="18" y2="1472" stroke="#2a241e" stroke-width="3"/>
 <line x1="1000" y1="1500" x2="982" y2="1472" stroke="#2a241e" stroke-width="3"/>
 
-<!-- полка и отопитель, выхлоп влево наружу -->
-<line x1="20" y1="790" x2="200" y2="790" stroke="#2a241e" stroke-width="4"/>
-<rect x="36" y="640" width="150" height="150" fill="#fffdf8" stroke="#8a8378" stroke-width="3" stroke-dasharray="10 7"/>
-<text x="111" y="720" text-anchor="middle" font-size="28" fill="#3c342c">отопитель</text>
-<line x1="36" y1="700" x2="-40" y2="700" stroke="#2a241e" stroke-width="3" marker-end="url(#ah)"/>
-<text x="-46" y="688" text-anchor="end" font-size="26" fill="#3c342c">наружу</text>
+<!-- зона бака 250 слева, полка на остальной ширине -->
+<rect x="0" y="500" width="250" height="290" fill="#fff6e8" stroke="#8a4e10" stroke-width="3" stroke-dasharray="10 7"/>
+<rect x="90" y="482" width="50" height="22" fill="#fff6e8" stroke="#8a4e10" stroke-width="3"/>
+<text x="125" y="640" text-anchor="middle" font-size="30" fill="#8a4e10" font-weight="700">бак</text>
+<text x="125" y="676" text-anchor="middle" font-size="24" fill="#8a4e10">топлива</text>
+<line x1="0" y1="820" x2="250" y2="820" stroke="#8a4e10" stroke-width="2.6" marker-start="url(#ao)" marker-end="url(#ao)"/>
+<text x="125" y="858" text-anchor="middle" font-size="26" fill="#8a4e10">250</text>
 
-<!-- бак над горелкой, низ у верха котла -->
-<rect x="560" y="470" width="230" height="320" rx="16" fill="#fff6e8" stroke="#8a4e10" stroke-width="3" stroke-dasharray="10 7"/>
-<rect x="650" y="452" width="50" height="22" fill="#fff6e8" stroke="#8a4e10" stroke-width="3"/>
-<text x="675" y="620" text-anchor="middle" font-size="30" fill="#8a4e10" font-weight="700">бак</text>
-<text x="675" y="656" text-anchor="middle" font-size="24" fill="#8a4e10">топлива</text>
-<line x1="675" y1="790" x2="675" y2="1188" stroke="#8a4e10" stroke-width="3"/>
-<circle cx="675" cy="980" r="22" fill="#fffdf8" stroke="#8a4e10" stroke-width="3"/>
-<text x="712" y="974" font-size="24" fill="#8a4e10">насос</text>
-<text x="712" y="1002" font-size="24" fill="#8a4e10">топлива</text>
+<line x1="250" y1="790" x2="1000" y2="790" stroke="#2a241e" stroke-width="4"/>
+<rect x="420" y="630" width="170" height="160" fill="#fffdf8" stroke="#8a8378" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="505" y="720" text-anchor="middle" font-size="28" fill="#3c342c">отопитель</text>
+<line x1="1000" y1="720" x2="1048" y2="720" stroke="#2a241e" stroke-width="3" marker-end="url(#ah)"/>
+<text x="1054" y="728" font-size="24" fill="#3c342c">наружу</text>
 
-<!-- котёл, бок: зад 590, перед 630, пол 700 -->
-<path fill="#f3e4c8" stroke="#2a241e" stroke-width="3.6" d="M 145 800 H 480 V 1210 H 525 V 1450 H 480 V 1430 L 145 1390 Z"/>
+<rect x="36" y="1040" width="120" height="16" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
+<line x1="48" y1="1056" x2="48" y2="1100" stroke="#2a241e" stroke-width="3"/>
+<line x1="144" y1="1056" x2="144" y2="1100" stroke="#2a241e" stroke-width="3"/>
+<circle cx="96" cy="1004" r="22" fill="#fffdf8" stroke="#8a4e10" stroke-width="3"/>
+<text x="96" y="1140" text-anchor="middle" font-size="22" fill="#8a4e10">насос топлива</text>
+<line x1="125" y1="790" x2="96" y2="982" stroke="#8a4e10" stroke-width="3"/>
+<line x1="118" y1="1004" x2="300" y2="1004" stroke="#8a4e10" stroke-width="3"/>
+<line x1="300" y1="1004" x2="300" y2="1280" stroke="#8a4e10" stroke-width="3"/>
+
+<!-- котёл: перед (горелка) слева ниже, зад справа. Шов 630 / 590 -->
+<path fill="#f3e4c8" stroke="#2a241e" stroke-width="3.6" d="M 730 800 H 395 V 1210 H 350 V 1450 H 395 V 1430 L 730 1390 Z"/>
 <g fill="none" stroke="#2a241e" stroke-width="3.2">
-<line x1="145" y1="1500" x2="190" y2="1500"/>
-<line x1="145" y1="1500" x2="145" y2="1390"/>
-<line x1="190" y1="1500" x2="190" y2="1395"/>
-<circle cx="167" cy="1464" r="9"/>
-<line x1="435" y1="1500" x2="480" y2="1500"/>
-<line x1="435" y1="1500" x2="435" y2="1425"/>
-<line x1="480" y1="1500" x2="480" y2="1430"/>
-<circle cx="457" cy="1472" r="9"/>
+<line x1="685" y1="1500" x2="730" y2="1500"/>
+<line x1="730" y1="1500" x2="730" y2="1390"/>
+<line x1="685" y1="1500" x2="685" y2="1395"/>
+<circle cx="707" cy="1464" r="9"/>
+<line x1="395" y1="1500" x2="440" y2="1500"/>
+<line x1="395" y1="1500" x2="395" y2="1430"/>
+<line x1="440" y1="1500" x2="440" y2="1425"/>
+<circle cx="417" cy="1472" r="9"/>
 </g>
-<line x1="200" y1="1396" x2="430" y2="1424" stroke="#2a241e" stroke-width="2.4" stroke-dasharray="8 6"/>
-<rect x="375" y="1280" width="150" height="100" fill="none" stroke="#2a241e" stroke-width="2.6" stroke-dasharray="8 6"/>
-<text x="450" y="1340" text-anchor="middle" font-size="24">150</text>
-<text x="300" y="1100" text-anchor="middle" font-size="32" fill="#241c16" font-weight="700">котёл</text>
+<line x1="450" y1="1424" x2="680" y2="1396" stroke="#2a241e" stroke-width="2.4" stroke-dasharray="8 6"/>
+<rect x="350" y="1280" width="150" height="100" fill="none" stroke="#2a241e" stroke-width="2.6" stroke-dasharray="8 6"/>
+<text x="425" y="1340" text-anchor="middle" font-size="24">150</text>
+<text x="560" y="1080" text-anchor="middle" font-size="32" fill="#241c16" font-weight="700">котёл</text>
+<text x="748" y="860" font-size="24" fill="#3c342c">зад</text>
 
-<!-- подача и обратка -->
-<line x1="230" y1="800" x2="230" y2="560" stroke="#2a241e" stroke-width="3.4"/>
-<line x1="430" y1="800" x2="430" y2="560" stroke="#2a241e" stroke-width="3.4"/>
-<path d="M214 700 L246 724 L214 748 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.6"/>
-<path d="M246 700 L214 724 L246 748 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.6"/>
-<path d="M414 700 L446 724 L414 748 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.6"/>
-<path d="M446 700 L414 724 L446 748 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.6"/>
-<path d="M230 560 H266" fill="none" stroke="#2a241e" stroke-width="3.4"/>
-<path d="M430 560 H466" fill="none" stroke="#2a241e" stroke-width="3.4"/>
-<circle cx="266" cy="560" r="8" fill="none" stroke="#2a241e" stroke-width="3"/>
-<circle cx="466" cy="560" r="8" fill="none" stroke="#2a241e" stroke-width="3"/>
-<text x="230" y="500" text-anchor="middle" font-size="24">обратка</text>
-<text x="430" y="500" text-anchor="middle" font-size="24">подача</text>
-<text x="490" y="548" font-size="24" fill="#3c342c">в стену</text>
+<!-- подача сверху заднего торца, обратка снизу выступа -->
+<line x1="730" y1="980" x2="860" y2="980" stroke="#2a241e" stroke-width="3.4"/>
+<line x1="730" y1="1390" x2="880" y2="1390" stroke="#2a241e" stroke-width="3.4"/>
+<path d="M800 964 L824 980 L800 996 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
+<path d="M848 964 L824 980 L848 996 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
+<path d="M810 1374 L834 1390 L810 1406 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
+<path d="M858 1374 L834 1390 L858 1406 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
+<circle cx="848" cy="1320" r="18" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
+<text x="874" y="1310" font-size="22">насос</text>
+<text x="874" y="1336" font-size="22">обратки</text>
+<path d="M860 980 V940" fill="none" stroke="#2a241e" stroke-width="3.4"/>
+<circle cx="860" cy="940" r="8" fill="none" stroke="#2a241e" stroke-width="3"/>
+<path d="M880 1390 V1350" fill="none" stroke="#2a241e" stroke-width="3.4"/>
+<circle cx="880" cy="1350" r="8" fill="none" stroke="#2a241e" stroke-width="3"/>
+<text x="900" y="960" font-size="24">подача</text>
+<text x="900" y="1440" font-size="24">обратка</text>
+<text x="900" y="920" font-size="22" fill="#3c342c">в стену</text>
 
-<!-- горелка и ход 150 -->
-<rect x="525" y="1280" width="180" height="100" fill="#efe6d6" stroke="#2a241e" stroke-width="3.4"/>
-<rect x="705" y="1280" width="150" height="100" fill="none" stroke="#c45c12" stroke-width="3" stroke-dasharray="10 7"/>
-<line x1="705" y1="1248" x2="855" y2="1248" stroke="#c45c12" stroke-width="3" marker-end="url(#ao)"/>
-<text x="780" y="1232" text-anchor="middle" font-size="26" fill="#8a4e10">ход 150</text>
-<text x="575" y="1340" text-anchor="middle" font-size="24">180</text>
-<circle cx="670" cy="1324" r="16" fill="none" stroke="#2a241e" stroke-width="2.4"/>
-<line x1="658" y1="1324" x2="682" y2="1324" stroke="#2a241e" stroke-width="2"/>
-<line x1="670" y1="1312" x2="670" y2="1336" stroke="#2a241e" stroke-width="2"/>
+<rect x="190" y="1168" width="150" height="18" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
+<line x1="210" y1="1186" x2="230" y2="1280" stroke="#2a241e" stroke-width="3"/>
+<line x1="320" y1="1186" x2="300" y2="1280" stroke="#2a241e" stroke-width="3"/>
+<path d="M230 1128 A28 28 0 1 1 268 1148 L310 1136 L300 1108 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
+<text x="250" y="1064" text-anchor="middle" font-size="22">наддув</text>
+
+<rect x="170" y="1280" width="180" height="100" fill="#efe6d6" stroke="#2a241e" stroke-width="3.4"/>
+<text x="280" y="1340" text-anchor="middle" font-size="24">180</text>
+<rect x="8" y="1286" width="160" height="94" fill="none" stroke="#c45c12" stroke-width="3" stroke-dasharray="10 7"/>
+<line x1="168" y1="1333" x2="8" y2="1333" stroke="#c45c12" stroke-width="3" marker-end="url(#ao)"/>
+<text x="88" y="1272" text-anchor="middle" font-size="24" fill="#8a4e10">160</text>
+<line x1="0" y1="1270" x2="-36" y2="1246" stroke="#c45c12" stroke-width="3"/>
+<line x1="0" y1="1390" x2="-36" y2="1414" stroke="#c45c12" stroke-width="3"/>
+<text x="-44" y="1338" text-anchor="end" font-size="22" fill="#8a4e10">дверка</text>
 
 <g fill="none" stroke="#2a241e" stroke-width="2.4" marker-start="url(#ah)" marker-end="url(#ah)">
-<line x1="145" y1="1548" x2="525" y2="1548"/>
+<line x1="350" y1="1548" x2="730" y2="1548"/>
 </g>
-<text x="335" y="1588" text-anchor="middle" font-size="26">380 до полки</text>
+<text x="540" y="1588" text-anchor="middle" font-size="26">380 до полки</text>
 <g fill="none" stroke="#2a241e" stroke-width="2.4" marker-start="url(#ah)" marker-end="url(#ah)">
 <line x1="-48" y1="0" x2="-48" y2="1500"/>
 </g>
@@ -94,52 +109,52 @@
 <line x1="1000" y1="-40" x2="1000" y2="-8" stroke="#2a241e" stroke-width="2.4"/>
 <text x="990" y="-52" text-anchor="end" font-size="28">около 1000</text>
 <g fill="none" stroke="#2a241e" stroke-width="2.2" marker-start="url(#ah)" marker-end="url(#ah)">
-<line x1="108" y1="800" x2="108" y2="1500"/>
+<line x1="760" y1="800" x2="760" y2="1500"/>
 </g>
-<text x="96" y="1160" text-anchor="end" font-size="26">700</text>
+<text x="776" y="1160" font-size="26">700</text>
 <g font-weight="700" fill="#fff" font-size="22" text-anchor="middle">
-<g transform="translate(48,48)"><circle r="20" fill="#c45c12"/><text dy="0.35em">1</text></g>
-<g transform="translate(190,1040)"><circle r="20" fill="#c45c12"/><text dy="0.35em">2</text></g>
-<g transform="translate(900,1204)"><circle r="20" fill="#c45c12"/><text dy="0.35em">3</text></g>
-<g transform="translate(330,640)"><circle r="20" fill="#c45c12"/><text dy="0.35em">5</text></g>
-<g transform="translate(620,530)"><circle r="20" fill="#c45c12"/><text dy="0.35em">6</text></g>
-<g transform="translate(78,675)"><circle r="20" fill="#c45c12"/><text dy="0.35em">7</text></g>
+<g transform="translate(40,40)"><circle r="20" fill="#c45c12"/><text dy="0.35em">1</text></g>
+<g transform="translate(560,1000)"><circle r="20" fill="#c45c12"/><text dy="0.35em">2</text></g>
+<g transform="translate(400,1240)"><circle r="20" fill="#c45c12"/><text dy="0.35em">3</text></g>
+<g transform="translate(360,1124)"><circle r="20" fill="#c45c12"/><text dy="0.35em">9</text></g>
+<g transform="translate(70,1220)"><circle r="20" fill="#c45c12"/><text dy="0.35em">11</text></g>
+<g transform="translate(96,960)"><circle r="20" fill="#c45c12"/><text dy="0.35em">10</text></g>
+<g transform="translate(960,1100)"><circle r="20" fill="#c45c12"/><text dy="0.35em">5</text></g>
+<g transform="translate(200,560)"><circle r="20" fill="#c45c12"/><text dy="0.35em">6</text></g>
+<g transform="translate(505,680)"><circle r="20" fill="#c45c12"/><text dy="0.35em">7</text></g>
 </g>
 </g>
 
-<!-- Вид сбоку: стена слева, дверь справа. Смотрим с задка котла. -->
+<!-- Вид сбоку: стена слева, дверь справа. Высоты патрубков те же. -->
 <text x="560" y="88" font-size="15" font-weight="700" fill="#241c16">Вид сбоку</text>
 <g transform="translate(600,108) scale(0.42)">
 <rect x="0" y="0" width="400" height="1500" fill="#fffdf8" stroke="#2a241e" stroke-width="4"/>
 <rect x="0" y="0" width="16" height="1500" fill="#4a453f"/>
 <text x="28" y="80" font-size="26" fill="#3c342c">стена</text>
 
-<line x1="248" y1="790" x2="380" y2="790" stroke="#2a241e" stroke-width="3"/>
-<rect x="256" y="640" width="120" height="150" fill="#fffdf8" stroke="#8a8378" stroke-width="3" stroke-dasharray="10 7"/>
-<text x="316" y="720" text-anchor="middle" font-size="26" fill="#3c342c">полка</text>
+<line x1="90" y1="790" x2="380" y2="790" stroke="#2a241e" stroke-width="3"/>
+<text x="300" y="770" text-anchor="end" font-size="24" fill="#3c342c">полка</text>
 
 <rect x="70" y="800" width="200" height="700" fill="#f3e4c8" stroke="#2a241e" stroke-width="3.6"/>
 <rect x="60" y="800" width="220" height="700" fill="none" stroke="#2a241e" stroke-width="2.4" stroke-dasharray="8 6"/>
 <line x1="80" y1="1500" x2="120" y2="1500" stroke="#2a241e" stroke-width="3"/>
 <line x1="230" y1="1500" x2="270" y2="1500" stroke="#2a241e" stroke-width="3"/>
 <text x="170" y="1160" text-anchor="middle" font-size="28" font-weight="700">котёл</text>
-<text x="170" y="1196" text-anchor="middle" font-size="24" fill="#3c342c">рамка 210</text>
 
-<line x1="120" y1="800" x2="120" y2="520" stroke="#2a241e" stroke-width="3.4"/>
-<line x1="200" y1="800" x2="200" y2="560" stroke="#2a241e" stroke-width="3.4"/>
-<path d="M104 680 L136 704 L104 728 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
-<path d="M136 680 L104 704 L136 728 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
-<path d="M184 640 L216 664 L184 688 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
-<path d="M216 640 L184 664 L216 688 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
-<circle cx="120" cy="600" r="18" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
-<text x="148" y="606" font-size="22">насос</text>
-<line x1="120" y1="520" x2="0" y2="520" stroke="#2a241e" stroke-width="3.4"/>
-<line x1="200" y1="560" x2="0" y2="560" stroke="#2a241e" stroke-width="3.4"/>
-<text x="150" y="500" font-size="24">90° в стену</text>
+<line x1="70" y1="980" x2="16" y2="980" stroke="#2a241e" stroke-width="3.4"/>
+<line x1="70" y1="1390" x2="16" y2="1390" stroke="#2a241e" stroke-width="3.4"/>
+<path d="M70 964 L46 980 L70 996 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
+<path d="M46 964 L70 980 L46 996 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
+<path d="M70 1374 L46 1390 L70 1406 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
+<path d="M46 1374 L70 1390 L46 1406 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
+<circle cx="150" cy="1390" r="16" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
+<text x="40" y="960" font-size="22">подача</text>
+<text x="40" y="1448" font-size="22">обратка</text>
 
-<rect x="250" y="1240" width="130" height="160" fill="#fffdf8" stroke="#8a8378" stroke-width="3" stroke-dasharray="10 7"/>
-<text x="315" y="1320" text-anchor="middle" font-size="24" fill="#3c342c">электро-</text>
-<text x="315" y="1350" text-anchor="middle" font-size="24" fill="#3c342c">ника</text>
+<rect x="248" y="1200" width="140" height="200" fill="none" stroke="#2a241e" stroke-width="3.4"/>
+<rect x="262" y="1224" width="112" height="150" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
+<text x="318" y="1304" text-anchor="middle" font-size="22" fill="#3c342c">электро-</text>
+<text x="318" y="1332" text-anchor="middle" font-size="22" fill="#3c342c">ника</text>
 
 <line x1="400" y1="360" x2="468" y2="360" stroke="#c45c12" stroke-width="3"/>
 <text x="390" y="348" text-anchor="end" font-size="24" fill="#8a4e10">дверь</text>
@@ -152,64 +167,72 @@
 <text x="200" y="1600" text-anchor="middle" font-size="26">около 400</text>
 <g font-weight="700" fill="#fff" font-size="22" text-anchor="middle">
 <g transform="translate(250,330)"><circle r="20" fill="#c45c12"/><text dy="0.35em">4</text></g>
-<g transform="translate(315,1288)"><circle r="20" fill="#c45c12"/><text dy="0.35em">8</text></g>
+<g transform="translate(360,1188)"><circle r="20" fill="#c45c12"/><text dy="0.35em">8</text></g>
 </g>
 </g>
 
-<!-- План: стена сверху, фасад снизу -->
+<!-- План: стена сверху. Зад котла справа, поворот патрубков к стене. -->
 <text x="800" y="88" font-size="15" font-weight="700" fill="#241c16">План, стена сверху</text>
 <g transform="translate(800,108) scale(0.42)">
 <rect x="0" y="0" width="1000" height="400" fill="#fffdf8" stroke="#2a241e" stroke-width="4"/>
 <rect x="0" y="0" width="1000" height="16" fill="#4a453f"/>
-<text x="500" y="48" text-anchor="middle" font-size="26" fill="#fffdf8"> </text>
 <text x="36" y="64" font-size="26" fill="#3c342c">стена</text>
-<text x="760" y="64" font-size="24" fill="#3c342c">в гараже 240 л</text>
+<text x="700" y="64" font-size="24" fill="#3c342c">в гараже 240 л</text>
 
-<!-- котёл: длина 380, рамка 210 поперёк -->
-<rect x="145" y="90" width="380" height="210" fill="#f3e4c8" stroke="#2a241e" stroke-width="3.6"/>
-<rect x="145" y="95" width="335" height="200" fill="none" stroke="#2a241e" stroke-width="2.2" stroke-dasharray="8 6"/>
-<text x="310" y="190" text-anchor="middle" font-size="30" font-weight="700">котёл</text>
-<text x="310" y="224" text-anchor="middle" font-size="24">335×200</text>
+<rect x="350" y="100" width="380" height="210" fill="#f3e4c8" stroke="#2a241e" stroke-width="3.6"/>
+<rect x="395" y="105" width="335" height="200" fill="none" stroke="#2a241e" stroke-width="2.2" stroke-dasharray="8 6"/>
+<text x="560" y="200" text-anchor="middle" font-size="30" font-weight="700">котёл</text>
+<text x="560" y="234" text-anchor="middle" font-size="24">335×200</text>
+<text x="700" y="150" text-anchor="end" font-size="22" fill="#3c342c">зад</text>
 
-<rect x="525" y="145" width="180" height="100" fill="#efe6d6" stroke="#2a241e" stroke-width="3.4"/>
-<text x="615" y="202" text-anchor="middle" font-size="24">горелка</text>
-<rect x="705" y="145" width="150" height="100" fill="none" stroke="#c45c12" stroke-width="3" stroke-dasharray="10 7"/>
-<line x1="705" y1="132" x2="855" y2="132" stroke="#c45c12" stroke-width="3" marker-end="url(#ao)"/>
-<text x="770" y="118" text-anchor="middle" font-size="24" fill="#8a4e10">ход 150</text>
+<rect x="170" y="155" width="180" height="100" fill="#efe6d6" stroke="#2a241e" stroke-width="3.4"/>
+<text x="260" y="212" text-anchor="middle" font-size="24">горелка</text>
+<line x1="170" y1="205" x2="0" y2="205" stroke="#c45c12" stroke-width="3" marker-end="url(#ao)"/>
+<line x1="0" y1="155" x2="-70" y2="130" stroke="#c45c12" stroke-width="3"/>
+<line x1="0" y1="255" x2="-70" y2="280" stroke="#c45c12" stroke-width="3"/>
+<text x="8" y="100" font-size="22" fill="#8a4e10">дверка</text>
 
-<line x1="860" y1="300" x2="700" y2="230" stroke="#8a4e10" stroke-width="2.4"/>
-<text x="868" y="292" font-size="24" fill="#8a4e10">бак над</text>
-<text x="868" y="320" font-size="24" fill="#8a4e10">горелкой</text>
+<rect x="0" y="130" width="250" height="140" fill="none" stroke="#8a4e10" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="125" y="292" text-anchor="middle" font-size="24" fill="#8a4e10">250</text>
 
-<line x1="230" y1="90" x2="230" y2="16" stroke="#2a241e" stroke-width="3.4"/>
-<line x1="420" y1="90" x2="420" y2="16" stroke="#2a241e" stroke-width="3.4"/>
-<rect x="218" y="46" width="24" height="16" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
-<rect x="408" y="46" width="24" height="16" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
+<line x1="250" y1="118" x2="720" y2="118" stroke="#8a8378" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="480" y="108" text-anchor="middle" font-size="22" fill="#3c342c">полка</text>
 
-<rect x="24" y="270" width="150" height="100" fill="#fffdf8" stroke="#8a8378" stroke-width="3" stroke-dasharray="10 7"/>
-<text x="99" y="316" text-anchor="middle" font-size="24" fill="#3c342c">электроника</text>
-<text x="99" y="346" text-anchor="middle" font-size="22" fill="#6b6258">у двери</text>
+<!-- с заднего торца назад, кран, 90° в стену -->
+<line x1="730" y1="150" x2="860" y2="150" stroke="#2a241e" stroke-width="3.4"/>
+<line x1="730" y1="210" x2="900" y2="210" stroke="#2a241e" stroke-width="3.4"/>
+<rect x="800" y="138" width="22" height="24" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
+<rect x="820" y="198" width="22" height="24" fill="#fffdf8" stroke="#2a241e" stroke-width="2.4"/>
+<line x1="860" y1="150" x2="860" y2="16" stroke="#2a241e" stroke-width="3.4"/>
+<line x1="900" y1="210" x2="900" y2="16" stroke="#2a241e" stroke-width="3.4"/>
+<text x="930" y="160" font-size="22">подача</text>
+<text x="930" y="230" font-size="22">обратка</text>
+<circle cx="860" cy="250" r="16" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
 
-<!-- дверь на себя, петля справа -->
+<rect x="790" y="270" width="180" height="110" fill="none" stroke="#2a241e" stroke-width="3.4"/>
+<rect x="808" y="286" width="144" height="78" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
+<text x="880" y="332" text-anchor="middle" font-size="24" fill="#3c342c">электроника</text>
+
 <line x1="0" y1="400" x2="1000" y2="400" stroke="#c45c12" stroke-width="4"/>
-<path d="M1000 400 L816 662" fill="none" stroke="#c45c12" stroke-width="3"/>
-<path d="M1000 400 A320 320 0 0 1 816 662" fill="none" stroke="#c45c12" stroke-width="2" stroke-dasharray="8 6"/>
-<text x="620" y="640" font-size="26" fill="#8a4e10">дверь наружу</text>
+<path d="M0 400 L184 662" fill="none" stroke="#c45c12" stroke-width="3"/>
+<path d="M0 400 A320 320 0 0 0 184 662" fill="none" stroke="#c45c12" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="210" y="640" font-size="26" fill="#8a4e10">дверь наружу</text>
 
 <text x="-36" y="230" text-anchor="middle" font-size="26" transform="rotate(-90 -36 230)">около 400</text>
 </g>
 
 <text x="800" y="470" font-size="16" font-weight="700" fill="#241c16">Номера</text>
 <g font-size="13" fill="#3c342c">
-<g transform="translate(800,500)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">1</text><text x="20" y="4">Шкаф около 1000×400×1500, предварительно</text></g>
-<g transform="translate(800,532)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">2</text><text x="20" y="4">Котёл 700, верх 335×200, шов 590/630, перепад 40</text></g>
-<g transform="translate(800,564)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">3</text><text x="20" y="4">Горелка: 180 наружу, 150 внутрь, ход снятия 150</text></g>
-<g transform="translate(800,596)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">4</text><text x="20" y="4">Дверь фасада. Запас руки сверх хода не задан</text></g>
-<g transform="translate(800,628)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">5</text><text x="20" y="4">Подача и обратка: кран и 90° в стену</text></g>
-<g transform="translate(800,660)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">6</text><text x="20" y="4">Бак над горелкой, около верха котла. Контур не обмер</text></g>
-<g transform="translate(800,692)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">7</text><text x="20" y="4">Полка отопителя, выхлоп наружу, не в шкаф</text></g>
-<g transform="translate(800,724)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">8</text><text x="20" y="4">Электроника у двери. Насосы и вентилятор — места</text></g>
+<g transform="translate(800,500)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">1</text><text x="20" y="4">Шкаф</text></g>
+<g transform="translate(800,528)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">2</text><text x="20" y="4">Котёл</text></g>
+<g transform="translate(800,556)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">3</text><text x="20" y="4">Квадрат горелки</text></g>
+<g transform="translate(800,584)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">4</text><text x="20" y="4">Дверь фасада</text></g>
+<g transform="translate(800,612)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">5</text><text x="20" y="4">Подача и обратка</text></g>
+<g transform="translate(800,640)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">6</text><text x="20" y="4">Бак</text></g>
+<g transform="translate(800,668)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">7</text><text x="20" y="4">Полка, отопитель</text></g>
+<g transform="translate(800,696)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">8</text><text x="20" y="4">Панель электроники</text></g>
+<g transform="translate(800,724)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">9</text><text x="20" y="4">Наддув</text></g>
+<g transform="translate(980,500)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">10</text><text x="20" y="4">Насос топлива</text></g>
+<g transform="translate(980,528)"><circle r="11" fill="#c45c12"/><text fill="#fff" font-size="12" font-weight="700" text-anchor="middle" dy="0.35em">11</text><text x="20" y="4">Дверка вставки</text></g>
 </g>
-<text x="48" y="830" font-size="13" fill="#6b6258">Накопитель 240 л в гараже, не в шкафу. Глубина около 400 не проверена: в неё смотрит ширина котла, рамка 210, полки и патрубки шире.</text>
-<text x="48" y="852" font-size="13" fill="#6b6258">Пунктир без размера — место оборудования, не его габарит. Запас руки сверх хода 150 не задан.</text>
 </svg>
