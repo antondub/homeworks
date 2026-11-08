@@ -31,8 +31,8 @@
 
 <line x1="250" y1="320" x2="850" y2="320" stroke="#2a241e" stroke-width="4"/>
 <line x1="990" y1="320" x2="1000" y2="320" stroke="#2a241e" stroke-width="4"/>
-<rect x="420" y="170" width="170" height="150" fill="#fffdf8" stroke="#8a8378" stroke-width="3" stroke-dasharray="10 7"/>
-<text x="505" y="255" text-anchor="middle" font-size="28" fill="#3c342c">отопитель</text>
+<rect x="290" y="143" width="435" height="177" fill="#fffdf8" stroke="#8a8378" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="507" y="240" text-anchor="middle" font-size="26" fill="#3c342c">отопитель</text>
 <line x1="460" y1="170" x2="460" y2="-20" stroke="#2a241e" stroke-width="3" marker-end="url(#ah)"/>
 
 <rect x="24" y="1164" width="150" height="14" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
@@ -59,7 +59,7 @@
 <text x="520" y="735" text-anchor="middle" font-size="26">крышка</text>
 <path fill="#d7c4a3" stroke="#2a241e" stroke-width="2.4" d="M542.5 650 A207.5 207.5 0 0 1 750 442.5 L770 442.5 A92.5 92.5 0 0 0 862.5 350 L862.5 330 A207.5 207.5 0 0 1 1070 122.5 L1120 122.5 L1120 237.5 L1070 237.5 A92.5 92.5 0 0 1 977.5 330 L977.5 350 A207.5 207.5 0 0 1 770 557.5 L750 557.5 A92.5 92.5 0 0 0 657.5 650 Z"/>
 <text x="760" y="160" font-size="22">1320</text>
-<text x="800" y="530" text-anchor="middle" font-size="22">Ø115 R150</text>
+<text x="800" y="530" text-anchor="middle" font-size="22">дымоход Ø115</text>
 <g fill="none" stroke="#2a241e" stroke-width="2.2" marker-start="url(#ah)" marker-end="url(#ah)">
 <line x1="378" y1="650" x2="378" y2="800"/>
 </g>
@@ -125,7 +125,7 @@
 <g transform="translate(150,1110)"><circle r="20" fill="#c45c12"/><text dy="0.35em">10</text></g>
 <g transform="translate(960,1100)"><circle r="20" fill="#c45c12"/><text dy="0.35em">5</text></g>
 <g transform="translate(200,560)"><circle r="20" fill="#c45c12"/><text dy="0.35em">6</text></g>
-<g transform="translate(505,240)"><circle r="20" fill="#c45c12"/><text dy="0.35em">7</text></g>
+<g transform="translate(320,175)"><circle r="20" fill="#c45c12"/><text dy="0.35em">7</text></g>
 </g>
 </g>
 
@@ -140,9 +140,9 @@
 <text x="330" y="150" font-size="22">1393</text>
 
 <line x1="90" y1="320" x2="380" y2="320" stroke="#2a241e" stroke-width="3"/>
-<text x="300" y="300" text-anchor="end" font-size="24" fill="#3c342c">полка</text>
-<circle cx="175" cy="500" r="57.5" fill="#d7c4a3" stroke="#2a241e" stroke-width="2.4"/>
-<circle cx="175" cy="180" r="57.5" fill="#d7c4a3" stroke="#2a241e" stroke-width="2.4"/>
+<text x="360" y="300" text-anchor="end" font-size="24" fill="#3c342c">полка</text>
+<rect x="170" y="143" width="216" height="177" fill="#fffdf8" stroke="#8a8378" stroke-width="2.4" stroke-dasharray="8 6"/>
+<rect x="40" y="180" width="115" height="320" fill="#d7c4a3" stroke="#2a241e" stroke-width="2.4"/>
 <rect x="80" y="650" width="190" height="150" fill="#f3e4c8" stroke="#2a241e" stroke-width="3.2"/>
 <text x="175" y="735" text-anchor="middle" font-size="24">крышка</text>
 
@@ -186,6 +186,11 @@
 <text x="800" y="88" font-size="15" font-weight="700" fill="#241c16">План, стена сверху</text>
 <g transform="translate(800,108) scale(0.42)">
 <rect x="0" y="0" width="1000" height="400" fill="#fffdf8" stroke="#2a241e" stroke-width="4"/>
+<rect x="0" y="0" width="25" height="25" fill="#e7e0d4" stroke="#2a241e" stroke-width="2"/>
+<rect x="975" y="0" width="25" height="25" fill="#e7e0d4" stroke="#2a241e" stroke-width="2"/>
+<rect x="0" y="375" width="25" height="25" fill="#e7e0d4" stroke="#2a241e" stroke-width="2"/>
+<rect x="975" y="375" width="25" height="25" fill="#e7e0d4" stroke="#2a241e" stroke-width="2"/>
+<text x="30" y="48" font-size="18" fill="#3c342c">25×25</text>
 <rect x="0" y="0" width="1000" height="16" fill="#4a453f"/>
 <text x="36" y="64" font-size="26" fill="#3c342c">стена</text>
 <text x="700" y="64" font-size="24" fill="#3c342c">в гараже 240 л</text>
@@ -212,6 +217,7 @@
 
 <line x1="250" y1="108" x2="990" y2="108" stroke="#8a8378" stroke-width="3" stroke-dasharray="10 7"/>
 <text x="300" y="96" font-size="22" fill="#3c342c">полка</text>
+<rect x="290" y="90" width="435" height="216" fill="none" stroke="#8a8378" stroke-width="2" stroke-dasharray="8 6"/>
 
 <!-- с заднего торца назад, кран, 90° в стену -->
 <line x1="730" y1="150" x2="860" y2="150" stroke="#2a241e" stroke-width="3.4"/>
