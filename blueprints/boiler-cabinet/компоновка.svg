@@ -32,14 +32,9 @@
 <line x1="1000" y1="720" x2="1048" y2="720" stroke="#2a241e" stroke-width="3" marker-end="url(#ah)"/>
 <text x="1054" y="728" font-size="24" fill="#3c342c">наружу</text>
 
-<rect x="36" y="1040" width="120" height="16" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
-<line x1="48" y1="1056" x2="48" y2="1100" stroke="#2a241e" stroke-width="3"/>
-<line x1="144" y1="1056" x2="144" y2="1100" stroke="#2a241e" stroke-width="3"/>
-<circle cx="96" cy="1004" r="22" fill="#fffdf8" stroke="#8a4e10" stroke-width="3"/>
-<text x="96" y="1140" text-anchor="middle" font-size="22" fill="#8a4e10">насос топлива</text>
-<line x1="125" y1="790" x2="96" y2="982" stroke="#8a4e10" stroke-width="3"/>
-<line x1="118" y1="1004" x2="300" y2="1004" stroke="#8a4e10" stroke-width="3"/>
-<line x1="300" y1="1004" x2="300" y2="1280" stroke="#8a4e10" stroke-width="3"/>
+<rect x="24" y="1164" width="150" height="14" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
+<rect x="36" y="1088" width="126" height="76" fill="#fff6e8" stroke="#8a4e10" stroke-width="3"/>
+<text x="99" y="1132" text-anchor="middle" font-size="22" fill="#8a4e10">подача</text>
 
 <!-- котёл: перед (горелка) слева ниже, зад справа. Шов 630 / 590 -->
 <path fill="#f3e4c8" stroke="#2a241e" stroke-width="3.6" d="M 730 800 H 395 V 1210 H 350 V 1450 H 395 V 1430 L 730 1390 Z"/>
@@ -77,20 +72,18 @@
 <text x="900" y="1440" font-size="24">обратка</text>
 <text x="900" y="920" font-size="22" fill="#3c342c">в стену</text>
 
-<rect x="190" y="1168" width="150" height="18" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
-<line x1="210" y1="1186" x2="230" y2="1280" stroke="#2a241e" stroke-width="3"/>
-<line x1="320" y1="1186" x2="300" y2="1280" stroke="#2a241e" stroke-width="3"/>
-<path d="M230 1128 A28 28 0 1 1 268 1148 L310 1136 L300 1108 Z" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
-<text x="250" y="1064" text-anchor="middle" font-size="22">наддув</text>
+<rect x="200" y="1164" width="150" height="14" fill="#fffdf8" stroke="#2a241e" stroke-width="3"/>
+<rect x="212" y="1076" width="126" height="88" fill="#efe6d6" stroke="#2a241e" stroke-width="3"/>
+<text x="275" y="1126" text-anchor="middle" font-size="22">наддув</text>
 
+<rect x="20" y="1280" width="330" height="100" fill="none" stroke="#c45c12" stroke-width="3" stroke-dasharray="10 7"/>
 <rect x="170" y="1280" width="180" height="100" fill="#efe6d6" stroke="#2a241e" stroke-width="3.4"/>
-<text x="280" y="1340" text-anchor="middle" font-size="24">180</text>
-<rect x="8" y="1286" width="160" height="94" fill="none" stroke="#c45c12" stroke-width="3" stroke-dasharray="10 7"/>
-<line x1="168" y1="1333" x2="8" y2="1333" stroke="#c45c12" stroke-width="3" marker-end="url(#ao)"/>
-<text x="88" y="1272" text-anchor="middle" font-size="24" fill="#8a4e10">160</text>
-<line x1="0" y1="1270" x2="-36" y2="1246" stroke="#c45c12" stroke-width="3"/>
-<line x1="0" y1="1390" x2="-36" y2="1414" stroke="#c45c12" stroke-width="3"/>
-<text x="-44" y="1338" text-anchor="end" font-size="22" fill="#8a4e10">дверка</text>
+<text x="260" y="1338" text-anchor="middle" font-size="24">180</text>
+<line x1="170" y1="1260" x2="20" y2="1260" stroke="#c45c12" stroke-width="3" marker-end="url(#ao)"/>
+<text x="95" y="1248" text-anchor="middle" font-size="24" fill="#8a4e10">150</text>
+<line x1="0" y1="1280" x2="-28" y2="1264" stroke="#c45c12" stroke-width="3"/>
+<line x1="0" y1="1380" x2="-28" y2="1396" stroke="#c45c12" stroke-width="3"/>
+<text x="8" y="1416" font-size="22" fill="#8a4e10">вставка</text>
 
 <g fill="none" stroke="#2a241e" stroke-width="2.4" marker-start="url(#ah)" marker-end="url(#ah)">
 <line x1="350" y1="1548" x2="730" y2="1548"/>
@@ -116,9 +109,8 @@
 <g transform="translate(40,40)"><circle r="20" fill="#c45c12"/><text dy="0.35em">1</text></g>
 <g transform="translate(560,1000)"><circle r="20" fill="#c45c12"/><text dy="0.35em">2</text></g>
 <g transform="translate(400,1240)"><circle r="20" fill="#c45c12"/><text dy="0.35em">3</text></g>
-<g transform="translate(360,1124)"><circle r="20" fill="#c45c12"/><text dy="0.35em">9</text></g>
-<g transform="translate(70,1220)"><circle r="20" fill="#c45c12"/><text dy="0.35em">11</text></g>
-<g transform="translate(96,960)"><circle r="20" fill="#c45c12"/><text dy="0.35em">10</text></g>
+<g transform="translate(340,1104)"><circle r="20" fill="#c45c12"/><text dy="0.35em">9</text></g>
+<g transform="translate(150,1110)"><circle r="20" fill="#c45c12"/><text dy="0.35em">10</text></g>
 <g transform="translate(960,1100)"><circle r="20" fill="#c45c12"/><text dy="0.35em">5</text></g>
 <g transform="translate(200,560)"><circle r="20" fill="#c45c12"/><text dy="0.35em">6</text></g>
 <g transform="translate(505,680)"><circle r="20" fill="#c45c12"/><text dy="0.35em">7</text></g>
@@ -185,12 +177,13 @@
 <text x="560" y="234" text-anchor="middle" font-size="24">335×200</text>
 <text x="700" y="150" text-anchor="end" font-size="22" fill="#3c342c">зад</text>
 
+<rect x="20" y="155" width="330" height="100" fill="none" stroke="#c45c12" stroke-width="3" stroke-dasharray="10 7"/>
 <rect x="170" y="155" width="180" height="100" fill="#efe6d6" stroke="#2a241e" stroke-width="3.4"/>
-<text x="260" y="212" text-anchor="middle" font-size="24">горелка</text>
-<line x1="170" y1="205" x2="0" y2="205" stroke="#c45c12" stroke-width="3" marker-end="url(#ao)"/>
-<line x1="0" y1="155" x2="-70" y2="130" stroke="#c45c12" stroke-width="3"/>
-<line x1="0" y1="255" x2="-70" y2="280" stroke="#c45c12" stroke-width="3"/>
-<text x="8" y="100" font-size="22" fill="#8a4e10">дверка</text>
+<text x="280" y="212" text-anchor="middle" font-size="24">горелка</text>
+<line x1="170" y1="145" x2="20" y2="145" stroke="#c45c12" stroke-width="3" marker-end="url(#ao)"/>
+<line x1="0" y1="155" x2="-24" y2="145" stroke="#c45c12" stroke-width="3"/>
+<line x1="0" y1="255" x2="-24" y2="265" stroke="#c45c12" stroke-width="3"/>
+<text x="8" y="148" font-size="20" fill="#8a4e10">вставка</text>
 
 <rect x="0" y="130" width="250" height="140" fill="none" stroke="#8a4e10" stroke-width="3" stroke-dasharray="10 7"/>
 <text x="125" y="292" text-anchor="middle" font-size="24" fill="#8a4e10">250</text>
