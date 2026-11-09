@@ -1,205 +1,1400 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="800" viewBox="0 0 700 800" font-family="Liberation Sans, DejaVu Sans, sans-serif">
-<rect width="700" height="800" fill="#f6f3ea"/>
-<defs><marker id="se" markerUnits="userSpaceOnUse" markerWidth="20.00" markerHeight="14.00" refX="18.00" refY="7.00" orient="auto"><path d="M0 0 L20.00 7.00 L0 14.00 Z" fill="#2a241e"/></marker><marker id="ss" markerUnits="userSpaceOnUse" markerWidth="20.00" markerHeight="14.00" refX="0" refY="7.00" orient="auto"><path d="M20.00 0 L0 7.00 L20.00 14.00 Z" fill="#2a241e"/></marker><marker id="fe" markerUnits="userSpaceOnUse" markerWidth="22.73" markerHeight="15.91" refX="20.45" refY="7.95" orient="auto"><path d="M0 0 L22.73 7.95 L0 15.91 Z" fill="#2a241e"/></marker><marker id="fs" markerUnits="userSpaceOnUse" markerWidth="22.73" markerHeight="15.91" refX="0" refY="7.95" orient="auto"><path d="M22.73 0 L0 7.95 L22.73 15.91 Z" fill="#2a241e"/></marker><marker id="te" markerUnits="userSpaceOnUse" markerWidth="16.13" markerHeight="11.29" refX="14.52" refY="5.65" orient="auto"><path d="M0 0 L16.13 5.65 L0 11.29 Z" fill="#2a241e"/></marker><marker id="ts" markerUnits="userSpaceOnUse" markerWidth="16.13" markerHeight="11.29" refX="0" refY="5.65" orient="auto"><path d="M16.13 0 L0 5.65 L16.13 11.29 Z" fill="#2a241e"/></marker></defs>
-<text x="28" y="36" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#241c16">Котёл v2, теплообменник Житомир-3</text>
-<text x="28" y="58" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="13" fill="#6b6258">Проём 170×240, высота 700. Внизу номера. Размеры на листе.</text>
-<line x1="28" y1="70" x2="676" y2="70" stroke="#e0d6c6" stroke-width="1"/>
-<g transform="translate(72,88) scale(0.5)">
-<g fill="#2a241e" fill-opacity="0.05" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0">
-<rect x="563" y="588" width="172" height="100"/>
-<rect x="405" y="588" width="150" height="100"/>
-<line x1="505" y1="588" x2="505" y2="688"/>
-</g>
-<rect x="551" y="528" width="8" height="210" fill="none" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0"/>
-<line x1="555" y1="518" x2="555" y2="758" stroke="#2a241e" stroke-width="3.40"/>
-<path fill="#f3e4c8" stroke="#2a241e" stroke-width="3.40" d="M 175 108 H 510 V 518 H 555 V 758 H 510 V 738 L 175 698 Z"/>
-<circle cx="175" cy="698" r="1.2" fill="#2a241e"/>
-<text x="188" y="540" font-size="26.0">обратка</text>
-<text x="183" y="124" font-size="26.0">1  вид сбоку</text>
-<text x="600" y="520" font-size="26.0">4 фланец</text>
-<text x="330" y="650" font-size="26.0">труба Ø100</text>
-<text x="590" y="730" font-size="26.0">квадрат 100×100</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.40">
-<line x1="175" y1="808" x2="218" y2="808"/>
-<line x1="175" y1="808" x2="175" y2="698"/>
-<line x1="218" y1="808" x2="218" y2="703"/>
-<circle cx="196" cy="782" r="6" fill="none" stroke="#2a241e" stroke-width="2.2"/>
-<line x1="468" y1="808" x2="510" y2="808"/>
-<line x1="468" y1="808" x2="468" y2="733"/>
-<line x1="510" y1="808" x2="510" y2="738"/>
-<circle cx="489" cy="792" r="6" fill="none" stroke="#2a241e" stroke-width="2.2"/>
-</g>
-<text x="512" y="796" font-size="26.0">6</text>
-<line x1="230" y1="701.6" x2="450" y2="727.8" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0"/>
-<line x1="232" y1="697.8" x2="448" y2="723.6" stroke="#2a241e" stroke-width="3.40"/>
-<text x="390" y="713" font-size="26.0">3</text>
-<circle cx="248" cy="660" r="7" fill="none" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0"/>
-<line x1="255" y1="666" x2="296" y2="682" stroke="#2a241e" stroke-width="3.40"/>
-<text x="300" y="690" font-size="26.0">7</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.40" marker-start="url(#ss)" marker-end="url(#se)">
-<line x1="133" y1="108" x2="133" y2="808"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.40">
-<line x1="133" y1="108" x2="175" y2="108"/>
-<line x1="133" y1="808" x2="175" y2="808"/>
-</g>
-<text x="130" y="459.5" font-size="26.0" text-anchor="end">700</text>
-<text x="129" y="474.0" font-size="26.0" text-anchor="end">с опорами</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.40" marker-start="url(#ss)" marker-end="url(#se)">
-<line x1="488" y1="518" x2="488" y2="758"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.40">
-<line x1="488" y1="518" x2="510" y2="518"/>
-<line x1="488" y1="758" x2="510" y2="758"/>
-</g>
-<text x="390" y="600" font-size="26.0" text-anchor="end">240</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.40" marker-start="url(#ss)" marker-end="url(#se)">
-<line x1="405" y1="499" x2="555" y2="499"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.40">
-<line x1="405" y1="588" x2="405" y2="499"/>
-<line x1="555" y1="588" x2="555" y2="499"/>
-</g>
-<text x="470" y="470" font-size="26.0" text-anchor="middle">150 вдоль оси</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.40" marker-start="url(#ss)" marker-end="url(#se)">
-<line x1="555" y1="781" x2="735" y2="781"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.40">
-<line x1="555" y1="688" x2="555" y2="781"/>
-<line x1="735" y1="688" x2="735" y2="781"/>
-</g>
-<text x="645.0" y="778" font-size="26.0" text-anchor="middle">180</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.40" marker-start="url(#ss)" marker-end="url(#se)">
-<line x1="753" y1="588" x2="753" y2="688"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.40">
-<line x1="735" y1="588" x2="753" y2="588"/>
-<line x1="735" y1="688" x2="753" y2="688"/>
-</g>
-<text x="756" y="639.5" font-size="26.0" text-anchor="start">100</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0" marker-start="url(#ss)" marker-end="url(#se)">
-<line x1="245" y1="698" x2="245" y2="738"/>
-</g>
-<text x="228" y="726" font-size="26.0" text-anchor="end">40</text>
-<text x="168" y="688" font-size="26.0" text-anchor="end">590</text>
-<text x="520" y="728" font-size="26.0">630</text>
-<line x1="175" y1="698" x2="245" y2="698" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0"/>
-<line x1="510" y1="738" x2="245" y2="738" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0"/>
-<text x="175" y="868" font-size="26.0">перед ниже</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0" marker-start="url(#ss)" marker-end="url(#se)">
-<line x1="175" y1="90" x2="510" y2="90"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0">
-<line x1="175" y1="108" x2="175" y2="90"/>
-<line x1="510" y1="108" x2="510" y2="90"/>
-</g>
-<text x="342.5" y="84" font-size="26.0" text-anchor="middle">335</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0" marker-start="url(#ss)" marker-end="url(#se)">
-<line x1="175" y1="68" x2="515" y2="68"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0">
-<line x1="175" y1="108" x2="175" y2="68"/>
-<line x1="515" y1="108" x2="515" y2="68"/>
-</g>
-<text x="300" y="52" font-size="26.0" text-anchor="middle">340</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0" marker-start="url(#ss)" marker-end="url(#se)">
-<line x1="175" y1="834" x2="555" y2="834"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.40" stroke-dasharray="12.0 7.0">
-<line x1="175" y1="808" x2="175" y2="834"/>
-<line x1="555" y1="808" x2="555" y2="834"/>
-</g>
-<text x="365.0" y="831" font-size="26.0" text-anchor="middle">380 полка</text>
-
-</g>
-<g transform="translate(118,88) scale(0.44)">
-<text x="830" y="100" font-size="29.5">вид спереди</text>
-<rect x="830" y="108" width="200" height="700" fill="none" stroke="#2a241e" stroke-width="3.86" stroke-dasharray="13.6 8.0"/>
-<rect x="825" y="518" width="210" height="240" fill="#fffdf8" stroke="#2a241e" stroke-width="3.86" stroke-dasharray="13.6 8.0"/>
-<rect x="845" y="518" width="170" height="240" fill="#fffdf8" stroke="#2a241e" stroke-width="3.86"/>
-<g fill="#2a241e" fill-opacity="0.04" stroke="#2a241e" stroke-width="3.86" stroke-dasharray="13.6 8.0">
-<rect x="820" y="496" width="220" height="274"/>
-<rect x="880.0" y="588" width="100" height="100"/>
-</g>
-<text x="851" y="534" font-size="29.5">5</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.86">
-<line x1="820" y1="800" x2="840" y2="800"/>
-<line x1="820" y1="808" x2="840" y2="808"/>
-<polyline points="820,808 812,808 812,790 828,774"/>
-<line x1="1020" y1="800" x2="1040" y2="800"/>
-<line x1="1020" y1="808" x2="1040" y2="808"/>
-<polyline points="1040,808 1048,808 1048,790 1032,774"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.86" marker-start="url(#fs)" marker-end="url(#fe)">
-<line x1="845" y1="828" x2="1015" y2="828"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.86">
-<line x1="845" y1="758" x2="845" y2="828"/>
-<line x1="1015" y1="758" x2="1015" y2="828"/>
-</g>
-<text x="930.0" y="825" font-size="29.5" text-anchor="middle">170</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.86" marker-start="url(#fs)" marker-end="url(#fe)">
-<line x1="1071.0" y1="518" x2="1071.0" y2="758"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.86">
-<line x1="1015" y1="518" x2="1071.0" y2="518"/>
-<line x1="1015" y1="758" x2="1071.0" y2="758"/>
-</g>
-<text x="1074.0" y="639.5" font-size="29.5" text-anchor="start">240</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.86" marker-start="url(#fs)" marker-end="url(#fe)">
-<line x1="808" y1="108" x2="808" y2="808"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.86">
-<line x1="808" y1="108" x2="830" y2="108"/>
-<line x1="808" y1="808" x2="830" y2="808"/>
-</g>
-<text x="805" y="459.5" font-size="29.5" text-anchor="end">700</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.86" stroke-dasharray="13.6 8.0" marker-start="url(#fs)" marker-end="url(#fe)">
-<line x1="825" y1="496" x2="1035" y2="496"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.86" stroke-dasharray="13.6 8.0">
-<line x1="825" y1="518" x2="825" y2="496"/>
-<line x1="1035" y1="518" x2="1035" y2="496"/>
-</g>
-<text x="930.0" y="493" font-size="29.5" text-anchor="middle">210 рамка</text>
-<g fill="none" stroke="#2a241e" stroke-width="3.86" stroke-dasharray="13.6 8.0" marker-start="url(#fs)" marker-end="url(#fe)">
-<line x1="830" y1="72" x2="1030" y2="72"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="3.86" stroke-dasharray="13.6 8.0">
-<line x1="830" y1="108" x2="830" y2="72"/>
-<line x1="1030" y1="108" x2="1030" y2="72"/>
-</g>
-<text x="930.0" y="69" font-size="29.5" text-anchor="middle">200 верх</text>
-
-</g>
-<g transform="translate(-78,16) scale(0.62)">
-<text x="175" y="894" font-size="21.0">2  вид сверху, каналы поперёк</text>
-<rect x="175" y="904" width="335" height="200" fill="none" stroke="#2a241e" stroke-width="2.74" stroke-dasharray="9.7 5.6"/>
-<rect x="208" y="939" width="29" height="130" fill="none" stroke="#2a241e" stroke-width="2.74" stroke-dasharray="9.7 5.6"/>
-<rect x="257" y="939" width="28" height="130" fill="none" stroke="#2a241e" stroke-width="2.74" stroke-dasharray="9.7 5.6"/>
-<rect x="309" y="939" width="20" height="130" fill="none" stroke="#2a241e" stroke-width="2.74" stroke-dasharray="9.7 5.6"/>
-<rect x="357" y="939" width="18" height="130" fill="none" stroke="#2a241e" stroke-width="2.74" stroke-dasharray="9.7 5.6"/>
-<rect x="398" y="939" width="32" height="130" fill="none" stroke="#2a241e" stroke-width="2.74" stroke-dasharray="9.7 5.6"/>
-<rect x="448" y="939" width="29" height="130" fill="none" stroke="#2a241e" stroke-width="2.74" stroke-dasharray="9.7 5.6"/>
-<g fill="none" stroke="#2a241e" stroke-width="2.74" stroke-dasharray="9.7 5.6" marker-start="url(#ts)" marker-end="url(#te)">
-<line x1="175" y1="1126" x2="510" y2="1126"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="2.74" stroke-dasharray="9.7 5.6">
-<line x1="175" y1="1104" x2="175" y2="1126"/>
-<line x1="510" y1="1104" x2="510" y2="1126"/>
-</g>
-<text x="342.5" y="1123" font-size="21.0" text-anchor="middle">335</text>
-<g fill="none" stroke="#2a241e" stroke-width="2.74" stroke-dasharray="9.7 5.6" marker-start="url(#ts)" marker-end="url(#te)">
-<line x1="533" y1="904" x2="533" y2="1104"/>
-</g>
-<g fill="none" stroke="#2a241e" stroke-width="2.74" stroke-dasharray="9.7 5.6">
-<line x1="510" y1="904" x2="533" y2="904"/>
-<line x1="510" y1="1104" x2="533" y2="1104"/>
-</g>
-<text x="536" y="1005.5" font-size="21.0" text-anchor="start">200</text>
-
-</g>
-<g transform="translate(222,213)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">1</text></g><g transform="translate(290,423)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">3</text></g><g transform="translate(412,408)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">5</text></g><g transform="translate(300,505)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">6</text></g><g transform="translate(228,400)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">7</text></g><g transform="translate(527,369)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">4</text></g><g transform="translate(150,640)" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-weight="700" font-size="15"><circle r="14" fill="#c45c12" stroke="#2a241e" stroke-width="1.4"/><text fill="#ffffff" text-anchor="middle" dy="0.35em">2</text></g>
-<text x="360" y="530" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#241c16">Номера</text><g transform="translate(374,568)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">1</text><text x="18" y="4" fill="#3c342c" font-size="12">Корпус, проём 170×240, высота 700</text></g><g transform="translate(374,602)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">2</text><text x="18" y="4" fill="#3c342c" font-size="12">Шесть каналов, поперёк 130</text></g><g transform="translate(374,636)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">3</text><text x="18" y="4" fill="#3c342c" font-size="12">Плита 2 мм, шов 590/630, шамот</text></g><g transform="translate(374,670)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">4</text><text x="18" y="4" fill="#3c342c" font-size="12">Рамка 210, край уголка около 15, фланец</text></g><g transform="translate(374,704)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">5</text><text x="18" y="4" fill="#3c342c" font-size="12">Горелка: 180 наружу, 150 внутрь</text></g><g transform="translate(374,738)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">6</text><text x="18" y="4" fill="#3c342c" font-size="12">Две опоры, зеркально, отверстие</text></g><g transform="translate(374,772)" font-family="Liberation Sans, DejaVu Sans, sans-serif"><circle r="10" fill="#c45c12" stroke="#2a241e" stroke-width="1.1"/><text fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" dy="0.35em">7</text><text x="18" y="4" fill="#3c342c" font-size="12">Пластина, керамика с графитом</text></g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="700"
+   height="800"
+   viewBox="0 0 700 800"
+   font-family="Liberation Sans, DejaVu Sans, sans-serif"
+   version="1.1"
+   id="svg106"
+   sodipodi:docname="котел-v2-эскиз.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview106"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.43"
+     inkscape:cx="201.3986"
+     inkscape:cy="460.83916"
+     inkscape:window-width="2560"
+     inkscape:window-height="1366"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g50" />
+  <rect
+     width="700"
+     height="800"
+     fill="#f6f3ea"
+     id="rect1" />
+  <defs
+     id="defs6">
+    <marker
+       id="se"
+       markerUnits="userSpaceOnUse"
+       markerWidth="20.00"
+       markerHeight="14.00"
+       refX="18.00"
+       refY="7.00"
+       orient="auto">
+      <path
+         d="M0 0 L20.00 7.00 L0 14.00 Z"
+         fill="#2a241e"
+         id="path1" />
+    </marker>
+    <marker
+       id="ss"
+       markerUnits="userSpaceOnUse"
+       markerWidth="20.00"
+       markerHeight="14.00"
+       refX="0"
+       refY="7.00"
+       orient="auto">
+      <path
+         d="M20.00 0 L0 7.00 L20.00 14.00 Z"
+         fill="#2a241e"
+         id="path2" />
+    </marker>
+    <marker
+       id="fe"
+       markerUnits="userSpaceOnUse"
+       markerWidth="22.73"
+       markerHeight="15.91"
+       refX="20.45"
+       refY="7.95"
+       orient="auto">
+      <path
+         d="M0 0 L22.73 7.95 L0 15.91 Z"
+         fill="#2a241e"
+         id="path3" />
+    </marker>
+    <marker
+       id="fs"
+       markerUnits="userSpaceOnUse"
+       markerWidth="22.73"
+       markerHeight="15.91"
+       refX="0"
+       refY="7.95"
+       orient="auto">
+      <path
+         d="M22.73 0 L0 7.95 L22.73 15.91 Z"
+         fill="#2a241e"
+         id="path4" />
+    </marker>
+    <marker
+       id="te"
+       markerUnits="userSpaceOnUse"
+       markerWidth="16.13"
+       markerHeight="11.29"
+       refX="14.52"
+       refY="5.65"
+       orient="auto">
+      <path
+         d="M0 0 L16.13 5.65 L0 11.29 Z"
+         fill="#2a241e"
+         id="path5" />
+    </marker>
+    <marker
+       id="ts"
+       markerUnits="userSpaceOnUse"
+       markerWidth="16.13"
+       markerHeight="11.29"
+       refX="0"
+       refY="5.65"
+       orient="auto">
+      <path
+         d="M16.13 0 L0 5.65 L16.13 11.29 Z"
+         fill="#2a241e"
+         id="path6" />
+    </marker>
+    <marker
+       id="ss-3"
+       markerUnits="userSpaceOnUse"
+       markerWidth="20"
+       markerHeight="14"
+       refX="0"
+       refY="7"
+       orient="auto">
+      <path
+         d="M 20,0 0,7 20,14 Z"
+         fill="#2a241e"
+         id="path2-6" />
+    </marker>
+    <marker
+       id="se-7"
+       markerUnits="userSpaceOnUse"
+       markerWidth="20"
+       markerHeight="14"
+       refX="18"
+       refY="7"
+       orient="auto">
+      <path
+         d="M 0,0 20,7 0,14 Z"
+         fill="#2a241e"
+         id="path1-5" />
+    </marker>
+  </defs>
+  <text
+     x="28"
+     y="36"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     font-size="22"
+     font-weight="700"
+     fill="#241c16"
+     id="text6">Котёл v2</text>
+  <line
+     x1="28"
+     y1="70"
+     x2="676"
+     y2="70"
+     stroke="#e0d6c6"
+     stroke-width="1"
+     id="line7" />
+  <g
+     transform="translate(72,88) scale(0.5)"
+     id="g50">
+    <rect
+       x="539"
+       y="528"
+       width="8"
+       height="210"
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.4"
+       stroke-dasharray="12, 7"
+       id="rect9" />
+    <line
+       x1="543"
+       y1="518"
+       x2="543"
+       y2="758"
+       stroke="#2a241e"
+       stroke-width="3.4"
+       id="line9" />
+    <path
+       fill="#f3e4c8"
+       stroke="#2a241e"
+       stroke-width="3.4"
+       d="m 175,108 h 335 v 410 h 25 V 758 H 510 V 738 L 175,698 Z"
+       id="path9"
+       sodipodi:nodetypes="ccccccccc" />
+    <g
+       fill="#2a241e"
+       fill-opacity="0.05"
+       stroke="#2a241e"
+       stroke-width="3.4"
+       stroke-dasharray="12, 7"
+       id="g8"
+       transform="translate(-16)">
+      <rect
+         x="563"
+         y="588"
+         width="172"
+         height="100"
+         id="rect7" />
+      <rect
+         x="405"
+         y="588"
+         width="150"
+         height="100"
+         id="rect8" />
+      <line
+         x1="537"
+         y1="588"
+         x2="537"
+         y2="688"
+         id="line8" />
+    </g>
+    <circle
+       cx="175"
+       cy="698"
+       r="1.2"
+       fill="#2a241e"
+       id="circle9" />
+    <text
+       x="183"
+       y="124"
+       font-size="26.0"
+       id="text10">1  вид сбоку</text>
+    <text
+       x="394.33566"
+       y="637.4126"
+       font-size="26px"
+       id="text12">Ø100</text>
+    <text
+       x="563.42657"
+       y="571.95807"
+       font-size="26px"
+       id="text13">квадрат 100×100</text>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.40"
+       id="g18">
+      <line
+         x1="175"
+         y1="808"
+         x2="218"
+         y2="808"
+         id="line13" />
+      <line
+         x1="175"
+         y1="808"
+         x2="175"
+         y2="698"
+         id="line14" />
+      <line
+         x1="218"
+         y1="808"
+         x2="218"
+         y2="703"
+         id="line15" />
+      <circle
+         cx="196"
+         cy="782"
+         r="6"
+         fill="none"
+         stroke="#2a241e"
+         stroke-width="2.2"
+         id="circle15" />
+      <line
+         x1="468"
+         y1="808"
+         x2="510"
+         y2="808"
+         id="line16" />
+      <line
+         x1="468"
+         y1="808"
+         x2="468"
+         y2="733"
+         id="line17" />
+      <line
+         x1="510"
+         y1="808"
+         x2="510"
+         y2="738"
+         id="line18" />
+      <circle
+         cx="489"
+         cy="792"
+         r="6"
+         fill="none"
+         stroke="#2a241e"
+         stroke-width="2.2"
+         id="circle18" />
+    </g>
+    <line
+       x1="230"
+       y1="701.6"
+       x2="450"
+       y2="727.8"
+       stroke="#2a241e"
+       stroke-width="3.40"
+       stroke-dasharray="12.0 7.0"
+       id="line19" />
+    <line
+       x1="232"
+       y1="697.8"
+       x2="448"
+       y2="723.6"
+       stroke="#2a241e"
+       stroke-width="3.40"
+       id="line20" />
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.40"
+       marker-start="url(#ss)"
+       marker-end="url(#se)"
+       id="g22">
+      <line
+         x1="133"
+         y1="108"
+         x2="133"
+         y2="808"
+         id="line22" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.68644"
+       marker-start="url(#ss-3)"
+       marker-end="url(#se-7)"
+       id="g22-3"
+       style="marker-start:url(#ss-3);marker-end:url(#se-7)"
+       transform="matrix(0.92229992,0,0,0.92229992,400.94949,9.5664336)">
+      <line
+         x1="133"
+         y1="108"
+         x2="133"
+         y2="808"
+         id="line22-5"
+         style="stroke-width:3.68644;marker-start:url(#ss-3);marker-end:url(#se-7)" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.40"
+       id="g24">
+      <line
+         x1="133"
+         y1="108"
+         x2="175"
+         y2="108"
+         id="line23" />
+      <line
+         x1="133"
+         y1="808"
+         x2="175"
+         y2="808"
+         id="line24" />
+    </g>
+    <text
+       x="130"
+       y="459.5"
+       font-size="26.0"
+       text-anchor="end"
+       id="text24">700</text>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.4"
+       id="g27">
+      <line
+         x1="508"
+         y1="108.60139"
+         x2="530"
+         y2="108.60139"
+         id="line26" />
+      <line
+         x1="488"
+         y1="758"
+         x2="510"
+         y2="758"
+         id="line27" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.4"
+       marker-start="url(#ss)"
+       marker-end="url(#se)"
+       id="g28"
+       transform="translate(-16)">
+      <line
+         x1="405"
+         y1="499"
+         x2="555"
+         y2="499"
+         id="line28" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.4"
+       id="g30"
+       transform="translate(-16)">
+      <line
+         x1="405"
+         y1="588"
+         x2="405"
+         y2="499"
+         id="line29" />
+      <line
+         x1="555"
+         y1="588"
+         x2="555"
+         y2="499"
+         id="line30" />
+    </g>
+    <text
+       x="458"
+       y="486"
+       font-size="26px"
+       text-anchor="middle"
+       id="text30">150</text>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.4"
+       marker-start="url(#ss)"
+       marker-end="url(#se)"
+       id="g31"
+       transform="translate(-16)">
+      <line
+         x1="555"
+         y1="781"
+         x2="735"
+         y2="781"
+         id="line31" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.4"
+       id="g33"
+       transform="translate(-16)">
+      <line
+         x1="555"
+         y1="688"
+         x2="555"
+         y2="781"
+         id="line32" />
+      <line
+         x1="735"
+         y1="688"
+         x2="735"
+         y2="781"
+         id="line33" />
+    </g>
+    <text
+       x="633"
+       y="778"
+       font-size="26px"
+       text-anchor="middle"
+       id="text33">180</text>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.4"
+       marker-start="url(#ss)"
+       marker-end="url(#se)"
+       id="g34"
+       transform="translate(-12)">
+      <line
+         x1="753"
+         y1="588"
+         x2="753"
+         y2="688"
+         id="line34" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.4"
+       id="g36"
+       transform="translate(-12)">
+      <line
+         x1="735"
+         y1="588"
+         x2="753"
+         y2="588"
+         id="line35" />
+      <line
+         x1="735"
+         y1="688"
+         x2="753"
+         y2="688"
+         id="line36" />
+    </g>
+    <text
+       x="756"
+       y="639.5"
+       font-size="26.0"
+       text-anchor="start"
+       id="text36">100</text>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="2.26742"
+       stroke-dasharray="12, 7"
+       marker-start="url(#ss)"
+       marker-end="url(#se)"
+       id="g37"
+       transform="matrix(1.4995005,0,0,1.4995005,-111.88811,-348.65135)">
+      <line
+         x1="245"
+         y1="698"
+         x2="245"
+         y2="738"
+         id="line37"
+         style="stroke-width:2.26742" />
+    </g>
+    <text
+       x="228"
+       y="726"
+       font-size="26.0"
+       text-anchor="end"
+       id="text37">40</text>
+    <text
+       x="121.84615"
+       y="692.1958"
+       font-size="26px"
+       text-anchor="end"
+       id="text38">590</text>
+    <text
+       x="530.8811"
+       y="379.04895"
+       font-size="26px"
+       id="text39">630</text>
+    <line
+       x1="175"
+       y1="698"
+       x2="245"
+       y2="698"
+       stroke="#2a241e"
+       stroke-width="3.40"
+       stroke-dasharray="12.0 7.0"
+       id="line39" />
+    <line
+       x1="510"
+       y1="758"
+       x2="245"
+       y2="758"
+       stroke="#2a241e"
+       stroke-width="3.4"
+       stroke-dasharray="12, 7"
+       id="line40" />
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.40"
+       stroke-dasharray="12.0 7.0"
+       marker-start="url(#ss)"
+       marker-end="url(#se)"
+       id="g41">
+      <line
+         x1="175"
+         y1="90"
+         x2="510"
+         y2="90"
+         id="line41" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.40"
+       stroke-dasharray="12.0 7.0"
+       id="g43">
+      <line
+         x1="175"
+         y1="108"
+         x2="175"
+         y2="90"
+         id="line42" />
+      <line
+         x1="510"
+         y1="108"
+         x2="510"
+         y2="90"
+         id="line43" />
+    </g>
+    <text
+       x="342.5"
+       y="84"
+       font-size="26.0"
+       text-anchor="middle"
+       id="text43">335</text>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.40"
+       stroke-dasharray="12.0 7.0"
+       marker-start="url(#ss)"
+       marker-end="url(#se)"
+       id="g47">
+      <line
+         x1="175"
+         y1="834"
+         x2="555"
+         y2="834"
+         id="line47" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.40"
+       stroke-dasharray="12.0 7.0"
+       id="g49">
+      <line
+         x1="175"
+         y1="808"
+         x2="175"
+         y2="834"
+         id="line48" />
+      <line
+         x1="555"
+         y1="808"
+         x2="555"
+         y2="834"
+         id="line49" />
+    </g>
+    <text
+       x="365"
+       y="831"
+       font-size="26px"
+       text-anchor="middle"
+       id="text49">380</text>
+  </g>
+  <g
+     transform="translate(118,88) scale(0.44)"
+     id="g73">
+    <text
+       x="830"
+       y="100"
+       font-size="29.5"
+       id="text50">вид спереди</text>
+    <rect
+       x="830"
+       y="108"
+       width="200"
+       height="700"
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       stroke-dasharray="13.6 8.0"
+       id="rect50" />
+    <rect
+       x="825"
+       y="518"
+       width="210"
+       height="240"
+       fill="#fffdf8"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       stroke-dasharray="13.6 8.0"
+       id="rect51" />
+    <rect
+       x="845"
+       y="518"
+       width="170"
+       height="240"
+       fill="#fffdf8"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       id="rect52" />
+    <g
+       fill="#2a241e"
+       fill-opacity="0.04"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       stroke-dasharray="13.6 8.0"
+       id="g54">
+      <rect
+         x="820"
+         y="496"
+         width="220"
+         height="274"
+         id="rect53" />
+      <rect
+         x="880.0"
+         y="588"
+         width="100"
+         height="100"
+         id="rect54" />
+    </g>
+    <text
+       x="851"
+       y="534"
+       font-size="29.5"
+       id="text54">5</text>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       id="g57">
+      <line
+         x1="820"
+         y1="800"
+         x2="840"
+         y2="800"
+         id="line54" />
+      <line
+         x1="820"
+         y1="808"
+         x2="840"
+         y2="808"
+         id="line55" />
+      <polyline
+         points="820,808 812,808 812,790 828,774"
+         id="polyline55" />
+      <line
+         x1="1020"
+         y1="800"
+         x2="1040"
+         y2="800"
+         id="line56" />
+      <line
+         x1="1020"
+         y1="808"
+         x2="1040"
+         y2="808"
+         id="line57" />
+      <polyline
+         points="1040,808 1048,808 1048,790 1032,774"
+         id="polyline57" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       marker-start="url(#fs)"
+       marker-end="url(#fe)"
+       id="g58">
+      <line
+         x1="845"
+         y1="828"
+         x2="1015"
+         y2="828"
+         id="line58" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       id="g60">
+      <line
+         x1="845"
+         y1="758"
+         x2="845"
+         y2="828"
+         id="line59" />
+      <line
+         x1="1015"
+         y1="758"
+         x2="1015"
+         y2="828"
+         id="line60" />
+    </g>
+    <text
+       x="930.0"
+       y="825"
+       font-size="29.5"
+       text-anchor="middle"
+       id="text60">170</text>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       marker-start="url(#fs)"
+       marker-end="url(#fe)"
+       id="g61">
+      <line
+         x1="1071.0"
+         y1="518"
+         x2="1071.0"
+         y2="758"
+         id="line61" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       id="g63">
+      <line
+         x1="1015"
+         y1="518"
+         x2="1071.0"
+         y2="518"
+         id="line62" />
+      <line
+         x1="1015"
+         y1="758"
+         x2="1071.0"
+         y2="758"
+         id="line63" />
+    </g>
+    <text
+       x="1074.0"
+       y="639.5"
+       font-size="29.5"
+       text-anchor="start"
+       id="text63">240</text>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       marker-start="url(#fs)"
+       marker-end="url(#fe)"
+       id="g64">
+      <line
+         x1="808"
+         y1="108"
+         x2="808"
+         y2="808"
+         id="line64" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       id="g66">
+      <line
+         x1="808"
+         y1="108"
+         x2="830"
+         y2="108"
+         id="line65" />
+      <line
+         x1="808"
+         y1="808"
+         x2="830"
+         y2="808"
+         id="line66" />
+    </g>
+    <text
+       x="805"
+       y="459.5"
+       font-size="29.5"
+       text-anchor="end"
+       id="text66">700</text>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       stroke-dasharray="13.6 8.0"
+       marker-start="url(#fs)"
+       marker-end="url(#fe)"
+       id="g67">
+      <line
+         x1="825"
+         y1="496"
+         x2="1035"
+         y2="496"
+         id="line67" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       stroke-dasharray="13.6 8.0"
+       id="g69">
+      <line
+         x1="825"
+         y1="518"
+         x2="825"
+         y2="496"
+         id="line68" />
+      <line
+         x1="1035"
+         y1="518"
+         x2="1035"
+         y2="496"
+         id="line69" />
+    </g>
+    <text
+       x="930"
+       y="493"
+       font-size="29.5px"
+       text-anchor="middle"
+       id="text69">210</text>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       stroke-dasharray="13.6 8.0"
+       marker-start="url(#fs)"
+       marker-end="url(#fe)"
+       id="g70">
+      <line
+         x1="830"
+         y1="72"
+         x2="1030"
+         y2="72"
+         id="line70" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="3.86"
+       stroke-dasharray="13.6 8.0"
+       id="g72">
+      <line
+         x1="830"
+         y1="108"
+         x2="830"
+         y2="72"
+         id="line71" />
+      <line
+         x1="1030"
+         y1="108"
+         x2="1030"
+         y2="72"
+         id="line72" />
+    </g>
+    <text
+       x="930.0"
+       y="69"
+       font-size="29.5"
+       text-anchor="middle"
+       id="text72">200 верх</text>
+  </g>
+  <g
+     transform="translate(-78,16) scale(0.62)"
+     id="g85">
+    <text
+       x="175"
+       y="894"
+       font-size="21.0"
+       id="text73">вид сверху</text>
+    <rect
+       x="175"
+       y="904"
+       width="335"
+       height="200"
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="2.74"
+       stroke-dasharray="9.7 5.6"
+       id="rect73" />
+    <rect
+       x="208"
+       y="939"
+       width="29"
+       height="130"
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="2.74"
+       stroke-dasharray="9.7 5.6"
+       id="rect74" />
+    <rect
+       x="257"
+       y="939"
+       width="28"
+       height="130"
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="2.74"
+       stroke-dasharray="9.7 5.6"
+       id="rect75" />
+    <rect
+       x="309"
+       y="939"
+       width="20"
+       height="130"
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="2.74"
+       stroke-dasharray="9.7 5.6"
+       id="rect76" />
+    <rect
+       x="357"
+       y="939"
+       width="18"
+       height="130"
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="2.74"
+       stroke-dasharray="9.7 5.6"
+       id="rect77" />
+    <rect
+       x="398"
+       y="939"
+       width="32"
+       height="130"
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="2.74"
+       stroke-dasharray="9.7 5.6"
+       id="rect78" />
+    <rect
+       x="448"
+       y="939"
+       width="29"
+       height="130"
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="2.74"
+       stroke-dasharray="9.7 5.6"
+       id="rect79" />
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="2.74"
+       stroke-dasharray="9.7 5.6"
+       marker-start="url(#ts)"
+       marker-end="url(#te)"
+       id="g79">
+      <line
+         x1="175"
+         y1="1126"
+         x2="510"
+         y2="1126"
+         id="line79" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="2.74"
+       stroke-dasharray="9.7 5.6"
+       id="g81">
+      <line
+         x1="175"
+         y1="1104"
+         x2="175"
+         y2="1126"
+         id="line80" />
+      <line
+         x1="510"
+         y1="1104"
+         x2="510"
+         y2="1126"
+         id="line81" />
+    </g>
+    <text
+       x="342.5"
+       y="1123"
+       font-size="21.0"
+       text-anchor="middle"
+       id="text81">335</text>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="2.74"
+       stroke-dasharray="9.7 5.6"
+       marker-start="url(#ts)"
+       marker-end="url(#te)"
+       id="g82">
+      <line
+         x1="533"
+         y1="904"
+         x2="533"
+         y2="1104"
+         id="line82" />
+    </g>
+    <g
+       fill="none"
+       stroke="#2a241e"
+       stroke-width="2.74"
+       stroke-dasharray="9.7 5.6"
+       id="g84">
+      <line
+         x1="510"
+         y1="904"
+         x2="533"
+         y2="904"
+         id="line83" />
+      <line
+         x1="510"
+         y1="1104"
+         x2="533"
+         y2="1104"
+         id="line84" />
+    </g>
+    <text
+       x="536"
+       y="1005.5"
+       font-size="21.0"
+       text-anchor="start"
+       id="text84">200</text>
+  </g>
+  <g
+     transform="translate(222,213)"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     font-weight="700"
+     font-size="15"
+     id="g86">
+    <circle
+       r="14"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.4"
+       id="circle85" />
+    <text
+       fill="#ffffff"
+       text-anchor="middle"
+       dy="0.35em"
+       id="text85">1</text>
+  </g>
+  <g
+     transform="translate(232.65734,464.95804)"
+     font-family="'Liberation Sans', 'DejaVu Sans', sans-serif"
+     font-weight="700"
+     font-size="15px"
+     id="g87">
+    <circle
+       r="14"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.4"
+       id="circle86"
+       cx="0"
+       cy="0" />
+    <text
+       fill="#ffffff"
+       text-anchor="middle"
+       dy="0.34999999em"
+       id="text86">3</text>
+  </g>
+  <g
+     transform="translate(412,408)"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     font-weight="700"
+     font-size="15"
+     id="g88">
+    <circle
+       r="14"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.4"
+       id="circle87" />
+    <text
+       fill="#ffffff"
+       text-anchor="middle"
+       dy="0.35em"
+       id="text87">5</text>
+  </g>
+  <g
+     transform="translate(300,505)"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     font-weight="700"
+     font-size="15"
+     id="g89">
+    <circle
+       r="14"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.4"
+       id="circle88" />
+    <text
+       fill="#ffffff"
+       text-anchor="middle"
+       dy="0.35em"
+       id="text88">6</text>
+  </g>
+  <g
+     transform="translate(184.64336,412.58741)"
+     font-family="'Liberation Sans', 'DejaVu Sans', sans-serif"
+     font-weight="700"
+     font-size="15px"
+     id="g90">
+    <circle
+       r="14"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.4"
+       id="circle89"
+       cx="0"
+       cy="0" />
+    <text
+       fill="#ffffff"
+       text-anchor="middle"
+       dy="0.34999999em"
+       id="text89">7</text>
+  </g>
+  <g
+     transform="translate(527,369)"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     font-weight="700"
+     font-size="15"
+     id="g91">
+    <circle
+       r="14"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.4"
+       id="circle90" />
+    <text
+       fill="#ffffff"
+       text-anchor="middle"
+       dy="0.35em"
+       id="text90">4</text>
+  </g>
+  <g
+     transform="translate(150,640)"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     font-weight="700"
+     font-size="15"
+     id="g92">
+    <circle
+       r="14"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.4"
+       id="circle91" />
+    <text
+       fill="#ffffff"
+       text-anchor="middle"
+       dy="0.35em"
+       id="text91">2</text>
+  </g>
+  <text
+     x="360"
+     y="530"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     font-size="16"
+     font-weight="700"
+     fill="#241c16"
+     id="text92">Номера</text>
+  <g
+     transform="translate(374,568)"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     id="g94">
+    <circle
+       r="10"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.1"
+       id="circle92" />
+    <text
+       fill="#ffffff"
+       font-size="11"
+       font-weight="700"
+       text-anchor="middle"
+       dy="0.35em"
+       id="text93">1</text>
+    <text
+       x="18"
+       y="4"
+       fill="#3c342c"
+       font-size="12px"
+       id="text94">Корпус</text>
+  </g>
+  <g
+     transform="translate(374,602)"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     id="g96">
+    <circle
+       r="10"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.1"
+       id="circle94" />
+    <text
+       fill="#ffffff"
+       font-size="11"
+       font-weight="700"
+       text-anchor="middle"
+       dy="0.35em"
+       id="text95">2</text>
+    <text
+       x="18"
+       y="4"
+       fill="#3c342c"
+       font-size="12px"
+       id="text96">Шесть каналов</text>
+  </g>
+  <g
+     transform="translate(374,636)"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     id="g98">
+    <circle
+       r="10"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.1"
+       id="circle96" />
+    <text
+       fill="#ffffff"
+       font-size="11"
+       font-weight="700"
+       text-anchor="middle"
+       dy="0.35em"
+       id="text97">3</text>
+    <text
+       x="18"
+       y="4"
+       fill="#3c342c"
+       font-size="12px"
+       id="text98">Дно</text>
+  </g>
+  <g
+     transform="translate(374,670)"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     id="g100">
+    <circle
+       r="10"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.1"
+       id="circle98" />
+    <text
+       fill="#ffffff"
+       font-size="11"
+       font-weight="700"
+       text-anchor="middle"
+       dy="0.35em"
+       id="text99">4</text>
+    <text
+       x="18"
+       y="4"
+       fill="#3c342c"
+       font-size="12px"
+       id="text100">Рамка</text>
+  </g>
+  <g
+     transform="translate(374,704)"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     id="g102">
+    <circle
+       r="10"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.1"
+       id="circle100" />
+    <text
+       fill="#ffffff"
+       font-size="11"
+       font-weight="700"
+       text-anchor="middle"
+       dy="0.35em"
+       id="text101">5</text>
+    <text
+       x="18"
+       y="4"
+       fill="#3c342c"
+       font-size="12px"
+       id="text102">Горелка</text>
+  </g>
+  <g
+     transform="translate(374,738)"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     id="g104">
+    <circle
+       r="10"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.1"
+       id="circle102" />
+    <text
+       fill="#ffffff"
+       font-size="11"
+       font-weight="700"
+       text-anchor="middle"
+       dy="0.35em"
+       id="text103">6</text>
+    <text
+       x="18"
+       y="4"
+       fill="#3c342c"
+       font-size="12px"
+       id="text104">опоры</text>
+  </g>
+  <g
+     transform="translate(374,772)"
+     font-family="Liberation Sans, DejaVu Sans, sans-serif"
+     id="g106">
+    <circle
+       r="10"
+       fill="#c45c12"
+       stroke="#2a241e"
+       stroke-width="1.1"
+       id="circle104" />
+    <text
+       fill="#ffffff"
+       font-size="11"
+       font-weight="700"
+       text-anchor="middle"
+       dy="0.35em"
+       id="text105">7</text>
+    <text
+       x="18"
+       y="4"
+       fill="#3c342c"
+       font-size="12px"
+       id="text106">Пластина пламяотбойник</text>
+  </g>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 160.48951,437.41259 H 130.76923"
+     id="path106" />
 </svg>
