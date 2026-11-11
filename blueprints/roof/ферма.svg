@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" font-family="Liberation Sans, DejaVu Sans, sans-serif">
+<rect width="1600" height="1230" fill="#f6f3ea"/>
+<text x="28" y="34" font-size="22" font-weight="700" fill="#241c16">Ферма 3,5 м</text>
+<text x="28" y="54" font-size="14" fill="#6b6258">низ L40×40×3, верх L25×25×3, труба 25×25×2</text>
+<line x1="28" y1="66" x2="1572" y2="66" stroke="#e0d6c6"/>
+<text x="28" y="96" font-size="16" font-weight="700" fill="#241c16">Бок</text>
+<polygon points="80.0,258.0 1480.0,258.0 1200.0,118.0 360.0,118.0" fill="#fffdf8"/>
+<g fill="none" stroke="#2a241e" stroke-linejoin="round" stroke-linecap="round">
+<line x1="80.0" y1="258.0" x2="1480.0" y2="258.0" stroke-width="6"/>
+<line x1="360.0" y1="118.0" x2="1200.0" y2="118.0" stroke-width="6"/>
+<line x1="80.0" y1="258.0" x2="360.0" y2="118.0" stroke-width="3.5"/>
+<line x1="1200.0" y1="118.0" x2="1480.0" y2="258.0" stroke-width="3.5"/>
+<line x1="360.0" y1="118.0" x2="360.0" y2="258.0" stroke-width="3"/>
+<line x1="640.0" y1="118.0" x2="640.0" y2="258.0" stroke-width="3"/>
+<line x1="920.0" y1="118.0" x2="920.0" y2="258.0" stroke-width="3"/>
+<line x1="1200.0" y1="118.0" x2="1200.0" y2="258.0" stroke-width="3"/>
+<line x1="360.0" y1="118.0" x2="640.0" y2="258.0" stroke-width="3"/>
+<line x1="640.0" y1="118.0" x2="920.0" y2="258.0" stroke-width="3"/>
+<line x1="920.0" y1="118.0" x2="640.0" y2="258.0" stroke-width="3"/>
+<line x1="1200.0" y1="118.0" x2="920.0" y2="258.0" stroke-width="3"/>
+</g>
+<rect x="68.0" y="258.0" width="24" height="7" fill="#2a241e"/>
+<rect x="1468.0" y="258.0" width="24" height="7" fill="#2a241e"/>
+<line x1="360.0" y1="96.0" x2="640.0" y2="96.0" stroke="#8a8175"/>
+<line x1="360.0" y1="90.0" x2="360.0" y2="102.0" stroke="#8a8175"/>
+<line x1="640.0" y1="90.0" x2="640.0" y2="102.0" stroke="#8a8175"/>
+<text x="500" y="86" font-size="16" fill="#241c16" text-anchor="middle">700</text>
+<line x1="80.0" y1="282.0" x2="1480.0" y2="282.0" stroke="#8a8175"/>
+<line x1="80.0" y1="276.0" x2="80.0" y2="288.0" stroke="#8a8175"/>
+<line x1="1480.0" y1="276.0" x2="1480.0" y2="288.0" stroke="#8a8175"/>
+<text x="780" y="302" font-size="16" fill="#241c16" text-anchor="middle">3500</text>
+<line x1="48" y1="118.0" x2="48" y2="258.0" stroke="#8a8175"/>
+<line x1="42" y1="118.0" x2="54" y2="118.0" stroke="#8a8175"/>
+<line x1="42" y1="258.0" x2="54" y2="258.0" stroke="#8a8175"/>
+<text x="36" y="192" font-size="16" fill="#241c16" text-anchor="middle" transform="rotate(-90 36 192)">350</text>
+<text x="780" y="70" font-size="16" fill="#c45c12" text-anchor="middle">подъём 25</text>
+<text x="28" y="348" font-size="16" font-weight="700" fill="#241c16">Торец</text>
+<rect x="415.0" y="390.0" width="10.0" height="1.2" fill="#c5ced6" stroke="#2a241e" stroke-width="0.6"/>
+<rect x="435.0" y="390.0" width="10.0" height="1.2" fill="#c5ced6" stroke="#2a241e" stroke-width="0.6"/>
+<rect x="423.8" y="390.0" width="1.2" height="10.0" fill="#c5ced6" stroke="#2a241e" stroke-width="0.6"/>
+<rect x="435.0" y="390.0" width="1.2" height="10.0" fill="#c5ced6" stroke="#2a241e" stroke-width="0.6"/>
+<rect x="425.0" y="391.2" width="10.0" height="137.6" fill="#d5dde3" stroke="#2a241e" stroke-width="0.8"/>
+<rect x="409.0" y="528.8" width="16.0" height="1.2" fill="#c5ced6" stroke="#2a241e" stroke-width="0.6"/>
+<rect x="435.0" y="528.8" width="16.0" height="1.2" fill="#c5ced6" stroke="#2a241e" stroke-width="0.6"/>
+<rect x="423.8" y="514.0" width="1.2" height="16.0" fill="#c5ced6" stroke="#2a241e" stroke-width="0.6"/>
+<rect x="435.0" y="514.0" width="1.2" height="16.0" fill="#c5ced6" stroke="#2a241e" stroke-width="0.6"/>
+<rect x="386.0" y="530.0" width="88.0" height="8.0" fill="#ddd4c6" stroke="#2a241e" stroke-width="0.7"/>
+<text x="384" y="537" font-size="14" fill="#6b6258" text-anchor="end">кровля</text>
+<rect x="414.0" y="538.0" width="32.0" height="16.0" fill="#e4d3b4" stroke="#2a241e" stroke-width="0.8"/>
+<rect x="428.0" y="554.0" width="4.0" height="108.0" fill="#e4d3b4" stroke="#2a241e" stroke-width="0.8"/>
+<rect x="414.0" y="662.0" width="32.0" height="16.0" fill="#e4d3b4" stroke="#2a241e" stroke-width="0.8"/>
+<rect x="402.0" y="678.0" width="56.0" height="2.0" fill="#b7c0c8" stroke="#2a241e" stroke-width="0.6"/>
+<rect x="408.8" y="524.4" width="4.8" height="158.8" fill="#2a241e"/>
+<rect x="407.6" y="524.4" width="7.2" height="2.4" fill="#f6f3ea" stroke="#2a241e" stroke-width="0.7"/>
+<rect x="407.6" y="680.0" width="7.2" height="2.4" fill="#f6f3ea" stroke="#2a241e" stroke-width="0.7"/>
+<rect x="446.4" y="524.4" width="4.8" height="158.8" fill="#2a241e"/>
+<rect x="445.2" y="524.4" width="7.2" height="2.4" fill="#f6f3ea" stroke="#2a241e" stroke-width="0.7"/>
+<rect x="445.2" y="680.0" width="7.2" height="2.4" fill="#f6f3ea" stroke="#2a241e" stroke-width="0.7"/>
+<text x="454" y="402" font-size="14" fill="#c45c12">L25×25×3</text>
+<text x="439" y="460" font-size="14" fill="#c45c12">25×25×2</text>
+<text x="454" y="526" font-size="14" fill="#c45c12">L40×40×3</text>
+<text x="454" y="552" font-size="14" fill="#c45c12">M12</text>
+<line x1="620" y1="390" x2="620" y2="530" stroke="#8a8175"/>
+<line x1="614" y1="390" x2="626" y2="390" stroke="#8a8175"/>
+<line x1="614" y1="530" x2="626" y2="530" stroke="#8a8175"/>
+<text x="634" y="464" font-size="16" fill="#241c16">350</text>
+<line x1="415" y1="374" x2="445" y2="374" stroke="#8a8175"/>
+<line x1="415" y1="368" x2="415" y2="380" stroke="#8a8175"/>
+<line x1="445" y1="368" x2="445" y2="380" stroke="#8a8175"/>
+<text x="430" y="364" font-size="16" fill="#241c16" text-anchor="middle">75</text>
+<line x1="414" y1="700" x2="446" y2="700" stroke="#8a8175"/>
+<line x1="414" y1="694" x2="414" y2="706" stroke="#8a8175"/>
+<line x1="446" y1="694" x2="446" y2="706" stroke="#8a8175"/>
+<text x="430" y="718" font-size="16" fill="#241c16" text-anchor="middle">80</text>
+<line x1="409" y1="736" x2="451" y2="736" stroke="#8a8175"/>
+<line x1="409" y1="730" x2="409" y2="742" stroke="#8a8175"/>
+<line x1="451" y1="730" x2="451" y2="742" stroke="#8a8175"/>
+<text x="430" y="754" font-size="16" fill="#241c16" text-anchor="middle">105</text>
+</svg>
