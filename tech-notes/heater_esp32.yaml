@@ -105,6 +105,16 @@ globals:
     restore_value: yes
     initial_value: "0.0"
 
+  - id: g_q_bias
+    type: float
+    restore_value: yes
+    initial_value: "0.0"
+
+  - id: g_q_bias_max
+    type: float
+    restore_value: yes
+    initial_value: "300.0"
+
   - id: g_q_need
     type: float
     restore_value: no
@@ -215,10 +225,22 @@ sensor:
             float q_loss = vol * kv * (targ - t1);
             float q_in = 0;
             if (!isnan(id(tempIn).state)) {
-              q_in = vol * kv * (targ - id(tempIn).state);
-              q_in += id(g_tin_w) * (targ - id(tempIn).state);
+              float e = targ - id(tempIn).state;
+              if (e > 1.5f) e = 1.5f;
+              if (e < -1.5f) e = -1.5f;
+              q_in = (vol * kv + id(g_tin_w)) * e;
             }
             float q_need = q_loss + q_in;
+            if (!isnan(id(tempIn).state)) {
+              float bias = id(g_q_bias);
+              bias += (150.0f / 3600.0f) * (targ - id(tempIn).state) * 5.0f;
+              float lim = id(g_q_bias_max);
+              if (lim < 0) lim = 0;
+              if (bias > lim) bias = lim;
+              if (bias < -lim) bias = -lim;
+              id(g_q_bias) = bias;
+            }
+            q_need += id(g_q_bias);
             if (q_need < 0) q_need = 0;
             float q_now = 1.163f * flow * (tT - tD);
             id(g_q_need) = q_need;
@@ -291,6 +313,16 @@ sensor:
     lambda: |-
       if (isnan(id(tempTop).state) || isnan(id(tempDown).state)) return NAN;
       return id(tempTop).state - id(tempDown).state;
+
+  - platform: template
+    name: "Room Bias"
+    id: room_bias
+    unit_of_measurement: "W"
+    accuracy_decimals: 0
+    device_class: power
+    update_interval: 30s
+    lambda: |-
+      return id(g_q_bias);
 
   - platform: template
     name: "Heat Need"
@@ -566,6 +598,20 @@ number:
     set_action:
       - globals.set:
           id: g_flow_lph
+          value: !lambda return x;
+
+  - platform: template
+    name: "Room Bias Max"
+    id: val_q_bias_max
+    mode: box
+    unit_of_measurement: "W"
+    min_value: 0
+    max_value: 1000
+    step: 10
+    lambda: return id(g_q_bias_max);
+    set_action:
+      - globals.set:
+          id: g_q_bias_max
           value: !lambda return x;
 
   - platform: template
