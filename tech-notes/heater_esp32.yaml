@@ -115,10 +115,15 @@ globals:
     restore_value: yes
     initial_value: "300.0"
 
-  - id: g_drop_set
+  - id: g_drop_0
     type: float
     restore_value: yes
     initial_value: "14.0"
+
+  - id: g_drop_slope
+    type: float
+    restore_value: yes
+    initial_value: "0.1"
 
   - id: g_drop_rate
     type: float
@@ -260,11 +265,12 @@ sensor:
               id(g_q_bias) = bias;
             }
             q_need += id(g_q_bias);
-            if (!boost && !isnan(tD)) {
+            if (!boost && !isnan(tD) && !isnan(t1)) {
               float trim = id(g_q_drop);
               float rate = id(g_drop_rate);
               if (rate < 0) rate = 0;
-              trim += (rate / 3600.0f) * (id(g_drop_set) - (tT - tD)) * 5.0f;
+              float drop_tgt = id(g_drop_0) - id(g_drop_slope) * t1;
+              trim += (rate / 3600.0f) * (drop_tgt - (tT - tD)) * 5.0f;
               if (trim > 600.0f) trim = 600.0f;
               if (trim < -600.0f) trim = -600.0f;
               id(g_q_drop) = trim;
@@ -352,6 +358,17 @@ sensor:
     update_interval: 30s
     lambda: |-
       return id(g_q_bias);
+
+  - platform: template
+    name: "Drop Target"
+    id: drop_target
+    unit_of_measurement: "°C"
+    accuracy_decimals: 1
+    device_class: temperature
+    update_interval: 30s
+    lambda: |-
+      if (isnan(id(tempOut).state)) return NAN;
+      return id(g_drop_0) - id(g_drop_slope) * id(tempOut).state;
 
   - platform: template
     name: "Drop Trim"
@@ -654,17 +671,30 @@ number:
           value: !lambda return x;
 
   - platform: template
-    name: "Drop Set"
-    id: val_drop_set
+    name: "Drop 0"
+    id: val_drop_0
     mode: box
     unit_of_measurement: "°C"
     min_value: 0
     max_value: 30
     step: 0.5
-    lambda: return id(g_drop_set);
+    lambda: return id(g_drop_0);
     set_action:
       - globals.set:
-          id: g_drop_set
+          id: g_drop_0
+          value: !lambda return x;
+
+  - platform: template
+    name: "Drop Slope"
+    id: val_drop_slope
+    mode: box
+    min_value: -1
+    max_value: 1
+    step: 0.05
+    lambda: return id(g_drop_slope);
+    set_action:
+      - globals.set:
+          id: g_drop_slope
           value: !lambda return x;
 
   - platform: template
