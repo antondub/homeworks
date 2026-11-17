@@ -115,6 +115,21 @@ globals:
     restore_value: yes
     initial_value: "300.0"
 
+  - id: g_drop_set
+    type: float
+    restore_value: yes
+    initial_value: "14.0"
+
+  - id: g_drop_rate
+    type: float
+    restore_value: yes
+    initial_value: "100.0"
+
+  - id: g_q_drop
+    type: float
+    restore_value: yes
+    initial_value: "0.0"
+
   - id: g_q_need
     type: float
     restore_value: no
@@ -201,6 +216,7 @@ sensor:
             float tD = id(tempDown).state;
             if(isnan(t1)) return;
             float targ = id(g_threshold_temp_targ);
+            bool boost = false;
             auto time = id(ha_time).now();
             if(id(g_daynight_mode) && time.is_valid()) {
               int h = time.hour;
@@ -214,7 +230,10 @@ sensor:
                 int elapsed = h * 60 + time.minute - b * 60;
                 if(elapsed < 0) elapsed += 1440;
                 float span = id(g_threshold_temp_targ) - t1;
-                if(elapsed < id(g_boost_min) && span > 0) targ += id(g_boost_c) * span / 8.0f;
+                if(elapsed < id(g_boost_min) && span > 0) {
+                  targ += id(g_boost_c) * span / 8.0f;
+                  boost = true;
+                }
               }
             }
 
@@ -241,6 +260,16 @@ sensor:
               id(g_q_bias) = bias;
             }
             q_need += id(g_q_bias);
+            if (!boost && !isnan(tD)) {
+              float trim = id(g_q_drop);
+              float rate = id(g_drop_rate);
+              if (rate < 0) rate = 0;
+              trim += (rate / 3600.0f) * (id(g_drop_set) - (tT - tD)) * 5.0f;
+              if (trim > 600.0f) trim = 600.0f;
+              if (trim < -600.0f) trim = -600.0f;
+              id(g_q_drop) = trim;
+            }
+            q_need += id(g_q_drop);
             if (q_need < 0) q_need = 0;
             float q_now = 1.163f * flow * (tT - tD);
             id(g_q_need) = q_need;
@@ -323,6 +352,16 @@ sensor:
     update_interval: 30s
     lambda: |-
       return id(g_q_bias);
+
+  - platform: template
+    name: "Drop Trim"
+    id: drop_trim
+    unit_of_measurement: "W"
+    accuracy_decimals: 0
+    device_class: power
+    update_interval: 30s
+    lambda: |-
+      return id(g_q_drop);
 
   - platform: template
     name: "Heat Need"
@@ -612,6 +651,34 @@ number:
     set_action:
       - globals.set:
           id: g_q_bias_max
+          value: !lambda return x;
+
+  - platform: template
+    name: "Drop Set"
+    id: val_drop_set
+    mode: box
+    unit_of_measurement: "°C"
+    min_value: 0
+    max_value: 30
+    step: 0.5
+    lambda: return id(g_drop_set);
+    set_action:
+      - globals.set:
+          id: g_drop_set
+          value: !lambda return x;
+
+  - platform: template
+    name: "Drop Rate"
+    id: val_drop_rate
+    mode: box
+    unit_of_measurement: "W/°Ch"
+    min_value: 0
+    max_value: 500
+    step: 10
+    lambda: return id(g_drop_rate);
+    set_action:
+      - globals.set:
+          id: g_drop_rate
           value: !lambda return x;
 
   - platform: template
