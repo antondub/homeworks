@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="460mm"
+   height="250mm"
+   viewBox="0 0 460 250"
+   version="1.1"
+   id="svg111"
+   sodipodi:docname="крышка-динамика.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview111"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.85611775"
+     inkscape:cx="234.78079"
+     inkscape:cy="606.22502"
+     inkscape:window-width="2560"
+     inkscape:window-height="1366"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg111" />
+  <title
+     id="title1">Крышка динамика</title>
+  <defs
+     id="defs1">
+    <marker
+       id="arr"
+       viewBox="0 0 8 6"
+       refX="8"
+       refY="3"
+       markerWidth="6.5"
+       markerHeight="5"
+       orient="auto-start-reverse">
+      <path
+         d="M0,0 L8,3 L0,6 Z"
+         fill="#0b57d0"
+         id="path1" />
+    </marker>
+  </defs>
+  <rect
+     width="460"
+     height="250"
+     fill="#fff"
+     id="rect1" />
+  <text
+     x="8"
+     y="11"
+     font-family="sans-serif"
+     font-size="5"
+     fill="#111"
+     id="text1">Крышка динамика</text>
+  <text
+     x="70"
+     y="22"
+     font-family="sans-serif"
+     font-size="3.3"
+     fill="#111"
+     id="text2">сверху</text>
+  <text
+     x="300"
+     y="22"
+     font-family="sans-serif"
+     font-size="3.3"
+     fill="#111"
+     id="text3">разрез</text>
+  <circle
+     cx="102.00"
+     cy="148.00"
+     r="49.70"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.35"
+     id="circle3" />
+  <circle
+     cx="102.00"
+     cy="148.00"
+     r="46.86"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.35"
+     id="circle4" />
+  <circle
+     cx="102.00"
+     cy="148.00"
+     r="44.30"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.35"
+     id="circle5" />
+  <circle
+     cx="102.00"
+     cy="148.00"
+     r="30.39"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.3"
+     stroke-dasharray="1.1 0.7"
+     id="circle6" />
+  <circle
+     cx="102.00"
+     cy="148.00"
+     r="28.54"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.35"
+     id="circle7" />
+  <circle
+     cx="102.00"
+     cy="148.00"
+     r="27.12"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.35"
+     id="circle8" />
+  <circle
+     cx="102.00"
+     cy="148.00"
+     r="37.42"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.3"
+     stroke-dasharray="1.1 0.7"
+     id="circle9" />
+  <circle
+     cx="102.00"
+     cy="148.00"
+     r="39.27"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.3"
+     stroke-dasharray="1.1 0.7"
+     id="circle10" />
+  <circle
+     cx="102.00"
+     cy="148.00"
+     r="5.68"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.32"
+     id="circle11" />
+  <circle
+     cx="114.64593"
+     cy="148"
+     r="2.1627836"
+     fill="none"
+     stroke="#111111"
+     stroke-width="0.356223"
+     id="circle12" />
+  <circle
+     cx="110.94375"
+     cy="139.05626"
+     r="2.1627836"
+     fill="none"
+     stroke="#111111"
+     stroke-width="0.356223"
+     id="circle13" />
+  <circle
+     cx="102"
+     cy="135.35408"
+     r="2.1627836"
+     fill="none"
+     stroke="#111111"
+     stroke-width="0.356223"
+     id="circle14" />
+  <circle
+     cx="93.056259"
+     cy="139.05626"
+     r="2.1627836"
+     fill="none"
+     stroke="#111111"
+     stroke-width="0.356223"
+     id="circle15" />
+  <circle
+     cx="89.35408"
+     cy="148"
+     r="2.1627836"
+     fill="none"
+     stroke="#111111"
+     stroke-width="0.356223"
+     id="circle16" />
+  <circle
+     cx="93.056259"
+     cy="156.94376"
+     r="2.1627836"
+     fill="none"
+     stroke="#111111"
+     stroke-width="0.356223"
+     id="circle17" />
+  <circle
+     cx="102"
+     cy="160.64594"
+     r="2.1627836"
+     fill="none"
+     stroke="#111111"
+     stroke-width="0.356223"
+     id="circle18" />
+  <circle
+     cx="110.94375"
+     cy="156.94376"
+     r="2.1627836"
+     fill="none"
+     stroke="#111111"
+     stroke-width="0.356223"
+     id="circle19" />
+  <path
+     d="m 123.85850,160.11636 a 24.99200,24.99200 0 0 0 0.00000,-24.23272 l -5.21623,2.89140 a 19.02800,19.02800 0 0 1 0.00000,18.44991 z"
+     fill="none"
+     stroke="#111111"
+     stroke-width="0.339175"
+     id="path19" />
+  <path
+     d="m 114.11636,126.14150 a 24.99200,24.99200 0 0 0 -24.23272,-0.00000 l 2.89140,5.21623 a 19.02800,19.02800 0 0 1 18.44991,0.00000 z"
+     fill="none"
+     stroke="#111111"
+     stroke-width="0.326952"
+     id="path20" />
+  <path
+     d="m 80.14150,135.88364 a 24.99200,24.99200 0 0 0 -0.00000,24.23272 l 5.21623,-2.89140 a 19.02800,19.02800 0 0 1 0.00000,-18.44991 z"
+     fill="none"
+     stroke="#111111"
+     stroke-width="0.34117"
+     id="path21" />
+  <path
+     d="m 89.88364,169.85850 a 24.99200,24.99200 0 0 0 24.23272,-0.00000 l -2.89140,-5.21623 a 19.02800,19.02800 0 0 1 -18.44991,0.00000 z"
+     fill="none"
+     stroke="#111111"
+     stroke-width="0.331077"
+     id="path22" />
+  <circle
+     cx="118.27"
+     cy="131.73"
+     r="2.84"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     id="circle22" />
+  <circle
+     cx="85.73"
+     cy="131.73"
+     r="2.84"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     id="circle23" />
+  <circle
+     cx="85.73"
+     cy="164.27"
+     r="2.84"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     id="circle24" />
+  <circle
+     cx="118.27"
+     cy="164.27"
+     r="2.84"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     id="circle25" />
+  <circle
+     cx="139.42"
+     cy="148.00"
+     r="5.68"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.25"
+     stroke-dasharray="1.0 0.7"
+     id="circle26" />
+  <circle
+     cx="139.42"
+     cy="148.00"
+     r="4.47"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.32"
+     id="circle27" />
+  <circle
+     cx="139.42"
+     cy="148.00"
+     r="2.98"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     id="circle28" />
+  <circle
+     cx="139.42"
+     cy="148.00"
+     r="1.77"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     id="circle29" />
+  <circle
+     cx="102.00"
+     cy="110.58"
+     r="5.68"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.25"
+     stroke-dasharray="1.0 0.7"
+     id="circle30" />
+  <circle
+     cx="102.00"
+     cy="110.58"
+     r="4.47"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.32"
+     id="circle31" />
+  <circle
+     cx="102.00"
+     cy="110.58"
+     r="2.98"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     id="circle32" />
+  <circle
+     cx="102.00"
+     cy="110.58"
+     r="1.77"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     id="circle33" />
+  <circle
+     cx="64.58"
+     cy="148.00"
+     r="5.68"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.25"
+     stroke-dasharray="1.0 0.7"
+     id="circle34" />
+  <circle
+     cx="64.58"
+     cy="148.00"
+     r="4.47"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.32"
+     id="circle35" />
+  <circle
+     cx="64.58"
+     cy="148.00"
+     r="2.98"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     id="circle36" />
+  <circle
+     cx="64.58"
+     cy="148.00"
+     r="1.77"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     id="circle37" />
+  <circle
+     cx="102.00"
+     cy="185.42"
+     r="5.68"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.25"
+     stroke-dasharray="1.0 0.7"
+     id="circle38" />
+  <circle
+     cx="102.00"
+     cy="185.42"
+     r="4.47"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.32"
+     id="circle39" />
+  <circle
+     cx="102.00"
+     cy="185.42"
+     r="2.98"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     id="circle40" />
+  <circle
+     cx="102.00"
+     cy="185.42"
+     r="1.77"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     id="circle41" />
+  <circle
+     cx="139.93"
+     cy="137.84"
+     r="5.68"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.25"
+     stroke-dasharray="1.0 0.7"
+     id="circle42" />
+  <circle
+     cx="139.93"
+     cy="137.84"
+     r="4.47"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.32"
+     id="circle43" />
+  <polygon
+     points="143.10,136.99 140.78,134.67 137.61,135.52 136.76,138.68 139.08,141.00 142.25,140.15"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     stroke-linejoin="round"
+     id="polygon43" />
+  <circle
+     cx="74.23"
+     cy="120.23"
+     r="5.68"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.25"
+     stroke-dasharray="1.0 0.7"
+     id="circle44" />
+  <circle
+     cx="74.23"
+     cy="120.23"
+     r="4.47"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.32"
+     id="circle45" />
+  <polygon
+     points="71.91,117.91 71.06,121.08 73.38,123.40 76.55,122.55 77.40,119.38 75.08,117.06"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     stroke-linejoin="round"
+     id="polygon45" />
+  <circle
+     cx="91.84"
+     cy="185.93"
+     r="5.68"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.25"
+     stroke-dasharray="1.0 0.7"
+     id="circle46" />
+  <circle
+     cx="91.84"
+     cy="185.93"
+     r="4.47"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.32"
+     id="circle47" />
+  <polygon
+     points="90.99,189.10 94.15,188.25 95.00,185.08 92.68,182.76 89.52,183.61 88.67,186.78"
+     fill="none"
+     stroke="#111"
+     stroke-width="0.28"
+     stroke-linejoin="round"
+     id="polygon47" />
+  <path
+     d="M126.14,148.00 A24.14,24.14 0 0 0 125.32,141.75"
+     fill="none"
+     stroke="#0b57d0"
+     stroke-width="0.22"
+     id="path47" />
+  <text
+     x="130.83"
+     y="143.95"
+     font-family="sans-serif"
+     font-size="2.8"
+     text-anchor="middle"
+     fill="#0b57d0"
+     id="text47">15°</text>
+  <line
+     x1="61.29"
+     y1="176.51"
+     x2="48.49"
+     y2="185.47"
+     stroke="#0b57d0"
+     stroke-width="0.15"
+     id="line47" />
+  <text
+     x="47.49"
+     y="186.47"
+     font-family="sans-serif"
+     font-size="2.9"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text48">Ø70</text>
+  <line
+     x1="59.88"
+     y1="168.54"
+     x2="43.29"
+     y2="176.63"
+     stroke="#0b57d0"
+     stroke-width="0.15"
+     id="line48" />
+  <text
+     x="42.29"
+     y="177.63"
+     font-family="sans-serif"
+     font-size="2.9"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text49">Ø66</text>
+  <line
+     x1="59.63"
+     y1="160.95"
+     x2="39.53"
+     y2="167.10"
+     stroke="#0b57d0"
+     stroke-width="0.15"
+     id="line49" />
+  <text
+     x="38.53"
+     y="168.10"
+     font-family="sans-serif"
+     font-size="2.9"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text50">Ø62.4</text>
+  <line
+     x1="71.91"
+     y1="152.23"
+     x2="37.32"
+     y2="157.09"
+     stroke="#0b57d0"
+     stroke-width="0.15"
+     id="line50" />
+  <text
+     x="36.32"
+     y="158.09"
+     font-family="sans-serif"
+     font-size="2.9"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text51">Ø42.8</text>
+  <line
+     x1="73.46"
+     y1="147.50"
+     x2="36.69"
+     y2="146.86"
+     stroke="#0b57d0"
+     stroke-width="0.15"
+     id="line51" />
+  <text
+     x="35.69"
+     y="147.86"
+     font-family="sans-serif"
+     font-size="2.9"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text52">Ø40.2</text>
+  <line
+     x1="75.29"
+     y1="143.29"
+     x2="37.67"
+     y2="136.66"
+     stroke="#0b57d0"
+     stroke-width="0.15"
+     id="line52" />
+  <text
+     x="36.67"
+     y="137.66"
+     font-family="sans-serif"
+     font-size="2.9"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text53">Ø38.2</text>
+  <line
+     x1="60.11"
+     y1="197.70"
+     x2="60.11"
+     y2="206.70"
+     stroke="#0b57d0"
+     stroke-width="0.15"
+     id="line53" />
+  <line
+     x1="143.89"
+     y1="197.70"
+     x2="143.89"
+     y2="206.70"
+     stroke="#0b57d0"
+     stroke-width="0.15"
+     id="line54" />
+  <line
+     x1="60.11"
+     y1="206.70"
+     x2="143.89"
+     y2="206.70"
+     stroke="#0b57d0"
+     stroke-width="0.18"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line55" />
+  <text
+     x="102.00"
+     y="210.70"
+     font-family="sans-serif"
+     font-size="3.1"
+     text-anchor="middle"
+     fill="#0b57d0"
+     id="text55">59</text>
+  <line
+     x1="135.61"
+     y1="136.68"
+     x2="142.96"
+     y2="109.25"
+     stroke="#0b57d0"
+     stroke-width="0.15"
+     id="line56" />
+  <line
+     x1="78.55"
+     y1="121.39"
+     x2="85.90"
+     y2="93.96"
+     stroke="#0b57d0"
+     stroke-width="0.15"
+     id="line57" />
+  <line
+     x1="142.96"
+     y1="109.25"
+     x2="85.90"
+     y2="93.96"
+     stroke="#0b57d0"
+     stroke-width="0.18"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line58" />
+  <text
+     x="114.43"
+     y="99.40"
+     font-family="sans-serif"
+     font-size="3.0"
+     text-anchor="middle"
+     fill="#0b57d0"
+     id="text58">54.2</text>
+  <text
+     x="168.00"
+     y="46.00"
+     font-family="sans-serif"
+     font-size="2.9"
+     text-anchor="start"
+     fill="#111"
+     id="text59">Ø6.3 / Ø8</text>
+  <text
+     x="168.00"
+     y="52.00"
+     font-family="sans-serif"
+     font-size="2.9"
+     text-anchor="start"
+     fill="#111"
+     id="text60">Ø4.2×2  низ Ø4.6×2  Ø2.5</text>
+  <text
+     x="168.00"
+     y="58.00"
+     font-family="sans-serif"
+     font-size="2.9"
+     text-anchor="start"
+     fill="#111"
+     id="text61">6-гр 4</text>
+  <text
+     x="168.00"
+     y="66.00"
+     font-family="sans-serif"
+     font-size="2.9"
+     text-anchor="start"
+     fill="#0b57d0"
+     id="text62">R26.35</text>
+  <text
+     x="168.00"
+     y="72.00"
+     font-family="sans-serif"
+     font-size="2.9"
+     text-anchor="start"
+     fill="#0b57d0"
+     id="text63">R27.66</text>
+  <text
+     x="168.00"
+     y="80.00"
+     font-family="sans-serif"
+     font-size="2.9"
+     text-anchor="start"
+     fill="#0b57d0"
+     id="text64">Ø8  Ø3.05×8 R8.9</text>
+  <text
+     x="168.00"
+     y="86.00"
+     font-family="sans-serif"
+     font-size="2.9"
+     text-anchor="start"
+     fill="#0b57d0"
+     id="text65">дуга 4.2×58° R15.5×4  Ø4×4</text>
+  <line
+     x1="168.00"
+     y1="49.00"
+     x2="144.42"
+     y2="144.00"
+     stroke="#0b57d0"
+     stroke-width="0.15"
+     id="line65" />
+  <line
+     x1="168.00"
+     y1="58.00"
+     x2="142.93"
+     y2="134.84"
+     stroke="#0b57d0"
+     stroke-width="0.15"
+     id="line66" />
+  <polygon
+     points="263.56,165.67 263.56,162.82 260.71,162.82 260.71,142.87 254.30,142.87 251.88,123.78 233.93,123.78 231.50,142.87 229.08,142.87 229.08,130.04 223.95,130.04 223.95,132.32 218.25,132.32 218.25,148.00 257.01,148.00 257.01,170.80 318.00,170.80 378.99,170.80 378.99,148.00 417.75,148.00 417.75,132.32 412.05,132.32 412.05,130.04 406.92,130.04 406.92,142.87 404.50,142.87 402.07,123.78 384.12,123.78 381.70,142.87 375.29,142.87 375.29,162.82 372.44,162.82 372.44,165.67 318.00,165.67 263.56,165.67"
+     fill="#e4e4e4"
+     stroke="#111"
+     stroke-width="0.32"
+     stroke-linejoin="round"
+     id="polygon66" />
+  <polygon
+     points="387.11,123.78 399.08,123.78 399.08,129.47 396.66,129.47 396.66,142.30 399.65,142.30 399.65,148.00 386.54,148.00 386.54,142.30 389.54,142.30 389.54,129.47 387.11,129.47"
+     fill="#fff"
+     stroke="#111"
+     stroke-width="0.32"
+     stroke-linejoin="round"
+     id="polygon67" />
+  <polygon
+     points="236.92,123.78 248.89,123.78 248.89,129.47 246.46,129.47 246.46,142.30 249.46,142.30 249.46,148.00 236.35,148.00 236.35,142.30 239.34,142.30 239.34,129.47 236.92,129.47"
+     fill="#fff"
+     stroke="#111"
+     stroke-width="0.32"
+     stroke-linejoin="round"
+     id="polygon68" />
+  <line
+     x1="318.00"
+     y1="173.65"
+     x2="318.00"
+     y2="119.50"
+     stroke="#111"
+     stroke-width="0.2"
+     stroke-dasharray="2.2 0.7 0.4 0.7"
+     id="line68" />
+  <line
+     x1="417.75"
+     y1="170.80"
+     x2="439.75"
+     y2="170.80"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line69" />
+  <line
+     x1="402.07"
+     y1="123.78"
+     x2="439.75"
+     y2="123.78"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line70" />
+  <line
+     x1="439.75"
+     y1="123.78"
+     x2="439.75"
+     y2="170.80"
+     stroke="#0b57d0"
+     stroke-width="0.2"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line71" />
+  <text
+     x="441.55"
+     y="148.29"
+     font-family="sans-serif"
+     font-size="2.8"
+     text-anchor="start"
+     fill="#0b57d0"
+     id="text71">16.5</text>
+  <line
+     x1="402.07"
+     y1="148.00"
+     x2="429.75"
+     y2="148.00"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line72" />
+  <line
+     x1="402.07"
+     y1="123.78"
+     x2="429.75"
+     y2="123.78"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line73" />
+  <line
+     x1="429.75"
+     y1="123.78"
+     x2="429.75"
+     y2="148.00"
+     stroke="#0b57d0"
+     stroke-width="0.2"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line74" />
+  <text
+     x="431.55"
+     y="136.89"
+     font-family="sans-serif"
+     font-size="2.8"
+     text-anchor="start"
+     fill="#0b57d0"
+     id="text74">8.5</text>
+  <line
+     x1="399.08"
+     y1="123.78"
+     x2="415.10"
+     y2="123.78"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line75" />
+  <line
+     x1="399.08"
+     y1="129.47"
+     x2="415.10"
+     y2="129.47"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line76" />
+  <line
+     x1="415.10"
+     y1="123.78"
+     x2="415.10"
+     y2="129.47"
+     stroke="#0b57d0"
+     stroke-width="0.2"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line77" />
+  <text
+     x="416.90"
+     y="127.62"
+     font-family="sans-serif"
+     font-size="2.8"
+     text-anchor="start"
+     fill="#0b57d0"
+     id="text77">2</text>
+  <line
+     x1="402.07"
+     y1="123.78"
+     x2="422.00"
+     y2="123.78"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line78" />
+  <line
+     x1="412.05"
+     y1="132.32"
+     x2="422.00"
+     y2="132.32"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line79" />
+  <line
+     x1="422.00"
+     y1="123.78"
+     x2="422.00"
+     y2="132.32"
+     stroke="#0b57d0"
+     stroke-width="0.2"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line80" />
+  <text
+     x="420.20"
+     y="129.20"
+     font-family="sans-serif"
+     font-size="2.8"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text80">3</text>
+  <line
+     x1="218.25"
+     y1="148.00"
+     x2="211.25"
+     y2="148.00"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line81" />
+  <line
+     x1="218.25"
+     y1="142.87"
+     x2="211.25"
+     y2="142.87"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line82" />
+  <line
+     x1="211.25"
+     y1="142.87"
+     x2="211.25"
+     y2="148.00"
+     stroke="#0b57d0"
+     stroke-width="0.2"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line83" />
+  <text
+     x="209.45"
+     y="146.44"
+     font-family="sans-serif"
+     font-size="2.8"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text83">1.8</text>
+  <line
+     x1="218.25"
+     y1="142.87"
+     x2="202.25"
+     y2="142.87"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line84" />
+  <line
+     x1="229.08"
+     y1="130.04"
+     x2="202.25"
+     y2="130.04"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line85" />
+  <line
+     x1="202.25"
+     y1="130.04"
+     x2="202.25"
+     y2="142.87"
+     stroke="#0b57d0"
+     stroke-width="0.2"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line86" />
+  <text
+     x="200.45"
+     y="137.50"
+     font-family="sans-serif"
+     font-size="2.8"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text86">4.5</text>
+  <line
+     x1="223.95"
+     y1="132.32"
+     x2="193.25"
+     y2="132.32"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line87" />
+  <line
+     x1="223.95"
+     y1="130.04"
+     x2="193.25"
+     y2="130.04"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line88" />
+  <line
+     x1="193.25"
+     y1="130.04"
+     x2="193.25"
+     y2="132.32"
+     stroke="#0b57d0"
+     stroke-width="0.2"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line89" />
+  <text
+     x="191.45"
+     y="132.20"
+     font-family="sans-serif"
+     font-size="2.8"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text89">0.8</text>
+  <line
+     x1="257.01"
+     y1="148.00"
+     x2="226.25"
+     y2="148.00"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line90" />
+  <line
+     x1="257.01"
+     y1="170.80"
+     x2="226.25"
+     y2="170.80"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line91" />
+  <line
+     x1="226.25"
+     y1="148.00"
+     x2="226.25"
+     y2="170.80"
+     stroke="#0b57d0"
+     stroke-width="0.2"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line92" />
+  <text
+     x="224.45"
+     y="160.40"
+     font-family="sans-serif"
+     font-size="2.8"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text92">8.0</text>
+  <line
+     x1="340.80"
+     y1="142.87"
+     x2="345.80"
+     y2="142.87"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line93" />
+  <line
+     x1="340.80"
+     y1="165.67"
+     x2="345.80"
+     y2="165.67"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line94" />
+  <line
+     x1="345.80"
+     y1="142.87"
+     x2="345.80"
+     y2="165.67"
+     stroke="#0b57d0"
+     stroke-width="0.2"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line95" />
+  <text
+     x="347.60"
+     y="155.27"
+     font-family="sans-serif"
+     font-size="2.8"
+     text-anchor="start"
+     fill="#0b57d0"
+     id="text95">8</text>
+  <line
+     x1="335.10"
+     y1="170.80"
+     x2="339.10"
+     y2="170.80"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line96" />
+  <line
+     x1="335.10"
+     y1="165.67"
+     x2="339.10"
+     y2="165.67"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line97" />
+  <line
+     x1="339.10"
+     y1="165.67"
+     x2="339.10"
+     y2="170.80"
+     stroke="#0b57d0"
+     stroke-width="0.2"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line98" />
+  <text
+     x="340.90"
+     y="169.24"
+     font-family="sans-serif"
+     font-size="2.8"
+     text-anchor="start"
+     fill="#0b57d0"
+     id="text98">1.8</text>
+  <line
+     x1="218.25"
+     y1="132.32"
+     x2="218.25"
+     y2="118.00"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line99" />
+  <line
+     x1="223.95"
+     y1="130.04"
+     x2="223.95"
+     y2="118.00"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line100" />
+  <line
+     x1="218.25"
+     y1="118.00"
+     x2="223.95"
+     y2="118.00"
+     stroke="#0b57d0"
+     stroke-width="0.18"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line101" />
+  <text
+     x="216.2"
+     y="117.2"
+     font-family="sans-serif"
+     font-size="2.7"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text101">2</text>
+  <line
+     x1="218.25"
+     y1="132.32"
+     x2="218.25"
+     y2="110.00"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line102" />
+  <line
+     x1="229.08"
+     y1="130.04"
+     x2="229.08"
+     y2="110.00"
+     stroke="#0b57d0"
+     stroke-width="0.14"
+     id="line103" />
+  <line
+     x1="218.25"
+     y1="110.00"
+     x2="229.08"
+     y2="110.00"
+     stroke="#0b57d0"
+     stroke-width="0.18"
+     marker-start="url(#arr)"
+     marker-end="url(#arr)"
+     id="line104" />
+  <text
+     x="216.2"
+     y="109.2"
+     font-family="sans-serif"
+     font-size="2.7"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text104">3.8</text>
+  <text
+     x="418.00"
+     y="121.00"
+     font-family="sans-serif"
+     font-size="2.6"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text105">Ø6.3</text>
+  <text
+     x="418.00"
+     y="136.00"
+     font-family="sans-serif"
+     font-size="2.6"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text106">Ø8</text>
+  <text
+     x="418.00"
+     y="127.00"
+     font-family="sans-serif"
+     font-size="2.5"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text107">Ø4.2</text>
+  <text
+     x="418.00"
+     y="144.00"
+     font-family="sans-serif"
+     font-size="2.5"
+     text-anchor="end"
+     fill="#0b57d0"
+     id="text108">Ø2.5</text>
+  <text
+     x="397.80"
+     y="157.12"
+     font-family="sans-serif"
+     font-size="2.6"
+     text-anchor="start"
+     fill="#111"
+     id="text109">ступень 1×1</text>
+  <line
+     x1="397.80"
+     y1="157.12"
+     x2="373.86"
+     y2="163.96"
+     stroke="#111"
+     stroke-width="0.15"
+     id="line109" />
+  <text
+     x="238.20"
+     y="137.17"
+     font-family="sans-serif"
+     font-size="2.6"
+     text-anchor="end"
+     fill="#111"
+     id="text110">бортик</text>
+  <line
+     x1="238.20"
+     y1="137.17"
+     x2="222.52"
+     y2="138.88"
+     stroke="#111"
+     stroke-width="0.15"
+     id="line110" />
+  <text
+     x="397.80"
+     y="151.42"
+     font-family="sans-serif"
+     font-size="2.6"
+     text-anchor="start"
+     fill="#111"
+     id="text111">выступ</text>
+  <line
+     x1="392.10"
+     y1="151.42"
+     x2="378.99"
+     y2="156.55"
+     stroke="#111"
+     stroke-width="0.15"
+     id="line111" />
+</svg>
