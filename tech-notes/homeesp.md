@@ -32,8 +32,9 @@ GPIO14 и GPIO13 в конфиге есть, к ТЭНам не подключе
 Q_loss = V · k · (targ − TempOut)
 Q_in   = (V · k + trim) · (targ − TempIn)   # 0, если TempIn нет; ошибка не больше ±1.5 °C
 Q_need = max(Q_loss + Q_in + Room Bias + Drop Trim, 0)  # Вт
-# Room Bias 150 Вт/(°C·ч) от (targ − TempIn), предел ±300 Вт
-# Drop Trim: Drop Rate от (Drop 0 − Drop Slope · TempOut − дроп), предел ±600 Вт, в буст не копится
+# Room Bias: Room Rate от (targ − TempIn), предел ±300 Вт, в буст не копится, набор вдвое быстрее
+# Drop Trim: Drop Rate от (цель − средний дроп за 5 мин), предел ±600 Вт, в буст не копится, набор вдвое быстрее
+# цель: ниже −5 °C наклон Drop Slope Cold, выше +5 °C наклон Drop Slope, между ними наклон смешивается
 Q_now  = 1.163 · G · (верх − низ)   # Вт; G — расход воды, л/ч
 Heat Now — среднее Q_now за 6 отсчётов по 5 с, один период ШИМ
 Δ      = Q_need / (1.163 · G)       # °C, только при G > 1 л/ч

@@ -110,10 +110,20 @@ globals:
     restore_value: yes
     initial_value: "0.0"
 
-  - id: g_q_bias_max
+  - id: g_room_rate
     type: float
     restore_value: yes
-    initial_value: "300.0"
+    initial_value: "150.0"
+
+  - id: g_drop_avg
+    type: float
+    restore_value: no
+    initial_value: "0.0"
+
+  - id: g_drop_avg_ready
+    type: bool
+    restore_value: no
+    initial_value: "false"
 
   - id: g_drop_0
     type: float
@@ -124,6 +134,11 @@ globals:
     type: float
     restore_value: yes
     initial_value: "0.1"
+
+  - id: g_drop_slope_cold
+    type: float
+    restore_value: yes
+    initial_value: "0.15"
 
   - id: g_drop_rate
     type: float
@@ -255,22 +270,41 @@ sensor:
               q_in = (vol * kv + id(g_tin_w)) * e;
             }
             float q_need = q_loss + q_in;
-            if (!isnan(id(tempIn).state)) {
+            if (!boost && !isnan(id(tempIn).state)) {
               float bias = id(g_q_bias);
-              bias += (150.0f / 3600.0f) * (targ - id(tempIn).state) * 5.0f;
-              float lim = id(g_q_bias_max);
-              if (lim < 0) lim = 0;
-              if (bias > lim) bias = lim;
-              if (bias < -lim) bias = -lim;
+              float brate = id(g_room_rate);
+              if (brate < 0) brate = 0;
+              bias += (brate / 1800.0f) * (targ - id(tempIn).state) * 5.0f;
+              if (bias > 300.0f) bias = 300.0f;
+              if (bias < -300.0f) bias = -300.0f;
+              id(g_q_bias) = bias;
+            } else {
+              float bias = id(g_q_bias);
+              if (bias > 300.0f) bias = 300.0f;
+              if (bias < -300.0f) bias = -300.0f;
               id(g_q_bias) = bias;
             }
             q_need += id(g_q_bias);
             if (!boost && !isnan(tD) && !isnan(t1)) {
+              float drop = tT - tD;
+              float avg = id(g_drop_avg);
+              if (!id(g_drop_avg_ready)) {
+                avg = drop;
+                id(g_drop_avg_ready) = true;
+              } else {
+                avg += (drop - avg) * (5.0f / 300.0f);
+              }
+              id(g_drop_avg) = avg;
               float trim = id(g_q_drop);
               float rate = id(g_drop_rate);
               if (rate < 0) rate = 0;
-              float drop_tgt = id(g_drop_0) - id(g_drop_slope) * t1;
-              trim += (rate / 3600.0f) * (drop_tgt - (tT - tD)) * 5.0f;
+              float sw = id(g_drop_slope);
+              float sc = id(g_drop_slope_cold);
+              float slope = sw;
+              if (t1 <= -5.0f) slope = sc;
+              else if (t1 < 5.0f) slope = sc + (sw - sc) * (t1 + 5.0f) / 10.0f;
+              float drop_tgt = id(g_drop_0) - slope * t1;
+              trim += (rate / 1800.0f) * (drop_tgt - avg) * 5.0f;
               if (trim > 600.0f) trim = 600.0f;
               if (trim < -600.0f) trim = -600.0f;
               id(g_q_drop) = trim;
@@ -368,7 +402,13 @@ sensor:
     update_interval: 30s
     lambda: |-
       if (isnan(id(tempOut).state)) return NAN;
-      return id(g_drop_0) - id(g_drop_slope) * id(tempOut).state;
+      float t = id(tempOut).state;
+      float sw = id(g_drop_slope);
+      float sc = id(g_drop_slope_cold);
+      float slope = sw;
+      if (t <= -5.0f) slope = sc;
+      else if (t < 5.0f) slope = sc + (sw - sc) * (t + 5.0f) / 10.0f;
+      return id(g_drop_0) - slope * t;
 
   - platform: template
     name: "Drop Trim"
@@ -657,17 +697,17 @@ number:
           value: !lambda return x;
 
   - platform: template
-    name: "Room Bias Max"
-    id: val_q_bias_max
+    name: "Room Rate"
+    id: val_room_rate
     mode: box
-    unit_of_measurement: "W"
+    unit_of_measurement: "W/°Ch"
     min_value: 0
     max_value: 1000
     step: 10
-    lambda: return id(g_q_bias_max);
+    lambda: return id(g_room_rate);
     set_action:
       - globals.set:
-          id: g_q_bias_max
+          id: g_room_rate
           value: !lambda return x;
 
   - platform: template
@@ -695,6 +735,19 @@ number:
     set_action:
       - globals.set:
           id: g_drop_slope
+          value: !lambda return x;
+
+  - platform: template
+    name: "Drop Slope Cold"
+    id: val_drop_slope_cold
+    mode: box
+    min_value: -1
+    max_value: 1
+    step: 0.05
+    lambda: return id(g_drop_slope_cold);
+    set_action:
+      - globals.set:
+          id: g_drop_slope_cold
           value: !lambda return x;
 
   - platform: template
