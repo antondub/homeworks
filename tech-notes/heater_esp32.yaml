@@ -90,16 +90,6 @@ globals:
     restore_value: yes
     initial_value: "0.95"
 
-  - id: g_flow_lph
-    type: float
-    restore_value: yes
-    initial_value: "170.0"
-
-  - id: g_tin_w
-    type: float
-    restore_value: yes
-    initial_value: "0.0"
-
   - id: g_m4
     type: float
     restore_value: yes
@@ -227,7 +217,7 @@ sensor:
             float vol = id(g_room_m3);
             float kv = id(g_heat_k);
             float p_base = vol * kv * (targ - t1) / 860.0f;
-            float dT_ref = (tT - t1) * (0.14f + 0.12f * kv);
+            float dT_ref = (tT - t1) * (0.18f + 0.12f * kv);
             if (dT_ref < 1.0f) dT_ref = 1.0f;
             float dT_act = 0;
             if (!isnan(tD)) dT_act = tT - tD;
@@ -547,20 +537,6 @@ number:
           value: !lambda return x;
 
   - platform: template
-    name: "Water Flow"
-    id: val_water_flow
-    mode: box
-    unit_of_measurement: "L/h"
-    min_value: 0
-    max_value: 3000
-    step: 1
-    lambda: return id(g_flow_lph);
-    set_action:
-      - globals.set:
-          id: g_flow_lph
-          value: !lambda return x;
-
-  - platform: template
     name: "M4"
     id: val_m4
     mode: box
@@ -623,20 +599,6 @@ number:
     set_action:
       - globals.set:
           id: g_m0
-          value: !lambda return x;
-
-  - platform: template
-    name: "TempIn Trim"
-    id: val_tin_w
-    mode: box
-    unit_of_measurement: "W/K"
-    min_value: 0
-    max_value: 100
-    step: 0.5
-    lambda: return id(g_tin_w);
-    set_action:
-      - globals.set:
-          id: g_tin_w
           value: !lambda return x;
 
   - platform: template
