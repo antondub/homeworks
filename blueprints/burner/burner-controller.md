@@ -2,6 +2,8 @@
 
 ESP32 DevKit, прошивка [oil-burner_esp32.yaml](../../tech-notes/oil-burner_esp32.yaml). Разводка этой монтажки. Схема 2025-01-16 — прежний насос и вентилятор.
 
+![Монтажка](контроллер-монтажка.svg)
+
 ## Пины
 
 | Куда | Пин |
@@ -96,7 +98,7 @@ stateDiagram-v2
 
 ## Прежняя прошивка
 
-Горелка на отработке. Плата ESP32. Файл: [oil-burner_esp32.yaml](../../tech-notes/oil-burner_esp32.yaml). Имя в HA: `OilBurner`. Железо: [горелка и котёл](README.md).
+Горелка на отработке. Плата ESP32. Файл: [oil-burner_esp32_old.yaml](../../tech-notes/oil-burner_esp32_old.yaml). Имя в HA: `OilBurner`. Железо: [горелка и котёл](README.md).
 
 | Сигнал | Пин |
 | --- | --- |
