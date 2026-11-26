@@ -80,11 +80,6 @@ globals:
     restore_value: yes
     initial_value: "60"
 
-  - id: g_prev_temp_targ
-    type: float
-    restore_value: yes
-    initial_value: "20.0"
-
   - id: g_room_m3
     type: float
     restore_value: yes
@@ -105,57 +100,32 @@ globals:
     restore_value: yes
     initial_value: "0.0"
 
-  - id: g_q_bias
+  - id: g_m4
     type: float
     restore_value: yes
-    initial_value: "0.0"
+    initial_value: "0.05237"
 
-  - id: g_room_rate
+  - id: g_m3
     type: float
     restore_value: yes
-    initial_value: "150.0"
+    initial_value: "-0.00965"
 
-  - id: g_drop_avg
-    type: float
-    restore_value: no
-    initial_value: "0.0"
-
-  - id: g_drop_avg_ready
-    type: bool
-    restore_value: no
-    initial_value: "false"
-
-  - id: g_drop_0
+  - id: g_m2
     type: float
     restore_value: yes
-    initial_value: "14.0"
+    initial_value: "0.24517"
 
-  - id: g_drop_slope
+  - id: g_m1
     type: float
     restore_value: yes
-    initial_value: "0.1"
+    initial_value: "0.74856"
 
-  - id: g_drop_slope_cold
+  - id: g_m0
     type: float
     restore_value: yes
-    initial_value: "0.15"
-
-  - id: g_drop_rate
-    type: float
-    restore_value: yes
-    initial_value: "100.0"
-
-  - id: g_q_drop
-    type: float
-    restore_value: yes
-    initial_value: "0.0"
+    initial_value: "-0.03791"
 
   - id: g_q_need
-    type: float
-    restore_value: no
-    initial_value: "0.0"
-
-  - id: g_q_now
     type: float
     restore_value: no
     initial_value: "0.0"
@@ -228,7 +198,6 @@ sensor:
               id(heater2).turn_off();
               id(g_power_kw) = 0;
               id(heater_pwm).publish_state(0);
-              id(g_prev_temp_targ) = 0;
               return;
             }
           
@@ -236,7 +205,6 @@ sensor:
             float tD = id(tempDown).state;
             if(isnan(t1)) return;
             float targ = id(g_threshold_temp_targ);
-            bool boost = false;
             auto time = id(ha_time).now();
             if(id(g_daynight_mode) && time.is_valid()) {
               int h = time.hour;
@@ -252,75 +220,30 @@ sensor:
                 float span = id(g_threshold_temp_targ) - t1;
                 if(elapsed < id(g_boost_min) && span > 0) {
                   targ += id(g_boost_c) * span / 8.0f;
-                  boost = true;
                 }
               }
             }
 
-            float prev = id(g_prev_temp_targ);
             float vol = id(g_room_m3);
             float kv = id(g_heat_k);
-            float flow = id(g_flow_lph);
-            float q_loss = vol * kv * (targ - t1);
-            float q_in = 0;
-            if (!isnan(id(tempIn).state)) {
-              float e = targ - id(tempIn).state;
-              if (e > 1.5f) e = 1.5f;
-              if (e < -1.5f) e = -1.5f;
-              q_in = (vol * kv + id(g_tin_w)) * e;
-            }
-            float q_need = q_loss + q_in;
-            if (!boost && !isnan(id(tempIn).state)) {
-              float bias = id(g_q_bias);
-              float brate = id(g_room_rate);
-              if (brate < 0) brate = 0;
-              bias += (brate / 1800.0f) * (targ - id(tempIn).state) * 5.0f;
-              if (bias > 300.0f) bias = 300.0f;
-              if (bias < -300.0f) bias = -300.0f;
-              id(g_q_bias) = bias;
-            } else {
-              float bias = id(g_q_bias);
-              if (bias > 300.0f) bias = 300.0f;
-              if (bias < -300.0f) bias = -300.0f;
-              id(g_q_bias) = bias;
-            }
-            q_need += id(g_q_bias);
-            if (!boost && !isnan(tD) && !isnan(t1)) {
-              float drop = tT - tD;
-              float avg = id(g_drop_avg);
-              if (!id(g_drop_avg_ready)) {
-                avg = drop;
-                id(g_drop_avg_ready) = true;
-              } else {
-                avg += (drop - avg) * (5.0f / 300.0f);
-              }
-              id(g_drop_avg) = avg;
-              float trim = id(g_q_drop);
-              float rate = id(g_drop_rate);
-              if (rate < 0) rate = 0;
-              float sw = id(g_drop_slope);
-              float sc = id(g_drop_slope_cold);
-              float slope = sw;
-              if (t1 <= -5.0f) slope = sc;
-              else if (t1 < 5.0f) slope = sc + (sw - sc) * (t1 + 5.0f) / 10.0f;
-              float drop_tgt = id(g_drop_0) - slope * t1;
-              trim += (rate / 1800.0f) * (drop_tgt - avg) * 5.0f;
-              if (trim > 600.0f) trim = 600.0f;
-              if (trim < -600.0f) trim = -600.0f;
-              id(g_q_drop) = trim;
-            }
-            q_need += id(g_q_drop);
-            if (q_need < 0) q_need = 0;
-            float q_now = 1.163f * flow * (tT - tD);
+            float p_base = vol * kv * (targ - t1) / 860.0f;
+            float dT_ref = (tT - t1) * (0.14f + 0.12f * kv);
+            if (dT_ref < 1.0f) dT_ref = 1.0f;
+            float dT_act = 0;
+            if (!isnan(tD)) dT_act = tT - tD;
+            if (dT_act < 0) dT_act = 0;
+            float xr = dT_act / dT_ref;
+            if (xr < 0.2f) xr = 0.2f;
+            if (xr > 2.0f) xr = 2.0f;
+            float m = (((id(g_m4) * xr + id(g_m3)) * xr + id(g_m2)) * xr + id(g_m1)) * xr + id(g_m0);
+            float room = 1.0f;
+            if (!isnan(id(tempIn).state)) room = 1.0f + 0.03f * (20.0f - id(tempIn).state);
+            float p_kw = p_base * m * room;
+            if (p_kw < 0) p_kw = 0;
+            float q_need = p_kw * 1000.0f;
+            float wcap = (id(g_heater1_kw) + id(g_heater2_kw)) * 900.0f;
+            if (q_need > wcap) q_need = wcap;
             id(g_q_need) = q_need;
-            id(g_q_now) = q_now;
-            float out = prev;
-            if (flow > 1) out = q_need / (1.163f * flow);
-            if(out < 0) out = 0;
-            if(out > 40) out = 40;
-            if(isnan(out)) out = prev;
-
-            id(g_prev_temp_targ) = out;
 
             float w1 = id(g_heater1_kw) * 1000.0f;
             float w2 = id(g_heater2_kw) * 1000.0f;
@@ -346,7 +269,7 @@ sensor:
             if(wsum > 0) pwm = id(g_power_kw) / wsum * 100;
             id(heater_pwm).publish_state(pwm);
 
-            ESP_LOGD("calculation", "targ %.2f, tOut %.2f, q_loss %.2f, q_in %.2f, q_need %.2f, q_now %.2f, out %.2f", targ, t1, q_loss, q_in, q_need, q_now, out);
+            ESP_LOGD("calculation", "targ %.2f, tOut %.2f, p_base %.2f, x %.2f, m %.2f, q_need %.2f", targ, t1, p_base, xr, m, q_need);
 
     filters:
       - calibrate_polynomial:
@@ -384,65 +307,14 @@ sensor:
       return id(tempTop).state - id(tempDown).state;
 
   - platform: template
-    name: "Room Bias"
-    id: room_bias
-    unit_of_measurement: "W"
-    accuracy_decimals: 0
-    device_class: power
-    update_interval: 30s
-    lambda: |-
-      return id(g_q_bias);
-
-  - platform: template
-    name: "Drop Target"
-    id: drop_target
-    unit_of_measurement: "°C"
-    accuracy_decimals: 1
-    device_class: temperature
-    update_interval: 30s
-    lambda: |-
-      if (isnan(id(tempOut).state)) return NAN;
-      float t = id(tempOut).state;
-      float sw = id(g_drop_slope);
-      float sc = id(g_drop_slope_cold);
-      float slope = sw;
-      if (t <= -5.0f) slope = sc;
-      else if (t < 5.0f) slope = sc + (sw - sc) * (t + 5.0f) / 10.0f;
-      return id(g_drop_0) - slope * t;
-
-  - platform: template
-    name: "Drop Trim"
-    id: drop_trim
-    unit_of_measurement: "W"
-    accuracy_decimals: 0
-    device_class: power
-    update_interval: 30s
-    lambda: |-
-      return id(g_q_drop);
-
-  - platform: template
     name: "Heat Need"
     id: heat_need
-    unit_of_measurement: "W"
-    accuracy_decimals: 0
+    unit_of_measurement: "kW"
+    accuracy_decimals: 2
     device_class: power
     update_interval: 30s
     lambda: |-
-      return id(g_q_need);
-
-  - platform: template
-    name: "Heat Now"
-    id: heat_now
-    unit_of_measurement: "W"
-    accuracy_decimals: 0
-    device_class: power
-    update_interval: 5s
-    lambda: |-
-      return id(g_q_now);
-    filters:
-      - sliding_window_moving_average:
-          window_size: 6
-          send_every: 1
+      return id(g_q_need) / 1000.0f;
 
   - platform: template
     name: "Heat Power"
@@ -494,14 +366,6 @@ sensor:
     name: "Heater PWM"
     id: heater_pwm
 
-
-  - platform: template
-    device_class: temperature
-    unit_of_measurement: "°C"
-    update_interval: 30s
-    name: "Climate Target"
-    lambda: |-
-      return id(g_prev_temp_targ);
 
 switch:
   - platform: gpio
@@ -697,71 +561,68 @@ number:
           value: !lambda return x;
 
   - platform: template
-    name: "Room Rate"
-    id: val_room_rate
+    name: "M4"
+    id: val_m4
     mode: box
-    unit_of_measurement: "W/°Ch"
-    min_value: 0
-    max_value: 1000
-    step: 10
-    lambda: return id(g_room_rate);
+    min_value: -5
+    max_value: 5
+    step: 0.00001
+    lambda: return id(g_m4);
     set_action:
       - globals.set:
-          id: g_room_rate
+          id: g_m4
           value: !lambda return x;
 
   - platform: template
-    name: "Drop 0"
-    id: val_drop_0
+    name: "M3"
+    id: val_m3
     mode: box
-    unit_of_measurement: "°C"
-    min_value: 0
-    max_value: 30
-    step: 0.5
-    lambda: return id(g_drop_0);
+    min_value: -5
+    max_value: 5
+    step: 0.00001
+    lambda: return id(g_m3);
     set_action:
       - globals.set:
-          id: g_drop_0
+          id: g_m3
           value: !lambda return x;
 
   - platform: template
-    name: "Drop Slope"
-    id: val_drop_slope
+    name: "M2"
+    id: val_m2
     mode: box
-    min_value: -1
-    max_value: 1
-    step: 0.05
-    lambda: return id(g_drop_slope);
+    min_value: -5
+    max_value: 5
+    step: 0.00001
+    lambda: return id(g_m2);
     set_action:
       - globals.set:
-          id: g_drop_slope
+          id: g_m2
           value: !lambda return x;
 
   - platform: template
-    name: "Drop Slope Cold"
-    id: val_drop_slope_cold
+    name: "M1"
+    id: val_m1
     mode: box
-    min_value: -1
-    max_value: 1
-    step: 0.05
-    lambda: return id(g_drop_slope_cold);
+    min_value: -5
+    max_value: 5
+    step: 0.00001
+    lambda: return id(g_m1);
     set_action:
       - globals.set:
-          id: g_drop_slope_cold
+          id: g_m1
           value: !lambda return x;
 
   - platform: template
-    name: "Drop Rate"
-    id: val_drop_rate
+    name: "M0"
+    id: val_m0
     mode: box
-    unit_of_measurement: "W/°Ch"
-    min_value: 0
-    max_value: 500
-    step: 10
-    lambda: return id(g_drop_rate);
+    min_value: -5
+    max_value: 5
+    step: 0.00001
+    lambda: return id(g_m0);
     set_action:
       - globals.set:
-          id: g_drop_rate
+          id: g_m0
           value: !lambda return x;
 
   - platform: template
