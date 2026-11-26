@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+<rect width="980" height="520" fill="#f6f3ea"/>
+<defs>
+<style type="text/css"><![CDATA[
+text { font-family: DejaVu Sans, Liberation Sans, sans-serif; fill: #241c16; }
+.title { font-size: 22px; font-weight: 700; }
+.lab { font-size: 15px; font-weight: 700; }
+.sm { font-size: 13px; fill: #3c342c; }
+.pin { font-size: 12px; fill: #3c342c; }
+]]></style>
+</defs>
+<text class="title" x="16" y="32">4PWM</text>
+
+<rect x="24" y="64" width="150" height="300" rx="8" fill="#dce8d6" stroke="#2a5a38" stroke-width="2"/>
+<text class="lab" x="99" y="88" text-anchor="middle">шина</text>
+<text class="pin" x="40" y="122">1  5 В</text>
+<text class="pin" x="40" y="150">2  GND</text>
+<text class="pin" x="40" y="178">3  SCK</text>
+<text class="pin" x="40" y="206">4  MOSI</text>
+<text class="pin" x="40" y="234">5  MISO</text>
+<text class="pin" x="40" y="262">6  CS</text>
+<text class="sm" x="99" y="300" text-anchor="middle">MISO: первый байт</text>
+<text class="sm" x="99" y="318" text-anchor="middle">тип модуля</text>
+
+<rect x="300" y="64" width="250" height="360" rx="8" fill="#f3f0ea" stroke="#241c16" stroke-width="2"/>
+<text class="lab" x="425" y="90" text-anchor="middle">STM32G030F6</text>
+<text class="sm" x="425" y="110" text-anchor="middle">SPI1 ведомый</text>
+<text class="pin" x="318" y="148">PA5  SCK</text>
+<text class="pin" x="318" y="172">PA2  MOSI</text>
+<text class="pin" x="318" y="196">PA6  MISO</text>
+<text class="pin" x="318" y="220">PA4  CS</text>
+<text class="pin" x="318" y="260">PB8  TIM16  канал 1</text>
+<text class="pin" x="318" y="284">PB9  TIM17  канал 2</text>
+<text class="pin" x="318" y="308">PA7  TIM14  канал 3</text>
+<text class="pin" x="318" y="332">PA8  TIM1   канал 4</text>
+<text class="sm" x="425" y="390" text-anchor="middle">3,3 В с LDO</text>
+<text class="sm" x="425" y="408" text-anchor="middle">SWD PA13 PA14</text>
+
+<rect x="640" y="150" width="130" height="150" rx="8" fill="#dce8d6" stroke="#2a5a38" stroke-width="2"/>
+<text class="lab" x="705" y="178" text-anchor="middle">оптрон</text>
+<text class="sm" x="705" y="202" text-anchor="middle">5 В привода</text>
+<text class="pin" x="658" y="232">4 канала</text>
+<text class="pin" x="658" y="256">330 Ом</text>
+
+<rect x="840" y="64" width="120" height="300" rx="8" fill="#ffffff" stroke="#241c16" stroke-width="2"/>
+<text class="lab" x="900" y="90" text-anchor="middle">клеммы</text>
+<text class="pin" x="858" y="130">1 SIG GND</text>
+<text class="pin" x="858" y="170">2 SIG GND</text>
+<text class="pin" x="858" y="210">3 SIG GND</text>
+<text class="pin" x="858" y="250">4 SIG GND</text>
+<text class="sm" x="900" y="310" text-anchor="middle">земля привода</text>
+<text class="sm" x="900" y="330" text-anchor="middle">мотор снаружи</text>
+
+<line x1="174" y1="172" x2="300" y2="142" stroke="#241c16" stroke-width="1.4"/>
+<line x1="174" y1="200" x2="300" y2="166" stroke="#241c16" stroke-width="1.4"/>
+<line x1="174" y1="228" x2="300" y2="190" stroke="#241c16" stroke-width="1.4"/>
+<line x1="174" y1="256" x2="300" y2="214" stroke="#241c16" stroke-width="1.4"/>
+<line x1="550" y1="254" x2="640" y2="200" stroke="#241c16" stroke-width="1.4"/>
+<line x1="550" y1="278" x2="640" y2="214" stroke="#241c16" stroke-width="1.4"/>
+<line x1="550" y1="302" x2="640" y2="228" stroke="#241c16" stroke-width="1.4"/>
+<line x1="550" y1="326" x2="640" y2="242" stroke="#241c16" stroke-width="1.4"/>
+<line x1="770" y1="220" x2="840" y2="200" stroke="#241c16" stroke-width="1.4"/>
+
+<rect x="300" y="450" width="250" height="48" rx="8" fill="#dce8d6" stroke="#2a5a38" stroke-width="1.6"/>
+<text class="sm" x="425" y="478" text-anchor="middle">5 В, LDO, 3,3 В</text>
+</svg>
