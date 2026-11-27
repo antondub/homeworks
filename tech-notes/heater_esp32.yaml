@@ -135,6 +135,16 @@ globals:
     restore_value: no
     initial_value: "0.0"
 
+  - id: g_tin_avg
+    type: float
+    restore_value: no
+    initial_value: "NAN"
+
+  - id: g_tin_n
+    type: int
+    restore_value: no
+    initial_value: "0"
+
 one_wire:
   - platform: gpio
     pin: GPIO5
@@ -226,8 +236,8 @@ sensor:
             if (xr < 0.2f) xr = 0.2f;
             if (xr > 2.0f) xr = 2.0f;
             float m = (((id(g_m4) * xr + id(g_m3)) * xr + id(g_m2)) * xr + id(g_m1)) * xr + id(g_m0);
-            float room = 1.0f;
-            if (!isnan(id(tempIn).state)) room = 1.0f + 0.15f * (targ - id(tempIn).state);
+            float room = 1.0f + 0.03f * (20.0f - targ);
+            if (id(g_tin_n) > 0) room *= 1.0f + 0.15f * (targ - id(g_tin_avg));
             float p_kw = p_base * m * room;
             if (p_kw < 0) p_kw = 0;
             float q_need = p_kw * 1000.0f;
@@ -349,6 +359,19 @@ sensor:
           - 0.2 -> -0.7
           - 23.0 -> 23.0
           - 53.0 -> 48.0
+    on_value:
+      then:
+        - lambda: |-
+            static float hist[10];
+            static int idx = 0;
+            hist[idx] = x;
+            idx = (idx + 1) % 10;
+            int n = id(g_tin_n);
+            if (n < 10) n++;
+            id(g_tin_n) = n;
+            float s = 0;
+            for (int k = 0; k < n; k++) s += hist[k];
+            id(g_tin_avg) = s / n;
 
   - platform: template
     device_class: power_factor
