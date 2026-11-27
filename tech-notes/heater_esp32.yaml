@@ -58,12 +58,12 @@ globals:
   - id: g_threshold_temp_night
     type: float
     restore_value: yes
-    initial_value: "20.5"
+    initial_value: "20.0"
 
   - id: g_night_start
     type: int
     restore_value: yes
-    initial_value: "0"
+    initial_value: "22"
 
   - id: g_night_end
     type: int
@@ -227,7 +227,7 @@ sensor:
             if (xr > 2.0f) xr = 2.0f;
             float m = (((id(g_m4) * xr + id(g_m3)) * xr + id(g_m2)) * xr + id(g_m1)) * xr + id(g_m0);
             float room = 1.0f;
-            if (!isnan(id(tempIn).state)) room = 1.0f + 0.03f * (20.0f - id(tempIn).state);
+            if (!isnan(id(tempIn).state)) room = 1.0f + 0.15f * (targ - id(tempIn).state);
             float p_kw = p_base * m * room;
             if (p_kw < 0) p_kw = 0;
             float q_need = p_kw * 1000.0f;
